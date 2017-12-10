@@ -237,10 +237,10 @@ ECHO ****************************************************
 ECHO ====================================================
 ECHO *                    ZENCash (ZEN)                 *
 ECHO ====================================================
-ECHO 58.  Claymore ZENCoin AMD Only - Zencoin to Suprnova.cc
-ECHO 59.  NVIDIA DSTM ZMiner - nVidia Only - ZENCOIN to Suprnova.cc
-ECHO 60.  ZENCoin Claymore - ZENCash to HODLPool - AMD Only
-ECHO 61.  NVIDIA DSTM ZMiner - nVidia Only - ZENCash to HODLPool
+ECHO 58.  ZENCoin Claymore - ZENCash to HODLPool - AMD Only
+ECHO 59.  NVIDIA DSTM ZMiner - nVidia Only - ZENCash to HODLPool
+ECHO 60.  Claymore ZENCoin AMD Only - Zencoin to Suprnova.cc
+ECHO 61.  NVIDIA DSTM ZMiner - nVidia Only - ZENCOIN to Suprnova.cc
 ECHO ****************************************************
 ECHO ====================================================
 ECHO *                    PIRL (PIRL)                   *
@@ -354,10 +354,10 @@ IF %M%==54 GOTO zcl2
 IF %M%==55 GOTO xzc1
 IF %M%==56 GOTO xzc2
 IF %M%==57 GOTO vtc1
-IF %M%==58 GOTO zen1
-IF %M%==59 GOTO zen2
-IF %M%==60 GOTO zen3
-IF %M%==61 GOTO zen4
+IF %M%==58 GOTO zen3
+IF %M%==59 GOTO zen4
+IF %M%==60 GOTO zen1
+IF %M%==61 GOTO zen2
 IF %M%==62 GOTO pirl1
 IF %M%==63 GOTO pirl2
 IF %M%==64 GOTO pirl3
@@ -474,7 +474,7 @@ pause
 ::
 :komodo1
 ECHO NVIDIA DSTM ZMiner - Komodo to HODLPool
-Miners\DSTM_zm_0.5.4_win\zm.exe --dev --server mining.hodlpool.com  --port 3035 --user %KMD_WALLET_ADDRESS% --pass %WORKER_PASSWORD%
+Miners\DSTM_zm_0.5.4_win\zm.exe --dev --server mining.hodlpool.com  --port 3035 --user %KMD_WALLET_ADDRESS%.%MINER_NAME% --pass %WORKER_PASSWORD%
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
@@ -808,7 +808,7 @@ pause
 
 :zen4
 ECHO NVIDIA DSTM ZMiner - nVidia Only - ZENCash to HODLPool
-Miners\DSTM_zm_0.5.4_win\zm.exe --dev --server mining.hodlpool.com --port 3032 --user %ZEN_WALLET_ADDRESS% --pass %WORKER_PASSWORD% 
+Miners\DSTM_zm_0.5.4_win\zm.exe --dev --server mining.hodlpool.com --port 3032 --user %ZEN_WALLET_ADDRESS%.%MINER_NAME% --pass %WORKER_PASSWORD% 
 if %ERRORLEVEL% NEQ 0 goto exit
 ECHO Error while running miner
 pause
