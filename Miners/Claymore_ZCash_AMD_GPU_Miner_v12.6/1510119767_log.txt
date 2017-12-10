@@ -1,0 +1,201 @@
+23:42:47:255	29ec	args: -zpool ssl://us-east.equihash-hub.miningpoolhub.com:20575 -zwal bitsbetrippin.bbtworker01 -zpsw x -allpools 1 
+23:42:47:259	29ec	
+23:42:47:262	29ec	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+23:42:47:265	29ec	บ             Claymore's ZCash AMD GPU Miner v12.6               บ
+23:42:47:272	29ec	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+23:42:47:276	29ec	
+23:42:47:486	29ec	ZEC: 1 pool is specified
+23:42:47:490	29ec	Main ZCash pool is us-east.equihash-hub.miningpoolhub.com:20575
+23:42:47:832	29ec	OpenCL platform: AMD Accelerated Parallel Processing
+23:42:47:839	29ec	OpenCL initializing...
+23:42:47:843	29ec	driver 10.0.2348.3
+23:42:47:850	29ec	AMD Cards available: 1 
+23:42:47:853	29ec	GPU #0: Ellesmere, 8192 MB available, 36 compute units
+23:42:47:861	29ec	GPU #0 recognized as Radeon RX 480/580
+23:42:47:865	29ec	POOL version
+23:42:47:873	29ec	b571 
+23:42:47:877	29ec	Platform: Windows
+23:42:48:039	29ec	start building OpenCL program for GPU 0...
+23:42:48:045	29ec	done
+23:42:48:519	29ec	GPU #0 algorithm ASM, intensity 6
+23:42:48:523	29ec	Total cards: 1 
+23:43:02:952	980	ZEC: Stratum - connecting to 'us-east.equihash-hub.miningpoolhub.com' <45.79.223.173> port 20575 (SSL/TLS)
+23:43:02:979	29ec	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+23:43:02:990	29ec	Watchdog enabled
+23:43:02:994	29ec	Remote management (READ-ONLY MODE) is enabled on port 3333
+23:43:03:005	29ec	
+23:43:03:081	980	cert subject: /O=mph
+23:43:03:086	980	cert issuer: /O=mph
+23:43:03:090	980	SSL/TLS encryption is enabled
+23:43:03:094	980	send: {"id": 1, "method": "mining.subscribe", "params": ["equihashminer", null, "us-east.equihash-hub.miningpoolhub.com", "20575"]}
+
+23:43:03:098	980	send: {"id": 2, "method": "mining.authorize", "params": ["bitsbetrippin.bbtworker01","x"]}
+
+23:43:03:106	980	send: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+23:43:03:110	980	ZEC: Stratum - Connected (us-east.equihash-hub.miningpoolhub.com:20575) (SSL/TLS)
+23:43:03:135	980	got 79 bytes
+23:43:03:139	980	buf: {"id":1,"result":["deadbeefcafebabe8d5e000000000000","08001bd8"],"error":null}
+
+23:43:03:143	980	parse packet: 78
+23:43:03:147	980	new buf size: 0
+23:43:03:182	980	got 119 bytes
+23:43:03:186	980	buf: {"id":null,"method":"mining.set_target","params":["0001000000000000000000000000000000000000000000000000000000000000"]}
+
+23:43:03:189	980	parse packet: 118
+23:43:03:193	980	Pool sets new share target: 0x00010000 (diff: 65535H)
+23:43:03:197	980	new buf size: 0
+23:43:03:206	980	got 294 bytes
+23:43:03:210	980	buf: {"id":null,"method":"mining.notify","params":["e734","04000000","ff99f7d007475df5baea21f4d90efe32360e48d8d50fdd075e31995601000000","94ee52c4d81ae761fde8cfaf872b88d9e195d31d18e443e0ec1fa490e9b91586","0000000000000000000000000000000000000000000000000000000000000000","3899025a","306f0b1d",true]}
+
+23:43:03:214	980	parse packet: 293
+23:43:03:217	980	new buf size: 0
+23:43:03:265	980	got 36 bytes
+23:43:03:269	980	buf: {"id":2,"result":true,"error":null}
+
+23:43:03:273	980	parse packet: 35
+23:43:03:283	980	ZEC: Authorized
+23:43:03:287	980	new buf size: 0
+23:43:03:297	980	got 119 bytes
+23:43:03:301	980	buf: {"id":null,"method":"mining.set_target","params":["0010000000000000000000000000000000000000000000000000000000000000"]}
+
+23:43:03:316	980	parse packet: 118
+23:43:03:320	980	Pool sets new share target: 0x00100000 (diff: 4095H)
+23:43:03:328	980	new buf size: 0
+23:43:10:347	980	got 295 bytes
+23:43:10:350	980	buf: {"id":null,"method":"mining.notify","params":["e735","04000000","ff99f7d007475df5baea21f4d90efe32360e48d8d50fdd075e31995601000000","b12302c627dc3e2c644f18a4b329ef98d8ed28be77d1c0356c7e66032b66a976","0000000000000000000000000000000000000000000000000000000000000000","6f99025a","306f0b1d",false]}
+
+23:43:10:354	980	parse packet: 294
+23:43:10:359	980	new buf size: 0
+23:43:10:363	980	ZEC: 11/07/17-23:43:10 - New job from us-east.equihash-hub.miningpoolhub.com:20575
+23:43:10:366	980	target: 0x00100000 (diff: 4095H)
+23:43:10:370	980	ZEC - Total Speed: 338.616 H/s, Total Shares: 0, Rejected: 0, Time: 00:00
+23:43:10:383	980	ZEC: GPU0 338.575 H/s
+23:43:18:703	5a4	ZEC: put share nonce 584
+23:43:18:707	5a4	ZEC round found 1 shares
+23:43:18:711	980	ZEC: 11/07/17-23:43:18 - SHARE FOUND - (GPU 0)
+23:43:18:715	980	send share: {"id": 4, "method": "mining.submit", "params": ["bitsbetrippin.bbtworker01","e735","6f99025a","84050000000000000000000000000000000000000000000000000000","fd40050016b8f4bfc7b775dec7874ef9dbec229b28d4ef
+23:43:18:767	980	got 36 bytes
+23:43:18:774	980	buf: {"id":4,"result":true,"error":null}
+
+23:43:18:778	980	parse packet: 35
+23:43:18:782	980	ZEC: Share accepted (62 ms)!
+23:43:18:785	980	new buf size: 0
+23:43:24:925	900	ZEC: put share nonce 9ad
+23:43:24:929	900	ZEC round found 1 shares
+23:43:24:933	980	ZEC: 11/07/17-23:43:24 - SHARE FOUND - (GPU 0)
+23:43:24:936	980	send share: {"id": 4, "method": "mining.submit", "params": ["bitsbetrippin.bbtworker01","e735","6f99025a","ad090000000000000000000000000000000000000000000000000000","fd40050011ce415148c76c683a313467527c96cfbdd7e3
+23:43:24:985	980	got 36 bytes
+23:43:24:990	980	buf: {"id":4,"result":true,"error":null}
+
+23:43:24:993	980	parse packet: 35
+23:43:24:996	980	ZEC: Share accepted (46 ms)!
+23:43:25:000	980	new buf size: 0
+23:43:33:019	29ec	GPU0 t=59C fan=40%
+23:43:33:023	29ec	em hbt: 0, fm hbt: 78, 
+23:43:33:027	29ec	watchdog - thread 0, hb time 219
+23:43:33:031	29ec	watchdog - thread 1, hb time 78
+23:43:33:034	29ec	watchdog - thread 2, hb time 485
+23:43:33:038	29ec	watchdog - thread 3, hb time 360
+23:44:03:053	29ec	GPU0 t=60C fan=39%
+23:44:03:731	29ec	em hbt: 0, fm hbt: 63, 
+23:44:03:735	29ec	watchdog - thread 0, hb time 531
+23:44:03:759	29ec	watchdog - thread 1, hb time 390
+23:44:03:762	29ec	watchdog - thread 2, hb time 250
+23:44:03:766	29ec	watchdog - thread 3, hb time 109
+23:44:05:401	980	got 295 bytes
+23:44:05:406	980	buf: {"id":null,"method":"mining.notify","params":["e736","04000000","ff99f7d007475df5baea21f4d90efe32360e48d8d50fdd075e31995601000000","1e3498973a444f8f0458a4311a7bebd67cf2a815887fb790e765c40e3fe37b5b","0000000000000000000000000000000000000000000000000000000000000000","a799025a","306f0b1d",false]}
+
+23:44:05:410	980	parse packet: 294
+23:44:05:414	980	new buf size: 0
+23:44:05:418	980	ZEC: 11/07/17-23:44:05 - New job from us-east.equihash-hub.miningpoolhub.com:20575
+23:44:05:423	980	target: 0x00100000 (diff: 4095H)
+23:44:05:427	980	ZEC - Total Speed: 331.223 H/s, Total Shares: 2, Rejected: 0, Time: 00:01
+23:44:05:432	980	ZEC: GPU0 331.223 H/s
+23:44:26:723	5a4	ZEC: put share nonce e26
+23:44:26:727	5a4	ZEC round found 1 shares
+23:44:26:731	980	ZEC: 11/07/17-23:44:26 - SHARE FOUND - (GPU 0)
+23:44:26:758	980	send share: {"id": 4, "method": "mining.submit", "params": ["bitsbetrippin.bbtworker01","e736","a799025a","260e0000000000000000000000000000000000000000000000000000","fd400500046258d4c17d0291cfd61e25ee08634cbefe28
+23:44:26:813	980	got 36 bytes
+23:44:26:817	980	buf: {"id":4,"result":true,"error":null}
+
+23:44:26:820	980	parse packet: 35
+23:44:26:835	980	ZEC: Share accepted (78 ms)!
+23:44:26:840	980	new buf size: 0
+23:44:33:780	29ec	GPU0 t=62C fan=38%
+23:44:33:784	29ec	em hbt: 0, fm hbt: 93, 
+23:44:33:788	29ec	watchdog - thread 0, hb time 140
+23:44:33:813	29ec	watchdog - thread 1, hb time 0
+23:44:33:817	29ec	watchdog - thread 2, hb time 422
+23:44:33:821	29ec	watchdog - thread 3, hb time 281
+23:44:49:434	5a4	ZEC: put share nonce 1d71
+23:44:50:107	5a4	ZEC round found 1 shares
+23:44:50:111	980	ZEC: 11/07/17-23:44:50 - SHARE FOUND - (GPU 0)
+23:44:50:135	980	send share: {"id": 4, "method": "mining.submit", "params": ["bitsbetrippin.bbtworker01","e736","a799025a","711d0000000000000000000000000000000000000000000000000000","fd4005008248a9f40562b4df620102468fb09fa7f4ffeb
+23:44:50:184	980	got 36 bytes
+23:44:50:187	980	buf: {"id":4,"result":true,"error":null}
+
+23:44:50:191	980	parse packet: 35
+23:44:50:195	980	ZEC: Share accepted (63 ms)!
+23:44:50:200	980	new buf size: 0
+23:44:51:643	5a4	ZEC: put share nonce 1ea6
+23:44:51:647	5a4	ZEC round found 1 shares
+23:44:51:651	980	ZEC: 11/07/17-23:44:51 - SHARE FOUND - (GPU 0)
+23:44:51:654	980	send share: {"id": 4, "method": "mining.submit", "params": ["bitsbetrippin.bbtworker01","e736","a799025a","a61e0000000000000000000000000000000000000000000000000000","fd400500457c6defb65d93f2324936aacfa1fb3eba5ae6
+23:44:51:707	980	got 36 bytes
+23:44:51:711	980	buf: {"id":4,"result":true,"error":null}
+
+23:44:51:714	980	parse packet: 35
+23:44:51:718	980	ZEC: Share accepted (63 ms)!
+23:44:51:722	980	new buf size: 0
+23:45:00:429	980	got 295 bytes
+23:45:00:432	980	buf: {"id":null,"method":"mining.notify","params":["e737","04000000","ff99f7d007475df5baea21f4d90efe32360e48d8d50fdd075e31995601000000","1e3498973a444f8f0458a4311a7bebd67cf2a815887fb790e765c40e3fe37b5b","0000000000000000000000000000000000000000000000000000000000000000","de99025a","306f0b1d",false]}
+
+23:45:00:436	980	parse packet: 294
+23:45:00:439	980	new buf size: 0
+23:45:00:444	980	ZEC: 11/07/17-23:45:00 - New job from us-east.equihash-hub.miningpoolhub.com:20575
+23:45:00:448	980	target: 0x00100000 (diff: 4095H)
+23:45:00:451	980	ZEC - Total Speed: 329.449 H/s, Total Shares: 5, Rejected: 0, Time: 00:01
+23:45:00:455	980	ZEC: GPU0 329.449 H/s
+23:45:03:835	29ec	GPU0 t=63C fan=38%
+23:45:03:839	29ec	em hbt: 0, fm hbt: 15, 
+23:45:03:843	29ec	watchdog - thread 0, hb time 438
+23:45:03:867	29ec	watchdog - thread 1, hb time 297
+23:45:03:872	29ec	watchdog - thread 2, hb time 16
+23:45:03:879	29ec	watchdog - thread 3, hb time 156
+23:45:12:986	300	ZEC: put share nonce 7f8
+23:45:12:990	300	ZEC round found 1 shares
+23:45:12:995	980	ZEC: 11/07/17-23:45:12 - SHARE FOUND - (GPU 0)
+23:45:12:999	980	send share: {"id": 4, "method": "mining.submit", "params": ["bitsbetrippin.bbtworker01","e737","de99025a","f8070000000000000000000000000000000000000000000000000000","fd40050080db32ecc7c19311ea90149bcd42c5ad0b969a
+23:45:13:051	980	got 36 bytes
+23:45:13:055	980	buf: {"id":4,"result":true,"error":null}
+
+23:45:13:059	980	parse packet: 35
+23:45:13:063	980	ZEC: Share accepted (63 ms)!
+23:45:13:067	980	new buf size: 0
+23:45:26:566	5a4	ZEC: put share nonce 1187
+23:45:26:570	5a4	ZEC round found 1 shares
+23:45:26:574	980	ZEC: 11/07/17-23:45:26 - SHARE FOUND - (GPU 0)
+23:45:26:578	980	send share: {"id": 4, "method": "mining.submit", "params": ["bitsbetrippin.bbtworker01","e737","de99025a","87110000000000000000000000000000000000000000000000000000","fd40050012c94c2dc4d381bba983069c43b8094a39aa7d
+23:45:26:637	980	got 36 bytes
+23:45:26:641	980	buf: {"id":4,"result":true,"error":null}
+
+23:45:26:645	980	parse packet: 35
+23:45:26:649	980	ZEC: Share accepted (63 ms)!
+23:45:26:667	980	new buf size: 0
+23:45:33:893	29ec	GPU0 t=63C fan=38%
+23:45:33:897	29ec	em hbt: 0, fm hbt: 47, 
+23:45:33:901	29ec	watchdog - thread 0, hb time 532
+23:45:33:922	29ec	watchdog - thread 1, hb time 391
+23:45:33:926	29ec	watchdog - thread 2, hb time 110
+23:45:33:933	29ec	watchdog - thread 3, hb time 250
+23:45:39:754	900	ZEC: put share nonce 1a2a
+23:45:39:758	900	ZEC round found 1 shares
+23:45:39:762	980	ZEC: 11/07/17-23:45:39 - SHARE FOUND - (GPU 0)
+23:45:39:767	980	send share: {"id": 4, "method": "mining.submit", "params": ["bitsbetrippin.bbtworker01","e737","de99025a","2a1a0000000000000000000000000000000000000000000000000000","fd400500f1716ae824c5b7acf7357382429a8deed6d978
+23:45:39:819	980	got 36 bytes
+23:45:39:823	980	buf: {"id":4,"result":true,"error":null}
+
+23:45:39:827	980	parse packet: 35
+23:45:39:844	980	ZEC: Share accepted (78 ms)!
+23:45:39:848	980	new buf size: 0

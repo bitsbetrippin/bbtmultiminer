@@ -1,0 +1,65 @@
+16:17:35:014	2a44	args: -zpool ssl://zec-us-east1.nanopool.org:6633 -zwal t1dBorBoRyznDaRyQzEEB4SkvmCFhmF2ZYk.bbtworker01/bitsbetrippin1@gmail.com -zpsw z -ftime 1 -allpools 1 
+16:17:35:018	2a44	
+16:17:35:021	2a44	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+16:17:35:024	2a44	บ             Claymore's ZCash AMD GPU Miner v12.6               บ
+16:17:35:027	2a44	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+16:17:35:030	2a44	
+16:17:35:235	2a44	ZEC: 1 pool is specified
+16:17:35:238	2a44	Main ZCash pool is zec-us-east1.nanopool.org:6633
+16:17:35:557	2a44	OpenCL platform: AMD Accelerated Parallel Processing
+16:17:35:564	2a44	OpenCL initializing...
+16:17:35:575	2a44	driver 10.0.2348.3
+16:17:35:578	2a44	AMD Cards available: 1 
+16:17:35:602	2a44	GPU #0: Ellesmere, 8192 MB available, 36 compute units
+16:17:35:606	2a44	GPU #0 recognized as Radeon RX 480/580
+16:17:35:609	2a44	POOL version
+16:17:35:612	2a44	b571 
+16:17:35:615	2a44	Platform: Windows
+16:17:35:793	2a44	start building OpenCL program for GPU 0...
+16:17:35:799	2a44	done
+16:17:36:257	2a44	GPU #0 algorithm ASM, intensity 6
+16:17:36:261	2a44	Total cards: 1 
+16:17:50:663	3fd0	ZEC: Stratum - connecting to 'zec-us-east1.nanopool.org' <158.69.85.38> port 6633 (SSL/TLS)
+16:17:50:716	2a44	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+16:17:50:720	2a44	Watchdog enabled
+16:17:50:723	2a44	Remote management (READ-ONLY MODE) is enabled on port 3333
+16:17:50:726	2a44	
+16:17:50:781	3fd0	cert subject: /O=CloudFlare, Inc./OU=CloudFlare Origin CA/CN=CloudFlare Origin Certificate
+16:17:50:785	3fd0	cert issuer: /C=US/O=CloudFlare, Inc./OU=CloudFlare Origin SSL Certificate Authority/L=San Francisco/ST=California
+16:17:50:788	3fd0	SSL/TLS encryption is enabled
+16:17:50:791	3fd0	send: {"id": 1, "method": "mining.subscribe", "params": ["equihashminer", null, "zec-us-east1.nanopool.org", "6633"]}
+
+16:17:50:794	3fd0	send: {"id": 2, "method": "mining.authorize", "params": ["t1dBorBoRyznDaRyQzEEB4SkvmCFhmF2ZYk.bbtworker01/bitsbetrippin1@gmail.com","z"]}
+
+16:17:50:797	3fd0	send: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+16:17:50:800	3fd0	ZEC: Stratum - Connected (zec-us-east1.nanopool.org:6633) (SSL/TLS)
+16:17:50:963	3fd0	got 73 bytes
+16:17:50:966	3fd0	buf: {"id":1,"result":[null,"b3e6000000000000caf743de4f63b032"],"error":null}
+
+16:17:50:969	3fd0	parse packet: 72
+16:17:50:972	3fd0	new buf size: 0
+16:17:50:975	3fd0	got 119 bytes
+16:17:51:001	3fd0	buf: {"id":null,"params":["000369d000000000000000000000000000000000000000000000000000000000"],"method":"mining.set_target"}
+
+16:17:51:004	3fd0	parse packet: 118
+16:17:51:007	3fd0	Pool sets new share target: 0x000369d0 (diff: 19200H)
+16:17:51:012	3fd0	new buf size: 0
+16:17:51:015	3fd0	got 336 bytes
+16:17:51:023	3fd0	buf: {"id":2,"result":true,"error":null}
+{"id":null,"params":["1504631967","04000000","4645c0c0acb1d2453caa1855065a3b1df2dcfe4411ef96b1cf89610200000000","153e1d02c6eedc8c61d445be1422a1f7423d90548fdf172f0bbd4fcea58e8354","0000000000000000000000000000000000000000000000000000000000000000","da65b059","cc7b1b1c",true],"method":"mining.notify"}
+
+16:17:51:026	3fd0	parse packet: 35
+16:17:51:034	3fd0	ZEC: Authorized
+16:17:51:037	3fd0	remove first packet 300
+16:17:51:046	3fd0	new buf size: 300
+16:17:51:049	3fd0	parse packet: 299
+16:17:51:052	3fd0	new buf size: 0
+16:17:56:405	21c0	
+16:17:56:409	21c0	GPU #0: Ellesmere
+16:17:56:412	21c0	ZEC - Total Speed: 310.579 H/s, Total Shares: 0, Rejected: 0, Time: 00:00
+16:17:56:415	21c0	ZEC: GPU0 310.579 H/s
+16:17:56:418	21c0	Pool switches: ZEC - 0
+16:17:56:422	21c0	Current ZEC pool share target: 0x000369d0 (diff: 19200H)
+16:17:56:476	21c0	GPU0 t=59C fan=0%
+16:17:56:480	21c0	

@@ -1,0 +1,21 @@
+21:47:23:608	345c	args: -zpool btg.minertopia.org:5555 -zwal GR9geLbA5pF9BeHQXA7vDj6uyFdGyiEYe8 .bbtworker01 -zpsw x -ftime 1 -allpools 1 
+21:47:23:612	345c	
+21:47:23:615	345c	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+21:47:23:619	345c	บ             Claymore's ZCash AMD GPU Miner v12.6               บ
+21:47:23:622	345c	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+21:47:23:625	345c	
+21:47:23:829	345c	ZEC: 1 pool is specified
+21:47:23:833	345c	Main ZCash pool is btg.minertopia.org:5555
+21:47:24:153	345c	OpenCL platform: AMD Accelerated Parallel Processing
+21:47:24:160	345c	OpenCL initializing...
+21:47:24:163	345c	driver 10.0.2348.3
+21:47:24:168	345c	AMD Cards available: 1 
+21:47:24:171	345c	GPU #0: Ellesmere, 8192 MB available, 36 compute units
+21:47:24:174	345c	GPU #0 recognized as Radeon RX 480/580
+21:47:24:178	345c	POOL version
+21:47:24:181	345c	b571 
+21:47:24:190	345c	Platform: Windows
+21:47:24:337	345c	start building OpenCL program for GPU 0...
+21:47:24:343	345c	done
+21:47:24:801	345c	GPU #0 algorithm ASM, intensity 6
+21:47:24:805	345c	Total cards: 1 

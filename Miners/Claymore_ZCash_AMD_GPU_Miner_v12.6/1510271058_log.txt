@@ -1,0 +1,81 @@
+17:44:18:432	1310	args: -zpool ssl://hush.suprnova.cc:4050 -zwal bitsbetrippin.bbtworker01 -zpsw x -allpools 1 
+17:44:19:102	1310	
+17:44:19:106	1310	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+17:44:19:109	1310	บ             Claymore's ZCash AMD GPU Miner v12.6               บ
+17:44:19:112	1310	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+17:44:19:115	1310	
+17:44:19:320	1310	ZEC: 1 pool is specified
+17:44:19:323	1310	Main ZCash pool is hush.suprnova.cc:4050
+17:44:19:641	1310	OpenCL platform: AMD Accelerated Parallel Processing
+17:44:19:648	1310	OpenCL initializing...
+17:44:19:652	1310	driver 10.0.2348.3
+17:44:19:655	1310	AMD Cards available: 1 
+17:44:19:663	1310	GPU #0: Ellesmere, 8192 MB available, 36 compute units
+17:44:19:667	1310	GPU #0 recognized as Radeon RX 480/580
+17:44:19:670	1310	POOL version
+17:44:19:674	1310	b571 
+17:44:19:677	1310	Platform: Windows
+17:44:19:842	1310	start building OpenCL program for GPU 0...
+17:44:19:847	1310	done
+17:44:20:304	1310	GPU #0 algorithm ASM, intensity 6
+17:44:20:307	1310	Total cards: 1 
+17:44:34:757	1a80	ZEC: Stratum - connecting to 'hush.suprnova.cc' <147.135.220.159> port 4050 (SSL/TLS)
+17:44:34:763	1310	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+17:44:34:767	1310	Watchdog enabled
+17:44:34:785	1310	Remote management (READ-ONLY MODE) is enabled on port 3333
+17:44:34:789	1310	
+17:44:34:843	3b8c	
+17:44:34:846	3b8c	GPU #0: Ellesmere
+17:44:34:850	3b8c	ZEC - Total Speed: 0.000 H/s, Total Shares: 0, Rejected: 0, Time: 00:00
+17:44:34:854	3b8c	ZEC: GPU0 0.000 H/s
+17:44:34:858	3b8c	Pool switches: ZEC - 0
+17:44:34:912	3b8c	GPU0 t=42C fan=0%
+17:44:34:916	3b8c	
+17:44:35:158	1a80	cert subject: /OU=Domain Control Validated/OU=PositiveSSL Wildcard/CN=*.suprnova.cc
+17:44:35:161	1a80	cert issuer: /C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Domain Validation Secure Server CA
+17:44:35:165	1a80	SSL/TLS encryption is enabled
+17:44:35:174	1a80	send: {"id": 1, "method": "mining.subscribe", "params": ["equihashminer", null, "hush.suprnova.cc", "4050"]}
+
+17:44:35:177	1a80	send: {"id": 2, "method": "mining.authorize", "params": ["bitsbetrippin.bbtworker01","x"]}
+
+17:44:35:185	1a80	send: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+17:44:35:189	1a80	ZEC: Stratum - Connected (hush.suprnova.cc:4050) (SSL/TLS)
+17:44:35:314	1a80	got 73 bytes
+17:44:35:317	1a80	buf: {"id":1,"result":[null,"78120040000000000000000040001279"],"error":null}
+
+17:44:35:321	1a80	parse packet: 72
+17:44:35:329	1a80	new buf size: 0
+17:44:35:333	1a80	got 119 bytes
+17:44:35:336	1a80	buf: {"id":null,"method":"mining.set_target","params":["000f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f"]}
+
+17:44:35:339	1a80	parse packet: 118
+17:44:35:342	1a80	Pool sets new share target: 0x000f0f0f (diff: 4352H)
+17:44:35:346	1a80	new buf size: 0
+17:44:35:349	1a80	got 293 bytes
+17:44:35:353	1a80	buf: {"id":null,"method":"mining.notify","params":["239","04000000","ac745b45278f697106d6a887b26df0552225bf48b1bb7f721048fc3609000000","c6045871c8229663405fce12da783cb35270333a314ada7c63f24d2de650d87d","0000000000000000000000000000000000000000000000000000000000000000","2be8045a","9dba0b1d",true]}
+
+17:44:35:356	1a80	parse packet: 292
+17:44:35:359	1a80	new buf size: 0
+17:44:35:437	1a80	got 36 bytes
+17:44:35:441	1a80	buf: {"id":2,"result":true,"error":null}
+
+17:44:35:446	1a80	parse packet: 35
+17:44:35:451	1a80	ZEC: Authorized
+17:44:35:456	1a80	new buf size: 0
+17:44:36:037	3b8c	
+17:44:36:041	3b8c	GPU #0: Ellesmere
+17:44:36:044	3b8c	ZEC - Total Speed: 0.000 H/s, Total Shares: 0, Rejected: 0, Time: 00:00
+17:44:36:051	3b8c	ZEC: GPU0 0.000 H/s
+17:44:36:055	3b8c	Pool switches: ZEC - 0
+17:44:36:063	3b8c	Current ZEC pool share target: 0x000f0f0f (diff: 4352H)
+17:44:36:118	3b8c	GPU0 t=48C fan=0%
+17:44:36:122	3b8c	
+17:44:36:965	3b8c	
+17:44:36:968	3b8c	GPU #0: Ellesmere
+17:44:36:972	3b8c	ZEC - Total Speed: 403.677 H/s, Total Shares: 0, Rejected: 0, Time: 00:00
+17:44:36:985	3b8c	ZEC: GPU0 403.677 H/s
+17:44:36:988	3b8c	Pool switches: ZEC - 0
+17:44:36:992	3b8c	Current ZEC pool share target: 0x000f0f0f (diff: 4352H)
+17:44:37:046	3b8c	GPU0 t=49C fan=0%
+17:44:37:050	3b8c	

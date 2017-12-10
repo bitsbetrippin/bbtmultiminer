@@ -1,0 +1,13 @@
+[
+	{"time":0,"commands":[
+		{"id":1,"method":"algorithm.add","params":["zec","stratum+tcp://mining.hodlpool.com:3033","86646-59e76e7d7a498fbc.testrig"]}
+	]},
+	{"time":3,"commands":[
+		{"id":1,"method":"worker.add","params":["0","0"]},
+		{"id":1,"method":"worker.add","params":["0","0"]}
+	]},
+	{"time":10,"loop":10,"commands":[
+		{"id":1,"method":"worker.print.speed","params":["0"]},
+		{"id":1,"method":"algorithm.print.speeds","params":["0"]}
+	]}
+]

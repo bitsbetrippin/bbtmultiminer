@@ -1,0 +1,13 @@
+[
+	{"time":0,"commands":[
+		{"id":1,"method":"algorithm.add","params":["equihash","zec-us-east1.nanopool.org:6666","t1dBorBoRyznDaRyQzEEB4SkvmCFhmF2ZYk.testrig"]}
+	]},
+	{"time":3,"commands":[
+		{"id":1,"method":"worker.add","params":["0","0"]},
+		{"id":1,"method":"worker.add","params":["0","0"]}
+	]},
+	{"time":10,"loop":10,"commands":[
+		{"id":1,"method":"worker.print.speed","params":["0"]},
+		{"id":1,"method":"algorithm.print.speeds","params":["0"]}
+	]}
+]

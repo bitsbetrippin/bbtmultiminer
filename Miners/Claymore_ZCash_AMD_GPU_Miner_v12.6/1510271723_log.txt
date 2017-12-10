@@ -1,0 +1,120 @@
+17:55:23:340	3210	args: -zpool btg.suprnova.cc:8816 -zwal bitsbetrippin.bbtworker01 -zpsw x -ftime 1 -allpools 1 
+17:55:23:344	3210	
+17:55:23:347	3210	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+17:55:23:350	3210	บ             Claymore's ZCash AMD GPU Miner v12.6               บ
+17:55:23:354	3210	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+17:55:23:363	3210	
+17:55:23:568	3210	ZEC: 1 pool is specified
+17:55:23:572	3210	Main ZCash pool is btg.suprnova.cc:8816
+17:55:23:890	3210	OpenCL platform: AMD Accelerated Parallel Processing
+17:55:23:897	3210	OpenCL initializing...
+17:55:23:901	3210	driver 10.0.2348.3
+17:55:23:908	3210	AMD Cards available: 1 
+17:55:23:911	3210	GPU #0: Ellesmere, 8192 MB available, 36 compute units
+17:55:23:919	3210	GPU #0 recognized as Radeon RX 480/580
+17:55:23:922	3210	POOL version
+17:55:23:926	3210	b571 
+17:55:23:929	3210	Platform: Windows
+17:55:24:090	3210	start building OpenCL program for GPU 0...
+17:55:24:096	3210	done
+17:55:24:551	3210	GPU #0 algorithm ASM, intensity 6
+17:55:24:554	3210	Total cards: 1 
+17:55:38:995	e10	ZEC: Stratum - connecting to 'btg.suprnova.cc' <145.239.0.50> port 8816 (unsecure)
+17:55:39:010	3210	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+17:55:39:014	3210	Watchdog enabled
+17:55:39:018	3210	Remote management (READ-ONLY MODE) is enabled on port 3333
+17:55:39:022	3210	
+17:55:39:129	e10	send: {"id": 1, "method": "mining.subscribe", "params": ["equihashminer", null, "btg.suprnova.cc", "8816"]}
+
+17:55:39:132	e10	send: {"id": 2, "method": "mining.authorize", "params": ["bitsbetrippin.bbtworker01","x"]}
+
+17:55:39:135	e10	send: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+17:55:39:141	e10	ZEC: Stratum - Connected (btg.suprnova.cc:8816) (unsecure)
+17:55:39:267	e10	got 485 bytes
+17:55:39:270	e10	buf: {"id":1,"result":[null,"80310020000000000000000020003181"],"error":null}
+{"id":null,"method":"mining.set_target","params":["003c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c"]}
+{"id":null,"method":"mining.notify","params":["7ec","00000020","44a919295d3624ad18bd23e8b1942c9c6014eb42c2771601b07bd57603000000","245c11b359dc06e9ed23de11509d2c956a027ece67583b0f19d8ac470fa993a3","e77b120000000000000000000000000000000000000000000000000000000000","9eea045a","818e0b1d",true]}
+
+17:55:39:273	e10	parse packet: 72
+17:55:39:277	e10	remove first packet 412
+17:55:39:280	e10	new buf size: 412
+17:55:39:284	e10	parse packet: 118
+17:55:39:287	e10	Pool sets new share target: 0x003c3c3c (diff: 1088H)
+17:55:39:296	e10	remove first packet 293
+17:55:39:300	e10	new buf size: 293
+17:55:39:303	e10	parse packet: 292
+17:55:39:306	e10	new buf size: 0
+17:55:39:394	e10	got 36 bytes
+17:55:39:398	e10	buf: {"id":2,"result":true,"error":null}
+
+17:55:39:402	e10	parse packet: 35
+17:55:39:406	e10	ZEC: Authorized
+17:55:39:410	e10	new buf size: 0
+17:55:40:850	234c	ZEC: put share nonce e1
+17:55:40:853	234c	ZEC round found 1 shares
+17:55:40:856	e10	ZEC: 11/09/17-17:55:40 - SHARE FOUND - (GPU 0)
+17:55:40:863	e10	send share: {"id": 4, "method": "mining.submit", "params": ["bitsbetrippin.bbtworker01","7ec","9eea045a","e1000000000000000000000000000000","fd4005001de751834345ac597101add138e0f4a5f5726f4b222c3bea8d539048b4fde56
+17:55:41:003	e10	got 36 bytes
+17:55:41:006	e10	buf: {"id":4,"result":true,"error":null}
+
+17:55:41:009	e10	parse packet: 35
+17:55:41:012	e10	ZEC: Share accepted (157 ms)!
+17:55:41:016	e10	new buf size: 0
+17:55:42:216	a28	ZEC: put share nonce 18d
+17:55:42:219	a28	ZEC round found 1 shares
+17:55:42:223	e10	ZEC: 11/09/17-17:55:42 - SHARE FOUND - (GPU 0)
+17:55:42:229	e10	send share: {"id": 4, "method": "mining.submit", "params": ["bitsbetrippin.bbtworker01","7ec","9eea045a","8d010000000000000000000000000000","fd400500a173d9cf1d9f37b81d930238c6799b9e79bf18054c9273f7fad3b5893388baf
+17:55:42:375	e10	got 36 bytes
+17:55:42:379	e10	buf: {"id":4,"result":true,"error":null}
+
+17:55:42:382	e10	parse packet: 35
+17:55:42:386	e10	ZEC: Share accepted (141 ms)!
+17:55:42:390	e10	new buf size: 0
+17:55:43:855	a28	ZEC: put share nonce 2b6
+17:55:43:859	a28	ZEC: put share nonce 2b7
+17:55:43:862	e10	ZEC: 11/09/17-17:55:43 - SHARE FOUND - (GPU 0)
+17:55:43:862	a28	ZEC round found 2 shares
+17:55:43:865	e10	send share: {"id": 4, "method": "mining.submit", "params": ["bitsbetrippin.bbtworker01","7ec","9eea045a","b6020000000000000000000000000000","fd4005005902031e4640b83915c28a1a327ce57a77d605db06ccaf4cff849d362c5807b
+17:55:43:872	e10	ZEC: 11/09/17-17:55:43 - SHARE FOUND - (GPU 0)
+17:55:43:875	e10	send share: {"id": 4, "method": "mining.submit", "params": ["bitsbetrippin.bbtworker01","7ec","9eea045a","b7020000000000000000000000000000","fd40050122a498ec5c8063685a218acfab3132d82c7f20c2070c870a8950669f6126a1d
+17:55:44:008	e10	got 36 bytes
+17:55:44:012	e10	buf: {"id":4,"result":true,"error":null}
+
+17:55:44:015	e10	parse packet: 35
+17:55:44:018	e10	ZEC: Share accepted (141 ms)!
+17:55:44:040	e10	new buf size: 0
+17:55:44:045	e10	got 36 bytes
+17:55:44:048	e10	buf: {"id":4,"result":true,"error":null}
+
+17:55:44:051	e10	parse packet: 35
+17:55:44:054	e10	ZEC: Share accepted (172 ms)!
+17:55:44:058	e10	new buf size: 0
+17:55:44:125	2a7c	
+17:55:44:130	2a7c	GPU #0: Ellesmere
+17:55:44:132	234c	ZEC: put share nonce 32c
+17:55:44:138	2a7c	ZEC - Total Speed: 348.496 H/s, Total Shares: 4, Rejected: 0, Time: 00:00
+17:55:44:142	e10	ZEC: 11/09/17-17:55:44 - SHARE FOUND - (GPU 0)
+17:55:44:145	2a7c	ZEC: GPU0 348.496 H/s
+17:55:44:149	2a7c	Pool switches: ZEC - 0
+17:55:44:152	2a7c	Current ZEC pool share target: 0x003c3c3c (diff: 1088H)
+17:55:44:138	234c	ZEC round found 1 shares
+17:55:44:145	e10	send share: {"id": 4, "method": "mining.submit", "params": ["bitsbetrippin.bbtworker01","7ec","9eea045a","2c030000000000000000000000000000","fd40050123817d65005b7f934c41ce66763d24f2190ccdc111d5fd225f888ac6e8d7336
+17:55:44:207	2a7c	GPU0 t=53C fan=0%
+17:55:44:224	2a7c	
+17:55:44:294	e10	got 36 bytes
+17:55:44:297	e10	buf: {"id":4,"result":true,"error":null}
+
+17:55:44:301	e10	parse packet: 35
+17:55:44:304	e10	ZEC: Share accepted (141 ms)!
+17:55:44:308	e10	new buf size: 0
+17:55:45:355	1088	ZEC: put share nonce 3ff
+17:55:45:359	1088	ZEC round found 1 shares
+17:55:45:362	e10	ZEC: 11/09/17-17:55:45 - SHARE FOUND - (GPU 0)
+17:55:45:366	e10	send share: {"id": 4, "method": "mining.submit", "params": ["bitsbetrippin.bbtworker01","7ec","9eea045a","ff030000000000000000000000000000","fd40050003a46ce89a3fabd6bd292f3fe927ba996bbe619926a2e439393ec2c9fec442e
+17:55:45:517	e10	got 36 bytes
+17:55:45:521	e10	buf: {"id":4,"result":true,"error":null}
+
+17:55:45:525	e10	parse packet: 35
+17:55:45:529	e10	ZEC: Share accepted (156 ms)!
+17:55:45:533	e10	new buf size: 0

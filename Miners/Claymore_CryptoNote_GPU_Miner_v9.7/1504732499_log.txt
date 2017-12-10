@@ -1,0 +1,90 @@
+16:14:59:593	31dc	
+16:14:59:596	31dc	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+16:14:59:600	31dc	บ            Claymore CryptoNote GPU Miner  v9.7 Beta            บ
+16:14:59:603	31dc	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+16:14:59:808	31dc	XMR: 1 pool is specified
+16:14:59:811	31dc	Main pool is xmr-eu1.nanopool.org:14433
+16:15:00:126	31dc	
+Cards available: 1 
+16:15:00:129	31dc	GPU #0: name: Ellesmere, 8192 MB available, 36 units 
+16:15:00:132	31dc	Total cards: 1 
+16:15:00:137	31dc	Initializing...
+
+16:15:00:139	31dc	GPU #0 recognized as RX480
+16:15:00:142	31dc	card 0, m1 8192, m2 4048 w 288
+16:15:00:145	31dc	0 m = 2
+16:15:00:148	31dc	GPU #0: HashCnt = 1024
+16:15:00:151	31dc	POOL version
+16:15:00:154	31dc	b155
+16:15:01:265	31dc	GPU #0: -a 1 mode selected
+16:15:15:104	31dc	1 pool specified.
+16:15:15:777	31dc	Remote management (READ-ONLY MODE) is enabled on port 3333
+16:15:15:781	b8	Speed: 0 h/s, Total Shares: 0, Rejected: 0, Mining time:
+16:15:15:785	b8	00:00
+16:15:15:788	b8	TotalHashes: 0K, DevHashes: 0K, DevFee rate is 1:39
+16:15:15:806	13d8	DevFee: Stratum - connecting to 'cryptonight.usa.nicehash.com' <192.155.218.242> port 3355 (unsecure)
+16:15:15:817	1610	Stratum - connecting to 'xmr-eu1.nanopool.org' <213.32.29.143> port 14433 (SSL/TLS)
+16:15:15:842	b8	GPU0 t=49C fan=0%
+16:15:15:878	13d8	send: {"method": "login", "params": {"login": "1LmMNkiEvjapn5PRY8A9wypcWJveRrRGWr", "pass": "x", "agent": "xmr/1.0"}, "id": 1}
+
+16:15:15:882	13d8	Stratum - Connected (unsecure)
+16:15:15:996	13d8	got 304 bytes
+16:15:15:999	13d8	buf: {"jsonrpc":"2.0","id":1,"error":null,"result":{"id":"840378311257621","status":"OK","job":{"job_id":"00000002ada8fc69","blob":"0505d4cac1cd053fde74fda838c6fd97a1baac7324b735cc10f11db7d6e2461840457edaa61d0b000000be6dcfafd0379f77f8aacb9de939fb7de7b1c110856edf573d5069950891feca6f0a","target":"b7d10000"}}}
+
+16:15:16:002	13d8	parse packet: 304
+16:15:16:005	13d8	new buf size: 0
+16:15:16:007	13d8	DevFee: Pool Diff 80000.1
+16:15:16:207	1610	cert subject: /O=CloudFlare, Inc./OU=CloudFlare Origin CA/CN=CloudFlare Origin Certificate
+16:15:16:211	1610	cert issuer: /C=US/O=CloudFlare, Inc./OU=CloudFlare Origin SSL Certificate Authority/L=San Francisco/ST=California
+16:15:16:214	1610	SSL/TLS encryption is enabled
+16:15:16:217	1610	send: {"method": "login", "params": {"login": "452eu5HWBcTEwQfwkRFHp9MgC39DhtAio5um8mEs6ZRgcyq9V3Gy3GbJfyASSxepSRQRe6SHcQ27xgorYzyZrn6DSVmWvuw.4d8ddccc40568d93.bbtworker01/bitsbetrippin1@gmail.com", "pass": "z", "agent": "xmr/1.0"}, "id": 1}
+
+16:15:16:221	1610	Stratum - Connected (SSL/TLS)
+16:15:16:224	1610	New connection: reset total hashes counters
+16:15:16:358	1610	got 279 bytes
+16:15:16:361	1610	buf: {"id":1,"jsonrpc":"2.0","result":{"id":"1","job":{"blob":"0505d4cac1cd053fde74fda838c6fd97a1baac7324b735cc10f11db7d6e2461840457edaa61d0b000000000bb71d5ef20055e80a37997eb575e1fc9c8e27690339e2973d79f0d726b29e3b0a","job_id":"25120","target":"cf8b0000"},"status":"OK"},"error":null}
+
+16:15:16:364	1610	parse packet: 279
+16:15:16:368	1610	new buf size: 0
+16:15:16:371	1610	Pool Diff 120001
+16:15:16:382	2dd4	Round
+16:15:18:241	3edc	GPU 0: HashCnt = 1024, time = 1816 ms, hashrate = 563 h/s 
+16:15:18:252	3edc	Round
+16:15:20:009	2dd4	GPU 0: HashCnt = 1024, time = 1725 ms, hashrate = 593 h/s 
+16:15:20:020	2dd4	Round
+16:15:21:770	3edc	GPU 0: HashCnt = 1024, time = 1719 ms, hashrate = 595 h/s 
+16:15:21:781	3edc	Round
+16:15:22:251	b8	Speed: 595 h/s, Total Shares: 0, Rejected: 0, Mining time:
+16:15:22:255	b8	00:00
+16:15:22:258	b8	TotalHashes: 3K, DevHashes: 0K, DevFee rate is 1:49
+16:15:22:335	b8	GPU0 t=57C fan=0%
+16:15:23:411	b8	Speed: 595 h/s, Total Shares: 0, Rejected: 0, Mining time:
+16:15:23:415	b8	00:00
+16:15:23:418	b8	TotalHashes: 3K, DevHashes: 0K, DevFee rate is 1:49
+16:15:23:472	b8	GPU0 t=58C fan=0%
+16:15:23:524	2dd4	GPU 0: HashCnt = 1024, time = 1711 ms, hashrate = 598 h/s 
+16:15:23:536	2dd4	Round
+16:15:23:859	b8	Speed: 598 h/s, Total Shares: 0, Rejected: 0, Mining time:
+16:15:23:863	b8	00:00
+16:15:23:866	b8	TotalHashes: 4K, DevHashes: 0K, DevFee rate is 1:49
+16:15:23:871	b8	GPU0 t=58C fan=0%
+16:15:24:195	b8	Speed: 598 h/s, Total Shares: 0, Rejected: 0, Mining time:
+16:15:24:199	b8	00:00
+16:15:24:202	b8	TotalHashes: 4K, DevHashes: 0K, DevFee rate is 1:49
+16:15:24:207	b8	GPU0 t=58C fan=27%
+16:15:24:547	b8	Speed: 598 h/s, Total Shares: 0, Rejected: 0, Mining time:
+16:15:24:551	b8	00:00
+16:15:24:554	b8	TotalHashes: 4K, DevHashes: 0K, DevFee rate is 1:49
+16:15:24:559	b8	GPU0 t=58C fan=31%
+16:15:24:891	b8	Speed: 598 h/s, Total Shares: 0, Rejected: 0, Mining time:
+16:15:24:895	b8	00:00
+16:15:24:898	b8	TotalHashes: 4K, DevHashes: 0K, DevFee rate is 1:49
+16:15:24:903	b8	GPU0 t=58C fan=32%
+16:15:25:211	b8	Speed: 598 h/s, Total Shares: 0, Rejected: 0, Mining time:
+16:15:25:215	b8	00:00
+16:15:25:218	b8	TotalHashes: 4K, DevHashes: 0K, DevFee rate is 1:49
+16:15:25:223	b8	GPU0 t=58C fan=32%
+16:15:25:279	3edc	GPU 0: HashCnt = 1024, time = 1712 ms, hashrate = 598 h/s 
+16:15:25:290	3edc	Round
+16:15:27:031	2dd4	GPU 0: HashCnt = 1024, time = 1710 ms, hashrate = 598 h/s 
+16:15:27:042	2dd4	Round

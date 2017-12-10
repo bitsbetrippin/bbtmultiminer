@@ -1,0 +1,1 @@
+ethminer.exe -U -S us1.ethermine.org:4444 -O 0xF897EaFdb787AcD4Da5e2EB5003E42dc1Ef86d39.1070

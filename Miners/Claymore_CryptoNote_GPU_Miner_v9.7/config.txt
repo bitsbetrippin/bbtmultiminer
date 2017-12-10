@@ -1,0 +1,6 @@
+-o stratum+tcp://us-east.cryptonight-hub.miningpoolhub.com:20580 
+-u Redhex.rig1 
+-p x 
+
+#-allpools 1
+#-tt 75

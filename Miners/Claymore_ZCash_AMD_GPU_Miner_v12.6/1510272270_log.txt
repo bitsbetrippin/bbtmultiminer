@@ -1,0 +1,86 @@
+18:04:30:376	3308	args: -zpool ssl://us-east.equihash-hub.miningpoolhub.com:20575 -zwal bitsbetrippin.bbtworker01 -zpsw x -allpools 1 
+18:04:30:380	3308	
+18:04:30:383	3308	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+18:04:30:400	3308	บ             Claymore's ZCash AMD GPU Miner v12.6               บ
+18:04:30:404	3308	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+18:04:30:407	3308	
+18:04:30:612	3308	ZEC: 1 pool is specified
+18:04:30:616	3308	Main ZCash pool is us-east.equihash-hub.miningpoolhub.com:20575
+18:04:31:031	3308	OpenCL platform: AMD Accelerated Parallel Processing
+18:04:31:038	3308	OpenCL initializing...
+18:04:31:042	3308	driver 10.0.2348.3
+18:04:31:046	3308	AMD Cards available: 1 
+18:04:31:056	3308	GPU #0: Ellesmere, 8192 MB available, 36 compute units
+18:04:31:060	3308	GPU #0 recognized as Radeon RX 480/580
+18:04:31:064	3308	POOL version
+18:04:31:067	3308	b571 
+18:04:31:078	3308	Platform: Windows
+18:04:31:262	3308	start building OpenCL program for GPU 0...
+18:04:31:268	3308	done
+18:04:31:778	3308	GPU #0 algorithm ASM, intensity 6
+18:04:31:783	3308	Total cards: 1 
+18:04:46:214	2fb8	ZEC: Stratum - connecting to 'us-east.equihash-hub.miningpoolhub.com' <45.79.223.173> port 20575 (SSL/TLS)
+18:04:46:244	3308	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+18:04:46:249	3308	Watchdog enabled
+18:04:46:253	3308	Remote management (READ-ONLY MODE) is enabled on port 3333
+18:04:46:257	3308	
+18:04:46:311	e44	
+18:04:46:315	e44	GPU #0: Ellesmere
+18:04:46:319	e44	ZEC - Total Speed: 0.000 H/s, Total Shares: 0, Rejected: 0, Time: 00:00
+18:04:46:325	e44	ZEC: GPU0 0.000 H/s
+18:04:46:329	e44	Pool switches: ZEC - 0
+18:04:46:345	e44	GPU0 t=38C fan=35%
+18:04:46:351	e44	
+18:04:46:354	2fb8	cert subject: /O=mph
+18:04:46:360	2fb8	cert issuer: /O=mph
+18:04:46:365	2fb8	SSL/TLS encryption is enabled
+18:04:46:377	2fb8	send: {"id": 1, "method": "mining.subscribe", "params": ["equihashminer", null, "us-east.equihash-hub.miningpoolhub.com", "20575"]}
+
+18:04:46:382	2fb8	send: {"id": 2, "method": "mining.authorize", "params": ["bitsbetrippin.bbtworker01","x"]}
+
+18:04:46:385	2fb8	send: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+18:04:46:389	2fb8	ZEC: Stratum - Connected (us-east.equihash-hub.miningpoolhub.com:20575) (SSL/TLS)
+18:04:46:406	e44	
+18:04:46:413	e44	GPU #0: Ellesmere
+18:04:46:417	e44	ZEC - Total Speed: 0.000 H/s, Total Shares: 0, Rejected: 0, Time: 00:00
+18:04:46:423	e44	ZEC: GPU0 0.000 H/s
+18:04:46:427	e44	Pool switches: ZEC - 0
+18:04:46:431	2fb8	got 79 bytes
+18:04:46:444	e44	GPU0 t=38C fan=35%
+18:04:46:444	2fb8	buf: {"id":1,"result":["deadbeefcafebabe9865000000000000","08002b18"],"error":null}
+
+18:04:46:448	e44	
+18:04:46:452	2fb8	parse packet: 78
+18:04:46:460	2fb8	new buf size: 0
+18:04:46:463	2fb8	got 119 bytes
+18:04:46:468	2fb8	buf: {"id":null,"method":"mining.set_target","params":["0001000000000000000000000000000000000000000000000000000000000000"]}
+
+18:04:46:471	2fb8	parse packet: 118
+18:04:46:475	2fb8	Pool sets new share target: 0x00010000 (diff: 65535H)
+18:04:46:479	2fb8	new buf size: 0
+18:04:46:483	2fb8	got 294 bytes
+18:04:46:489	2fb8	buf: {"id":null,"method":"mining.notify","params":["f420","04000000","1cf28a89c85c32569a067784e2a63f42a6f567d420a3214e5b4bcb9b04000000","11b399964fbd081d9aedf9286961292afc802ae5de02b55554121002a03410b9","0000000000000000000000000000000000000000000000000000000000000000","05ed045a","a4460a1d",true]}
+
+18:04:46:493	2fb8	parse packet: 293
+18:04:46:497	2fb8	new buf size: 0
+18:04:46:610	2fb8	got 36 bytes
+18:04:46:615	2fb8	buf: {"id":2,"result":true,"error":null}
+
+18:04:46:619	2fb8	parse packet: 35
+18:04:46:624	2fb8	ZEC: Authorized
+18:04:46:629	2fb8	new buf size: 0
+18:04:46:670	2fb8	got 119 bytes
+18:04:46:682	2fb8	buf: {"id":null,"method":"mining.set_target","params":["0010000000000000000000000000000000000000000000000000000000000000"]}
+
+18:04:46:695	2fb8	parse packet: 118
+18:04:46:711	2fb8	Pool sets new share target: 0x00100000 (diff: 4095H)
+18:04:46:717	2fb8	new buf size: 0
+18:04:48:637	e44	
+18:04:48:642	e44	GPU #0: Ellesmere
+18:04:48:660	e44	ZEC - Total Speed: 342.686 H/s, Total Shares: 0, Rejected: 0, Time: 00:00
+18:04:48:689	e44	ZEC: GPU0 342.686 H/s
+18:04:48:716	e44	Pool switches: ZEC - 0
+18:04:48:728	e44	Current ZEC pool share target: 0x00010000 (diff: 65535H)
+18:04:48:735	e44	GPU0 t=46C fan=35%
+18:04:48:740	e44	

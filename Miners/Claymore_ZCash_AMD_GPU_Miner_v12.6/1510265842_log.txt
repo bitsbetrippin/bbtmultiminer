@@ -1,0 +1,104 @@
+16:17:22:202	36c0	args: -zpool stratum+tcp://zen.suprnova.cc:3618 -zwal bitsbetrippin.bbtworker01 -zpsw x -allpools 1 
+16:17:22:206	36c0	
+16:17:22:209	36c0	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+16:17:22:212	36c0	บ             Claymore's ZCash AMD GPU Miner v12.6               บ
+16:17:22:236	36c0	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+16:17:22:239	36c0	
+16:17:22:452	36c0	ZEC: 1 pool is specified
+16:17:22:455	36c0	Main ZCash pool is zen.suprnova.cc:3618
+16:17:23:094	36c0	OpenCL platform: AMD Accelerated Parallel Processing
+16:17:23:100	36c0	OpenCL initializing...
+16:17:23:104	36c0	driver 10.0.2348.3
+16:17:23:136	36c0	AMD Cards available: 1 
+16:17:23:140	36c0	GPU #0: Ellesmere, 8192 MB available, 36 compute units
+16:17:23:147	36c0	GPU #0 recognized as Radeon RX 480/580
+16:17:23:150	36c0	POOL version
+16:17:23:160	36c0	b571 
+16:17:23:163	36c0	Platform: Windows
+16:17:23:365	36c0	start building OpenCL program for GPU 0...
+16:17:23:371	36c0	done
+16:17:24:025	36c0	GPU #0 algorithm ASM, intensity 6
+16:17:24:029	36c0	Total cards: 1 
+16:17:37:918	3764	ZEC: Stratum - connecting to 'zen.suprnova.cc' <217.182.199.116> port 3618 (unsecure)
+16:17:37:934	36c0	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+16:17:37:938	36c0	Watchdog enabled
+16:17:37:946	36c0	Remote management (READ-ONLY MODE) is enabled on port 3333
+16:17:37:950	36c0	
+16:17:38:050	3764	send: {"id": 1, "method": "mining.subscribe", "params": ["equihashminer", null, "zen.suprnova.cc", "3618"]}
+
+16:17:38:054	3764	send: {"id": 2, "method": "mining.authorize", "params": ["bitsbetrippin.bbtworker01","x"]}
+
+16:17:38:057	3764	send: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+16:17:38:060	3764	ZEC: Stratum - Connected (zen.suprnova.cc:3618) (unsecure)
+16:17:38:206	3764	got 73 bytes
+16:17:38:209	3764	buf: {"id":1,"result":[null,"cefdfc0f00000000000000000ffcfdcd"],"error":null}
+
+16:17:38:212	3764	parse packet: 72
+16:17:38:216	3764	new buf size: 0
+16:17:38:224	3764	got 413 bytes
+16:17:38:227	3764	buf: {"id":null,"method":"mining.set_target","params":["000f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f"]}
+{"id":null,"method":"mining.notify","params":["1221","00000020","b1f6b80863bb267bf82f64a8cde58f937ccb99e4bfb566a07c578d9a00000000","d7c153af9f65b4754643dedd4e5babdd719f34373e83831c9fd867d7529e0650","0000000000000000000000000000000000000000000000000000000000000000","ead3045a","0ec3001d",true]}
+
+16:17:38:235	3764	parse packet: 118
+16:17:38:238	3764	Pool sets new share target: 0x000f0f0f (diff: 4352H)
+16:17:38:247	3764	remove first packet 294
+16:17:38:251	3764	new buf size: 294
+16:17:38:258	3764	parse packet: 293
+16:17:38:261	3764	new buf size: 0
+16:17:38:344	3764	got 36 bytes
+16:17:38:347	3764	buf: {"id":2,"result":true,"error":null}
+
+16:17:38:351	3764	parse packet: 35
+16:17:38:357	3764	ZEC: Authorized
+16:17:38:361	3764	new buf size: 0
+16:17:38:610	3764	got 294 bytes
+16:17:38:614	3764	buf: {"id":null,"method":"mining.notify","params":["1222","00000020","a023e5b3599ea356704a887cc6f4b98fa26f94c27a45565c7564468300000000","61c12548d289f41279665808bb6c02bd8161dbb7d21133b2918a3b3b8e9239e3","0000000000000000000000000000000000000000000000000000000000000000","02d4045a","79c2001d",true]}
+
+16:17:38:618	3764	parse packet: 293
+16:17:38:624	3764	new buf size: 0
+16:17:38:627	3764	ZEC: 11/09/17-16:17:38 - New job from zen.suprnova.cc:3618
+16:17:38:635	3764	target: 0x000f0f0f (diff: 4352H)
+16:17:38:638	3764	ZEC - Total Speed: 0.000 H/s, Total Shares: 0, Rejected: 0, Time: 00:00
+16:17:38:646	3764	ZEC: GPU0 0.000 H/s
+16:17:56:594	3764	got 294 bytes
+16:17:56:597	3764	buf: {"id":null,"method":"mining.notify","params":["1223","00000020","b529543e16cf2bc5b5402ec7c516738b33fd7d23e4afaac8e9ff7f0b00000000","7397eb44abab90e5e7c280a207e094afdcb69ce7641385e8e033d27d13057486","0000000000000000000000000000000000000000000000000000000000000000","14d4045a","dcc0001d",true]}
+
+16:17:56:601	3764	parse packet: 293
+16:17:56:604	3764	new buf size: 0
+16:17:56:612	3764	ZEC: 11/09/17-16:17:56 - New job from zen.suprnova.cc:3618
+16:17:56:616	3764	target: 0x000f0f0f (diff: 4352H)
+16:17:56:619	3764	ZEC - Total Speed: 337.017 H/s, Total Shares: 0, Rejected: 0, Time: 00:00
+16:17:56:623	3764	ZEC: GPU0 337.017 H/s
+16:18:07:970	36c0	GPU0 t=58C fan=38%
+16:18:07:974	36c0	em hbt: 0, fm hbt: 78, 
+16:18:07:978	36c0	watchdog - thread 0, hb time 172
+16:18:07:991	36c0	watchdog - thread 1, hb time 31
+16:18:07:994	36c0	watchdog - thread 2, hb time 453
+16:18:08:001	36c0	watchdog - thread 3, hb time 313
+16:18:09:170	1d50	ZEC: put share nonce 812
+16:18:09:174	1d50	ZEC round found 1 shares
+16:18:09:178	3764	ZEC: 11/09/17-16:18:09 - SHARE FOUND - (GPU 0)
+16:18:09:182	3764	send share: {"id": 4, "method": "mining.submit", "params": ["bitsbetrippin.bbtworker01","1223","14d4045a","12080000000000000000000000000000","fd4005002c05955a1df949276f047c21ab1b8da09139384f20a3493296ebea7bb9de52
+16:18:09:348	3764	got 36 bytes
+16:18:09:351	3764	buf: {"id":4,"result":true,"error":null}
+
+16:18:09:355	3764	parse packet: 35
+16:18:09:358	3764	ZEC: Share accepted (156 ms)!
+16:18:09:378	3764	new buf size: 0
+16:18:18:725	3bf4	ZEC: put share nonce eb0
+16:18:18:729	3bf4	ZEC round found 1 shares
+16:18:18:732	3764	ZEC: 11/09/17-16:18:18 - SHARE FOUND - (GPU 0)
+16:18:18:745	3764	send share: {"id": 4, "method": "mining.submit", "params": ["bitsbetrippin.bbtworker01","1223","14d4045a","b00e0000000000000000000000000000","fd40050084b0751c61bf352059e2a2191aa38234f892b3033f1c8faa5f3bf6d5f0b0b4
+16:18:18:891	3764	got 36 bytes
+16:18:18:895	3764	buf: {"id":4,"result":true,"error":null}
+
+16:18:18:898	3764	parse packet: 35
+16:18:18:923	3764	ZEC: Share accepted (172 ms)!
+16:18:18:926	3764	new buf size: 0
+16:18:38:015	36c0	GPU0 t=60C fan=38%
+16:18:38:019	36c0	em hbt: 0, fm hbt: 0, 
+16:18:38:022	36c0	watchdog - thread 0, hb time 188
+16:18:38:033	36c0	watchdog - thread 1, hb time 47
+16:18:38:036	36c0	watchdog - thread 2, hb time 469
+16:18:38:044	36c0	watchdog - thread 3, hb time 328

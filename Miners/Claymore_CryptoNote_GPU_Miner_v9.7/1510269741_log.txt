@@ -1,0 +1,63 @@
+17:22:21:104	8b8	
+17:22:21:108	8b8	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+17:22:21:111	8b8	บ            Claymore CryptoNote GPU Miner  v9.7 Beta            บ
+17:22:21:114	8b8	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+17:22:21:329	8b8	XMR: 1 pool is specified
+17:22:21:332	8b8	Main pool is xmr-eu1.nanopool.org:14433
+17:22:21:645	8b8	
+Cards available: 1 
+17:22:21:648	8b8	GPU #0: name: Ellesmere, 8192 MB available, 36 units 
+17:22:21:652	8b8	Total cards: 1 
+17:22:21:656	8b8	Initializing...
+
+17:22:21:659	8b8	GPU #0 recognized as RX480
+17:22:21:662	8b8	card 0, m1 8192, m2 4048 w 288
+17:22:21:665	8b8	0 m = 2
+17:22:21:669	8b8	GPU #0: HashCnt = 1024
+17:22:21:672	8b8	POOL version
+17:22:21:675	8b8	b155
+17:22:22:799	8b8	GPU #0: -a 1 mode selected
+17:22:36:624	8b8	1 pool specified.
+17:22:36:628	8b8	Remote management (READ-ONLY MODE) is enabled on port 3333
+17:22:36:684	3778	DevFee: Stratum - connecting to 'cryptonight.usa.nicehash.com' <198.23.94.139> port 3355 (unsecure)
+17:22:36:756	3778	send: {"method": "login", "params": {"login": "1LmMNkiEvjapn5PRY8A9wypcWJveRrRGWr", "pass": "x", "agent": "xmr/1.0"}, "id": 1}
+
+17:22:36:760	3778	Stratum - Connected (unsecure)
+17:22:36:855	3778	got 304 bytes
+17:22:36:858	3778	buf: {"jsonrpc":"2.0","id":1,"error":null,"result":{"id":"455037224305803","status":"OK","job":{"job_id":"0000002ca602164f","blob":"01018ac693d005c6675c9904bce54fd53f15267fba4c0f40bf520976d9b252c47a710654a6d247000000005c10624f77af2017be16402b0803048793d5a69b571bdf53d7fd746af2a1113404","target":"c5a70000"}}}
+
+17:22:36:861	3778	parse packet: 304
+17:22:36:864	3778	new buf size: 0
+17:22:36:867	3778	DevFee: Pool Diff 100002
+17:22:37:103	1558	cert subject: /O=CloudFlare, Inc./OU=CloudFlare Origin CA/CN=CloudFlare Origin Certificate
+17:22:37:107	1558	cert issuer: /C=US/O=CloudFlare, Inc./OU=CloudFlare Origin SSL Certificate Authority/L=San Francisco/ST=California
+17:22:37:110	1558	SSL/TLS encryption is enabled
+17:22:37:117	1558	send: {"method": "login", "params": {"login": "452eu5HWBcTEwQfwkRFHp9MgC39DhtAio5um8mEs6ZRgcyq9V3Gy3GbJfyASSxepSRQRe6SHcQ27xgorYzyZrn6DSVmWvuw.4d8ddccc40568d93.bbtworker01/bitsbetrippin1@gmail.com", "pass": "z", "agent": "xmr/1.0"}, "id": 1}
+
+17:22:37:120	1558	Stratum - Connected (SSL/TLS)
+17:22:37:123	1558	New connection: reset total hashes counters
+17:22:37:268	1558	got 278 bytes
+17:22:37:271	1558	buf: {"id":1,"jsonrpc":"2.0","result":{"id":"1","job":{"blob":"0606a4c693d005de6347bb4a5db6ef6fa3e55060cfbbd2119d10684fafda3f2cae14d7179d44cd000000000ef0c1286a0b656d163d933ed1f7ac4a6973596d5cb714484c07c34d22658cf308","job_id":"5845","target":"cf8b0000"},"status":"OK"},"error":null}
+
+17:22:37:274	1558	parse packet: 278
+17:22:37:284	1558	new buf size: 0
+17:22:37:287	1558	Pool Diff 120001
+17:22:37:332	2dd8	Round
+17:22:38:652	3a38	GPU 0: HashCnt = 1024, time = 1288 ms, hashrate = 795 h/s 
+17:22:38:664	3a38	Round
+17:22:39:714	18a0	Speed: 795 h/s, Total Shares: 0, Rejected: 0, Mining time:
+17:22:39:718	18a0	00:00
+17:22:39:721	18a0	TotalHashes: 1K, DevHashes: 0K, DevFee rate is 1:49
+17:22:39:776	18a0	GPU0 t=48C fan=0%
+17:22:39:868	2dd8	GPU 0: HashCnt = 1024, time = 1183 ms, hashrate = 865 h/s 
+17:22:39:877	2dd8	Round
+17:22:41:078	3a38	GPU 0: HashCnt = 1024, time = 1181 ms, hashrate = 867 h/s 
+17:22:41:090	3a38	Round
+17:22:41:386	18a0	Speed: 867 h/s, Total Shares: 0, Rejected: 0, Mining time:
+17:22:41:390	18a0	00:00
+17:22:41:393	18a0	TotalHashes: 3K, DevHashes: 0K, DevFee rate is 1:49
+17:22:41:448	18a0	GPU0 t=48C fan=0%
+17:22:42:292	2dd8	GPU 0: HashCnt = 1024, time = 1181 ms, hashrate = 867 h/s 
+17:22:42:300	2dd8	Round
+17:22:43:505	3a38	GPU 0: HashCnt = 1024, time = 1183 ms, hashrate = 865 h/s 
+17:22:43:513	3a38	Round

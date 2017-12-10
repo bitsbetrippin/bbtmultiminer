@@ -1,0 +1,72 @@
+17:16:49:353	343c	args: -zpool ssl://us-east.equihash-hub.miningpoolhub.com:20575 -zwal bitsbetrippin.bbtworker01 -zpsw x -allpools 1 
+17:16:49:357	343c	
+17:16:49:360	343c	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+17:16:49:363	343c	บ             Claymore's ZCash AMD GPU Miner v12.6               บ
+17:16:49:366	343c	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+17:16:49:369	343c	
+17:16:49:573	343c	ZEC: 1 pool is specified
+17:16:49:576	343c	Main ZCash pool is us-east.equihash-hub.miningpoolhub.com:20575
+17:16:49:895	343c	OpenCL platform: AMD Accelerated Parallel Processing
+17:16:49:902	343c	OpenCL initializing...
+17:16:49:911	343c	driver 10.0.2348.3
+17:16:49:914	343c	AMD Cards available: 1 
+17:16:49:943	343c	GPU #0: Ellesmere, 8192 MB available, 36 compute units
+17:16:49:946	343c	GPU #0 recognized as Radeon RX 480/580
+17:16:49:955	343c	POOL version
+17:16:49:958	343c	b571 
+17:16:49:961	343c	Platform: Windows
+17:16:50:147	343c	start building OpenCL program for GPU 0...
+17:16:50:152	343c	done
+17:16:50:615	343c	GPU #0 algorithm ASM, intensity 6
+17:16:50:618	343c	Total cards: 1 
+17:17:05:036	a7c	ZEC: Stratum - connecting to 'us-east.equihash-hub.miningpoolhub.com' <45.79.223.173> port 20575 (SSL/TLS)
+17:17:05:703	343c	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+17:17:05:706	343c	Watchdog enabled
+17:17:05:731	343c	Remote management (READ-ONLY MODE) is enabled on port 3333
+17:17:05:734	343c	
+17:17:05:811	a7c	cert subject: /O=mph
+17:17:05:814	a7c	cert issuer: /O=mph
+17:17:05:817	a7c	SSL/TLS encryption is enabled
+17:17:05:820	a7c	send: {"id": 1, "method": "mining.subscribe", "params": ["equihashminer", null, "us-east.equihash-hub.miningpoolhub.com", "20575"]}
+
+17:17:05:823	a7c	send: {"id": 2, "method": "mining.authorize", "params": ["bitsbetrippin.bbtworker01","x"]}
+
+17:17:05:826	a7c	send: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+17:17:05:829	a7c	ZEC: Stratum - Connected (us-east.equihash-hub.miningpoolhub.com:20575) (SSL/TLS)
+17:17:05:863	a7c	got 79 bytes
+17:17:05:887	a7c	buf: {"id":1,"result":["deadbeefcafebabea94e000000000000","08000dbc"],"error":null}
+
+17:17:05:890	a7c	parse packet: 78
+17:17:05:920	a7c	new buf size: 0
+17:17:05:923	a7c	got 119 bytes
+17:17:05:931	a7c	buf: {"id":null,"method":"mining.set_target","params":["0001000000000000000000000000000000000000000000000000000000000000"]}
+
+17:17:05:934	a7c	parse packet: 118
+17:17:05:942	a7c	Pool sets new share target: 0x00010000 (diff: 65535H)
+17:17:05:945	a7c	new buf size: 0
+17:17:05:953	a7c	got 293 bytes
+17:17:05:956	a7c	buf: {"id":null,"method":"mining.notify","params":["2c","04000000","58966c396136cdec62a90aa549a563d0c05aa542fefac50db90db28f00000000","67102b413235bef626d950a060a898ca7df211a4b21d7b16e551a8a553352cc4","0000000000000000000000000000000000000000000000000000000000000000","d173b059","ed2b091d",false]}
+
+17:17:05:965	a7c	parse packet: 292
+17:17:05:968	a7c	new buf size: 0
+17:17:05:971	a7c	got 36 bytes
+17:17:05:973	a7c	buf: {"id":2,"result":true,"error":null}
+
+17:17:05:976	a7c	parse packet: 35
+17:17:05:979	a7c	ZEC: Authorized
+17:17:05:982	a7c	new buf size: 0
+17:17:36:003	343c	GPU0 t=61C fan=37%
+17:17:36:679	343c	em hbt: 0, fm hbt: 0, 
+17:17:36:682	343c	watchdog - thread 0, hb time 312
+17:17:36:708	343c	watchdog - thread 1, hb time 468
+17:17:36:711	343c	watchdog - thread 2, hb time 0
+17:17:36:714	343c	watchdog - thread 3, hb time 156
+17:17:37:890	337c	
+17:17:37:893	337c	GPU #0: Ellesmere
+17:17:37:896	337c	ZEC - Total Speed: 296.367 H/s, Total Shares: 0, Rejected: 0, Time: 00:00
+17:17:37:900	337c	ZEC: GPU0 296.367 H/s
+17:17:37:903	337c	Pool switches: ZEC - 0
+17:17:37:906	337c	Current ZEC pool share target: 0x00010000 (diff: 65535H)
+17:17:37:910	337c	GPU0 t=61C fan=37%
+17:17:37:941	337c	

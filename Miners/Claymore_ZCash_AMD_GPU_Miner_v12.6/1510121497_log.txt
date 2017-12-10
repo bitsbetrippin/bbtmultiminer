@@ -1,0 +1,63 @@
+00:11:37:432	3a04	args: -zpool stratum+tcp://zen.suprnova.cc:3618 -zwal bitsbetrippin.bbtworker01 -zpsw x -allpools 1 
+00:11:38:097	3a04	
+00:11:38:100	3a04	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+00:11:38:125	3a04	บ             Claymore's ZCash AMD GPU Miner v12.6               บ
+00:11:38:128	3a04	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+00:11:38:137	3a04	
+00:11:38:341	3a04	ZEC: 1 pool is specified
+00:11:38:345	3a04	Main ZCash pool is zen.suprnova.cc:3618
+00:11:38:704	3a04	OpenCL platform: AMD Accelerated Parallel Processing
+00:11:38:711	3a04	OpenCL initializing...
+00:11:38:724	3a04	driver 10.0.2348.3
+00:11:38:729	3a04	AMD Cards available: 1 
+00:11:38:736	3a04	GPU #0: Ellesmere, 8192 MB available, 36 compute units
+00:11:38:739	3a04	GPU #0 recognized as Radeon RX 480/580
+00:11:38:748	3a04	POOL version
+00:11:38:751	3a04	b571 
+00:11:38:755	3a04	Platform: Windows
+00:11:38:966	3a04	start building OpenCL program for GPU 0...
+00:11:38:972	3a04	done
+00:11:39:453	3a04	GPU #0 algorithm ASM, intensity 6
+00:11:39:456	3a04	Total cards: 1 
+00:11:53:908	2390	ZEC: Stratum - connecting to 'zen.suprnova.cc' <217.182.199.116> port 3618 (unsecure)
+00:11:53:913	3a04	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+00:11:53:916	3a04	Watchdog enabled
+00:11:53:920	3a04	Remote management (READ-ONLY MODE) is enabled on port 3333
+00:11:53:924	3a04	
+00:11:54:035	2390	send: {"id": 1, "method": "mining.subscribe", "params": ["equihashminer", null, "zen.suprnova.cc", "3618"]}
+
+00:11:54:812	2390	send: {"id": 2, "method": "mining.authorize", "params": ["bitsbetrippin.bbtworker01","x"]}
+
+00:11:54:816	2390	send: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+00:11:54:825	2390	ZEC: Stratum - Connected (zen.suprnova.cc:3618) (unsecure)
+00:11:54:954	2390	got 73 bytes
+00:11:54:959	2390	buf: {"id":1,"result":[null,"ce34fd37000000000000000037fd34cd"],"error":null}
+
+00:11:54:962	2390	parse packet: 72
+00:11:54:966	2390	new buf size: 0
+00:11:54:979	2390	got 412 bytes
+00:11:54:983	2390	buf: {"id":null,"method":"mining.set_target","params":["000f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f"]}
+{"id":null,"method":"mining.notify","params":["b3c","00000020","b06f5a2be2baa3200814c27e5b7c310d61a192942db4c4f0fd25517400000000","eb0d17fb7858110b1a20e089ab530f6b74d6514491113994cf3c0c4a01f83629","0000000000000000000000000000000000000000000000000000000000000000","e99f025a","09bb001d",true]}
+
+00:11:54:990	2390	parse packet: 118
+00:11:54:995	2390	Pool sets new share target: 0x000f0f0f (diff: 4352H)
+00:11:55:002	2390	remove first packet 293
+00:11:55:006	2390	new buf size: 293
+00:11:55:011	2390	parse packet: 292
+00:11:55:015	2390	new buf size: 0
+00:11:55:087	2390	got 36 bytes
+00:11:55:090	2390	buf: {"id":2,"result":true,"error":null}
+
+00:11:55:094	2390	parse packet: 35
+00:11:55:102	2390	ZEC: Authorized
+00:11:55:106	2390	new buf size: 0
+00:12:00:635	2390	got 293 bytes
+00:12:00:639	2390	buf: {"id":null,"method":"mining.notify","params":["b3d","00000020","3291eada3498732b8e97c40412db60e759dd7de1f7a4047473f5e8b700000000","ab2f301834d10513648bff8d5b2427fdfac2966a0cd935f05fd157e778af2616","0000000000000000000000000000000000000000000000000000000000000000","32a0025a","cbbe001d",true]}
+
+00:12:00:642	2390	parse packet: 292
+00:12:00:668	2390	new buf size: 0
+00:12:00:672	2390	ZEC: 11/08/17-00:12:00 - New job from zen.suprnova.cc:3618
+00:12:00:679	2390	target: 0x000f0f0f (diff: 4352H)
+00:12:00:683	2390	ZEC - Total Speed: 328.257 H/s, Total Shares: 0, Rejected: 0, Time: 00:00
+00:12:00:690	2390	ZEC: GPU0 328.257 H/s

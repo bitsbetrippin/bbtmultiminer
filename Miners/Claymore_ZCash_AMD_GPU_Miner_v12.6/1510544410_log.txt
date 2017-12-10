@@ -1,0 +1,60 @@
+21:40:10:134	2004	args: -zpool btg.minertopia.org:5555 -zwal bitsbetrippin.bbtworker01 -zpsw x -ftime 1 -allpools 1 
+21:40:10:138	2004	
+21:40:10:142	2004	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+21:40:10:159	2004	บ             Claymore's ZCash AMD GPU Miner v12.6               บ
+21:40:10:162	2004	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+21:40:10:170	2004	
+21:40:10:375	2004	ZEC: 1 pool is specified
+21:40:10:378	2004	Main ZCash pool is btg.minertopia.org:5555
+21:40:10:695	2004	OpenCL platform: AMD Accelerated Parallel Processing
+21:40:10:702	2004	OpenCL initializing...
+21:40:10:705	2004	driver 10.0.2348.3
+21:40:10:714	2004	AMD Cards available: 1 
+21:40:10:718	2004	GPU #0: Ellesmere, 8192 MB available, 36 compute units
+21:40:10:726	2004	GPU #0 recognized as Radeon RX 480/580
+21:40:10:730	2004	POOL version
+21:40:10:736	2004	b571 
+21:40:10:740	2004	Platform: Windows
+21:40:10:876	2004	start building OpenCL program for GPU 0...
+21:40:10:881	2004	done
+21:40:11:336	2004	GPU #0 algorithm ASM, intensity 6
+21:40:11:339	2004	Total cards: 1 
+21:40:25:765	4060	ZEC: Stratum - connecting to 'btg.minertopia.org' <66.70.247.148> port 5555 (unsecure)
+21:40:25:795	2004	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+21:40:25:798	2004	Watchdog enabled
+21:40:25:802	2004	Remote management (READ-ONLY MODE) is enabled on port 3333
+21:40:25:805	4060	send: {"id": 1, "method": "mining.subscribe", "params": ["equihashminer", null, "btg.minertopia.org", "5555"]}
+
+21:40:25:814	2004	
+21:40:25:818	4060	send: {"id": 2, "method": "mining.authorize", "params": ["bitsbetrippin.bbtworker01","x"]}
+
+21:40:25:829	4060	send: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+21:40:25:836	4060	ZEC: Stratum - Connected (btg.minertopia.org:5555) (unsecure)
+21:40:25:860	4060	got 49 bytes
+21:40:25:873	4060	buf: {"id":1,"result":[null,"0ffffd6a"],"error":null}
+
+21:40:25:876	4060	parse packet: 48
+21:40:25:891	4060	new buf size: 0
+21:40:25:946	4060	got 515 bytes
+21:40:25:949	4060	buf: {"id":null,"method":"mining.set_target","params":["0008000000000000000000000000000000000000000000000000000000000000"]}
+{"id":null,"method":"mining.notify","params":["cdbe","00000020","fa162b41464da2ea4cc60b240d0c6abd08a2837c67f34041c6b2160101000000","0e2ddb7aa5caa679e9f755da0010eda0602d3ad068f0863f552e64ad844fa6b5","c79f070000000000000000000000000000000000000000000000000000000000","1e14095a","454e011d",true,false]}
+{"id":5,"result":false,"error":[20,"Not supported.",null]}
+{"id":2,"result":false,"error":null}
+
+21:40:25:952	4060	parse packet: 118
+21:40:25:970	4060	Pool sets new share target: 0x00080000 (diff: 8191H)
+21:40:25:973	4060	remove first packet 395
+21:40:25:982	4060	new buf size: 395
+21:40:25:985	4060	parse packet: 299
+21:40:25:988	4060	remove first packet 95
+21:40:25:991	4060	new buf size: 95
+21:40:26:003	4060	parse packet: 57
+21:40:26:006	4060	ZEC: Share rejected!
+21:40:26:015	4060	remove first packet 37
+21:40:26:018	4060	new buf size: 37
+21:40:26:025	4060	parse packet: 36
+21:40:26:029	4060	ZEC: Authorization failed
+: {"id":2,"result":false,"error":null}
+21:40:26:037	4060	buf was cleared
+21:40:26:041	4060	ZEC: Connection lost, retry in 20 sec...

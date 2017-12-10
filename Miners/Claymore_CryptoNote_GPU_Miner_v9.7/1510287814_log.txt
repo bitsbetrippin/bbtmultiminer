@@ -1,0 +1,20 @@
+22:23:34:515	e34	
+22:23:34:528	e34	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+22:23:34:532	e34	บ            Claymore CryptoNote GPU Miner  v9.7 Beta            บ
+22:23:34:535	e34	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+22:23:34:740	e34	XMR: 1 pool is specified
+22:23:34:744	e34	Main pool is xmr-eu1.nanopool.org:14433
+22:23:35:249	e34	
+Cards available: 1 
+22:23:35:253	e34	GPU #0: name: Ellesmere, 8192 MB available, 36 units 
+22:23:35:256	e34	Total cards: 1 
+22:23:35:260	e34	Initializing...
+
+22:23:35:264	e34	GPU #0 recognized as RX480
+22:23:35:267	e34	card 0, m1 8192, m2 4048 w 288
+22:23:35:270	e34	0 m = 2
+22:23:35:274	e34	GPU #0: HashCnt = 1024
+22:23:35:277	e34	POOL version
+22:23:35:281	e34	b155
+22:23:36:309	e34	GPU #0: -a 1 mode selected
+22:23:38:347	7d4	ADL: Cannot find any AMD adapters

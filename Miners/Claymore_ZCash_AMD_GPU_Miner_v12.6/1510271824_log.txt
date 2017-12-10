@@ -1,0 +1,146 @@
+17:57:04:546	37d4	args: -zpool btg.suprnova.cc:8816 -zwal bitsbetrippin.bbtworker01 -zpsw x -ftime 1 -allpools 1 
+17:57:04:549	37d4	
+17:57:04:552	37d4	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+17:57:04:555	37d4	บ             Claymore's ZCash AMD GPU Miner v12.6               บ
+17:57:04:558	37d4	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+17:57:04:561	37d4	
+17:57:04:766	37d4	ZEC: 1 pool is specified
+17:57:04:770	37d4	Main ZCash pool is btg.suprnova.cc:8816
+17:57:05:088	37d4	OpenCL platform: AMD Accelerated Parallel Processing
+17:57:05:095	37d4	OpenCL initializing...
+17:57:05:098	37d4	driver 10.0.2348.3
+17:57:05:102	37d4	AMD Cards available: 1 
+17:57:05:105	37d4	GPU #0: Ellesmere, 8192 MB available, 36 compute units
+17:57:05:110	37d4	GPU #0 recognized as Radeon RX 480/580
+17:57:05:113	37d4	POOL version
+17:57:05:117	37d4	b571 
+17:57:05:120	37d4	Platform: Windows
+17:57:05:281	37d4	start building OpenCL program for GPU 0...
+17:57:05:287	37d4	done
+17:57:05:744	37d4	GPU #0 algorithm ASM, intensity 6
+17:57:05:748	37d4	Total cards: 1 
+17:57:20:128	32b8	ZEC: Stratum - connecting to 'btg.suprnova.cc' <145.239.0.50> port 8816 (unsecure)
+17:57:20:203	37d4	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+17:57:20:206	37d4	Watchdog enabled
+17:57:20:210	37d4	Remote management (READ-ONLY MODE) is enabled on port 3333
+17:57:20:213	37d4	
+17:57:20:268	32b8	send: {"id": 1, "method": "mining.subscribe", "params": ["equihashminer", null, "btg.suprnova.cc", "8816"]}
+
+17:57:20:272	32b8	send: {"id": 2, "method": "mining.authorize", "params": ["bitsbetrippin.bbtworker01","x"]}
+
+17:57:20:275	32b8	send: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+17:57:20:278	32b8	ZEC: Stratum - Connected (btg.suprnova.cc:8816) (unsecure)
+17:57:20:407	32b8	got 485 bytes
+17:57:20:411	32b8	buf: {"id":1,"result":[null,"9cabff2f00000000000000002fffab9b"],"error":null}
+{"id":null,"method":"mining.set_target","params":["003c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c"]}
+{"id":null,"method":"mining.notify","params":["7ed","00000020","44a919295d3624ad18bd23e8b1942c9c6014eb42c2771601b07bd57603000000","aca0649af1110f23ab3d94c57334d2308f8e4757c945b9c7b84ed2bbe93580c8","e77b120000000000000000000000000000000000000000000000000000000000","16eb045a","818e0b1d",true]}
+
+17:57:20:414	32b8	parse packet: 72
+17:57:20:417	32b8	remove first packet 412
+17:57:20:420	32b8	new buf size: 412
+17:57:20:423	32b8	parse packet: 118
+17:57:20:426	32b8	Pool sets new share target: 0x003c3c3c (diff: 1088H)
+17:57:20:430	32b8	remove first packet 293
+17:57:20:433	32b8	new buf size: 293
+17:57:20:436	32b8	parse packet: 292
+17:57:20:439	32b8	new buf size: 0
+17:57:20:531	32b8	got 36 bytes
+17:57:20:535	32b8	buf: {"id":2,"result":true,"error":null}
+
+17:57:20:539	32b8	parse packet: 35
+17:57:20:543	32b8	ZEC: Authorized
+17:57:20:547	32b8	new buf size: 0
+17:57:24:767	11c8	ZEC: put share nonce 2f1
+17:57:24:771	11c8	ZEC round found 1 shares
+17:57:24:774	32b8	ZEC: 11/09/17-17:57:24 - SHARE FOUND - (GPU 0)
+17:57:24:777	32b8	send share: {"id": 4, "method": "mining.submit", "params": ["bitsbetrippin.bbtworker01","7ed","16eb045a","f1020000000000000000000000000000","fd4005005f9fb20602d8793c72c03fbff17304d6db6fea8d3855bb3cba291e35a4b8c43
+17:57:24:917	32b8	got 36 bytes
+17:57:24:921	32b8	buf: {"id":4,"result":true,"error":null}
+
+17:57:24:924	32b8	parse packet: 35
+17:57:24:927	32b8	ZEC: Share accepted (141 ms)!
+17:57:24:931	32b8	new buf size: 0
+17:57:25:311	11c8	ZEC: put share nonce 358
+17:57:25:315	11c8	ZEC round found 1 shares
+17:57:25:319	32b8	ZEC: 11/09/17-17:57:25 - SHARE FOUND - (GPU 0)
+17:57:25:326	32b8	send share: {"id": 4, "method": "mining.submit", "params": ["bitsbetrippin.bbtworker01","7ed","16eb045a","58030000000000000000000000000000","fd4005001fbd0db440f9145f80f12a4fe2f994db817eaf17440345c537e396bdfcb2f66
+17:57:25:458	32b8	got 36 bytes
+17:57:25:462	32b8	buf: {"id":4,"result":true,"error":null}
+
+17:57:25:465	32b8	parse packet: 35
+17:57:25:481	32b8	ZEC: Share accepted (156 ms)!
+17:57:25:485	32b8	new buf size: 0
+17:57:27:477	30fc	
+17:57:27:481	30fc	GPU #0: Ellesmere
+17:57:27:484	30fc	ZEC - Total Speed: 346.792 H/s, Total Shares: 2, Rejected: 0, Time: 00:00
+17:57:27:515	30fc	ZEC: GPU0 346.278 H/s
+17:57:27:519	30fc	Pool switches: ZEC - 0
+17:57:27:523	30fc	Current ZEC pool share target: 0x003c3c3c (diff: 1088H)
+17:57:27:527	30fc	GPU0 t=54C fan=29%
+17:57:27:531	30fc	
+17:57:35:395	289c	ZEC: put share nonce 9fb
+17:57:35:399	289c	ZEC: put share nonce a05
+17:57:35:402	32b8	ZEC: 11/09/17-17:57:35 - SHARE FOUND - (GPU 0)
+17:57:35:402	289c	ZEC round found 2 shares
+17:57:35:425	32b8	send share: {"id": 4, "method": "mining.submit", "params": ["bitsbetrippin.bbtworker01","7ed","16eb045a","fb090000000000000000000000000000","fd400500054eb64b19e15502fa92fdf2ac894b4ce3bfecad186aa67cd04727235b07048
+17:57:35:436	32b8	ZEC: 11/09/17-17:57:35 - SHARE FOUND - (GPU 0)
+17:57:35:440	32b8	send share: {"id": 4, "method": "mining.submit", "params": ["bitsbetrippin.bbtworker01","7ed","16eb045a","050a0000000000000000000000000000","fd4005000bd7399e75d47ff75312a06b31b885d63f72d70a0603292a5c969ac72cfc65b
+17:57:35:575	32b8	got 36 bytes
+17:57:35:578	32b8	buf: {"id":4,"result":true,"error":null}
+
+17:57:35:582	32b8	parse packet: 35
+17:57:35:585	32b8	ZEC: Share accepted (140 ms)!
+17:57:35:589	32b8	new buf size: 0
+17:57:35:594	32b8	got 36 bytes
+17:57:35:598	32b8	buf: {"id":4,"result":true,"error":null}
+
+17:57:35:601	32b8	parse packet: 35
+17:57:35:604	32b8	ZEC: Share accepted (156 ms)!
+17:57:35:608	32b8	new buf size: 0
+17:57:38:662	289c	ZEC: put share nonce c32
+17:57:38:666	289c	ZEC round found 1 shares
+17:57:38:670	32b8	ZEC: 11/09/17-17:57:38 - SHARE FOUND - (GPU 0)
+17:57:38:674	32b8	send share: {"id": 4, "method": "mining.submit", "params": ["bitsbetrippin.bbtworker01","7ed","16eb045a","320c0000000000000000000000000000","fd400500ed985d2e88a75924bb2170f64e71274fbf1e369e0f0174175f43fe37820925d
+17:57:38:814	32b8	got 36 bytes
+17:57:38:818	32b8	buf: {"id":4,"result":true,"error":null}
+
+17:57:38:821	32b8	parse packet: 35
+17:57:38:824	32b8	ZEC: Share accepted (156 ms)!
+17:57:38:828	32b8	new buf size: 0
+17:57:47:658	11c8	ZEC: put share nonce 12bd
+17:57:47:662	11c8	ZEC round found 1 shares
+17:57:47:666	32b8	ZEC: 11/09/17-17:57:47 - SHARE FOUND - (GPU 0)
+17:57:47:670	32b8	send share: {"id": 4, "method": "mining.submit", "params": ["bitsbetrippin.bbtworker01","7ed","16eb045a","bd120000000000000000000000000000","fd40050131ab561ac311d2322d91de1e216af14d0e112b71513b5e82945869e37f17b68
+17:57:47:794	740	ZEC: put share nonce 1273
+17:57:47:798	740	ZEC round found 1 shares
+17:57:47:801	32b8	ZEC: 11/09/17-17:57:47 - SHARE FOUND - (GPU 0)
+17:57:47:805	32b8	send share: {"id": 4, "method": "mining.submit", "params": ["bitsbetrippin.bbtworker01","7ed","16eb045a","73120000000000000000000000000000","fd4005006edb08f3943909a90815e1804a31e9926650fc5f39c5bf5c78e7c9c9a4ea764
+17:57:47:810	32b8	got 36 bytes
+17:57:47:814	32b8	buf: {"id":4,"result":true,"error":null}
+
+17:57:47:817	32b8	parse packet: 35
+17:57:47:820	32b8	ZEC: Share accepted (0 ms)!
+17:57:47:824	32b8	new buf size: 0
+17:57:47:939	32b8	got 36 bytes
+17:57:47:942	32b8	buf: {"id":4,"result":true,"error":null}
+
+17:57:47:946	32b8	parse packet: 35
+17:57:47:949	32b8	ZEC: Share accepted (140 ms)!
+17:57:47:958	32b8	new buf size: 0
+17:57:48:069	2fc8	ZEC: put share nonce 12df
+17:57:48:073	2fc8	ZEC round found 1 shares
+17:57:48:076	32b8	ZEC: 11/09/17-17:57:48 - SHARE FOUND - (GPU 0)
+17:57:48:080	32b8	send share: {"id": 4, "method": "mining.submit", "params": ["bitsbetrippin.bbtworker01","7ed","16eb045a","df120000000000000000000000000000","fd40050036723cf90259e1455a04d14e5eb779f2633534b91b3695d7341f47a7186133f
+17:57:48:216	32b8	got 36 bytes
+17:57:48:219	32b8	buf: {"id":4,"result":true,"error":null}
+
+17:57:48:223	32b8	parse packet: 35
+17:57:48:226	32b8	ZEC: Share accepted (141 ms)!
+17:57:48:230	32b8	new buf size: 0
+17:57:50:277	37d4	GPU0 t=57C fan=37%
+17:57:50:402	37d4	em hbt: 343, fm hbt: 359, 
+17:57:50:406	37d4	watchdog - thread 0, hb time 437
+17:57:50:425	37d4	watchdog - thread 1, hb time 703
+17:57:50:428	37d4	watchdog - thread 2, hb time 843
+17:57:50:436	37d4	watchdog - thread 3, hb time 562

@@ -1,0 +1,66 @@
+17:39:05:386	20ac	args: -zpool ssl://zec-us-east1.nanopool.org:6633 -zwal t1dBorBoRyznDaRyQzEEB4SkvmCFhmF2ZYk.bbtworker01/bitsbetrippin1@gmail.com -zpsw z -ftime 1 -allpools 1 
+17:39:05:390	20ac	
+17:39:05:393	20ac	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+17:39:05:397	20ac	บ             Claymore's ZCash AMD GPU Miner v12.6               บ
+17:39:05:401	20ac	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+17:39:05:405	20ac	
+17:39:05:610	20ac	ZEC: 1 pool is specified
+17:39:05:613	20ac	Main ZCash pool is zec-us-east1.nanopool.org:6633
+17:39:05:938	20ac	OpenCL platform: AMD Accelerated Parallel Processing
+17:39:05:945	20ac	OpenCL initializing...
+17:39:05:949	20ac	driver 10.0.2348.3
+17:39:05:953	20ac	AMD Cards available: 1 
+17:39:05:962	20ac	GPU #0: Ellesmere, 8192 MB available, 36 compute units
+17:39:05:966	20ac	GPU #0 recognized as Radeon RX 480/580
+17:39:05:970	20ac	POOL version
+17:39:05:974	20ac	b571 
+17:39:05:984	20ac	Platform: Windows
+17:39:06:150	20ac	start building OpenCL program for GPU 0...
+17:39:06:159	20ac	done
+17:39:06:641	20ac	GPU #0 algorithm ASM, intensity 6
+17:39:06:644	20ac	Total cards: 1 
+17:39:21:070	31d0	ZEC: Stratum - connecting to 'zec-us-east1.nanopool.org' <142.44.243.6> port 6633 (SSL/TLS)
+17:39:21:114	20ac	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+17:39:21:118	20ac	Watchdog enabled
+17:39:21:121	20ac	Remote management (READ-ONLY MODE) is enabled on port 3333
+17:39:21:124	20ac	
+17:39:21:240	31d0	cert subject: /O=CloudFlare, Inc./OU=CloudFlare Origin CA/CN=CloudFlare Origin Certificate
+17:39:21:244	31d0	cert issuer: /C=US/O=CloudFlare, Inc./OU=CloudFlare Origin SSL Certificate Authority/L=San Francisco/ST=California
+17:39:21:247	31d0	SSL/TLS encryption is enabled
+17:39:21:251	31d0	send: {"id": 1, "method": "mining.subscribe", "params": ["equihashminer", null, "zec-us-east1.nanopool.org", "6633"]}
+
+17:39:21:262	31d0	send: {"id": 2, "method": "mining.authorize", "params": ["t1dBorBoRyznDaRyQzEEB4SkvmCFhmF2ZYk.bbtworker01/bitsbetrippin1@gmail.com","z"]}
+
+17:39:21:266	31d0	send: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+17:39:21:270	31d0	ZEC: Stratum - Connected (zec-us-east1.nanopool.org:6633) (SSL/TLS)
+17:39:21:429	31d0	got 192 bytes
+17:39:21:433	31d0	buf: {"id":1,"result":[null,"9650000000000000b05a067ac7d14750"],"error":null}
+{"id":null,"params":["00028f5c00000000000000000000000000000000000000000000000000000000"],"method":"mining.set_target"}
+
+17:39:21:436	31d0	parse packet: 72
+17:39:21:440	31d0	remove first packet 119
+17:39:21:443	31d0	new buf size: 119
+17:39:21:447	31d0	parse packet: 118
+17:39:21:451	31d0	Pool sets new share target: 0x00028f5c (diff: 25600H)
+17:39:21:455	31d0	new buf size: 0
+17:39:21:480	31d0	got 36 bytes
+17:39:21:483	31d0	buf: {"id":2,"result":true,"error":null}
+
+17:39:21:486	31d0	parse packet: 35
+17:39:21:489	31d0	ZEC: Authorized
+17:39:21:492	31d0	new buf size: 0
+17:39:21:496	31d0	got 300 bytes
+17:39:21:499	31d0	buf: {"id":null,"params":["1510223238","04000000","4c61492e76305616bbebb9eb235386d17d95ae995d66461e84e2320700000000","9a2ef25ca0b91ac8fcfad7d139289be162996c7da7f31326122319f42db7d34e","0000000000000000000000000000000000000000000000000000000000000000","f5e6045a","c6b1161c",true],"method":"mining.notify"}
+
+17:39:21:502	31d0	parse packet: 299
+17:39:21:505	31d0	new buf size: 0
+17:39:29:936	31d0	got 300 bytes
+17:39:29:940	31d0	buf: {"id":null,"params":["1510223239","04000000","4c61492e76305616bbebb9eb235386d17d95ae995d66461e84e2320700000000","9382b7850dac3623917e59a0bde28d542d3579b14adeb16ac9e8aa3cde7ed399","0000000000000000000000000000000000000000000000000000000000000000","31e7045a","c6b1161c",true],"method":"mining.notify"}
+
+17:39:29:943	31d0	parse packet: 299
+17:39:29:947	31d0	new buf size: 0
+17:39:29:950	31d0	ZEC: 11/09/17-17:39:29 - New job from zec-us-east1.nanopool.org:6633
+17:39:29:953	31d0	target: 0x00028f5c (diff: 25600H)
+17:39:29:958	31d0	ZEC - Total Speed: 331.470 H/s, Total Shares: 0, Rejected: 0, Time: 00:00
+17:39:29:962	31d0	ZEC: GPU0 331.470 H/s

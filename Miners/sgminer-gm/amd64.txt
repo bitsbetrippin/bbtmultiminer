@@ -1,0 +1,1 @@
+sgminer-5.5.5-gm-nicehash-8-windows-amd64

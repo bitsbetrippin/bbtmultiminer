@@ -1,0 +1,84 @@
+21:49:27:697	3c6c	args: -zpool btg.minertopia.org:5555 -zwal GR9geLbA5pF9BeHQXA7vDj6uyFdGyiEYe8 .bbtworker01 -zpsw x -ftime 1 -allpools 1 
+21:49:27:701	3c6c	
+21:49:27:705	3c6c	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+21:49:27:709	3c6c	บ             Claymore's ZCash AMD GPU Miner v12.6               บ
+21:49:27:719	3c6c	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+21:49:27:722	3c6c	
+21:49:27:932	3c6c	ZEC: 1 pool is specified
+21:49:27:935	3c6c	Main ZCash pool is btg.minertopia.org:5555
+21:49:28:285	3c6c	OpenCL platform: AMD Accelerated Parallel Processing
+21:49:28:291	3c6c	OpenCL initializing...
+21:49:28:300	3c6c	driver 10.0.2348.3
+21:49:28:304	3c6c	AMD Cards available: 1 
+21:49:28:307	3c6c	GPU #0: Ellesmere, 8192 MB available, 36 compute units
+21:49:28:310	3c6c	GPU #0 recognized as Radeon RX 480/580
+21:49:28:314	3c6c	POOL version
+21:49:28:317	3c6c	b571 
+21:49:28:320	3c6c	Platform: Windows
+21:49:28:464	3c6c	start building OpenCL program for GPU 0...
+21:49:28:470	3c6c	done
+21:49:28:932	3c6c	GPU #0 algorithm ASM, intensity 6
+21:49:28:936	3c6c	Total cards: 1 
+21:49:43:318	23dc	ZEC: Stratum - connecting to 'btg.minertopia.org' <66.70.247.148> port 5555 (unsecure)
+21:49:43:364	23dc	send: {"id": 1, "method": "mining.subscribe", "params": ["equihashminer", null, "btg.minertopia.org", "5555"]}
+
+21:49:43:367	23dc	send: {"id": 2, "method": "mining.authorize", "params": ["GR9geLbA5pF9BeHQXA7vDj6uyFdGyiEYe8","x"]}
+
+21:49:43:371	23dc	send: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+21:49:43:374	23dc	ZEC: Stratum - Connected (btg.minertopia.org:5555) (unsecure)
+21:49:43:392	3c6c	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+21:49:43:410	3c6c	Watchdog enabled
+21:49:43:414	3c6c	Remote management (READ-ONLY MODE) is enabled on port 3333
+21:49:43:417	3c6c	
+21:49:43:426	23dc	got 49 bytes
+21:49:43:455	23dc	buf: {"id":1,"result":[null,"77fffcb6"],"error":null}
+
+21:49:43:458	23dc	parse packet: 48
+21:49:43:461	23dc	new buf size: 0
+21:49:43:475	23dc	got 508 bytes
+21:49:43:499	23dc	buf: {"id":null,"method":"mining.set_target","params":["0008000000000000000000000000000000000000000000000000000000000000"]}
+{"id":null,"method":"mining.notify","params":["cdd5","00000020","9185d61af927494cd44efc89a70453c18e23efe1e305def18035d00f00000000","65ed4d2c41b01248ee90393da52d1108e79f500fc949064d7fb262ae5104c42b","db9f070000000000000000000000000000000000000000000000000000000000","4716095a","7a0c011d",true]}
+{"id":5,"result":false,"error":[20,"Not supported.",null]}
+{"id":2,"result":true,"error":null}
+
+21:49:43:503	23dc	parse packet: 118
+21:49:43:518	23dc	Pool sets new share target: 0x00080000 (diff: 8191H)
+21:49:43:521	23dc	remove first packet 388
+21:49:43:530	23dc	new buf size: 388
+21:49:43:533	23dc	parse packet: 293
+21:49:43:537	23dc	remove first packet 94
+21:49:43:540	23dc	new buf size: 94
+21:49:43:543	23dc	parse packet: 57
+21:49:43:546	23dc	ZEC: Share rejected!
+21:49:43:551	23dc	remove first packet 36
+21:49:43:554	23dc	new buf size: 36
+21:49:43:563	23dc	parse packet: 35
+21:49:43:567	23dc	ZEC: Authorized
+21:49:43:570	23dc	new buf size: 0
+21:50:00:994	3c0c	
+21:50:01:678	3c0c	GPU #0: Ellesmere
+21:50:01:682	3c0c	ZEC - Total Speed: 331.222 H/s, Total Shares: 0, Rejected: 1, Time: 00:00
+21:50:01:686	3c0c	ZEC: GPU0 331.222 H/s
+21:50:01:732	3c0c	Pool switches: ZEC - 0
+21:50:01:736	3c0c	Current ZEC pool share target: 0x00080000 (diff: 8191H)
+21:50:01:790	3c0c	GPU0 t=53C fan=0%
+21:50:01:794	3c0c	
+21:50:02:843	d38	ZEC: put share nonce cd7
+21:50:02:847	d38	ZEC round found 1 shares
+21:50:02:850	23dc	ZEC: 11/12/17-21:50:02 - SHARE FOUND - (GPU 0)
+21:50:02:863	23dc	send share: {"id": 4, "method": "mining.submit", "params": ["GR9geLbA5pF9BeHQXA7vDj6uyFdGyiEYe8","cdd5","4716095a","d70c0000000000000000000000000000000000000000000000000000","fd40050078b33f7c91904db8eb0278ca1f490
+21:50:02:910	23dc	got 36 bytes
+21:50:02:914	23dc	buf: {"id":4,"result":true,"error":null}
+
+21:50:02:917	23dc	parse packet: 35
+21:50:02:928	23dc	ZEC: Share accepted (63 ms)!
+21:50:02:932	23dc	new buf size: 0
+21:50:03:898	3c0c	
+21:50:03:902	3c0c	GPU #0: Ellesmere
+21:50:03:905	3c0c	ZEC - Total Speed: 330.805 H/s, Total Shares: 1, Rejected: 1, Time: 00:00
+21:50:03:909	3c0c	ZEC: GPU0 330.805 H/s
+21:50:03:913	3c0c	Pool switches: ZEC - 0
+21:50:03:917	3c0c	Current ZEC pool share target: 0x00080000 (diff: 8191H)
+21:50:03:921	3c0c	GPU0 t=54C fan=28%
+21:50:03:925	3c0c	

@@ -1,0 +1,69 @@
+18:05:25:416	1b54	args: -zpool stratum+tcp://zen.suprnova.cc:3618 -zwal bitsbetrippin.bbtworker01 -zpsw x -allpools 1 
+18:05:25:420	1b54	
+18:05:25:424	1b54	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+18:05:25:427	1b54	บ             Claymore's ZCash AMD GPU Miner v12.6               บ
+18:05:25:431	1b54	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+18:05:25:434	1b54	
+18:05:25:639	1b54	ZEC: 1 pool is specified
+18:05:25:642	1b54	Main ZCash pool is zen.suprnova.cc:3618
+18:05:26:129	1b54	OpenCL platform: AMD Accelerated Parallel Processing
+18:05:26:136	1b54	OpenCL initializing...
+18:05:26:141	1b54	driver 10.0.2348.3
+18:05:26:144	1b54	AMD Cards available: 1 
+18:05:26:148	1b54	GPU #0: Ellesmere, 8192 MB available, 36 compute units
+18:05:26:152	1b54	GPU #0 recognized as Radeon RX 480/580
+18:05:26:156	1b54	POOL version
+18:05:26:159	1b54	b571 
+18:05:26:163	1b54	Platform: Windows
+18:05:26:377	1b54	start building OpenCL program for GPU 0...
+18:05:26:383	1b54	done
+18:05:26:863	1b54	GPU #0 algorithm ASM, intensity 6
+18:05:26:867	1b54	Total cards: 1 
+18:05:40:804	2e10	ZEC: Stratum - connecting to 'zen.suprnova.cc' <217.182.199.116> port 3618 (unsecure)
+18:05:41:481	1b54	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+18:05:41:485	1b54	Watchdog enabled
+18:05:41:509	1b54	Remote management (READ-ONLY MODE) is enabled on port 3333
+18:05:41:513	1b54	
+18:05:41:567	30bc	
+18:05:41:571	30bc	GPU #0: Ellesmere
+18:05:41:574	30bc	ZEC - Total Speed: 0.000 H/s, Total Shares: 0, Rejected: 0, Time: 00:00
+18:05:41:579	30bc	ZEC: GPU0 0.000 H/s
+18:05:41:582	30bc	Pool switches: ZEC - 0
+18:05:41:616	2e10	send: {"id": 1, "method": "mining.subscribe", "params": ["equihashminer", null, "zen.suprnova.cc", "3618"]}
+
+18:05:41:619	2e10	send: {"id": 2, "method": "mining.authorize", "params": ["bitsbetrippin.bbtworker01","x"]}
+
+18:05:41:623	2e10	send: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+18:05:41:631	2e10	ZEC: Stratum - Connected (zen.suprnova.cc:3618) (unsecure)
+18:05:41:637	30bc	GPU0 t=37C fan=0%
+18:05:41:642	30bc	
+18:05:41:771	2e10	got 73 bytes
+18:05:41:775	2e10	buf: {"id":1,"result":[null,"f8fd030000000000000000000003fdf9"],"error":null}
+
+18:05:41:778	2e10	parse packet: 72
+18:05:41:786	2e10	new buf size: 0
+18:05:41:791	2e10	got 413 bytes
+18:05:41:798	2e10	buf: {"id":null,"method":"mining.set_target","params":["000f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f"]}
+{"id":null,"method":"mining.notify","params":["1268","00000020","1e9a6801263912b8e709a0d4987c2229763f372798d371db1d50ae3e00000000","2a0f74b89e0c9580552769ca4a3c5f7748a6aac29d810ca628ea2f05617775ce","0000000000000000000000000000000000000000000000000000000000000000","20ed045a","590d011d",true]}
+
+18:05:41:801	2e10	parse packet: 118
+18:05:41:805	2e10	Pool sets new share target: 0x000f0f0f (diff: 4352H)
+18:05:41:811	2e10	remove first packet 294
+18:05:41:820	2e10	new buf size: 294
+18:05:41:825	2e10	parse packet: 293
+18:05:41:831	2e10	new buf size: 0
+18:05:41:913	2e10	got 36 bytes
+18:05:41:917	2e10	buf: {"id":2,"result":true,"error":null}
+
+18:05:41:920	2e10	parse packet: 35
+18:05:41:924	2e10	ZEC: Authorized
+18:05:41:931	2e10	new buf size: 0
+18:05:43:469	30bc	
+18:05:43:473	30bc	GPU #0: Ellesmere
+18:05:43:477	30bc	ZEC - Total Speed: 391.154 H/s, Total Shares: 0, Rejected: 0, Time: 00:00
+18:05:43:487	30bc	ZEC: GPU0 391.154 H/s
+18:05:43:491	30bc	Pool switches: ZEC - 0
+18:05:43:494	30bc	Current ZEC pool share target: 0x000f0f0f (diff: 4352H)
+18:05:43:549	30bc	GPU0 t=45C fan=0%
+18:05:43:554	30bc	

@@ -1,0 +1,128 @@
+22:49:39:262	4b8c	args: -zpool stratum+tcp://zen.suprnova.cc:3618 -zwal bitsbetrippin.bbtworker01 -zpsw x -allpools 1 
+22:49:39:265	4b8c	
+22:49:39:268	4b8c	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+22:49:39:271	4b8c	บ             Claymore's ZCash AMD GPU Miner v12.6               บ
+22:49:39:273	4b8c	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+22:49:39:277	4b8c	
+22:49:39:481	4b8c	ZEC: 1 pool is specified
+22:49:39:485	4b8c	Main ZCash pool is zen.suprnova.cc:3618
+22:49:39:811	4b8c	OpenCL platform: AMD Accelerated Parallel Processing
+22:49:39:818	4b8c	OpenCL initializing...
+22:49:39:821	4b8c	driver 10.0.2348.3
+22:49:39:824	4b8c	AMD Cards available: 1 
+22:49:39:827	4b8c	GPU #0: Ellesmere, 8192 MB available, 36 compute units
+22:49:39:830	4b8c	GPU #0 recognized as Radeon RX 480/580
+22:49:39:834	4b8c	POOL version
+22:49:39:837	4b8c	b571 
+22:49:39:839	4b8c	Platform: Windows
+22:49:40:117	4b8c	start building OpenCL program for GPU 0...
+22:49:40:122	4b8c	done
+22:49:40:580	4b8c	GPU #0 algorithm ASM, intensity 6
+22:49:40:583	4b8c	Total cards: 1 
+22:49:54:964	4f74	ZEC: Stratum - connecting to 'zen.suprnova.cc' <37.187.167.145> port 3618 (unsecure)
+22:49:55:652	4b8c	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+22:49:55:656	4b8c	Watchdog enabled
+22:49:55:681	4b8c	Remote management (READ-ONLY MODE) is enabled on port 3333
+22:49:55:684	4b8c	
+22:49:55:776	4f74	send: {"id": 1, "method": "mining.subscribe", "params": ["equihashminer", null, "zen.suprnova.cc", "3618"]}
+
+22:49:55:779	4f74	send: {"id": 2, "method": "mining.authorize", "params": ["bitsbetrippin.bbtworker01","x"]}
+
+22:49:55:782	4f74	send: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+22:49:55:803	4f74	ZEC: Stratum - Connected (zen.suprnova.cc:3618) (unsecure)
+22:49:55:917	4f74	got 73 bytes
+22:49:55:920	4f74	buf: {"id":1,"result":[null,"6e07fa07000000000000000007fa076d"],"error":null}
+
+22:49:55:923	4f74	parse packet: 72
+22:49:55:947	4f74	new buf size: 0
+22:49:56:081	4f74	got 449 bytes
+22:49:56:084	4f74	buf: {"id":null,"method":"mining.set_target","params":["003c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c"]}
+{"id":null,"method":"mining.notify","params":["368b","00000020","fb3e2f91b7354c83e052a7385b59e6e70df1a2fc55234ae56d13f06b00000000","92f992c356d08faf2a932f418a1a15d342efe450e2d6dc6fd8b52f2c2e09d745","0000000000000000000000000000000000000000000000000000000000000000","74c1b059","b428021d",true]}
+{"id":2,"result":true,"error":null}
+
+22:49:56:087	4f74	parse packet: 118
+22:49:56:090	4f74	Pool sets new share target: 0x003c3c3c (diff: 1088H)
+22:49:56:094	4f74	remove first packet 330
+22:49:56:097	4f74	new buf size: 330
+22:49:56:100	4f74	parse packet: 293
+22:49:56:103	4f74	remove first packet 36
+22:49:56:106	4f74	new buf size: 36
+22:49:56:109	4f74	parse packet: 35
+22:49:56:112	4f74	ZEC: Authorized
+22:49:56:115	4f74	new buf size: 0
+22:49:57:427	3f18	ZEC: put share nonce 89
+22:49:57:430	3f18	ZEC round found 1 shares
+22:49:57:434	4f74	ZEC: 09/06/17-22:49:57 - SHARE FOUND - (GPU 0)
+22:49:57:437	4f74	send share: {"id": 4, "method": "mining.submit", "params": ["bitsbetrippin.bbtworker01","368b","74c1b059","89000000000000000000000000000000","fd4005007beb1943cb72ddf9c5791bb24b53ce47c617761138355b3fad900e7f1732bc
+22:49:57:575	4f74	got 36 bytes
+22:49:57:579	4f74	buf: {"id":4,"result":true,"error":null}
+
+22:49:57:582	4f74	parse packet: 35
+22:49:57:586	4f74	ZEC: Share accepted (141 ms)!
+22:49:57:590	4f74	new buf size: 0
+22:50:00:862	4834	
+22:50:00:866	4834	GPU #0: Ellesmere
+22:50:00:870	4834	ZEC - Total Speed: 310.757 H/s, Total Shares: 1, Rejected: 0, Time: 00:00
+22:50:00:891	4834	ZEC: GPU0 310.757 H/s
+22:50:00:895	4834	Pool switches: ZEC - 0
+22:50:00:903	4834	Current ZEC pool share target: 0x003c3c3c (diff: 1088H)
+22:50:00:957	4834	GPU0 t=55C fan=0%
+22:50:00:960	4834	
+22:50:03:595	3f18	ZEC: put share nonce 44a
+22:50:03:600	3f18	ZEC round found 1 shares
+22:50:03:605	4f74	ZEC: 09/06/17-22:50:03 - SHARE FOUND - (GPU 0)
+22:50:03:609	4f74	send share: {"id": 4, "method": "mining.submit", "params": ["bitsbetrippin.bbtworker01","368b","74c1b059","4a040000000000000000000000000000","fd4005004c7394330bdc094fca02b8237d9720c9601fbbbf3d8bc76b0d51fc6ccd6074
+22:50:03:746	4f74	got 36 bytes
+22:50:03:750	4f74	buf: {"id":4,"result":true,"error":null}
+
+22:50:03:753	4f74	parse packet: 35
+22:50:03:756	4f74	ZEC: Share accepted (141 ms)!
+22:50:03:759	4f74	new buf size: 0
+22:50:03:906	4db4	ZEC: put share nonce 4ce
+22:50:03:910	4db4	ZEC round found 1 shares
+22:50:03:913	4f74	ZEC: 09/06/17-22:50:03 - SHARE FOUND - (GPU 0)
+22:50:03:917	4f74	send share: {"id": 4, "method": "mining.submit", "params": ["bitsbetrippin.bbtworker01","368b","74c1b059","ce040000000000000000000000000000","fd4005003a894691387263cb6b54a99fe20cba48279c75ca24890e9db609b40cae2b52
+22:50:04:063	4f74	got 36 bytes
+22:50:04:066	4f74	buf: {"id":4,"result":true,"error":null}
+
+22:50:04:069	4f74	parse packet: 35
+22:50:04:072	4f74	ZEC: Share accepted (141 ms)!
+22:50:04:076	4f74	new buf size: 0
+22:50:06:026	4f74	got 294 bytes
+22:50:06:029	4f74	buf: {"id":null,"method":"mining.notify","params":["368c","00000020","fb3e2f91b7354c83e052a7385b59e6e70df1a2fc55234ae56d13f06b00000000","2d2e3dcececbebfddef2b1649216f8d9d7b63ebfbece857fb2ee4bb206d2d330","0000000000000000000000000000000000000000000000000000000000000000","ecc1b059","b428021d",true]}
+
+22:50:06:032	4f74	parse packet: 293
+22:50:06:035	4f74	new buf size: 0
+22:50:06:057	4f74	ZEC: 09/06/17-22:50:06 - New job from zen.suprnova.cc:3618
+22:50:06:062	4f74	target: 0x003c3c3c (diff: 1088H)
+22:50:06:070	4f74	ZEC - Total Speed: 304.066 H/s, Total Shares: 3, Rejected: 0, Time: 00:00
+22:50:06:074	4f74	ZEC: GPU0 304.066 H/s
+22:50:06:215	49e4	ZEC: put share nonce 5e3
+22:50:06:218	49e4	ZEC round found 1 shares
+22:50:06:221	4f74	ZEC:  Stale share found - skip
+22:50:08:059	49e4	ZEC: put share nonce 100
+22:50:08:063	49e4	ZEC round found 1 shares
+22:50:08:066	4f74	ZEC: 09/06/17-22:50:08 - SHARE FOUND - (GPU 0)
+22:50:08:091	4f74	send share: {"id": 4, "method": "mining.submit", "params": ["bitsbetrippin.bbtworker01","368c","ecc1b059","00010000000000000000000000000000","fd4005007fcdbc59ece3f3bfbef0a4d83f996cf4c153c50102d23a9aa325939dda1c58
+22:50:08:225	4f74	got 36 bytes
+22:50:08:229	4f74	buf: {"id":4,"result":true,"error":null}
+
+22:50:08:232	4f74	parse packet: 35
+22:50:08:235	4f74	ZEC: Share accepted (141 ms)!
+22:50:08:238	4f74	new buf size: 0
+22:50:09:067	4f74	got 119 bytes
+22:50:09:071	4f74	buf: {"id":null,"method":"mining.set_target","params":["0010fd4c10fd0139ec8170281be4fbe261d3220ac4fccbd1a2341224db9616c4"]}
+
+22:50:09:074	4f74	parse packet: 118
+22:50:09:077	4f74	Pool sets new share target: 0x0010fd4c (diff: 3857H)
+22:50:09:102	4f74	new buf size: 0
+22:50:09:243	4f74	got 294 bytes
+22:50:09:247	4f74	buf: {"id":null,"method":"mining.notify","params":["368d","00000020","5820bf53b0bb5c17e0bb5b32538c32b3af953d8420b4e2b2d887820d02000000","a56c912a9ac5aba0779146d73aefe37407e6f03a2ab9925e7073dbf1ff166883","0000000000000000000000000000000000000000000000000000000000000000","f0c1b059","713a021d",true]}
+
+22:50:09:250	4f74	parse packet: 293
+22:50:09:270	4f74	new buf size: 0
+22:50:09:273	4f74	ZEC: 09/06/17-22:50:09 - New job from zen.suprnova.cc:3618
+22:50:09:276	4f74	target: 0x0010fd4c (diff: 3857H)
+22:50:09:280	4f74	ZEC - Total Speed: 298.511 H/s, Total Shares: 4, Rejected: 0, Time: 00:00
+22:50:09:283	4f74	ZEC: GPU0 298.511 H/s
