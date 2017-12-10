@@ -1,0 +1,1 @@
+miner --server us-east.equihash-hub.miningpoolhub.com --user username.workername --pass x --port 20570

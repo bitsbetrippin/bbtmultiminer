@@ -1,0 +1,1 @@
+miner --server zec.coinmine.pl --user user.1 --pass x --port 7007 --cuda_devices 0 1 2 3

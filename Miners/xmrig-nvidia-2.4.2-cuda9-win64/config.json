@@ -1,0 +1,34 @@
+{
+    "algo": "cryptonight",
+    "background": false,
+    "colors": true,
+    "donate-level": 1,
+    "log-file": null,
+    "print-time": 60,
+    "retries": 5,
+    "retry-pause": 5,
+    "threads": [
+        {
+            "index": 0,
+            "threads": 32,
+            "blocks": 84,
+            "bfactor": 6,
+            "bsleep": 25,
+            "affine_to_cpu": false
+        }
+    ],
+    "pools": [
+        {
+            "url": "xmr-us-east1.nanopool.org:14444",
+            "user": "bitsbetrippin",
+            "pass": "x",
+            "keepalive": true,
+            "nicehash": false
+        }
+    ],
+    "api": {
+        "port": 0,
+        "access-token": null,
+        "worker-id": null
+    }
+}
