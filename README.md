@@ -7,7 +7,7 @@ Created, updated and maintained by www.bitsbetrippin.io
 Supported by donations and great viewers of www.youtube.com/c/bitsbetrippin
 
 - 27 Individual Miner builds
-- AMD, NVIDIA Miners for over 
+- AMD, NVIDIA Miners included
 - 29 Different Mineable Cryptocurrencies
 - Cryptos supported:
 ETH,ETC,XMR,SIA,ZEC,PASC,HUSH,LBC,DCR,DBIX,UBQ,EXP,DGD,FTC,MUS,ZCL,ZEN,BTG,PIRL,ETN,VTC,KMD,ELLA,SUMO,KRB,MONA
