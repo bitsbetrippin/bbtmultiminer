@@ -564,13 +564,13 @@ pause
 ::
 :lbry1
 ECHO NVIDIA CCMiner Lbry Credits Miner - Lbry to coinmine.pl NVIDIA ONLY
-Miners\ccminer-x64-2.2.1\ccminer-x64.exe -o stratum+tcp://lbc-us.coinmine.pl:8787 -u %LBRY_WALLET_ADDRESS%.%MINER_NAME% -a lbry -p %WORKER_PASSWORD%
+Miners\ccminer-x64-2.2.1\ccminer-x64.exe -o stratum+tcp://lbc-us.coinmine.pl:8787 -u %MINER_WEBLOGIN%.%MINER_NAME% -a lbry -p %WORKER_PASSWORD%
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :lbry2
 ECHO SGMiner Lbry Credits Miner - Lbry to coinmine AMD ONLY
-Miners\sgminer_5_4_0-lbry\sgminer.exe --kernel lbry -o stratum+tcp://lbc-us.coinmine.pl:8787 -u %LBRY_WALLET_ADDRESS%.%MINER_NAME% -p %WORKER_PASSWORD% -I 19 -w 64 -g 4
+Miners\sgminer_5_4_0-lbry\sgminer.exe --kernel lbry -o stratum+tcp://lbc-us.coinmine.pl:8787 -u %MINER_WEBLOGIN%.%MINER_NAME% -p %WORKER_PASSWORD% -I 19 -w 64 -g 4
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
