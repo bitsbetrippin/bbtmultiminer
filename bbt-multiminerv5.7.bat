@@ -269,9 +269,9 @@ ECHO ****************************************************
 ECHO ====================================================
 ECHO *                    Karbowanec (KRB)              *
 ECHO ====================================================
-ECHO 74.  CAST VEGA Miner - Sumokoin to easyhash.io - Mining Rig Difficulty for RX VEGA
-ECHO 75.  Claymore CryptoNote 9.7 AMD Only - Sumokoin to easyhash.io - For R9 / RX Series
-ECHO 76.  Claymore CryptoNote 10.2 AMD Only - Sumokoin to easyhash.io - For VEGA
+ECHO 74.  CAST VEGA Miner - Karbowanec to easyhash.io - Mining Rig Difficulty for RX VEGA
+ECHO 75.  Claymore CryptoNote 9.7 AMD Only - Karbowanec to easyhash.io - For R9 / RX Series
+ECHO 76.  Claymore CryptoNote 10.2 AMD Only - Karbowanec to easyhash.io - For VEGA
 ECHO ****************************************************
 ECHO ====================================================
 ECHO *                    Zcash (ZEC) /HODLPool\        *
