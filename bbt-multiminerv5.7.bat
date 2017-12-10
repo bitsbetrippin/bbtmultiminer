@@ -879,19 +879,19 @@ pause
 
 :sumo1
 ECHO CAST VEGA Miner - Sumo to easyhash.io - Mining Rig Difficulty for RX VEGA
-Miners\cast_xmr-vega-win64_070\cast_xmr-vega -S sumo.easyhash.io:3332 -u %ETN_WALLET_ADDRESS%.%MINER_NAME% %*
+Miners\cast_xmr-vega-win64_070\cast_xmr-vega -S sumo.easyhash.io:3332 -u %SUMO_WALLET_ADDRESS%.%MINER_NAME% %*
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :sumo2
 ECHO Claymore CryptoNote 9.7 AMD Only - Sumo to easyhash.io - Mining Rig Difficulty - For R9 / RX Series
-Miners\Claymore_CryptoNote_GPU_Miner_v9.7\NsGpuCNMiner.exe -o stratum+tcp://sumo.easyhash.io:3332 -u %ETN_WALLET_ADDRESS% -p %WORKER_PASSWORD% -ftime 1 -allpools 1 
+Miners\Claymore_CryptoNote_GPU_Miner_v9.7\NsGpuCNMiner.exe -o stratum+tcp://sumo.easyhash.io:3332 -u %SUMO_WALLET_ADDRESS% -p %WORKER_PASSWORD% -ftime 1 -allpools 1 
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :sumo3
 ECHO Claymore CryptoNote 10.2 AMD Only - Sumo to easyhash.io - Mining Rig Difficulty - For VEGA
-Miners\Claymore_CryptoNote_AMDv10.2\NsGpuCNMiner.exe -xpool stratum+tcp://sumo.easyhash.io:3332 -xwal %ETN_WALLET_ADDRESS% -xpsw %WORKER_PASSWORD% -allpools 1
+Miners\Claymore_CryptoNote_AMDv10.2\NsGpuCNMiner.exe -xpool stratum+tcp://sumo.easyhash.io:3332 -xwal %SUMO_WALLET_ADDRESS% -xpsw %WORKER_PASSWORD% -allpools 1
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
