@@ -1,0 +1,4 @@
+Fixes
+
+** Corrected %Worker_Password% issues on all miners, all are referenced now to Set String
+** Corrected Syntax on DSTM Miner

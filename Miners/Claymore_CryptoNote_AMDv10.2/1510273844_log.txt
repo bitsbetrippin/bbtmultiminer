@@ -1,0 +1,11 @@
+18:30:44:400	32c	args: -xpool ssl://xmr-eu1.nanopool.org:14433 -xwal 452eu5HWBcTEwQfwkRFHp9MgC39DhtAio5um8mEs6ZRgcyq9V3Gy3GbJfyASSxepSRQRe6SHcQ27xgorYzyZrn6DSVmWvuw.4d8ddccc40568d93.bbtworker01/bitsbetrippin1@gmail.com -xpsw x -allpools 1 
+18:30:44:407	32c	
+18:30:44:412	32c	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+18:30:44:416	32c	บ         Claymore's CryptoNote AMD GPU Miner v10.2 Beta         บ
+18:30:44:419	32c	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+18:30:44:423	32c	
+18:30:44:627	32c	XMR: 2 pools are specified
+18:30:44:631	32c	Main Monero pool is xmr-eu1.nanopool.org:14433
+18:30:44:686	32c	OpenCL platform: NVIDIA CUDA
+18:30:44:690	32c	AMD OpenCL platform not found 
+18:30:44:694	32c	No AMD OPENCLGPUs found, exit

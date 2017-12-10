@@ -1,0 +1,137 @@
+21:32:31:140	53bc	args: -xpool stratum+tcp://xmr-eu.dwarfpool.com:8005 -xwal 449TGay4WWJPwsXrWZfkMoPtDbJp8xoSzFuyjRt3iaM4bRHdzw4qoDu26FdcGx67BMDS1r2bnp7f5hF6xdPWWrD3Q3Wf7G6 -xpsw x 
+21:32:31:144	53bc	
+21:32:31:147	53bc	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+21:32:31:150	53bc	บ         Claymore's CryptoNote AMD GPU Miner v10.2 Beta         บ
+21:32:31:153	53bc	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+21:32:31:157	53bc	
+21:32:31:362	53bc	XMR: 1 pool is specified
+21:32:31:365	53bc	Main Monero pool is xmr-eu.dwarfpool.com:8005
+21:32:32:355	53bc	OpenCL platform: AMD Accelerated Parallel Processing
+21:32:32:360	53bc	OpenCL initializing...
+21:32:32:364	53bc	driver 10.0.2348.3
+21:32:32:367	53bc	AMD Cards available: 1 
+21:32:32:370	53bc	GPU #0: Ellesmere, 8192 MB available, 36 compute units
+21:32:32:373	53bc	GPU #0 recognized as Radeon RX 480/580
+21:32:32:376	53bc	card 0, m1 8192, m2 4048 w 288
+21:32:32:379	53bc	0 m = 2
+21:32:32:383	53bc	POOL version
+21:32:32:386	53bc	b141 
+21:32:32:389	53bc	Platform: Windows
+21:32:32:566	53bc	start building OpenCL program for GPU 0...
+21:32:32:571	53bc	done
+21:32:33:215	53bc	GPU #0 algorithm ASM, -h 1800, -dmem 1 (Memory used: 7560MB)
+21:32:33:219	53bc	Total cards: 1 
+21:32:46:542	98e8	XMR: Stratum - connecting to 'xmr-eu.dwarfpool.com' <79.137.57.106> port 8005 (unsecure)
+21:32:46:574	53bc	Watchdog enabled
+21:32:46:578	53bc	Remote management (READ-ONLY MODE) is enabled on port 3333
+21:32:46:581	53bc	
+21:32:46:638	988c	
+21:32:46:642	988c	GPU #0: Ellesmere
+21:32:46:645	988c	XMR - Total Speed: 0 H/s, Total Shares: 0, Rejected: 0, Time: 00:00
+21:32:46:649	988c	XMR: GPU0 0 H/s
+21:32:46:654	988c	Incorrect XMR shares: none
+21:32:46:658	988c	1 minute average XMR total speed: 0 H/s
+21:32:46:661	988c	Pool switches: XMR - 0
+21:32:46:663	98e8	send: {"method": "login", "params": {"login": "449TGay4WWJPwsXrWZfkMoPtDbJp8xoSzFuyjRt3iaM4bRHdzw4qoDu26FdcGx67BMDS1r2bnp7f5hF6xdPWWrD3Q3Wf7G6", "pass": "x", "agent": "xmr/1.0"}, "id": 1}
+
+21:32:46:676	98e8	XMR: Stratum - Connected (xmr-eu.dwarfpool.com:8005) (unsecure)
+21:32:46:719	988c	GPU0 t=41C fan=0%
+21:32:46:723	988c	
+21:32:46:811	98e8	got 303 bytes
+21:32:46:815	98e8	buf: {"id":1,"jsonrpc":"2.0","error":null,"result":{"id":"677815816854126","job":{"blob":"0606afcdf4cf05a060023b48ad83d21ff4e8e74b5468dac78c3e1fd1b37b3536242ced7c05fb1b00000000e3bc2915fb9a8de446108ac901346f3c6a26f8b569491c1ffd5155e8a69b796d01","job_id":"201665127836167","target":"dc460300"},"status":"OK"}}
+
+21:32:46:818	98e8	parse packet: 302
+21:32:46:822	98e8	new buf size: 0
+21:32:48:561	988c	
+21:32:48:566	988c	GPU #0: Ellesmere
+21:32:48:569	988c	XMR - Total Speed: 0 H/s, Total Shares: 0, Rejected: 0, Time: 00:00
+21:32:48:573	988c	XMR: GPU0 0 H/s
+21:32:48:577	988c	Incorrect XMR shares: none
+21:32:48:581	988c	1 minute average XMR total speed: 0 H/s
+21:32:48:584	988c	Pool switches: XMR - 0
+21:32:48:588	988c	Current XMR pool share target: 0x000346dc (diff: 20000H)
+21:32:48:863	988c	GPU0 t=45C fan=0%
+21:32:48:867	988c	
+21:32:51:697	988c	
+21:32:51:701	988c	GPU #0: Ellesmere
+21:32:51:705	988c	XMR - Total Speed: 0 H/s, Total Shares: 0, Rejected: 0, Time: 00:00
+21:32:51:709	988c	XMR: GPU0 0 H/s
+21:32:51:712	988c	Incorrect XMR shares: none
+21:32:51:719	988c	1 minute average XMR total speed: 0 H/s
+21:32:51:723	988c	Pool switches: XMR - 0
+21:32:51:727	988c	Current XMR pool share target: 0x000346dc (diff: 20000H)
+21:32:51:781	988c	GPU0 t=47C fan=0%
+21:32:51:785	988c	
+21:32:52:633	988c	
+21:32:52:638	988c	GPU #0: Ellesmere
+21:32:52:645	988c	XMR - Total Speed: 343 H/s, Total Shares: 0, Rejected: 0, Time: 00:00
+21:32:52:653	988c	XMR: GPU0 343 H/s
+21:32:52:657	988c	Incorrect XMR shares: none
+21:32:52:661	988c	1 minute average XMR total speed: 0 H/s
+21:32:52:664	988c	Pool switches: XMR - 0
+21:32:52:676	988c	Current XMR pool share target: 0x000346dc (diff: 20000H)
+21:32:52:737	988c	GPU0 t=47C fan=0%
+21:32:52:742	988c	
+21:32:53:281	988c	
+21:32:53:286	988c	GPU #0: Ellesmere
+21:32:53:290	988c	XMR - Total Speed: 343 H/s, Total Shares: 0, Rejected: 0, Time: 00:00
+21:32:53:294	988c	XMR: GPU0 343 H/s
+21:32:53:298	988c	Incorrect XMR shares: none
+21:32:53:302	988c	1 minute average XMR total speed: 0 H/s
+21:32:53:305	988c	Pool switches: XMR - 0
+21:32:53:309	988c	Current XMR pool share target: 0x000346dc (diff: 20000H)
+21:32:53:364	988c	GPU0 t=47C fan=0%
+21:32:53:371	988c	
+21:32:54:273	988c	
+21:32:54:278	988c	GPU #0: Ellesmere
+21:32:54:282	988c	XMR - Total Speed: 343 H/s, Total Shares: 0, Rejected: 0, Time: 00:00
+21:32:54:297	988c	XMR: GPU0 343 H/s
+21:32:54:302	988c	Incorrect XMR shares: none
+21:32:54:306	988c	1 minute average XMR total speed: 0 H/s
+21:32:54:319	988c	Pool switches: XMR - 0
+21:32:54:323	988c	Current XMR pool share target: 0x000346dc (diff: 20000H)
+21:32:54:378	988c	GPU0 t=48C fan=0%
+21:32:54:383	988c	
+21:32:55:042	988c	
+21:32:55:046	988c	GPU #0: Ellesmere
+21:32:55:051	988c	XMR - Total Speed: 343 H/s, Total Shares: 0, Rejected: 0, Time: 00:00
+21:32:55:055	988c	XMR: GPU0 343 H/s
+21:32:55:059	988c	Incorrect XMR shares: none
+21:32:55:063	988c	1 minute average XMR total speed: 0 H/s
+21:32:55:067	988c	Pool switches: XMR - 0
+21:32:55:071	988c	Current XMR pool share target: 0x000346dc (diff: 20000H)
+21:32:55:126	988c	GPU0 t=48C fan=0%
+21:32:55:131	988c	
+21:32:55:554	988c	
+21:32:55:559	988c	GPU #0: Ellesmere
+21:32:55:563	988c	XMR - Total Speed: 343 H/s, Total Shares: 0, Rejected: 0, Time: 00:00
+21:32:55:567	988c	XMR: GPU0 343 H/s
+21:32:55:571	988c	Incorrect XMR shares: none
+21:32:55:575	988c	1 minute average XMR total speed: 0 H/s
+21:32:55:579	988c	Pool switches: XMR - 0
+21:32:55:583	988c	Current XMR pool share target: 0x000346dc (diff: 20000H)
+21:32:55:637	988c	GPU0 t=48C fan=0%
+21:32:55:965	98e8	got 253 bytes
+21:32:56:845	988c	
+21:32:56:845	98e8	buf: {"jsonrpc":"2.0","method":"job","params":{"blob":"0606d2cdf4cf05cc9d263e62c9a784eee3a985a678844458bc596863807844c9e21bb2f2c9f13000000000c836c406414021ed91918789abf634825ee60a861faf83afdba9f2178852e5fa02","job_id":"968267482309602","target":"dc460300"}}
+
+21:32:56:853	98e8	parse packet: 252
+21:32:56:864	98e8	new buf size: 0
+21:32:56:868	98e8	XMR: 11/03/17-21:32:56 - New job from xmr-eu.dwarfpool.com:8005
+21:32:56:873	98e8	target: 0x000346dc (diff: 20000H)
+21:32:56:877	98e8	XMR - Total Speed: 394 H/s, Total Shares: 0, Rejected: 0, Time: 00:00
+21:32:56:886	98e8	XMR: GPU0 394 H/s
+21:32:56:900	988c	
+21:32:56:908	988c	GPU #0: Ellesmere
+21:32:56:912	988c	XMR - Total Speed: 394 H/s, Total Shares: 0, Rejected: 0, Time: 00:00
+21:32:56:919	988c	XMR: GPU0 394 H/s
+21:32:56:923	988c	Incorrect XMR shares: none
+21:32:56:927	988c	1 minute average XMR total speed: 0 H/s
+21:32:56:931	988c	Pool switches: XMR - 0
+21:32:56:935	988c	Current XMR pool share target: 0x000346dc (diff: 20000H)
+21:32:56:990	988c	GPU0 t=50C fan=0%
+21:32:56:994	988c	
+21:32:57:431	9650	Job changed, drop current round
+21:32:57:435	41d8	Job changed, drop current round
+21:32:57:439	649c	Job changed, drop current round
+21:32:57:443	8424	Job changed, drop current round

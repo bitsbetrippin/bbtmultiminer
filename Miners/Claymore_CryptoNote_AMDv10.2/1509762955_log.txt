@@ -1,0 +1,23 @@
+21:35:55:528	8490	args: -xpool stratum+tcp://xmr-eu.dwarfpool.com:8005 -xwal 449TGay4WWJPwsXrWZfkMoPtDbJp8xoSzFuyjRt3iaM4bRHdzw4qoDu26FdcGx67BMDS1r2bnp7f5hF6xdPWWrD3Q3Wf7G6 -xpsw x 
+21:35:55:531	8490	
+21:35:55:535	8490	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+21:35:55:538	8490	บ         Claymore's CryptoNote AMD GPU Miner v10.2 Beta         บ
+21:35:55:541	8490	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+21:35:55:544	8490	
+21:35:55:747	8490	XMR: 2 pools are specified
+21:35:55:751	8490	Main Monero pool is xmr-eu.dwarfpool.com:8005
+21:35:56:067	8490	OpenCL platform: AMD Accelerated Parallel Processing
+21:35:56:072	8490	OpenCL initializing...
+21:35:56:076	8490	driver 10.0.2348.3
+21:35:56:079	8490	AMD Cards available: 1 
+21:35:56:092	8490	GPU #0: Ellesmere, 8192 MB available, 36 compute units
+21:35:56:095	8490	GPU #0 recognized as Radeon RX 480/580
+21:35:56:104	8490	card 0, m1 8192, m2 4048 w 288
+21:35:56:107	8490	0 m = 2
+21:35:56:110	8490	POOL version
+21:35:56:113	8490	b141 
+21:35:56:119	8490	Platform: Windows
+21:35:56:287	8490	start building OpenCL program for GPU 0...
+21:35:56:291	8490	done
+21:35:56:752	8490	GPU #0 algorithm ASM, -h 1800, -dmem 1 (Memory used: 7560MB)
+21:35:56:755	8490	Total cards: 1 

@@ -1,0 +1,19 @@
+* Corrected many menu options
+* Added/updated 11 miners
+* Fixed 18+ syntax bugs, fixing most all existing errors for nvidia/amd miners
+
+* Depricated Zclassic + PASC
+* Depricated Ubiq EU based pool
+* Depricated Litecoin
+* Depricated Dash
+
+* Added Monero VEGA Support
+* Added Monero nVidia Support
+* Added Komodo Coin
+* Added Vertcoin
+* Added Zcoin
+* Added Bitcoin Gold
+* Added Electroneum
+* Optimized Ethminer supporting both amd and nvidia cards
+
+
