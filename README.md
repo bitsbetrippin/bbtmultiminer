@@ -3,6 +3,7 @@
 BBT MultiMiner is the official BitsBeTrippin MultiMiner Tool produced by BBT Carter.
 
 Created, updated and maintained by www.bitsbetrippin.io
+
 Supported by donations and great viewers of www.youtube.com/c/bitsbetrippin
 
 - 27 Individual Miner builds
