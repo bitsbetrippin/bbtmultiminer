@@ -108,7 +108,10 @@ setx GPU_SINGLE_ALLOC_PERCENT 100 >nul 2>&1
 
 ::  http://equihash.hodlpool.com/
 ::   ZEC, KMD, ZEN, ZEC
-	
+
+::  http://coinmine.pl/ - Anonymous Dashboard - No Login
+::   DEC, LBC
+
 SET miner=%1
 
 IF NOT "%miner%"=="" (
@@ -242,7 +245,7 @@ ECHO ====================================================
 ECHO 58.  ZENCoin Claymore - ZENCash to HODLPool - AMD Only
 ECHO 59.  NVIDIA DSTM ZMiner - nVidia Only - ZENCash to HODLPool
 ECHO 60.  Claymore ZENCoin AMD Only - Zencoin to Suprnova.cc
-ECHO 61.  NVIDIA DSTM ZMiner - nVidia Only - ZENCOIN to Suprnova.cc
+ECHO 61.  NVIDIA DSTM ZMiner - nVidia Only - ZENCash to Suprnova.cc
 ECHO ****************************************************
 ECHO ====================================================
 ECHO *                    PIRL (PIRL)                   *
