@@ -92,6 +92,7 @@ setx GPU_SINGLE_ALLOC_PERCENT 100 >nul 2>&1
 ::  Feathercoin
 
 ::  http://pirl.minerpool.net/#/ 
+::  http://pirl.cryptopools.info/
 ::  PIRL Mining Pool
 
 ::  https://btg.minertopia.org/
@@ -248,6 +249,9 @@ ECHO ====================================================
 ECHO 62.  AMD and NVIDIA Claymore - Pirl LESS THAN 100 MH/s Only minerpool.net
 ECHO 63.  AMD and NVIDIA Claymore - Pirl 100 MH/s to 800 MH/s Only minerpool.net
 ECHO 64.  AMD and NVIDIA Claymore - Pirl MORE THAN 800 MH/s Only minerpool.net
+ECHO 81.  AMD and NVIDIA Claymore - Pirl LESS THAN 200 MH/s   Only cryptopools.info
+ECHO 82.  AMD and NVIDIA Claymore - Pirl 200 MH/s to 800 MH/s Only cryptopools.info
+ECHO 83.  AMD and NVIDIA Claymore - Pirl MORE THAN 800 MH/s   Only cryptopools.info
 ECHO ****************************************************
 ECHO ====================================================
 ECHO *                    Ellaism (ELLA)                *
@@ -377,7 +381,10 @@ IF %M%==77 GOTO zcash4
 IF %M%==78 GOTO zcash5
 IF %M%==79 GOTO mona1
 IF %M%==80 GOTO mona1
-IF %M% GTR 81 GOTO EOF
+IF %M%==81 GOTO pirl4
+IF %M%==82 GOTO pirl5
+IF %M%==83 GOTO pirl6
+IF %M% GTR 84 GOTO EOF
 
 ::
 :: Ethereum miners
@@ -830,6 +837,24 @@ pause
 :pirl3
 ECHO AMD and NVIDIA Claymore - Pirl MORE THAN 800 MH/s Only minerpool.net
 Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://pirl.minerpool.net:8044 -ewal %PIRL_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins exp -eworker %MINER_NAME%
+if %ERRORLEVEL% NEQ 0 goto exit
+pause
+
+:pirl4
+ECHO AMD and NVIDIA Claymore - Pirl LESS THAN 200 MH/s Only Cryptopools.info
+Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://pirl.Cryptopools.info:8002 -ewal %PIRL_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins exp -eworker %MINER_NAME%
+if %ERRORLEVEL% NEQ 0 goto exit
+pause
+
+:pirl5
+ECHO AMD and NVIDIA Claymore - Pirl 200 MH/s to 800 MH/s Only Cryptopools.info
+Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://pirl.Cryptopools.info:8004 -ewal %PIRL_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins exp -eworker %MINER_NAME%
+if %ERRORLEVEL% NEQ 0 goto exit
+pause
+
+:pirl6
+ECHO AMD and NVIDIA Claymore - Pirl MORE THAN 800 MH/s Only Cryptopools.info
+Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://pirl.Cryptopools.info:8008 -ewal %PIRL_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins exp -eworker %MINER_NAME%
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
