@@ -1,0 +1,174 @@
+
+====================================================
+*                    ETHEREUM (ETH)                *
+====================================================
+1.  Optimized Ethminer AMD and NVIDIA - Eth Ethermine.org Only
+2.  Optimized Ethminer AMD and NVIDIA - Eth Nanopool Only
+3.  AMD and NVIDIA Claymore - Eth Only Ethermine.org
+4.  AMD and NVIDIA Claymore - Eth Ethermine.org and Siacoin to Nanopool
+5.  AMD and NVIDIA Claymore - Eth Ethermine.org and Decred to CoinMine.pl
+6.  AMD and NVIDIA Claymore - Eth Ethermine.org and Lbry Credits to Coinmine.pl
+7.  AMD and NVIDIA Claymore - Eth Ethermine.org and PascalCoin to Nanopool
+8.  AMD and NVIDIA Claymore - Eth Nanopool Only
+9.  AMD and NVIDIA Claymore - Eth Nanopool and Siacoin to Nanopool
+10. AMD and NVIDIA Claymore - Eth Nanopool and Pascal to Nanopool
+====================================================
+*                    ETHEREUM Classic (ETC)        *
+====================================================
+11. Optimized Ethminer AMD and NVIDIA - Etc nanopool
+12. AMD and NVIDIA Claymore - Etc (ethereum classic) to Nanopool
+13. AMD and NVIDIA Claymore - Etc (ethereum classic) and Siacoin both to Nanopool
+14. AMD and NVIDIA Claymore - Etc (ethereum classic) Nanopool and Decred to CoinMine.pl
+====================================================
+*                    Komodo (KMD)                  *
+====================================================
+15.  NVIDIA DSTM ZMiner - Komodo to HODLPool
+====================================================
+*                    Monero (XMR)                  *
+====================================================
+16.  Claymore CryptoNote 9.7 AMD Only - XMR to Nanopool
+17.  Claymore CryptoNote 10.2 AMD Only - XMR to Nanopool
+18.  CAST VEGA Miner - XMR to Nanopool for RX VEGA
+====================================================
+*                    ZCASH (ZEC)                   *
+====================================================
+19.  AMD ZCash Claymore - Zcash to Nanopool AMD Only
+20.  Nicehash Excavator - Zcash to Nanopool Both AMD and Nvidia
+21.  NVIDIA EWBF's CUDA Zcash Miner - Zcash to Nanopool NVIDIA Only
+====================================================
+*                    SIACOIN (SIA)                 *
+====================================================
+22.   AMD and NVIDIA Gominer - Siacoin to Nanopool Only
+====================================================
+*                    PASCALCOIN (PASC)             *
+====================================================
+23.  AMD SGMiner PascalCoin (exchange address) - PascalCoin to Nanopool
+24.  NiceHash Excavator 1.2.11a - PascalCoin to Nanopool
+====================================================
+*                    HUSH (HUSH)                   *
+====================================================
+25.  HUSH Claymore - Hush to HODLPool AMD Only SECURE SSL
+26.  NVIDIA EWBF's CUDA HUSH Miner - HUSH to HODLPool NVIDIA Only
+====================================================
+*                    LBRY (LBC)                    *
+====================================================
+27.  NVIDIA CCMiner Lbry Credits Miner - Lbry to coinmine.pl NVIDIA ONLY
+28.  SGMiner Lbry Credits Miner - Lbry to coinmine AMD ONLY
+====================================================
+*                    DBIX (DBIX)                   *
+====================================================
+29.  AMD and NVIDIA Claymore - DBIX to Sexy.Pool Only
+30.  AMD and NVIDIA Claymore - Dbix to Sexy.Pool and Siacoin to Nanopool
+31.  AMD and NVIDIA Claymore - Dbix to Sexy.Pool and Decred to Suprnova.cc Pool
+32.  AMD and NVIDIA Claymore - Dbix to Sexy.Pool and LBRY to Coinmine.pl
+====================================================
+*                    UBIQ (UBQ)                    *
+====================================================
+33.  AMD and NVIDIA Claymore - Ubiq to Hodl Pool
+34.  AMD and NVIDIA Claymore - Ubiq to Hodl Pool and Decred to Coinmine.pl
+35.  AMD and NVIDIA Claymore - Ubiq to Hodl Pool and LBRY to Coinmine.pl
+36.  AMD and NVIDIA Claymore - Ubiq to Hodl Pool and PASC to Nanopool
+37.  AMD and NVIDIA Claymore - Ubiq to Hodl Pool and Siacoin to Nanopool
+====================================================
+*                    Expanse (EXP)                 *
+====================================================
+38.  AMD and NVIDIA Claymore - Expanse to Hodl Pool
+====================================================
+*                    Bitcoin Gold (BTG)            *
+====================================================
+39.  AMD Claymore - BTG to minertopia AMD Only
+40.  NVIDIA EWBF's CUDA Miner - BTG to minertopia NVIDIA Only 
+====================================================
+*                    Digibyte (DGB)                *
+====================================================
+41.  AMD SGMiner DGB Miner GROESTL - Digibyte to Suprnova.cc AMD Only
+42.  CCMiner NVIDIA - DGB GROESTL to Suprnova.cc
+====================================================
+*                    Feathercoin (FTC)             *
+====================================================
+43.  NVIDIA only - FTC to F2Pool FTC
+44.  AMD NSGMiner Feathercoin Miner - FTC to P2Pool FTC
+====================================================
+*                    Musicoin (MUS)                *
+====================================================
+45.  AMD and NVIDIA Claymore - Musicoin to miningpoolhub Only
+46.  AMD and NVIDIA Claymore - Musicoin to miningpoolhub Siacoin to Nanopool
+47.  AMD and NVIDIA Claymore - Musicoin to miningpoolhub Decred to Coinmine.pl Pool
+48.  AMD and NVIDIA Claymore - Musicoin to miningpoolhub Lbry Credits to Coinmine.pl
+49.  AMD and NVIDIA Claymore - Musicoin to miningpoolhub PascalCoin to Nanopool
+====================================================
+*                    Electroneum (ETN)             *
+====================================================
+50.  CAST VEGA Miner - Electroneum to easyhash.io - Mining Rig Difficulty for RX VEGA
+51.  Claymore CryptoNote 9.7 AMD Only - Electroneum to easyhash.io - For R9 / RX Series
+52.  Claymore CryptoNote 10.2 AMD Only - Electroneum to easyhash.io - For VEGA
+****************************************************
+====================================================
+*                    Zclassic (ZCL)                *
+====================================================
+53.  Claymore Zclassic AMD Only - Zclassic to Miningpoolhub
+54.  Silentarmy Zclassic nVidia GPU Only - Zclassic to Miningpoolhub
+****************************************************
+====================================================
+*                    Zcoin (XZC)                   *
+====================================================
+55.  CCMiner YIIMP - Nvidia Only - Zcoin to Miningpoolhub
+56.  SGMiner - AMD Only - Zcoin to Miningpoolhub
+****************************************************
+====================================================
+*                    Vertcoin (VTC)                *
+====================================================
+57.  Vertcoin - CCMiner YIIMP - Nvidia Only - Vertcoin to Miningpoolhub
+****************************************************
+====================================================
+*                    ZENCash (ZEN)                 *
+====================================================
+58.  ZENCoin Claymore - ZENCash to HODLPool - AMD Only
+59.  NVIDIA DSTM ZMiner - nVidia Only - ZENCash to HODLPool
+60.  Claymore ZENCoin AMD Only - Zencoin to Suprnova.cc
+61.  NVIDIA DSTM ZMiner - nVidia Only - ZENCOIN to Suprnova.cc
+****************************************************
+====================================================
+*                    PIRL (PIRL)                   *
+====================================================
+62.  AMD and NVIDIA Claymore - Pirl LESS THAN 100 MH/s Only minerpool.net
+63.  AMD and NVIDIA Claymore - Pirl 100 MH/s to 800 MH/s Only minerpool.net
+64.  AMD and NVIDIA Claymore - Pirl MORE THAN 800 MH/s Only minerpool.net
+****************************************************
+====================================================
+*                    Ellaism (ELLA)                *
+====================================================
+65.  AMD and NVIDIA Claymore - Ella LESS THAN 180 MH/s ellaismpool America Based
+66.  AMD and NVIDIA Claymore - Ella 100 MH/s to 800 MH/s ellaismpool America Based
+67.  AMD and NVIDIA Claymore - Ella MORE THAN 800 MH/s ellaismpool America Based
+68.  AMD and NVIDIA Claymore - Ella LESS THAN 100 MH/s Only minerpool.net
+69.  AMD and NVIDIA Claymore - Ella 100 MH/s to 800 MH/s Only minerpool.net
+70.  AMD and NVIDIA Claymore - Ella MORE THAN 800 MH/s Only minerpool.net
+****************************************************
+====================================================
+*                    Sumokoin (SUMO)               *
+====================================================
+71.  CAST VEGA Miner - Sumokoin to easyhash.io - Mining Rig Difficulty for RX VEGA
+72.  Claymore CryptoNote 9.7 AMD Only - Sumokoin to easyhash.io - For R9 / RX Series
+73.  Claymore CryptoNote 10.2 AMD Only - Sumokoin to easyhash.io - For VEGA
+****************************************************
+====================================================
+*                    Karbowanec (KRB)              *
+====================================================
+74.  CAST VEGA Miner - Karbowanec to easyhash.io - Mining Rig Difficulty for RX VEGA
+75.  Claymore CryptoNote 9.7 AMD Only - Karbowanec to easyhash.io - For R9 / RX Series
+76.  Claymore CryptoNote 10.2 AMD Only - Karbowanec to easyhash.io - For VEGA
+****************************************************
+====================================================
+*                    Zcash (ZEC) /HODLPool\        *
+====================================================
+77.  AMD ZCash Claymore - Zcash to HODLPool AMD Only
+78.  NVIDIA EWBF's CUDA Zcash Miner - Zcash to HODLPool NVIDIA Only
+****************************************************
+====================================================
+*                    MonaCoin (MONA)               *
+====================================================
+79.  CCMiner YIIMP - Nvidia Only - Zcoin to Miningpoolhub
+80.  SGMiner - AMD Only - Monacoin to Miningpoolhub   
+****************************************************
+99 - EXIT
