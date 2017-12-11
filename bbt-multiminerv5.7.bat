@@ -420,25 +420,25 @@ pause
 
 :ethereum7
 ECHO AMD and NVIDIA Claymore - Eth Ethermine.org and PascalCoin to Nanopool
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool us1.ethermine.org:4444 -ewal %ETH_WALLET_ADDRESS%.%MINER_NAME% -epsw %WORKER_PASSWORD% -dpool stratum+tcp://pasc-us-east1.nanopool.org:15555 -dwal %PASCAL_WALLET_ADDRESS%.%MINER_NAME%/%EMAIL_ADDRESS% -dpsw %WORKER_PASSWORD% -dcoin pasc -ftime 10 
+Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool us1.ethermine.org:4444 -ewal %ETH_WALLET_ADDRESS%.%MINER_NAME% -epsw %WORKER_PASSWORD% -dpool stratum+tcp://pasc-us-east1.nanopool.org:15555 -dwal %PASCAL_WALLET_ADDRESS%.%MINER_NAME%/%EMAIL_ADDRESS% -dpsw %WORKER_PASSWORD% -dcoin pasc -ftime 10 -allpools 1
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :ethereum8
 ECHO AMD and NVIDIA Claymore - Eth Nanopool Only
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool eth-us-east1.nanopool.org:9999 -ewal %ETH_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -mode 1
+Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool eth-us-east1.nanopool.org:9999 -ewal %ETH_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -mode 1 -allpools 1
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :ethereum9
 ECHO AMD and NVIDIA Claymore - Nanopool and Siacoin to Nanopool
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool eth-us-east1.nanopool.org:9999 -ewal %ETH_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -epsw %WORKER_PASSWORD% -dpool stratum+tcp://sia-us-east1.nanopool.org:7777 -dwal %SIA_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -dcoin sia
+Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool eth-us-east1.nanopool.org:9999 -ewal %ETH_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -epsw %WORKER_PASSWORD% -dpool stratum+tcp://sia-us-east1.nanopool.org:7777 -dwal %SIA_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -dcoin sia -allpools 1
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :ethereum10
 ECHO AMD and NVIDIA Claymore - Eth Nanopool and Pascal to Nanopool
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool eth-us-east1.nanopool.org:9999 -ewal %ETH_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -epsw %WORKER_PASSWORD% -dpool stratum+tcp://pasc-us-east1.nanopool.org:15555 -dwal %PASCAL_WALLET_ADDRESS%.%MINER_NAME%/%EMAIL_ADDRESS% -dcoin pasc -ftime 10 
+Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool eth-us-east1.nanopool.org:9999 -ewal %ETH_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -epsw %WORKER_PASSWORD% -dpool stratum+tcp://pasc-us-east1.nanopool.org:15555 -dwal %PASCAL_WALLET_ADDRESS%.%MINER_NAME%/%EMAIL_ADDRESS% -dcoin pasc -ftime 10 -allpools 1
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
