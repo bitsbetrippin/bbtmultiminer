@@ -287,7 +287,7 @@ ECHO 80.  SGMiner - AMD Only - Monacoin to Miningpoolhub
 ECHO ****************************************************
 ECHO 99 - EXIT
 ECHO.
-
+:MinerSwitch
 :: Get input from user
 SET /P M=Type 1, 2, 3, or 4 then press ENTER:
 if %ERRORLEVEL% NEQ 0 goto EOF
@@ -296,7 +296,7 @@ if %ERRORLEVEL% NEQ 0 goto EOF
 SET "var="&for /f "delims=0123456789" %%i in ("%M%") do set var=%%i
 if defined var goto EOF
 
-:MinerSwitch
+
 IF %M%==1 GOTO ethereum1
 IF %M%==2 GOTO ethereum2
 IF %M%==3 GOTO ethereum3
@@ -408,13 +408,13 @@ pause
 
 :ethereum5
 ECHO AMD and NVIDIA Claymore - Eth Ethermine.org and Decred to CoinMine.pl
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool us1.ethermine.org:4444 -ewal %ETH_WALLET_ADDRESS%.%MINER_NAME% -epsw %WORKER_PASSWORD% -dpool dcr-us.coinmine.pl:2222 -dwal %MINER_WEBLOGIN%.%MINER_NAME% -dpsw %WORKER_PASSWORD% -allpools 1 
+Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool us1.ethermine.org:4444 -ewal %ETH_WALLET_ADDRESS%.%MINER_NAME% -epsw %WORKER_PASSWORD% -dpool dcr-us.coinmine.pl:2222 -dwal %DECRED_WALLET_ADDRESS% -dpsw %WORKER_PASSWORD% -allpools 1 
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :ethereum6
 ECHO AMD and NVIDIA Claymore - Eth Ethermine.org and Lbry Credits to Coinmine.pl
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool us1.ethermine.org:4444 -ewal %ETH_WALLET_ADDRESS%.%MINER_NAME% -epsw %WORKER_PASSWORD% -dpool lbc-us.coinmine.pl:8787 -dwal %MINER_WEBLOGIN%.%MINER_NAME% -dpsw %WORKER_PASSWORD% -dcoin lbc
+Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool us1.ethermine.org:4444 -ewal %ETH_WALLET_ADDRESS%.%MINER_NAME% -epsw %WORKER_PASSWORD% -dpool lbc-us.coinmine.pl:8787 -dwal %LBRY_WALLET_ADDRESS% -dpsw %WORKER_PASSWORD% -dcoin lbc
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
@@ -465,7 +465,7 @@ pause
 
 :ethereumc4
 ECHO AMD and NVIDIA Claymore - Etc (ethereum classic) Nanopool and Decred to Coinmine
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool etc-us-east1.nanopool.org:19999 -ewal %ETC_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -epsw %WORKER_PASSWORD% -dpool dcr-us.coinmine.pl:2222 -dwal %MINER_WEBLOGIN%.%MINER_NAME% -dpsw %WORKER_PASSWORD% -allpools 1 
+Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool etc-us-east1.nanopool.org:19999 -ewal %ETC_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -epsw %WORKER_PASSWORD% -dpool dcr-us.coinmine.pl:2222 -dwal %DECRED_WALLET_ADDRESS% -dpsw %WORKER_PASSWORD% -allpools 1 
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
@@ -549,13 +549,13 @@ pause
 ::
 :hush1
 ECHO Hush Claymore - Hush to HODLPool AMD Only 
-Miners\Claymore_ZCash_AMD_GPU_Miner_v12.6\ZecMiner64.exe -zpool mining.hodlpool.com:3034 -zwal %MINER_WEBLOGIN%.%MINER_NAME% -zpsw %WORKER_PASSWORD% -allpools 1
+Miners\Claymore_ZCash_AMD_GPU_Miner_v12.6\ZecMiner64.exe -zpool mining.hodlpool.com:3034 -zwal %HUSH_WALLET_ADDRESS%.%MINER_NAME% -zpsw %WORKER_PASSWORD% -allpools 1
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :hush2
 ECHO NVIDIA EWBF's CUDA HUSH Miner - HUSH to HODLPool NVIDIA Only
-Miners\ZEC_M0.3.4b\miner --server mining.hodlpool.com --user %MINER_WEBLOGIN%.%MINER_NAME% --pass %WORKER_PASSWORD% --port 3034 --zec
+Miners\ZEC_M0.3.4b\miner --server mining.hodlpool.com --user %HUSH_WALLET_ADDRESS%.%MINER_NAME% --pass %WORKER_PASSWORD% --port 3034 --zec
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
@@ -564,13 +564,13 @@ pause
 ::
 :lbry1
 ECHO NVIDIA CCMiner Lbry Credits Miner - Lbry to coinmine.pl NVIDIA ONLY
-Miners\ccminer-x64-2.2.1\ccminer-x64.exe -o stratum+tcp://lbc-us.coinmine.pl:8787 -u %MINER_WEBLOGIN%.%MINER_NAME% -a lbry -p %WORKER_PASSWORD%
+Miners\ccminer-x64-2.2.1\ccminer-x64.exe -o stratum+tcp://lbc-us.coinmine.pl:8787 -u %LBRY_WALLET_ADDRESS%.%MINER_NAME% -a lbry -p %WORKER_PASSWORD%
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :lbry2
 ECHO SGMiner Lbry Credits Miner - Lbry to coinmine AMD ONLY
-Miners\sgminer_5_4_0-lbry\sgminer.exe --kernel lbry -o stratum+tcp://lbc-us.coinmine.pl:8787 -u %MINER_WEBLOGIN%.%MINER_NAME% -p %WORKER_PASSWORD% -I 19 -w 64 -g 4
+Miners\sgminer_5_4_0-lbry\sgminer.exe --kernel lbry -o stratum+tcp://lbc-us.coinmine.pl:8787 -u %LBRY_WALLET_ADDRESS%.%MINER_NAME% -p %WORKER_PASSWORD% -I 19 -w 64 -g 4
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
@@ -591,13 +591,13 @@ pause
 
 :dbix3
 ECHO AMD and NVIDIA Claymore - Dbix to Sexy.Pool and Decred to Coinmine.pl
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://dbix.pool.sexy:7007 -ewal %DBIX_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -eworker %MINER_NAME% -dpool dcr-us.coinmine.pl:2222 -dwal %MINER_WEBLOGIN%.%MINER_NAME% -dpsw %WORKER_PASSWORD% -allpools 1
+Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://dbix.pool.sexy:7007 -ewal %DBIX_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -eworker %MINER_NAME% -dpool dcr-us.coinmine.pl:2222 -dwal %DECRED_WALLET_ADDRESS%.%MINER_NAME% -dpsw x -allpools 1
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :dbix4
 ECHO AMD and NVIDIA Claymore - Dbix to Sexy.Pool and LBRY to Coinmine.pl
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://dbix.pool.sexy:7007 -ewal %DBIX_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -eworker %MINER_NAME% -dpool lbc-us.coinmine.pl:8787 -dwal %LBRY_WALLET_ADDRESS%.%MINER_NAME% -dpsw %WORKER_PASSWORD% -dcoin lbc -allpools 1
+Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://dbix.pool.sexy:7007 -ewal %DBIX_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -eworker %MINER_NAME% -dpool lbc-us.coinmine.pl:8787 -dwal %LBRY_WALLET_ADDRESS%.%MINER_NAME% -dpsw x -dcoin lbc -allpools 1
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
@@ -614,7 +614,7 @@ pause
 
 :ubiq3
 ECHO AMD and NVIDIA Claymore - Ubiq to Hodl Pool and Decred to Coinmine.pl
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://ubiq.hodlpool.com:8009 -ewal %UBIQ_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -eworker %MINER_NAME% -dpool dcr-us.coinmine.pl:2222 -dwal %MINER_WEBLOGIN%.%MINER_NAME% -dpsw %WORKER_PASSWORD% -allpools 1 
+Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://ubiq.hodlpool.com:8009 -ewal %UBIQ_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -eworker %MINER_NAME% -dpool dcr-us.coinmine.pl:2222 -dwal %DECRED_WALLET_ADDRESS%.%MINER_NAME% -dpsw %WORKER_PASSWORD% -allpools 1 
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
@@ -711,7 +711,7 @@ pause
 
 :mus3
 ECHO AMD and NVIDIA Claymore - Musiccoin to miningpoolhub Pool and Decred to Suprnova.cc Pool
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://us-east.ethash-hub.miningpoolhub.com:20585 -ewal %MINER_WEBLOGIN%.%MINER_NAME% -epsw %WORKER_PASSWORD% -esm 2 -allcoins 1 -allpools 1 -dpool dcr-us.coinmine.pl:2222 -dwal %MINER_WEBLOGIN%.%MINER_NAME% -dpsw %WORKER_PASSWORD% -allpools 1
+Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://us-east.ethash-hub.miningpoolhub.com:20585 -ewal %MINER_WEBLOGIN%.%MINER_NAME% -epsw %WORKER_PASSWORD% -esm 2 -allcoins 1 -allpools 1 -dpool dcr-us.coinmine.pl:2222 -dwal %DECRED_WALLET_ADDRESS%.%MINER_NAME% -dpsw %WORKER_PASSWORD% -allpools 1
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
@@ -929,7 +929,7 @@ pause
 
 :zcash5
 ECHO NVIDIA EWBF's CUDA Zcash Miner - Zcash to HODLPool NVIDIA Only
-Miners\ZEC_M0.3.4b\miner --server mining.hodlpool.com --user %ZCASH_WALLET_ADDRESS%.%MINER_NAME%.%EMAIL_ADDRESS% --pass %WORKER_PASSWORD% --port 3033 --zec
+Miners\ZEC_M0.3.4b\miner --server mining.hodlpool.com --user %ZCASH_WALLET_ADDRESS%.%MINER_NAME% --pass %WORKER_PASSWORD% --port 3033 --zec
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
