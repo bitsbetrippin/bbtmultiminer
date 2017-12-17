@@ -802,7 +802,7 @@ if %ERRORLEVEL% NEQ 0 goto exit
 
 :zen3
 ECHO ZENCoin Claymore - ZENCash to HODLPool - AMD Only
-Miners\Claymore_ZCash_AMD_GPU_Miner_v12.6\ZecMiner64.exe -zpool stratum+tcp://mining.hodlpool.com:3032 -zwal %MINER_WEBLOGIN%.%MINER_NAME% -zpsw %WORKER_PASSWORD% -allpools 1
+Miners\Claymore_ZCash_AMD_GPU_Miner_v12.6\ZecMiner64.exe -zpool stratum+tcp://mining.hodlpool.com:3032 -zwal %ZEN_WALLET_ADDRESS%.%MINER_NAME% -zpsw %WORKER_PASSWORD% -allpools 1
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
