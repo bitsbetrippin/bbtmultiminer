@@ -294,8 +294,10 @@ ECHO ****************************************************
 ECHO 99 - EXIT
 ECHO.
 :MinerSwitch
+if defined miner goto StartMining
 :: Get input from user
 SET /P M=Type 1, 2, 3, or 4 then press ENTER:
+:StartMining
 if %ERRORLEVEL% NEQ 0 goto EOF
 
 :: Is choice a number?
