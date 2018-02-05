@@ -393,7 +393,7 @@ IF %M% GTR 84 GOTO EOF
 ::
 :ethereum1
 ECHO Optimized Ethminer AMD and NVIDIA - Eth Ethermine.org Only
-Miners\ethminer-0.12.0rc1\bin\ethminer.exe --farm-recheck 200 -G -S eu1.ethermine.org:4444 -FS us1.ethermine.org:4444 -O %ETH_WALLET_ADDRESS%.%MINER_NAME%
+Miners\ethminer-0.12.0rc1\bin\ethminer.exe --farm-recheck 200 -G -S eu1.ethermine.org:4444 -FS us1.ethermine.org:4444 -O %ETH_WALLET_ADDRESS%.%MINER_NAME% -allpools 1
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
@@ -405,7 +405,7 @@ pause
 
 :ethereum3
 ECHO AMD and NVIDIA Claymore - Eth Only Ethermine.org
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool us1.ethermine.org:4444 -ewal %ETH_WALLET_ADDRESS%.%MINER_NAME% -epsw %WORKER_PASSWORD%
+Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool us1.ethermine.org:4444 -ewal %ETH_WALLET_ADDRESS%.%MINER_NAME% -epsw %WORKER_PASSWORD% -allpools 1
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
