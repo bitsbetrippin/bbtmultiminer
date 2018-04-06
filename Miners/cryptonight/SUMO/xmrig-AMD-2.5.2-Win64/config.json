@@ -1,0 +1,27 @@
+{
+    "algo": "cryptonight",
+    "background": false,
+    "colors": true,
+    "donate-level": 1,
+    "log-file": null,
+    "print-time": 60,
+    "retries": 5,
+    "retry-pause": 5,
+    "syslog": false,
+    "threads": null,
+    "pools": [
+        {
+            "url": "sumo.easyhash.io:3332",
+            "user": "Sumoo4mPu6HhURuCcHnWhxfDP3x4PxqeAfXoR8ysiEqZF3i5XSVstHx2JNVqUtpoeAapmShkYiufLHGRa8jAysFm54QjjvGje7u",
+            "pass": "x",
+            "keepalive": true,
+            "nicehash": false,
+            "variant": -1
+        }
+    ],
+    "api": {
+        "port": 0,
+        "access-token": null,
+        "worker-id": null
+    }
+}

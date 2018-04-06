@@ -1,0 +1,27 @@
+{
+    "algo": "cryptonight",
+    "background": false,
+    "colors": true,
+    "donate-level": 1,
+    "log-file": null,
+    "print-time": 60,
+    "retries": 5,
+    "retry-pause": 5,
+    "syslog": false,
+    "threads": null,
+    "pools": [
+        {
+            "url": "krb.easyhash.io:3532",
+            "user": "KcFb4s1bNMuhcCMPE8xcYmjnZdSjDdXZ7BS1NtofiDX7UKmkJzVRxipRQ7uPhevtdR2TdDsBFyvwtGVPnJsozYGVUB8s2SD",
+            "pass": "x",
+            "keepalive": true,
+            "nicehash": false,
+            "variant": -1
+        }
+    ],
+    "api": {
+        "port": 0,
+        "access-token": null,
+        "worker-id": null
+    }
+}
