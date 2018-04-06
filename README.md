@@ -1,54 +1,41 @@
-# BBT Multi Miner v6.0 - 6 April 2018
+# bbtmultiminer
 
-BBT MultiMiner is the official BitsBeTrippin MultiMiner Tool produced by BBT Carter (and commits by a range of open source community members).
+BBT MultiMiner is the official BitsBeTrippin MultiMiner Tool produced by BBT Carter.
 
 Created, updated and maintained by www.bitsbetrippin.io
 
 Supported by donations and great viewers of www.youtube.com/c/bitsbetrippin
 
-Major Overhall Update
+- 27 Individual Miner builds
+- AMD, NVIDIA Miners included
+- 29 Different Mineable Cryptocurrencies
+- Cryptos supported:
+ETH,ETC,XMR,SIA,ZEC,PASC,HUSH,LBC,DCR,DBIX,UBQ,EXP,DGD,FTC,MUS,ZCL,ZEN,BTG,PIRL,ETN,VTC,KMD,ELLA,SUMO,KRB,MONA
 
-*Notable Info
-- This version supports the new Monero v7 Fork update with CAST XMR 0.9.1
+Latest Update v5.7
 
-*Miner Software Changes
-- Removed all previous miners
-- Updated Claymore Eth Dual Miner to version 11.6
-- Updated DTSM Miner to version 0.6
-- Updated CAST XMR Vega to version 0.9.2 *Monero v7 fixed
-- Updated xmrig AMD, NVIDIA and CPU version to 2.5.2 *Monero v7 fixed
-- Updated nsgminer to 0.9.4 (for neoscrypt, feathercoin)
-- Added nevermore x16r/x16s CCMiner 0.2.2 
-- Added ccminer-suprnova edition 1.6.0
-- Added ccminer-enemy edition 1.3.0
-- Added Brians sgminer x16r for AMD 0.4.0
-- Added Mkxminer 3.1.0 for Lyra2rev2
+Change Log
 
-*Mining Coin Changes
-- Complete restructure of menu
-- Added Ravencoin
-- Added Bitcoin Private
-- Added Bulkwark
-- Added Pigeoncoin
-- Removed all ASIC minable coins
-  --Siacoin
-  --PASC
-  --LBRY Credits
-  --Decred
-- Removed all instances of dual mining
-- Removed DBIX
-- Removed HUSH
-- Removed Bitcoin Gold
+* Updated Claymore Ethereum Dual Miner to 10.2
+* Removed -di entry on ETN RX option, left in from testing in previous option
+* Removed STAK-XMR Miner CPU & GPU as it was tossing false positive on antivirus
+* Added CAST XMR Miner - updated XMR, ETN, SUMO, KRB options for Vega Cards
+* Removed electoneum.fr pool as many reported unstability
+* Added easyhash.io for electroneum, sumokoin, karbowanec
+* Aligned all of the menu item titles (yes, OCD folks will be happy)
+* Added Coin Tickers to each Menu Title
+* Corrected ZENCash title, previously named ZENCoin in our MultiMiner
+* Added HODLPool ZEC Only Category (MSG Us for your own Pool Category)
+* Swapped HUSH Pools from Suprnov.cc to HODLPool (send us msg if you want suprnova back)
 
-*Pool Changes
-- Removed many pools, check the pool coins are now targeted for!
-- Depricated all HODLPool but ubiq
-- Depricated all minertopia pools
-- Added Threeyed Pool
-- Added bsod.pw pool
-- Added Blockcruncher
-- Added Zhash.pro
-- Added btcprivate.org
+Coins added
+* Added Ellaism
+* Added Sumokoin
+* Added Karbowanec
+* Added Monacoin
 
-** NOTE **
-All configurations for Cryptonite need to be updated in JSON files in miners/cryptonight subfolders for appropriate coins. This will be changed in the future and consolidated to my_info.bat
+Pools added
+* Additional HODLPool options for ZEC, HUSH, ZEN, KMD
+* Added easyhash.io
+* Added cryptobitpool
+* Added ellaismpool
