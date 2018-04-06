@@ -1,0 +1,6 @@
+-xpool stratum+tcp://xmr-eu.dwarfpool.com:8005
+-xwal 449TGay4WWJPwsXrWZfkMoPtDbJp8xoSzFuyjRt3iaM4bRHdzw4qoDu26FdcGx67BMDS1r2bnp7f5hF6xdPWWrD3Q3Wf7G6
+-xpsw x
+
+#-allpools 1
+#-tt 75

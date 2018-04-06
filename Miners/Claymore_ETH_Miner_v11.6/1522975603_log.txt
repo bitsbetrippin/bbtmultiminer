@@ -1,0 +1,234 @@
+19:46:43:989	445c	Check and remove old log files...
+19:46:43:993	445c	args: -epool us1.ethermine.org:4444 -ewal 0xF897EaFdb787AcD4Da5e2EB5003E42dc1Ef86d39.bitsbetrippin01 -epsw x 
+19:46:43:995	445c	
+19:46:43:998	445c	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+19:46:44:001	445c	บ                Claymore's Dual GPU Miner - v11.6               บ
+19:46:44:004	445c	บ              ETH + DCR/SIA/LBC/PASC/BLAKE2S/KECCAK             บ
+19:46:44:007	445c	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+19:46:44:010	445c	
+19:46:44:013	445c	b571 
+19:46:44:218	445c	ETH: 1 pool is specified
+19:46:44:222	445c	Main Ethereum pool is us1.ethermine.org:4444
+19:46:44:225	445c	DCR: 0 pool is specified
+19:46:44:633	445c	OpenCL platform: NVIDIA CUDA
+19:46:44:636	445c	AMD OpenCL platform not found 
+19:46:45:161	445c	CUDA initializing...
+
+19:46:45:164	445c	NVIDIA Cards available: 1 
+19:46:45:167	445c	CUDA Driver Version/Runtime Version: 9.1/8.0
+19:46:45:171	445c	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+19:46:45:173	445c	Total cards: 1 
+19:46:49:178	445c	No AMD cards in the list, ADL library will not be used.
+19:46:49:185	445c	NVML version: 9.388.59
+19:46:51:794	445c	SSL: Imported 52 certificates from local storage
+19:46:51:819	5acc	ETH: Stratum - connecting to 'us1.ethermine.org' <18.219.59.155> port 4444 (unsecure)
+19:46:51:864	5acc	sent: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0xF897EaFdb787AcD4Da5e2EB5003E42dc1Ef86d39.bitsbetrippin01", "x"], "id": 2, "method": "eth_submitLogin"}
+
+19:46:51:868	5acc	ETH: Stratum - Connected (us1.ethermine.org:4444) (unsecure)
+19:46:51:898	445c	No pool specified for Decred! Ethereum-only mining mode is enabled
+19:46:51:902	445c	ETHEREUM-ONLY MINING MODE ENABLED (-mode 1)
+19:46:51:902	5acc	buf: {"id":2,"jsonrpc":"2.0","result":true}
+
+19:46:51:909	445c	ETH: eth-proxy stratum mode
+19:46:51:912	445c	Watchdog enabled
+19:46:51:916	5acc	ETH: Authorized
+19:46:51:920	5acc	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:46:51:916	445c	Remote management (READ-ONLY MODE) is enabled on port 3333
+19:46:51:926	445c	
+19:46:51:953	5acc	buf: {"id":3,"jsonrpc":"2.0","result":["0xa139803dd3d1d954b4ec8c5af595ef66b704c43462253bbfa2b3ce5bc613e173","0xa74dd84414948aba4bfd6580908dbf9c32a494aa336609746d19a35bb4cccb24","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x523789"]}
+
+19:46:51:985	38ec	Setting DAG epoch #179...
+19:46:53:773	38ec	Setting DAG epoch #179 for GPU0
+19:46:53:778	38ec	Create GPU buffer for GPU0
+19:47:01:754	5acc	buf: {"id":0,"jsonrpc":"2.0","result":["0x9eb5224206e19330a335fb841220f2a7328dc1dd674fafa6d477423d28121f4c","0xa74dd84414948aba4bfd6580908dbf9c32a494aa336609746d19a35bb4cccb24","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x52378a"]}
+
+19:47:09:333	38ec	GPU0 DAG creation time - 5174 ms
+19:47:09:341	5acc	ETH: 04/05/18-19:47:09 - New job from us1.ethermine.org:4444
+19:47:09:341	38ec	Setting DAG epoch #179 for GPU0 done
+19:47:09:345	5acc	target: 0x0000000112e0be82 (diff: 4000MH), epoch 179(2.40GB)
+19:47:09:351	5acc	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+19:47:09:354	5acc	ETH: GPU0 0.000 Mh/s
+19:47:09:357	5acc	ETH: checking pool connection...
+19:47:09:360	5acc	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:47:09:385	2d18	
+19:47:09:388	2d18	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+19:47:09:391	2d18	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+19:47:09:394	5acc	buf: {"id":3,"jsonrpc":"2.0","result":["0x9eb5224206e19330a335fb841220f2a7328dc1dd674fafa6d477423d28121f4c","0xa74dd84414948aba4bfd6580908dbf9c32a494aa336609746d19a35bb4cccb24","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x52378a"]}
+
+19:47:09:398	2d18	ETH: GPU0 0.000 Mh/s
+19:47:09:401	2d18	Incorrect ETH shares: none
+19:47:09:404	2d18	1 minute average ETH total speed: 0.000 Mh/s
+19:47:09:407	2d18	Pool switches: ETH - 0
+19:47:09:410	2d18	Current ETH share target: 0x0000000112e0be82 (diff: 4000MH), epoch 179(2.40GB)
+19:47:09:413	2d18	Current -dcri values: -dcri 30
+19:47:09:417	2d18	GPU0 t=47C fan=31%
+19:47:09:420	2d18	
+19:47:11:959	5acc	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x4013510", "0x000000000000000000000000000000000000000000000000000000004298be59"]}
+
+19:47:11:990	5acc	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:47:12:626	587c	checked ETH share on CPU, spent 4ms
+19:47:12:630	587c	sent: {"id":10,"method":"eth_submitWork","params":["0x491136100d0e6f3c","0x9eb5224206e19330a335fb841220f2a7328dc1dd674fafa6d477423d28121f4c","0xc8c7ff8d8ebd02fa0db2c28027e995b0c254bcee43bc27fb646e49254a52557b"]}
+
+19:47:12:634	587c	ETH: put share nonce 491136100d0e6f3c
+19:47:12:638	5acc	ETH: 04/05/18-19:47:12 - SHARE FOUND - (GPU 0)
+19:47:12:659	5acc	buf: {"id":10,"jsonrpc":"2.0","result":true}
+
+19:47:12:662	5acc	ETH: Share accepted (31 ms)!
+19:47:14:237	3a50	GPU0 t=50C fan=32%
+19:47:14:314	2280	em hbt: 0, fm hbt: 16, 
+19:47:14:318	2280	watchdog - thread 0 (gpu0), hb time 140
+19:47:14:321	2280	watchdog - thread 1 (gpu0), hb time 453
+19:47:14:864	5acc	buf: {"id":0,"jsonrpc":"2.0","result":["0x56c5aa9143d8fe40fde1c17670308bd91cd1057cdd521644bfb8ac392b3f715f","0xa74dd84414948aba4bfd6580908dbf9c32a494aa336609746d19a35bb4cccb24","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x52378b"]}
+
+19:47:14:868	5acc	ETH: 04/05/18-19:47:14 - New job from us1.ethermine.org:4444
+19:47:14:872	5acc	target: 0x0000000112e0be82 (diff: 4000MH), epoch 179(2.40GB)
+19:47:14:873	5acc	ETH - Total Speed: 67.317 Mh/s, Total Shares: 1, Rejected: 0, Time: 00:00
+19:47:14:876	5acc	ETH: GPU0 67.317 Mh/s
+19:47:19:364	5acc	ETH: checking pool connection...
+19:47:19:368	5acc	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:47:19:424	5acc	buf: {"id":3,"jsonrpc":"2.0","result":["0x56c5aa9143d8fe40fde1c17670308bd91cd1057cdd521644bfb8ac392b3f715f","0xa74dd84414948aba4bfd6580908dbf9c32a494aa336609746d19a35bb4cccb24","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x52378b"]}
+
+19:47:21:272	2d18	
+19:47:21:276	2d18	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+19:47:21:279	2d18	ETH - Total Speed: 66.970 Mh/s, Total Shares: 1, Rejected: 0, Time: 00:00
+19:47:21:283	2d18	ETH: GPU0 66.970 Mh/s
+19:47:21:286	2d18	Incorrect ETH shares: none
+19:47:21:289	2d18	1 minute average ETH total speed: 67.053 Mh/s
+19:47:21:290	2d18	Pool switches: ETH - 0
+19:47:21:293	2d18	Current ETH share target: 0x0000000112e0be82 (diff: 4000MH), epoch 179(2.40GB)
+19:47:21:296	2d18	Current -dcri values: -dcri 30
+19:47:21:300	2d18	GPU0 t=52C fan=34%
+19:47:21:304	2d18	
+19:47:21:705	5acc	buf: {"id":0,"jsonrpc":"2.0","result":["0xe22b6f0f55f1936562fde68a1e6ed18bb8a40250ca3bcb7c7eb511427fe98969","0xa74dd84414948aba4bfd6580908dbf9c32a494aa336609746d19a35bb4cccb24","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x52378c"]}
+
+19:47:21:709	5acc	ETH: 04/05/18-19:47:21 - New job from us1.ethermine.org:4444
+19:47:21:713	5acc	target: 0x0000000112e0be82 (diff: 4000MH), epoch 179(2.40GB)
+19:47:21:716	5acc	ETH - Total Speed: 66.384 Mh/s, Total Shares: 1, Rejected: 0, Time: 00:00
+19:47:21:719	5acc	ETH: GPU0 66.384 Mh/s
+19:47:29:380	5acc	ETH: checking pool connection...
+19:47:29:385	5acc	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:47:29:429	5acc	buf: {"id":3,"jsonrpc":"2.0","result":["0xe22b6f0f55f1936562fde68a1e6ed18bb8a40250ca3bcb7c7eb511427fe98969","0xa74dd84414948aba4bfd6580908dbf9c32a494aa336609746d19a35bb4cccb24","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x52378c"]}
+
+19:47:31:974	5acc	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x4032391", "0x000000000000000000000000000000000000000000000000000000004298be59"]}
+
+19:47:32:005	5acc	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:47:37:472	38ec	checked ETH share on CPU, spent 4ms
+19:47:37:476	38ec	sent: {"id":10,"method":"eth_submitWork","params":["0x37729cc03f07dad6","0xe22b6f0f55f1936562fde68a1e6ed18bb8a40250ca3bcb7c7eb511427fe98969","0xe59d2d93b92970bbdd1ff3c79be0dc5e7312a0223ad069c0a617e3c9fad5ea9a"]}
+
+19:47:37:480	38ec	ETH: put share nonce 37729cc03f07dad6
+19:47:37:484	5acc	ETH: 04/05/18-19:47:37 - SHARE FOUND - (GPU 0)
+19:47:37:520	5acc	buf: {"id":10,"jsonrpc":"2.0","result":true}
+
+19:47:37:524	5acc	ETH: Share accepted (46 ms)!
+19:47:39:092	38ec	checked ETH share on CPU, spent 4ms
+19:47:39:096	38ec	sent: {"id":10,"method":"eth_submitWork","params":["0x37729cc04636d678","0xe22b6f0f55f1936562fde68a1e6ed18bb8a40250ca3bcb7c7eb511427fe98969","0x2fc1c1fc4728358688a372cb6e3b9ce2208b7a9c8e86e14eded533e3b496dbf7"]}
+
+19:47:39:099	38ec	ETH: put share nonce 37729cc04636d678
+19:47:39:102	5acc	ETH: 04/05/18-19:47:39 - SHARE FOUND - (GPU 0)
+19:47:39:133	5acc	buf: {"id":10,"jsonrpc":"2.0","result":true}
+
+19:47:39:138	5acc	ETH: Share accepted (31 ms)!
+19:47:39:396	5acc	ETH: checking pool connection...
+19:47:39:399	5acc	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:47:39:437	5acc	buf: {"id":3,"jsonrpc":"2.0","result":["0xe22b6f0f55f1936562fde68a1e6ed18bb8a40250ca3bcb7c7eb511427fe98969","0xa74dd84414948aba4bfd6580908dbf9c32a494aa336609746d19a35bb4cccb24","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x52378c"]}
+
+19:47:40:264	5acc	buf: {"id":0,"jsonrpc":"2.0","result":["0xdd4e98523ff19f4e0aef1747772fa8447247b38eba6cc00167da06a246d7170c","0xa74dd84414948aba4bfd6580908dbf9c32a494aa336609746d19a35bb4cccb24","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x52378d"]}
+
+19:47:40:268	5acc	ETH: 04/05/18-19:47:40 - New job from us1.ethermine.org:4444
+19:47:40:272	5acc	target: 0x0000000112e0be82 (diff: 4000MH), epoch 179(2.40GB)
+19:47:40:276	5acc	ETH - Total Speed: 67.181 Mh/s, Total Shares: 3, Rejected: 0, Time: 00:00
+19:47:40:280	5acc	ETH: GPU0 67.181 Mh/s
+19:47:44:248	3a50	GPU0 t=59C fan=40%
+19:47:44:406	2280	em hbt: 0, fm hbt: 31, 
+19:47:44:409	2280	watchdog - thread 0 (gpu0), hb time 62
+19:47:44:413	2280	watchdog - thread 1 (gpu0), hb time 391
+19:47:45:337	5acc	buf: {"id":0,"jsonrpc":"2.0","result":["0xad458469c04ce40117f7192efb5043e300a59662f49d2e986aa7a91b6ebff515","0xa74dd84414948aba4bfd6580908dbf9c32a494aa336609746d19a35bb4cccb24","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x52378e"]}
+
+19:47:45:341	5acc	ETH: 04/05/18-19:47:45 - New job from us1.ethermine.org:4444
+19:47:45:345	5acc	target: 0x0000000112e0be82 (diff: 4000MH), epoch 179(2.40GB)
+19:47:45:349	5acc	ETH - Total Speed: 65.606 Mh/s, Total Shares: 3, Rejected: 0, Time: 00:00
+19:47:45:376	5acc	ETH: GPU0 65.606 Mh/s
+19:47:49:412	5acc	ETH: checking pool connection...
+19:47:49:416	5acc	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:47:49:457	5acc	buf: {"id":3,"jsonrpc":"2.0","result":["0xad458469c04ce40117f7192efb5043e300a59662f49d2e986aa7a91b6ebff515","0xa74dd84414948aba4bfd6580908dbf9c32a494aa336609746d19a35bb4cccb24","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x52378e"]}
+
+19:47:51:989	5acc	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x3fe1704", "0x000000000000000000000000000000000000000000000000000000004298be59"]}
+
+19:47:52:044	5acc	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:47:56:258	5acc	buf: {"id":0,"jsonrpc":"2.0","result":["0x5d18d9ec01c2d4de0d4e1287fb4b3eb61030cc3f670452792855480d6ac7614c","0xa74dd84414948aba4bfd6580908dbf9c32a494aa336609746d19a35bb4cccb24","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x52378f"]}
+
+19:47:56:262	5acc	ETH: 04/05/18-19:47:56 - New job from us1.ethermine.org:4444
+19:47:56:266	5acc	target: 0x0000000112e0be82 (diff: 4000MH), epoch 179(2.40GB)
+19:47:56:270	5acc	ETH - Total Speed: 65.105 Mh/s, Total Shares: 3, Rejected: 0, Time: 00:01
+19:47:56:273	5acc	ETH: GPU0 65.105 Mh/s
+19:47:59:428	5acc	ETH: checking pool connection...
+19:47:59:432	5acc	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:47:59:472	5acc	buf: {"id":3,"jsonrpc":"2.0","result":["0x5d18d9ec01c2d4de0d4e1287fb4b3eb61030cc3f670452792855480d6ac7614c","0xa74dd84414948aba4bfd6580908dbf9c32a494aa336609746d19a35bb4cccb24","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x52378f"]}
+
+19:47:59:677	5acc	buf: {"id":0,"jsonrpc":"2.0","result":["0xcfb9d39c2a1c33eac888ba8380ee0ec4f2cab46f58842f33a37081f0edc03e63","0xa74dd84414948aba4bfd6580908dbf9c32a494aa336609746d19a35bb4cccb24","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x523790"]}
+
+19:47:59:681	5acc	ETH: 04/05/18-19:47:59 - New job from us1.ethermine.org:4444
+19:47:59:685	5acc	target: 0x0000000112e0be82 (diff: 4000MH), epoch 179(2.40GB)
+19:47:59:688	5acc	ETH - Total Speed: 66.797 Mh/s, Total Shares: 3, Rejected: 0, Time: 00:01
+19:47:59:692	5acc	ETH: GPU0 66.797 Mh/s
+19:48:09:443	5acc	ETH: checking pool connection...
+19:48:09:447	5acc	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:48:09:476	5acc	buf: {"id":3,"jsonrpc":"2.0","result":["0xcfb9d39c2a1c33eac888ba8380ee0ec4f2cab46f58842f33a37081f0edc03e63","0xa74dd84414948aba4bfd6580908dbf9c32a494aa336609746d19a35bb4cccb24","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x523790"]}
+
+19:48:12:005	5acc	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x3dc6b87", "0x000000000000000000000000000000000000000000000000000000004298be59"]}
+
+19:48:12:035	5acc	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:48:13:569	587c	checked ETH share on CPU, spent 4ms
+19:48:13:574	587c	sent: {"id":10,"method":"eth_submitWork","params":["0x751e8b90372a8622","0xcfb9d39c2a1c33eac888ba8380ee0ec4f2cab46f58842f33a37081f0edc03e63","0xb48842418f111756f6717b2ac50309b2212ef7aab7089116efa7a0eaa3e5efe7"]}
+
+19:48:13:577	587c	ETH: put share nonce 751e8b90372a8622
+19:48:13:581	5acc	ETH: 04/05/18-19:48:13 - SHARE FOUND - (GPU 0)
+19:48:13:604	5acc	buf: {"id":10,"jsonrpc":"2.0","result":true}
+
+19:48:13:608	5acc	ETH: Share accepted (32 ms)!
+19:48:14:261	3a50	GPU0 t=64C fan=44%
+19:48:14:498	2280	em hbt: 0, fm hbt: 31, 
+19:48:14:502	2280	watchdog - thread 0 (gpu0), hb time 594
+19:48:14:506	2280	watchdog - thread 1 (gpu0), hb time 266
+19:48:19:459	5acc	ETH: checking pool connection...
+19:48:19:463	5acc	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:48:19:501	5acc	buf: {"id":3,"jsonrpc":"2.0","result":["0xcfb9d39c2a1c33eac888ba8380ee0ec4f2cab46f58842f33a37081f0edc03e63","0xa74dd84414948aba4bfd6580908dbf9c32a494aa336609746d19a35bb4cccb24","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x523790"]}
+
+19:48:29:080	2d18	
+19:48:29:085	2d18	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+19:48:29:088	2d18	ETH - Total Speed: 67.071 Mh/s, Total Shares: 4, Rejected: 0, Time: 00:01
+19:48:29:092	2d18	ETH: GPU0 67.071 Mh/s
+19:48:29:095	2d18	Incorrect ETH shares: none
+19:48:29:098	2d18	1 minute average ETH total speed: 65.937 Mh/s
+19:48:29:102	2d18	Pool switches: ETH - 0
+19:48:29:105	2d18	Current ETH share target: 0x0000000112e0be82 (diff: 4000MH), epoch 179(2.40GB)
+19:48:29:108	2d18	Current -dcri values: -dcri 30
+19:48:29:112	2d18	GPU0 t=66C fan=46%
+19:48:29:149	2d18	
+19:48:29:474	5acc	ETH: checking pool connection...
+19:48:29:478	5acc	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:48:29:507	5acc	buf: {"id":3,"jsonrpc":"2.0","result":["0xcfb9d39c2a1c33eac888ba8380ee0ec4f2cab46f58842f33a37081f0edc03e63","0xa74dd84414948aba4bfd6580908dbf9c32a494aa336609746d19a35bb4cccb24","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x523790"]}
+
+19:48:32:021	5acc	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x4027930", "0x000000000000000000000000000000000000000000000000000000004298be59"]}
+
+19:48:32:052	5acc	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:48:33:173	4cc8	Quit, please wait...

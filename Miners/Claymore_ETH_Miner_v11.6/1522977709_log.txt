@@ -1,0 +1,43 @@
+20:21:49:174	4528	Check and remove old log files...
+20:21:49:178	4528	args: -epool us.gmc.epool.io:8008 -ewal 0x9507e04bd57caeee18a6cae2d70ca044cffcf27d -eworker bitsbetrippin01 -epsw x -allpools 1 -esm 2 
+20:21:49:180	4528	
+20:21:49:181	4528	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+20:21:49:184	4528	บ                Claymore's Dual GPU Miner - v11.6               บ
+20:21:49:186	4528	บ              ETH + DCR/SIA/LBC/PASC/BLAKE2S/KECCAK             บ
+20:21:49:189	4528	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+20:21:49:192	4528	
+20:21:49:195	4528	b571 
+20:21:49:398	4528	ETH: 1 pool is specified
+20:21:49:402	4528	Main Ethereum pool is us.gmc.epool.io:8008
+20:21:49:404	4528	DCR: 0 pool is specified
+20:21:49:448	4528	OpenCL platform: NVIDIA CUDA
+20:21:49:452	4528	AMD OpenCL platform not found 
+20:21:49:808	4528	CUDA initializing...
+
+20:21:49:812	4528	NVIDIA Cards available: 1 
+20:21:49:815	4528	CUDA Driver Version/Runtime Version: 9.1/8.0
+20:21:49:818	4528	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+20:21:49:821	4528	Total cards: 1 
+20:21:53:826	4528	No AMD cards in the list, ADL library will not be used.
+20:21:53:832	4528	NVML version: 9.388.59
+20:21:54:773	4528	SSL: Imported 52 certificates from local storage
+20:21:54:785	2e90	ETH: Stratum - connecting to 'us.gmc.epool.io' <165.227.102.207> port 8008 (unsecure)
+20:21:54:844	2e90	sent: {"id": 1, "method": "mining.subscribe", "params": []}
+
+20:21:54:847	2e90	sent: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+20:21:54:850	2e90	sent: {"id": 2, "method": "mining.authorize", "params": ["0x9507e04bd57caeee18a6cae2d70ca044cffcf27d","x"]}
+
+20:21:54:850	2e90	ETH: Stratum - Connected (us.gmc.epool.io:8008) (unsecure)
+20:21:54:877	4528	No pool specified for Decred! Ethereum-only mining mode is enabled
+20:21:54:881	4528	ETHEREUM-ONLY MINING MODE ENABLED (-mode 1)
+20:21:54:884	4528	ETH: miner-proxy stratum mode
+20:21:54:888	4528	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+20:21:54:891	4528	Watchdog enabled
+20:21:54:895	4528	Remote management (READ-ONLY MODE) is enabled on port 3333
+20:21:54:897	4528	
+20:21:54:895	2e90	buf: {"id":1,"jsonrpc":"2.0","result":null,"error":{"code":-3,"message":"Method not found"}}
+
+20:21:54:904	2e90	Socket was closed remotely (by pool)
+20:21:54:907	2e90	ETH: Job timeout, disconnect, retry in 20 sec...

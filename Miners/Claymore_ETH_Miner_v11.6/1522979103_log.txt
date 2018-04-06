@@ -1,0 +1,61 @@
+20:45:03:722	4024	Check and remove old log files...
+20:45:03:726	4024	args: -epool stratum+tcp://us.expmine.pro:9009 -ewal 0x32ce762bcbb758702b7e830925477976ff514c21 -epsw x -esm 0 -allcoins exp -allpools 1 
+20:45:03:729	4024	
+20:45:03:732	4024	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+20:45:03:735	4024	บ                Claymore's Dual GPU Miner - v11.6               บ
+20:45:03:738	4024	บ              ETH + DCR/SIA/LBC/PASC/BLAKE2S/KECCAK             บ
+20:45:03:741	4024	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+20:45:03:744	4024	
+20:45:03:747	4024	b571 
+20:45:03:951	4024	ETH: 1 pool is specified
+20:45:03:955	4024	Main Ethereum pool is us.expmine.pro:9009
+20:45:03:958	4024	DCR: 0 pool is specified
+20:45:04:001	4024	OpenCL platform: NVIDIA CUDA
+20:45:04:005	4024	AMD OpenCL platform not found 
+20:45:04:357	4024	CUDA initializing...
+
+20:45:04:361	4024	NVIDIA Cards available: 1 
+20:45:04:364	4024	CUDA Driver Version/Runtime Version: 9.1/8.0
+20:45:04:368	4024	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+20:45:04:372	4024	Total cards: 1 
+20:45:08:376	4024	No AMD cards in the list, ADL library will not be used.
+20:45:08:383	4024	NVML version: 9.388.59
+20:45:09:276	4024	SSL: Imported 52 certificates from local storage
+20:45:09:380	4024	No pool specified for Decred! Ethereum-only mining mode is enabled
+20:45:09:384	4024	ETHEREUM-ONLY MINING MODE ENABLED (-mode 1)
+20:45:09:388	4024	ETH: eth-proxy stratum mode
+20:45:09:391	4024	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+20:45:09:394	4024	"-allcoins" option is set, default pools will be used for devfee, check "Readme" file for details.
+20:45:09:398	4024	Watchdog enabled
+20:45:09:401	4024	Remote management (READ-ONLY MODE) is enabled on port 3333
+20:45:09:404	4024	
+20:45:09:443	41a0	ETH: Stratum - connecting to 'us.expmine.pro' <45.77.69.193> port 9009 (unsecure)
+20:45:09:532	41a0	sent: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0x32ce762bcbb758702b7e830925477976ff514c21", "x"], "id": 2, "method": "eth_submitLogin"}
+
+20:45:09:536	41a0	ETH: Stratum - Connected (us.expmine.pro:9009) (unsecure)
+20:45:09:610	41a0	buf: {"id":2,"jsonrpc":"2.0","result":true}
+
+20:45:09:614	41a0	ETH: Authorized
+20:45:09:618	41a0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+20:45:09:712	41a0	buf: {"id":3,"jsonrpc":"2.0","result":["0x35b976597510538331b41208c598a145c48b9c382e02b3c3ff431d4ef444a985","0x4b77c50b31c33143e52b344c4542cb43c2683c94a707e052c01f27e05741f77b","0x0225c17d04dad2965cc5a02a23e254c0c3f75d9178046aeb27ce1ca574"]}
+
+20:45:09:749	33d4	Setting DAG epoch #36...
+20:45:10:627	33d4	Setting DAG epoch #36 for GPU0
+20:45:10:632	33d4	Create GPU buffer for GPU0
+20:45:13:340	33d4	GPU0 DAG creation time - 2650 ms
+20:45:13:344	33d4	Setting DAG epoch #36 for GPU0 done
+20:45:17:799	30f8	
+20:45:17:803	30f8	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+20:45:17:806	30f8	ETH - Total Speed: 67.530 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+20:45:17:810	30f8	ETH: GPU0 67.530 Mh/s
+20:45:17:814	30f8	Incorrect ETH shares: none
+20:45:17:818	30f8	1 minute average ETH total speed: 67.446 Mh/s
+20:45:17:821	30f8	Pool switches: ETH - 0
+20:45:17:842	30f8	Current ETH share target: 0x0000000225c17d04 (diff: 2000MH), epoch 36(1.28GB)
+20:45:17:846	30f8	Current -dcri values: -dcri 30
+20:45:17:850	30f8	GPU0 t=49C fan=31%
+20:45:17:853	30f8	
+20:45:19:591	185c	Quit, please wait...

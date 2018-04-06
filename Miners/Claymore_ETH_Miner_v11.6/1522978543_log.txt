@@ -1,0 +1,81 @@
+20:35:43:372	2dfc	Check and remove old log files...
+20:35:43:377	2dfc	args: -epool stratum+tcp://us-nj-01.pools.hppcg.com:8005 -ewal 0x810e25250226738d2cef840a6fC3ACDed207e4E0 -epsw x -allpools 1 -allcoins exp -eworker bitsbetrippin01 
+20:35:43:380	2dfc	
+20:35:43:383	2dfc	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+20:35:43:386	2dfc	บ                Claymore's Dual GPU Miner - v11.6               บ
+20:35:43:388	2dfc	บ              ETH + DCR/SIA/LBC/PASC/BLAKE2S/KECCAK             บ
+20:35:43:391	2dfc	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+20:35:43:394	2dfc	
+20:35:43:397	2dfc	b571 
+20:35:43:600	2dfc	ETH: 1 pool is specified
+20:35:43:604	2dfc	Main Ethereum pool is us-nj-01.pools.hppcg.com:8005
+20:35:43:607	2dfc	DCR: 0 pool is specified
+20:35:43:654	2dfc	OpenCL platform: NVIDIA CUDA
+20:35:43:657	2dfc	AMD OpenCL platform not found 
+20:35:44:011	2dfc	CUDA initializing...
+
+20:35:44:015	2dfc	NVIDIA Cards available: 1 
+20:35:44:018	2dfc	CUDA Driver Version/Runtime Version: 9.1/8.0
+20:35:44:021	2dfc	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+20:35:44:024	2dfc	Total cards: 1 
+20:35:48:028	2dfc	No AMD cards in the list, ADL library will not be used.
+20:35:48:035	2dfc	NVML version: 9.388.59
+20:35:48:942	2dfc	SSL: Imported 52 certificates from local storage
+20:35:48:954	52f0	ETH: Stratum - connecting to 'us-nj-01.pools.hppcg.com' <209.222.10.159> port 8005 (unsecure)
+20:35:49:020	52f0	sent: {"worker": "bitsbetrippin01", "jsonrpc": "2.0", "params": ["0x810e25250226738d2cef840a6fC3ACDed207e4E0", "x"], "id": 2, "method": "eth_submitLogin"}
+
+20:35:49:024	52f0	ETH: Stratum - Connected (us-nj-01.pools.hppcg.com:8005) (unsecure)
+20:35:49:046	2dfc	No pool specified for Decred! Ethereum-only mining mode is enabled
+20:35:49:050	2dfc	ETHEREUM-ONLY MINING MODE ENABLED (-mode 1)
+20:35:49:053	2dfc	ETH: eth-proxy stratum mode
+20:35:49:056	2dfc	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+20:35:49:059	2dfc	"-allcoins" option is set, default pools will be used for devfee, check "Readme" file for details.
+20:35:49:062	2dfc	Watchdog enabled
+20:35:49:065	2dfc	Remote management (READ-ONLY MODE) is enabled on port 3333
+20:35:49:068	52f0	buf: {"id":2,"jsonrpc":"2.0","result":true}
+
+20:35:49:073	2dfc	
+20:35:49:076	52f0	ETH: Authorized
+20:35:49:080	52f0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+20:35:49:124	52f0	buf: {"id":3,"jsonrpc":"2.0","result":["0x2981308563a26eb518b429a31602acd4dfe205d7bdc7ffff2cfeb1a6e706a742","0x5197b2a3898b31d4d8afb33e2216b2ef6e166b09122e514323701e9af3b09643","0xfffd010bf9d421a15cb9f012ffe4e38a39f386fe0c676dd04333501a"]}
+
+20:35:49:197	4ce4	Setting DAG epoch #38...
+20:35:50:140	4ce4	Setting DAG epoch #38 for GPU0
+20:35:50:144	4ce4	Create GPU buffer for GPU0
+20:35:52:151	4e24	
+20:35:52:155	4e24	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+20:35:52:158	4e24	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+20:35:52:161	4e24	ETH: GPU0 0.000 Mh/s
+20:35:52:164	4e24	Incorrect ETH shares: none
+20:35:52:167	4e24	1 minute average ETH total speed: 0.000 Mh/s
+20:35:52:168	4e24	Pool switches: ETH - 0
+20:35:52:171	4e24	Current ETH share target: 0x00000000fffd010b (diff: 4295MH), epoch 38(1.30GB)
+20:35:52:174	4e24	Current -dcri values: -dcri 30
+20:35:52:201	4e24	GPU0 t=47C fan=30%
+20:35:52:205	4e24	
+20:35:52:871	4ce4	GPU0 DAG creation time - 2670 ms
+20:35:52:875	4ce4	Setting DAG epoch #38 for GPU0 done
+20:35:53:535	4e24	
+20:35:53:539	4e24	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+20:35:53:542	4e24	ETH - Total Speed: 67.543 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+20:35:53:545	4e24	ETH: GPU0 67.543 Mh/s
+20:35:53:548	4e24	Incorrect ETH shares: none
+20:35:53:549	4e24	1 minute average ETH total speed: 67.408 Mh/s
+20:35:53:553	4e24	Pool switches: ETH - 0
+20:35:53:556	4e24	Current ETH share target: 0x00000000fffd010b (diff: 4295MH), epoch 38(1.30GB)
+20:35:53:559	4e24	Current -dcri values: -dcri 30
+20:35:53:563	4e24	GPU0 t=48C fan=30%
+20:35:53:566	4e24	
+20:35:54:825	4710	checked ETH share on CPU, spent 4ms
+20:35:54:829	4710	sent: {"worker":"bitsbetrippin01","id":10,"method":"eth_submitWork","params":["0xfe9ce22007bde416","0x2981308563a26eb518b429a31602acd4dfe205d7bdc7ffff2cfeb1a6e706a742","0xf714912d7db7a752a088457ec297a3c9436f64c291b2e960ba5ed6b22137929d"]}
+
+20:35:54:832	4710	ETH: put share nonce fe9ce22007bde416
+20:35:54:836	52f0	ETH: 04/05/18-20:35:54 - SHARE FOUND - (GPU 0)
+20:35:54:884	52f0	buf: {"id":10,"jsonrpc":"2.0","result":true}
+
+20:35:54:887	52f0	ETH: Share accepted (63 ms)!
+20:35:55:321	2ad0	Quit, please wait...

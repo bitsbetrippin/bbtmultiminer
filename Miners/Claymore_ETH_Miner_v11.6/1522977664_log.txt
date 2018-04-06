@@ -1,0 +1,122 @@
+20:21:04:357	3b8c	Check and remove old log files...
+20:21:04:362	3b8c	args: -epool us.gmc.epool.io:8008 -ewal 0x9507e04bd57caeee18a6cae2d70ca044cffcf27d -eworker bitsbetrippin01 -epsw x -allpools 1 
+20:21:04:366	3b8c	
+20:21:04:369	3b8c	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+20:21:04:372	3b8c	บ                Claymore's Dual GPU Miner - v11.6               บ
+20:21:04:375	3b8c	บ              ETH + DCR/SIA/LBC/PASC/BLAKE2S/KECCAK             บ
+20:21:04:376	3b8c	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+20:21:04:379	3b8c	
+20:21:04:381	3b8c	b571 
+20:21:04:583	3b8c	ETH: 1 pool is specified
+20:21:04:586	3b8c	Main Ethereum pool is us.gmc.epool.io:8008
+20:21:04:589	3b8c	DCR: 0 pool is specified
+20:21:04:636	3b8c	OpenCL platform: NVIDIA CUDA
+20:21:04:640	3b8c	AMD OpenCL platform not found 
+20:21:05:003	3b8c	CUDA initializing...
+
+20:21:05:007	3b8c	NVIDIA Cards available: 1 
+20:21:05:010	3b8c	CUDA Driver Version/Runtime Version: 9.1/8.0
+20:21:05:013	3b8c	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+20:21:05:016	3b8c	Total cards: 1 
+20:21:09:021	3b8c	No AMD cards in the list, ADL library will not be used.
+20:21:09:027	3b8c	NVML version: 9.388.59
+20:21:09:943	3b8c	SSL: Imported 52 certificates from local storage
+20:21:09:955	12b4	ETH: Stratum - connecting to 'us.gmc.epool.io' <165.227.102.207> port 8008 (unsecure)
+20:21:10:014	12b4	sent: {"worker": "bitsbetrippin01", "jsonrpc": "2.0", "params": ["0x9507e04bd57caeee18a6cae2d70ca044cffcf27d", "x"], "id": 2, "method": "eth_submitLogin"}
+
+20:21:10:018	12b4	ETH: Stratum - Connected (us.gmc.epool.io:8008) (unsecure)
+20:21:10:047	3b8c	No pool specified for Decred! Ethereum-only mining mode is enabled
+20:21:10:051	3b8c	ETHEREUM-ONLY MINING MODE ENABLED (-mode 1)
+20:21:10:055	3b8c	ETH: eth-proxy stratum mode
+20:21:10:058	3b8c	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+20:21:10:061	3b8c	Watchdog enabled
+20:21:10:064	3b8c	Remote management (READ-ONLY MODE) is enabled on port 3333
+20:21:10:068	3b8c	
+20:21:10:073	12b4	buf: {"id":2,"jsonrpc":"2.0","result":true}
+
+20:21:10:076	12b4	ETH: Authorized
+20:21:10:079	12b4	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+20:21:10:124	12b4	buf: {"id":3,"jsonrpc":"2.0","result":["0xf6ad7cda8a300543449d5f6abf4e061821bee3b294caacdfa4f395e1d1831fd3","0x0ee232f1867fd14f43990c8413953a4009ad96d14d28c1f27153927f28ee6c68","0xdbe6fecebdedd5beb573440e5a884d1b2fbf06fcce912adcb8d8422e"]}
+
+20:21:10:186	738	Setting DAG epoch #76...
+20:21:11:294	738	Setting DAG epoch #76 for GPU0
+20:21:11:298	738	Create GPU buffer for GPU0
+20:21:11:343	12b4	buf: {"id":0,"jsonrpc":"2.0","result":["0xc08872e5892aa3ad575de5d76a00ca58a2300124b455f0a7af906835951a2830","0x0ee232f1867fd14f43990c8413953a4009ad96d14d28c1f27153927f28ee6c68","0xdbe6fecebdedd5beb573440e5a884d1b2fbf06fcce912adcb8d8422e"]}
+
+20:21:11:347	12b4	ETH: 04/05/18-20:21:11 - New job from us.gmc.epool.io:8008
+20:21:11:350	12b4	target: 0x00000000dbe6fece (diff: 5000MH), epoch 76(1.59GB)
+20:21:11:353	12b4	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+20:21:11:357	12b4	ETH: GPU0 0.000 Mh/s
+20:21:14:731	738	GPU0 DAG creation time - 3364 ms
+20:21:14:736	738	Setting DAG epoch #76 for GPU0 done
+20:21:16:956	12b4	buf: {"id":0,"jsonrpc":"2.0","result":["0x9787ed5876e3d6ddf7e262d00b4f75cde45392303090e333ae7a6778efdc07ff","0x0ee232f1867fd14f43990c8413953a4009ad96d14d28c1f27153927f28ee6c68","0xdbe6fecebdedd5beb573440e5a884d1b2fbf06fcce912adcb8d8422e"]}
+
+20:21:16:960	12b4	ETH: 04/05/18-20:21:16 - New job from us.gmc.epool.io:8008
+20:21:16:963	12b4	target: 0x00000000dbe6fece (diff: 5000MH), epoch 76(1.59GB)
+20:21:16:967	12b4	ETH - Total Speed: 67.322 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+20:21:16:970	12b4	ETH: GPU0 67.322 Mh/s
+20:21:17:046	2d64	checked ETH share on CPU, spent 4ms
+20:21:17:050	2d64	sent: {"worker":"bitsbetrippin01","id":10,"method":"eth_submitWork","params":["0x8226f868004b8c97","0x9787ed5876e3d6ddf7e262d00b4f75cde45392303090e333ae7a6778efdc07ff","0x1cdacfcc596c2d36114a210c7a529d73f0f7f92f3b84cb310e2e90ad81db846d"]}
+
+20:21:17:054	2d64	ETH: put share nonce 8226f868004b8c97
+20:21:17:058	12b4	ETH: 04/05/18-20:21:17 - SHARE FOUND - (GPU 0)
+20:21:17:107	12b4	buf: {"id":10,"jsonrpc":"2.0","result":true}
+
+20:21:17:111	12b4	ETH: Share accepted (47 ms)!
+20:21:17:626	12b4	buf: {"id":0,"jsonrpc":"2.0","result":["0xb04d18fa7ed6c0849d009acfadc3766bcce9d26a3b714b3ee3c8028130dbfdc6","0x0ee232f1867fd14f43990c8413953a4009ad96d14d28c1f27153927f28ee6c68","0xdbe6fecebdedd5beb573440e5a884d1b2fbf06fcce912adcb8d8422e"]}
+
+20:21:17:630	12b4	ETH: 04/05/18-20:21:17 - New job from us.gmc.epool.io:8008
+20:21:17:634	12b4	target: 0x00000000dbe6fece (diff: 5000MH), epoch 76(1.59GB)
+20:21:17:638	12b4	ETH - Total Speed: 66.893 Mh/s, Total Shares: 1, Rejected: 0, Time: 00:00
+20:21:17:642	12b4	ETH: GPU0 66.893 Mh/s
+20:21:20:130	12b4	ETH: checking pool connection...
+20:21:20:134	12b4	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+20:21:20:181	12b4	buf: {"id":3,"jsonrpc":"2.0","result":["0xb04d18fa7ed6c0849d009acfadc3766bcce9d26a3b714b3ee3c8028130dbfdc6","0x0ee232f1867fd14f43990c8413953a4009ad96d14d28c1f27153927f28ee6c68","0xdbe6fecebdedd5beb573440e5a884d1b2fbf06fcce912adcb8d8422e"]}
+
+20:21:22:999	f34	
+20:21:23:003	f34	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+20:21:23:007	f34	ETH - Total Speed: 67.443 Mh/s, Total Shares: 1, Rejected: 0, Time: 00:00
+20:21:23:010	f34	ETH: GPU0 67.443 Mh/s
+20:21:23:015	f34	Incorrect ETH shares: none
+20:21:23:037	f34	1 minute average ETH total speed: 67.171 Mh/s
+20:21:23:041	f34	Pool switches: ETH - 0
+20:21:23:046	f34	Current ETH share target: 0x00000000dbe6fece (diff: 5000MH), epoch 76(1.59GB)
+20:21:23:049	f34	Current -dcri values: -dcri 30
+20:21:23:053	f34	GPU0 t=51C fan=33%
+20:21:23:057	f34	
+20:21:23:287	12b4	buf: {"id":0,"jsonrpc":"2.0","result":["0x4686b484077a494ef64e53b5c536367520f1aacdffb1fddfa2e3c3b1ea79eaa6","0x0ee232f1867fd14f43990c8413953a4009ad96d14d28c1f27153927f28ee6c68","0xdbe6fecebdedd5beb573440e5a884d1b2fbf06fcce912adcb8d8422e"]}
+
+20:21:23:291	12b4	ETH: 04/05/18-20:21:23 - New job from us.gmc.epool.io:8008
+20:21:23:294	12b4	target: 0x00000000dbe6fece (diff: 5000MH), epoch 76(1.59GB)
+20:21:23:298	12b4	ETH - Total Speed: 65.567 Mh/s, Total Shares: 1, Rejected: 0, Time: 00:00
+20:21:23:301	12b4	ETH: GPU0 65.567 Mh/s
+20:21:24:319	f34	
+20:21:24:324	f34	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+20:21:24:332	f34	ETH - Total Speed: 67.091 Mh/s, Total Shares: 1, Rejected: 0, Time: 00:00
+20:21:24:335	f34	ETH: GPU0 67.091 Mh/s
+20:21:24:357	f34	Incorrect ETH shares: none
+20:21:24:361	f34	1 minute average ETH total speed: 67.112 Mh/s
+20:21:24:365	f34	Pool switches: ETH - 0
+20:21:24:369	f34	Current ETH share target: 0x00000000dbe6fece (diff: 5000MH), epoch 76(1.59GB)
+20:21:24:372	f34	Current -dcri values: -dcri 30
+20:21:24:376	f34	GPU0 t=52C fan=34%
+20:21:24:380	f34	
+20:21:25:231	f34	
+20:21:25:236	f34	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+20:21:25:251	f34	ETH - Total Speed: 67.125 Mh/s, Total Shares: 1, Rejected: 0, Time: 00:00
+20:21:25:256	f34	ETH: GPU0 67.125 Mh/s
+20:21:25:259	f34	Incorrect ETH shares: none
+20:21:25:263	f34	1 minute average ETH total speed: 67.094 Mh/s
+20:21:25:266	f34	Pool switches: ETH - 0
+20:21:25:270	f34	Current ETH share target: 0x00000000dbe6fece (diff: 5000MH), epoch 76(1.59GB)
+20:21:25:273	f34	Current -dcri values: -dcri 30
+20:21:25:277	f34	GPU0 t=52C fan=34%
+20:21:25:281	f34	
+20:21:26:731	f34	DCRI value cannot be changed: you should enable assembler mode firstly ("-asm 1")
+20:21:26:986	4734	Quit, please wait...

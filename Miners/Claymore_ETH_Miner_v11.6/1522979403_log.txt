@@ -1,0 +1,115 @@
+20:50:03:249	43fc	Check and remove old log files...
+20:50:03:252	43fc	args: -epool stratum+tcp://ella.cryptobitpool.eu:8004 -ewal 0x1FD15054675c913b5B7A21b0d7338fff9FAFB8eE -epsw x -allpools 1 -allcoins 1 
+20:50:03:255	43fc	
+20:50:03:258	43fc	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+20:50:03:261	43fc	บ                Claymore's Dual GPU Miner - v11.6               บ
+20:50:03:264	43fc	บ              ETH + DCR/SIA/LBC/PASC/BLAKE2S/KECCAK             บ
+20:50:03:267	43fc	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+20:50:03:270	43fc	
+20:50:03:273	43fc	b571 
+20:50:03:479	43fc	ETH: 1 pool is specified
+20:50:03:483	43fc	Main Ethereum pool is ella.cryptobitpool.eu:8004
+20:50:03:486	43fc	DCR: 0 pool is specified
+20:50:03:530	43fc	OpenCL platform: NVIDIA CUDA
+20:50:03:533	43fc	AMD OpenCL platform not found 
+20:50:03:897	43fc	CUDA initializing...
+
+20:50:03:901	43fc	NVIDIA Cards available: 1 
+20:50:03:903	43fc	CUDA Driver Version/Runtime Version: 9.1/8.0
+20:50:03:907	43fc	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+20:50:03:910	43fc	Total cards: 1 
+20:50:07:915	43fc	No AMD cards in the list, ADL library will not be used.
+20:50:07:921	43fc	NVML version: 9.388.59
+20:50:08:838	43fc	SSL: Imported 52 certificates from local storage
+20:50:08:942	43fc	No pool specified for Decred! Ethereum-only mining mode is enabled
+20:50:08:946	43fc	ETHEREUM-ONLY MINING MODE ENABLED (-mode 1)
+20:50:08:949	43fc	ETH: eth-proxy stratum mode
+20:50:08:952	43fc	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+20:50:08:955	43fc	"-allcoins" option is set, default pools will be used for devfee, check "Readme" file for details.
+20:50:08:958	43fc	Watchdog enabled
+20:50:08:961	43fc	Remote management (READ-ONLY MODE) is enabled on port 3333
+20:50:08:965	43fc	
+20:50:09:053	538	ETH: Stratum - connecting to 'ella.cryptobitpool.eu' <18.194.88.189> port 8004 (unsecure)
+20:50:09:207	538	sent: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0x1FD15054675c913b5B7A21b0d7338fff9FAFB8eE", "x"], "id": 2, "method": "eth_submitLogin"}
+
+20:50:09:211	538	ETH: Stratum - Connected (ella.cryptobitpool.eu:8004) (unsecure)
+20:50:09:345	538	buf: {"id":2,"jsonrpc":"2.0","result":true}
+
+20:50:09:349	538	ETH: Authorized
+20:50:09:352	538	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+20:50:09:486	538	buf: {"id":3,"jsonrpc":"2.0","result":["0x38322d67d8061936872f28eae8a85f09f5d8b9c6c625746dc0ec5a65e77db146","0x63ca6f54b1af76dd4df3b908cee464ff1f212f08352cbe7eb4422806bb0c7885","0x7a2aff5669842169f30725cf15d9f1f2a8bf75a8e4898997115bb2fd"]}
+
+20:50:09:593	5850	Setting DAG epoch #42...
+20:50:10:511	5850	Setting DAG epoch #42 for GPU0
+20:50:10:515	5850	Create GPU buffer for GPU0
+20:50:10:798	5390	
+20:50:10:802	5390	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+20:50:10:806	5390	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+20:50:10:810	5390	ETH: GPU0 0.000 Mh/s
+20:50:10:813	5390	Incorrect ETH shares: none
+20:50:10:816	5390	1 minute average ETH total speed: 0.000 Mh/s
+20:50:10:819	5390	Pool switches: ETH - 0
+20:50:10:822	5390	Current ETH share target: 0x000000007a2aff56 (diff: 9000MH), epoch 42(1.33GB)
+20:50:10:825	5390	Current -dcri values: -dcri 30
+20:50:10:829	5390	GPU0 t=48C fan=32%
+20:50:10:832	5390	
+20:50:11:299	538	buf: {"id":0,"jsonrpc":"2.0","result":["0x854038278fd0226f48d5667f13b1ccc3ebd7ac1b0d7034db92864ccf78043ae2","0x63ca6f54b1af76dd4df3b908cee464ff1f212f08352cbe7eb4422806bb0c7885","0x7a2aff5669842169f30725cf15d9f1f2a8bf75a8e4898997115bb2fd"]}
+
+20:50:11:304	538	ETH: 04/05/18-20:50:11 - New job from ella.cryptobitpool.eu:8004
+20:50:11:307	538	target: 0x000000007a2aff56 (diff: 9000MH), epoch 42(1.33GB)
+20:50:11:311	538	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+20:50:11:331	538	ETH: GPU0 0.000 Mh/s
+20:50:11:894	5390	
+20:50:11:898	5390	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+20:50:11:902	5390	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+20:50:11:905	5390	ETH: GPU0 0.000 Mh/s
+20:50:11:909	5390	Incorrect ETH shares: none
+20:50:11:927	5390	1 minute average ETH total speed: 0.000 Mh/s
+20:50:11:931	5390	Pool switches: ETH - 0
+20:50:11:934	5390	Current ETH share target: 0x000000007a2aff56 (diff: 9000MH), epoch 42(1.33GB)
+20:50:11:938	5390	Current -dcri values: -dcri 30
+20:50:11:941	5390	GPU0 t=49C fan=32%
+20:50:11:944	5390	
+20:50:12:935	5390	
+20:50:12:939	5390	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+20:50:12:945	5390	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+20:50:12:949	5390	ETH: GPU0 0.000 Mh/s
+20:50:12:952	5390	Incorrect ETH shares: none
+20:50:12:956	5390	1 minute average ETH total speed: 0.000 Mh/s
+20:50:12:960	5390	Pool switches: ETH - 0
+20:50:12:963	5390	Current ETH share target: 0x000000007a2aff56 (diff: 9000MH), epoch 42(1.33GB)
+20:50:12:966	5390	Current -dcri values: -dcri 30
+20:50:12:970	5390	GPU0 t=50C fan=32%
+20:50:12:974	5390	
+20:50:13:376	5850	GPU0 DAG creation time - 2802 ms
+20:50:13:380	5850	Setting DAG epoch #42 for GPU0 done
+20:50:13:614	5390	
+20:50:13:619	5390	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+20:50:13:623	5390	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+20:50:13:626	5390	ETH: GPU0 0.000 Mh/s
+20:50:13:630	5390	Incorrect ETH shares: none
+20:50:13:634	5390	1 minute average ETH total speed: 0.000 Mh/s
+20:50:13:637	5390	Pool switches: ETH - 0
+20:50:13:641	5390	Current ETH share target: 0x000000007a2aff56 (diff: 9000MH), epoch 42(1.33GB)
+20:50:13:644	5390	Current -dcri values: -dcri 30
+20:50:13:649	5390	GPU0 t=50C fan=32%
+20:50:13:652	5390	
+20:50:14:166	5390	
+20:50:14:170	5390	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+20:50:14:174	5390	ETH - Total Speed: 67.433 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+20:50:14:178	5390	ETH: GPU0 67.433 Mh/s
+20:50:14:182	5390	Incorrect ETH shares: none
+20:50:14:185	5390	1 minute average ETH total speed: 66.844 Mh/s
+20:50:14:188	5390	Pool switches: ETH - 0
+20:50:14:208	5390	Current ETH share target: 0x000000007a2aff56 (diff: 9000MH), epoch 42(1.33GB)
+20:50:14:213	5390	Current -dcri values: -dcri 30
+20:50:14:216	5390	GPU0 t=50C fan=32%
+20:50:14:219	5390	
+20:50:15:831	36b0	Quit, please wait...

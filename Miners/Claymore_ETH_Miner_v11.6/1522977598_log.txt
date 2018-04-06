@@ -1,0 +1,44 @@
+20:19:58:483	2418	Check and remove old log files...
+20:19:58:486	2418	args: -epool us.gmc.epool.io:8008 -ewal 0x9507e04bd57caeee18a6cae2d70ca044cffcf27d -eworker bitsbetrippin01 -epsw x -esm 2 -allcoins 1 -allpools 1 
+20:19:58:489	2418	
+20:19:58:492	2418	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+20:19:58:495	2418	บ                Claymore's Dual GPU Miner - v11.6               บ
+20:19:58:498	2418	บ              ETH + DCR/SIA/LBC/PASC/BLAKE2S/KECCAK             บ
+20:19:58:501	2418	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+20:19:58:504	2418	
+20:19:58:507	2418	b571 
+20:19:58:710	2418	ETH: 1 pool is specified
+20:19:58:714	2418	Main Ethereum pool is us.gmc.epool.io:8008
+20:19:58:717	2418	DCR: 0 pool is specified
+20:19:58:763	2418	OpenCL platform: NVIDIA CUDA
+20:19:58:767	2418	AMD OpenCL platform not found 
+20:19:59:123	2418	CUDA initializing...
+
+20:19:59:127	2418	NVIDIA Cards available: 1 
+20:19:59:130	2418	CUDA Driver Version/Runtime Version: 9.1/8.0
+20:19:59:134	2418	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+20:19:59:137	2418	Total cards: 1 
+20:20:03:141	2418	No AMD cards in the list, ADL library will not be used.
+20:20:03:148	2418	NVML version: 9.388.59
+20:20:04:078	2418	SSL: Imported 52 certificates from local storage
+20:20:04:114	368c	ETH: Stratum - connecting to 'us.gmc.epool.io' <165.227.102.207> port 8008 (unsecure)
+20:20:04:174	368c	sent: {"id": 1, "method": "mining.subscribe", "params": []}
+
+20:20:04:177	368c	sent: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+20:20:04:180	368c	sent: {"id": 2, "method": "mining.authorize", "params": ["0x9507e04bd57caeee18a6cae2d70ca044cffcf27d","x"]}
+
+20:20:04:183	368c	ETH: Stratum - Connected (us.gmc.epool.io:8008) (unsecure)
+20:20:04:186	2418	No pool specified for Decred! Ethereum-only mining mode is enabled
+20:20:04:190	2418	ETHEREUM-ONLY MINING MODE ENABLED (-mode 1)
+20:20:04:193	2418	ETH: miner-proxy stratum mode
+20:20:04:196	2418	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+20:20:04:200	2418	"-allcoins" option is set, default pools will be used for devfee, check "Readme" file for details.
+20:20:04:203	2418	Watchdog enabled
+20:20:04:206	2418	Remote management (READ-ONLY MODE) is enabled on port 3333
+20:20:04:209	2418	
+20:20:04:238	368c	buf: {"id":1,"jsonrpc":"2.0","result":null,"error":{"code":-3,"message":"Method not found"}}
+
+20:20:04:242	368c	Socket was closed remotely (by pool)
+20:20:04:245	368c	ETH: Job timeout, disconnect, retry in 20 sec...

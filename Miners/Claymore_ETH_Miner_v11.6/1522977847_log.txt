@@ -1,0 +1,89 @@
+20:24:07:907	1ee4	Check and remove old log files...
+20:24:07:911	1ee4	args: -epool stratum+tcp://us-east.ethash-hub.miningpoolhub.com:20585 -ewal bitsbetrippin.bitsbetrippin01 -epsw x -esm 2 -allcoins 1 -allpools 1 
+20:24:07:914	1ee4	
+20:24:07:916	1ee4	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+20:24:07:919	1ee4	บ                Claymore's Dual GPU Miner - v11.6               บ
+20:24:07:922	1ee4	บ              ETH + DCR/SIA/LBC/PASC/BLAKE2S/KECCAK             บ
+20:24:07:925	1ee4	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+20:24:07:928	1ee4	
+20:24:07:933	1ee4	b571 
+20:24:08:136	1ee4	ETH: 1 pool is specified
+20:24:08:140	1ee4	Main Ethereum pool is us-east.ethash-hub.miningpoolhub.com:20585
+20:24:08:143	1ee4	DCR: 0 pool is specified
+20:24:08:188	1ee4	OpenCL platform: NVIDIA CUDA
+20:24:08:191	1ee4	AMD OpenCL platform not found 
+20:24:08:549	1ee4	CUDA initializing...
+
+20:24:08:552	1ee4	NVIDIA Cards available: 1 
+20:24:08:555	1ee4	CUDA Driver Version/Runtime Version: 9.1/8.0
+20:24:08:559	1ee4	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+20:24:08:562	1ee4	Total cards: 1 
+20:24:12:566	1ee4	No AMD cards in the list, ADL library will not be used.
+20:24:12:574	1ee4	NVML version: 9.388.59
+20:24:13:501	1ee4	SSL: Imported 52 certificates from local storage
+20:24:13:533	a98	ETH: Stratum - connecting to 'us-east.ethash-hub.miningpoolhub.com' <192.81.129.199> port 20585 (unsecure)
+20:24:13:606	1ee4	No pool specified for Decred! Ethereum-only mining mode is enabled
+20:24:13:610	1ee4	ETHEREUM-ONLY MINING MODE ENABLED (-mode 1)
+20:24:13:614	1ee4	ETH: miner-proxy stratum mode
+20:24:13:617	1ee4	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+20:24:13:621	1ee4	"-allcoins" option is set, default pools will be used for devfee, check "Readme" file for details.
+20:24:13:622	a98	sent: {"id": 1, "method": "mining.subscribe", "params": []}
+
+20:24:13:628	a98	sent: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+20:24:13:628	1ee4	Watchdog enabled
+20:24:13:632	a98	sent: {"id": 2, "method": "mining.authorize", "params": ["bitsbetrippin.bitsbetrippin01","x"]}
+
+20:24:13:640	a98	ETH: Stratum - Connected (us-east.ethash-hub.miningpoolhub.com:20585) (unsecure)
+20:24:13:639	1ee4	Remote management (READ-ONLY MODE) is enabled on port 3333
+20:24:13:647	1ee4	
+20:24:13:694	a98	buf: {"id":1,"result":[[["mining.set_difficulty","deadbeefcafebabe949a000000000000"],["mining.notify","deadbeefcafebabe949a000000000000"]],"48000f0e",4],"error":null}
+
+20:24:13:799	a98	buf: {"id":null,"method":"mining.notify","params":["b29a","0x70bc473085edfd0a26238dd8181a5d0135822f8bbe0ac3f7454011d98cf01593","0x0ee232f1867fd14f43990c8413953a4009ad96d14d28c1f27153927f28ee6c68","0x00000000ffb34c02420e9948eacd78cf33b059a88ade1ff0614f7f3c303cf3a7",true]}
+
+20:24:13:843	2b84	Setting DAG epoch #76...
+20:24:14:030	a98	buf: {"id":2,"result":true,"error":null}
+
+20:24:14:034	a98	ETH: Authorized
+20:24:15:022	2b84	Setting DAG epoch #76 for GPU0
+20:24:15:026	2b84	Create GPU buffer for GPU0
+20:24:18:103	21d8	
+20:24:18:107	21d8	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+20:24:18:112	21d8	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+20:24:18:116	21d8	ETH: GPU0 0.000 Mh/s
+20:24:18:120	21d8	Incorrect ETH shares: none
+20:24:18:123	21d8	1 minute average ETH total speed: 0.000 Mh/s
+20:24:18:127	21d8	Pool switches: ETH - 0
+20:24:18:130	21d8	Current ETH share target: 0x00000000ffb34c02 (diff: 4300MH), epoch 76(1.59GB)
+20:24:18:133	21d8	Current -dcri values: -dcri 30
+20:24:18:137	21d8	GPU0 t=48C fan=33%
+20:24:18:141	21d8	
+20:24:18:425	2b84	GPU0 DAG creation time - 3329 ms
+20:24:18:430	2b84	Setting DAG epoch #76 for GPU0 done
+20:24:19:111	21d8	
+20:24:19:115	21d8	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+20:24:19:119	21d8	ETH - Total Speed: 67.416 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+20:24:19:123	21d8	ETH: GPU0 67.416 Mh/s
+20:24:19:126	21d8	Incorrect ETH shares: none
+20:24:19:130	21d8	1 minute average ETH total speed: 67.321 Mh/s
+20:24:19:134	21d8	Pool switches: ETH - 0
+20:24:19:333	21d8	Current ETH share target: 0x00000000ffb34c02 (diff: 4300MH), epoch 76(1.59GB)
+20:24:19:338	21d8	Current -dcri values: -dcri 30
+20:24:19:342	21d8	GPU0 t=49C fan=33%
+20:24:19:346	21d8	
+20:24:20:183	21d8	
+20:24:20:187	21d8	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+20:24:20:191	21d8	ETH - Total Speed: 67.474 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+20:24:20:195	21d8	ETH: GPU0 67.474 Mh/s
+20:24:20:199	21d8	Incorrect ETH shares: none
+20:24:20:202	21d8	1 minute average ETH total speed: 66.474 Mh/s
+20:24:20:206	21d8	Pool switches: ETH - 0
+20:24:20:210	21d8	Current ETH share target: 0x00000000ffb34c02 (diff: 4300MH), epoch 76(1.59GB)
+20:24:20:214	21d8	Current -dcri values: -dcri 30
+20:24:20:217	21d8	GPU0 t=49C fan=33%
+20:24:20:221	21d8	
+20:24:21:393	3430	Quit, please wait...

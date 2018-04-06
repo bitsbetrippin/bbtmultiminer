@@ -1,0 +1,88 @@
+20:18:03:223	59c0	Check and remove old log files...
+20:18:03:227	59c0	args: -epool stratum+tcp://us.gmc.epool.io:8008 -ewal 0x9507e04bd57caeee18a6cae2d70ca044cffcf27d -eworker bitsbetrippin01 -epsw x -esm 2 -allcoins 1 -allpools 1 
+20:18:03:230	59c0	
+20:18:03:232	59c0	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+20:18:03:235	59c0	บ                Claymore's Dual GPU Miner - v11.6               บ
+20:18:03:238	59c0	บ              ETH + DCR/SIA/LBC/PASC/BLAKE2S/KECCAK             บ
+20:18:03:241	59c0	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+20:18:03:251	59c0	
+20:18:03:254	59c0	b571 
+20:18:03:458	59c0	ETH: 1 pool is specified
+20:18:03:462	59c0	Main Ethereum pool is us.gmc.epool.io:8008
+20:18:03:465	59c0	DCR: 0 pool is specified
+20:18:03:510	59c0	OpenCL platform: NVIDIA CUDA
+20:18:03:514	59c0	AMD OpenCL platform not found 
+20:18:03:874	59c0	CUDA initializing...
+
+20:18:03:877	59c0	NVIDIA Cards available: 1 
+20:18:03:880	59c0	CUDA Driver Version/Runtime Version: 9.1/8.0
+20:18:03:884	59c0	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+20:18:03:887	59c0	Total cards: 1 
+20:18:07:891	59c0	No AMD cards in the list, ADL library will not be used.
+20:18:07:898	59c0	NVML version: 9.388.59
+20:18:08:832	59c0	SSL: Imported 52 certificates from local storage
+20:18:08:844	5618	ETH: Stratum - connecting to 'us.gmc.epool.io' <165.227.102.207> port 8008 (unsecure)
+20:18:08:903	5618	sent: {"id": 1, "method": "mining.subscribe", "params": []}
+
+20:18:08:907	5618	sent: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+20:18:08:910	5618	sent: {"id": 2, "method": "mining.authorize", "params": ["0x9507e04bd57caeee18a6cae2d70ca044cffcf27d","x"]}
+
+20:18:08:913	5618	ETH: Stratum - Connected (us.gmc.epool.io:8008) (unsecure)
+20:18:08:936	59c0	No pool specified for Decred! Ethereum-only mining mode is enabled
+20:18:08:939	59c0	ETHEREUM-ONLY MINING MODE ENABLED (-mode 1)
+20:18:08:944	59c0	ETH: miner-proxy stratum mode
+20:18:08:947	59c0	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+20:18:08:951	59c0	"-allcoins" option is set, default pools will be used for devfee, check "Readme" file for details.
+20:18:08:954	59c0	Watchdog enabled
+20:18:08:958	59c0	Remote management (READ-ONLY MODE) is enabled on port 3333
+20:18:08:959	5618	buf: {"id":1,"jsonrpc":"2.0","result":null,"error":{"code":-3,"message":"Method not found"}}
+
+20:18:08:965	59c0	
+20:18:08:968	5618	Socket was closed remotely (by pool)
+20:18:08:972	5618	ETH: Job timeout, disconnect, retry in 20 sec...
+20:18:28:976	5618	ETH: Stratum - connecting to 'us.gmc.epool.io' <165.227.102.207> port 8008 (unsecure)
+20:18:29:031	5618	sent: {"id": 1, "method": "mining.subscribe", "params": []}
+
+20:18:29:035	5618	sent: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+20:18:29:039	5618	sent: {"id": 2, "method": "mining.authorize", "params": ["0x9507e04bd57caeee18a6cae2d70ca044cffcf27d","x"]}
+
+20:18:29:042	5618	ETH: Stratum - Connected (us.gmc.epool.io:8008) (unsecure)
+20:18:29:087	5618	buf: {"id":1,"jsonrpc":"2.0","result":null,"error":{"code":-3,"message":"Method not found"}}
+
+20:18:29:091	5618	Socket was closed remotely (by pool)
+20:18:29:095	5618	ETH: Job timeout, disconnect, retry in 20 sec...
+20:18:33:476	40d0	GPU0 t=45C fan=30%
+20:18:33:552	3a30	em hbt: 4578, fm hbt: 16, 
+20:18:33:556	3a30	watchdog - thread 0 (gpu0), hb time 63
+20:18:33:559	3a30	watchdog - thread 1 (gpu0), hb time 63
+20:18:49:099	5618	ETH: Stratum - connecting to 'us.gmc.epool.io' <165.227.102.207> port 8008 (unsecure)
+20:18:49:155	5618	sent: {"id": 1, "method": "mining.subscribe", "params": []}
+
+20:18:49:159	5618	sent: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+20:18:49:163	5618	sent: {"id": 2, "method": "mining.authorize", "params": ["0x9507e04bd57caeee18a6cae2d70ca044cffcf27d","x"]}
+
+20:18:49:166	5618	ETH: Stratum - Connected (us.gmc.epool.io:8008) (unsecure)
+20:18:49:210	5618	buf: {"id":1,"jsonrpc":"2.0","result":null,"error":{"code":-3,"message":"Method not found"}}
+
+20:18:49:214	5618	Socket was closed remotely (by pool)
+20:18:49:218	5618	ETH: Job timeout, disconnect, retry in 20 sec...
+20:19:03:488	40d0	GPU0 t=46C fan=30%
+20:19:03:645	3a30	em hbt: 14531, fm hbt: 16, 
+20:19:03:650	3a30	watchdog - thread 0 (gpu0), hb time 31
+20:19:03:653	3a30	watchdog - thread 1 (gpu0), hb time 31
+20:19:09:222	5618	ETH: Stratum - connecting to 'us.gmc.epool.io' <165.227.102.207> port 8008 (unsecure)
+20:19:09:281	5618	sent: {"id": 1, "method": "mining.subscribe", "params": []}
+
+20:19:09:285	5618	sent: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+20:19:09:289	5618	sent: {"id": 2, "method": "mining.authorize", "params": ["0x9507e04bd57caeee18a6cae2d70ca044cffcf27d","x"]}
+
+20:19:09:292	5618	ETH: Stratum - Connected (us.gmc.epool.io:8008) (unsecure)
+20:19:09:337	5618	buf: {"id":1,"jsonrpc":"2.0","result":null,"error":{"code":-3,"message":"Method not found"}}
+
+20:19:09:341	5618	Socket was closed remotely (by pool)
+20:19:09:345	5618	ETH: Job timeout, disconnect, retry in 20 sec...

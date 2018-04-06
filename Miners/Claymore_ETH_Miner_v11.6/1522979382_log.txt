@@ -1,0 +1,73 @@
+20:49:42:657	185c	Check and remove old log files...
+20:49:42:661	185c	args: -epool stratum+tcp://ellaismpool.com:8009 -ewal 0x1FD15054675c913b5B7A21b0d7338fff9FAFB8eE -epsw x -allpools 1 -allcoins 1 
+20:49:42:664	185c	
+20:49:42:666	185c	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+20:49:42:670	185c	บ                Claymore's Dual GPU Miner - v11.6               บ
+20:49:42:673	185c	บ              ETH + DCR/SIA/LBC/PASC/BLAKE2S/KECCAK             บ
+20:49:42:676	185c	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+20:49:42:679	185c	
+20:49:42:681	185c	b571 
+20:49:42:891	185c	ETH: 1 pool is specified
+20:49:42:895	185c	Main Ethereum pool is ellaismpool.com:8009
+20:49:42:897	185c	DCR: 0 pool is specified
+20:49:42:941	185c	OpenCL platform: NVIDIA CUDA
+20:49:42:944	185c	AMD OpenCL platform not found 
+20:49:43:296	185c	CUDA initializing...
+
+20:49:43:299	185c	NVIDIA Cards available: 1 
+20:49:43:303	185c	CUDA Driver Version/Runtime Version: 9.1/8.0
+20:49:43:306	185c	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+20:49:43:309	185c	Total cards: 1 
+20:49:47:313	185c	No AMD cards in the list, ADL library will not be used.
+20:49:47:319	185c	NVML version: 9.388.59
+20:49:48:220	185c	SSL: Imported 52 certificates from local storage
+20:49:48:231	2180	ETH: Stratum - connecting to 'ellaismpool.com' <45.63.93.129> port 8009 (unsecure)
+20:49:48:308	2180	sent: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0x1FD15054675c913b5B7A21b0d7338fff9FAFB8eE", "x"], "id": 2, "method": "eth_submitLogin"}
+
+20:49:48:312	2180	ETH: Stratum - Connected (ellaismpool.com:8009) (unsecure)
+20:49:48:324	185c	No pool specified for Decred! Ethereum-only mining mode is enabled
+20:49:48:328	185c	ETHEREUM-ONLY MINING MODE ENABLED (-mode 1)
+20:49:48:331	185c	ETH: eth-proxy stratum mode
+20:49:48:334	185c	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+20:49:48:337	185c	"-allcoins" option is set, default pools will be used for devfee, check "Readme" file for details.
+20:49:48:340	185c	Watchdog enabled
+20:49:48:343	185c	Remote management (READ-ONLY MODE) is enabled on port 3333
+20:49:48:346	185c	
+20:49:48:376	2180	buf: {"id":2,"jsonrpc":"2.0","result":true}
+
+20:49:48:380	2180	ETH: Authorized
+20:49:48:381	2180	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+20:49:48:446	2180	buf: {"id":3,"jsonrpc":"2.0","result":["0x232ec9f973e0cd53164f920c04c46518fb1bfada38f7edc17295bcc8ebcd9cd3","0x63ca6f54b1af76dd4df3b908cee464ff1f212f08352cbe7eb4422806bb0c7885","0x7a2aff5669842169f30725cf15d9f1f2a8bf75a8e4898997115bb2fd"]}
+
+20:49:48:481	22a4	Setting DAG epoch #42...
+20:49:49:502	22a4	Setting DAG epoch #42 for GPU0
+20:49:49:506	22a4	Create GPU buffer for GPU0
+20:49:52:364	22a4	GPU0 DAG creation time - 2799 ms
+20:49:52:368	22a4	Setting DAG epoch #42 for GPU0 done
+20:49:52:606	5b1c	
+20:49:52:611	5b1c	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+20:49:52:616	5b1c	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+20:49:52:620	5b1c	ETH: GPU0 0.000 Mh/s
+20:49:52:624	5b1c	Incorrect ETH shares: none
+20:49:52:627	5b1c	1 minute average ETH total speed: 0.000 Mh/s
+20:49:52:638	5b1c	Pool switches: ETH - 0
+20:49:52:642	5b1c	Current ETH share target: 0x000000007a2aff56 (diff: 9000MH), epoch 42(1.33GB)
+20:49:52:646	5b1c	Current -dcri values: -dcri 30
+20:49:52:649	5b1c	GPU0 t=49C fan=31%
+20:49:52:653	5b1c	
+20:49:53:735	5b1c	
+20:49:53:740	5b1c	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+20:49:53:745	5b1c	ETH - Total Speed: 66.888 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+20:49:53:748	5b1c	ETH: GPU0 66.888 Mh/s
+20:49:53:751	5b1c	Incorrect ETH shares: none
+20:49:53:755	5b1c	1 minute average ETH total speed: 66.936 Mh/s
+20:49:53:758	5b1c	Pool switches: ETH - 0
+20:49:53:761	5b1c	Current ETH share target: 0x000000007a2aff56 (diff: 9000MH), epoch 42(1.33GB)
+20:49:53:764	5b1c	Current -dcri values: -dcri 30
+20:49:53:769	5b1c	GPU0 t=49C fan=31%
+20:49:53:798	5b1c	
+20:49:54:982	281c	Quit, please wait...

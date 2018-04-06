@@ -1,0 +1,85 @@
+20:49:24:013	41c0	Check and remove old log files...
+20:49:24:017	41c0	args: -epool stratum+tcp://ellaismpool.com:8008 -ewal 0x1FD15054675c913b5B7A21b0d7338fff9FAFB8eE -epsw x -allpools 1 -allcoins 1 
+20:49:24:020	41c0	
+20:49:24:023	41c0	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+20:49:24:025	41c0	บ                Claymore's Dual GPU Miner - v11.6               บ
+20:49:24:028	41c0	บ              ETH + DCR/SIA/LBC/PASC/BLAKE2S/KECCAK             บ
+20:49:24:031	41c0	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+20:49:24:034	41c0	
+20:49:24:037	41c0	b571 
+20:49:24:246	41c0	ETH: 1 pool is specified
+20:49:24:249	41c0	Main Ethereum pool is ellaismpool.com:8008
+20:49:24:252	41c0	DCR: 0 pool is specified
+20:49:24:297	41c0	OpenCL platform: NVIDIA CUDA
+20:49:24:301	41c0	AMD OpenCL platform not found 
+20:49:24:653	41c0	CUDA initializing...
+
+20:49:24:657	41c0	NVIDIA Cards available: 1 
+20:49:24:659	41c0	CUDA Driver Version/Runtime Version: 9.1/8.0
+20:49:24:663	41c0	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+20:49:24:666	41c0	Total cards: 1 
+20:49:28:670	41c0	No AMD cards in the list, ADL library will not be used.
+20:49:28:677	41c0	NVML version: 9.388.59
+20:49:29:592	41c0	SSL: Imported 52 certificates from local storage
+20:49:29:657	3bdc	ETH: Stratum - connecting to 'ellaismpool.com' <45.63.93.129> port 8008 (unsecure)
+20:49:29:697	41c0	No pool specified for Decred! Ethereum-only mining mode is enabled
+20:49:29:700	41c0	ETHEREUM-ONLY MINING MODE ENABLED (-mode 1)
+20:49:29:703	41c0	ETH: eth-proxy stratum mode
+20:49:29:706	41c0	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+20:49:29:709	41c0	"-allcoins" option is set, default pools will be used for devfee, check "Readme" file for details.
+20:49:29:713	41c0	Watchdog enabled
+20:49:29:716	41c0	Remote management (READ-ONLY MODE) is enabled on port 3333
+20:49:29:719	41c0	
+20:49:29:749	3bdc	sent: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0x1FD15054675c913b5B7A21b0d7338fff9FAFB8eE", "x"], "id": 2, "method": "eth_submitLogin"}
+
+20:49:29:753	3bdc	ETH: Stratum - Connected (ellaismpool.com:8008) (unsecure)
+20:49:29:827	3bdc	buf: {"id":2,"jsonrpc":"2.0","result":true}
+
+20:49:29:831	3bdc	ETH: Authorized
+20:49:29:834	3bdc	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+20:49:29:908	3bdc	buf: {"id":3,"jsonrpc":"2.0","result":["0xdb3d1cfdaefbd1e1770ce5ed4569af5a22d5de2bdf62444365038917bb8d913e","0x63ca6f54b1af76dd4df3b908cee464ff1f212f08352cbe7eb4422806bb0c7885","0x0225c17d04dad2965cc5a02a23e254c0c3f75d9178046aeb27ce1ca574"]}
+
+20:49:29:945	4508	Setting DAG epoch #42...
+20:49:30:538	3bdc	buf: {"id":0,"jsonrpc":"2.0","result":["0xee143b64df8bd3764c7403640b3009e7e15e9ab4ffa0682d40eae33c38630de9","0x63ca6f54b1af76dd4df3b908cee464ff1f212f08352cbe7eb4422806bb0c7885","0x0225c17d04dad2965cc5a02a23e254c0c3f75d9178046aeb27ce1ca574"]}
+
+20:49:30:543	3bdc	ETH: 04/05/18-20:49:30 - New job from ellaismpool.com:8008
+20:49:30:546	3bdc	target: 0x0000000225c17d04 (diff: 2000MH), epoch 42(1.33GB)
+20:49:30:549	3bdc	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+20:49:30:552	3bdc	ETH: GPU0 0.000 Mh/s
+20:49:30:925	4508	Setting DAG epoch #42 for GPU0
+20:49:30:929	4508	Create GPU buffer for GPU0
+20:49:32:390	116c	
+20:49:32:395	116c	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+20:49:32:398	116c	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+20:49:32:401	116c	ETH: GPU0 0.000 Mh/s
+20:49:32:405	116c	Incorrect ETH shares: none
+20:49:32:408	116c	1 minute average ETH total speed: 0.000 Mh/s
+20:49:32:412	116c	Pool switches: ETH - 0
+20:49:32:449	116c	Current ETH share target: 0x0000000225c17d04 (diff: 2000MH), epoch 42(1.33GB)
+20:49:32:453	116c	Current -dcri values: -dcri 30
+20:49:32:457	116c	GPU0 t=46C fan=31%
+20:49:32:461	116c	
+20:49:32:637	3bdc	buf: {"id":0,"jsonrpc":"2.0","result":["0x855eb149e966bbaf2825aad70c1da68fb7d18dd5f29c56b96e7879241a479c08","0x63ca6f54b1af76dd4df3b908cee464ff1f212f08352cbe7eb4422806bb0c7885","0x0225c17d04dad2965cc5a02a23e254c0c3f75d9178046aeb27ce1ca574"]}
+
+20:49:32:641	3bdc	ETH: 04/05/18-20:49:32 - New job from ellaismpool.com:8008
+20:49:32:644	3bdc	target: 0x0000000225c17d04 (diff: 2000MH), epoch 42(1.33GB)
+20:49:32:648	3bdc	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+20:49:32:654	3bdc	ETH: GPU0 0.000 Mh/s
+20:49:33:761	4508	GPU0 DAG creation time - 2771 ms
+20:49:33:765	4508	Setting DAG epoch #42 for GPU0 done
+20:49:34:174	116c	
+20:49:34:178	116c	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+20:49:34:181	116c	ETH - Total Speed: 67.302 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+20:49:34:185	116c	ETH: GPU0 67.302 Mh/s
+20:49:34:189	116c	Incorrect ETH shares: none
+20:49:34:192	116c	1 minute average ETH total speed: 67.302 Mh/s
+20:49:34:196	116c	Pool switches: ETH - 0
+20:49:34:217	116c	Current ETH share target: 0x0000000225c17d04 (diff: 2000MH), epoch 42(1.33GB)
+20:49:34:221	116c	Current -dcri values: -dcri 30
+20:49:34:228	116c	GPU0 t=47C fan=31%
+20:49:34:232	116c	
+20:49:36:055	32bc	Quit, please wait...

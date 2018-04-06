@@ -1,0 +1,88 @@
+20:38:00:589	59a4	Check and remove old log files...
+20:38:00:593	59a4	args: -epool stratum+tcp://pirl.Cryptopools.info:8002 -ewal 0x810e25250226738d2cef840a6fC3ACDed207e4E0 -epsw x -allpools 1 -allcoins exp -eworker bitsbetrippin01 
+20:38:00:596	59a4	
+20:38:00:599	59a4	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+20:38:00:602	59a4	บ                Claymore's Dual GPU Miner - v11.6               บ
+20:38:00:605	59a4	บ              ETH + DCR/SIA/LBC/PASC/BLAKE2S/KECCAK             บ
+20:38:00:608	59a4	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+20:38:00:612	59a4	
+20:38:00:616	59a4	b571 
+20:38:00:820	59a4	ETH: 1 pool is specified
+20:38:00:824	59a4	Main Ethereum pool is pirl.Cryptopools.info:8002
+20:38:00:826	59a4	DCR: 0 pool is specified
+20:38:00:871	59a4	OpenCL platform: NVIDIA CUDA
+20:38:00:875	59a4	AMD OpenCL platform not found 
+20:38:01:229	59a4	CUDA initializing...
+
+20:38:01:233	59a4	NVIDIA Cards available: 1 
+20:38:01:236	59a4	CUDA Driver Version/Runtime Version: 9.1/8.0
+20:38:01:240	59a4	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+20:38:01:243	59a4	Total cards: 1 
+20:38:05:247	59a4	No AMD cards in the list, ADL library will not be used.
+20:38:05:254	59a4	NVML version: 9.388.59
+20:38:06:144	59a4	SSL: Imported 52 certificates from local storage
+20:38:06:156	1a50	ETH: Stratum - connecting to 'pirl.Cryptopools.info' <45.76.57.55> port 8002 (unsecure)
+20:38:06:207	1a50	sent: {"worker": "bitsbetrippin01", "jsonrpc": "2.0", "params": ["0x810e25250226738d2cef840a6fC3ACDed207e4E0", "x"], "id": 2, "method": "eth_submitLogin"}
+
+20:38:06:211	1a50	ETH: Stratum - Connected (pirl.Cryptopools.info:8002) (unsecure)
+20:38:06:249	59a4	No pool specified for Decred! Ethereum-only mining mode is enabled
+20:38:06:253	59a4	ETHEREUM-ONLY MINING MODE ENABLED (-mode 1)
+20:38:06:255	1a50	buf: {"id":2,"jsonrpc":"2.0","result":true}
+
+20:38:06:260	1a50	ETH: Authorized
+20:38:06:256	59a4	ETH: eth-proxy stratum mode
+20:38:06:264	1a50	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+20:38:06:267	59a4	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+20:38:06:275	59a4	"-allcoins" option is set, default pools will be used for devfee, check "Readme" file for details.
+20:38:06:279	59a4	Watchdog enabled
+20:38:06:283	59a4	Remote management (READ-ONLY MODE) is enabled on port 3333
+20:38:06:286	59a4	
+20:38:06:312	1a50	buf: {"id":3,"jsonrpc":"2.0","result":["0xbf1d0ffbe3e1982254f898cc39423d51ecf899757855fddbdb749c7d3aa73c1b","0x5197b2a3898b31d4d8afb33e2216b2ef6e166b09122e514323701e9af3b09643","0x0225c17d04dad2965cc5a02a23e254c0c3f75d9178046aeb27ce1ca574"]}
+
+20:38:06:417	5824	Setting DAG epoch #38...
+20:38:07:331	5824	Setting DAG epoch #38 for GPU0
+20:38:07:335	5824	Create GPU buffer for GPU0
+20:38:10:125	5824	GPU0 DAG creation time - 2732 ms
+20:38:10:129	5824	Setting DAG epoch #38 for GPU0 done
+20:38:13:308	58d4	checked ETH share on CPU, spent 4ms
+20:38:13:312	58d4	sent: {"worker":"bitsbetrippin01","id":10,"method":"eth_submitWork","params":["0x61915bf00cabf1a5","0xbf1d0ffbe3e1982254f898cc39423d51ecf899757855fddbdb749c7d3aa73c1b","0xdc8bc44a59bfa9d9c50ddade658501bbb6038f7c6d5c7e8afb77d60bc8172627"]}
+
+20:38:13:315	58d4	ETH: put share nonce 61915bf00cabf1a5
+20:38:13:319	1a50	ETH: 04/05/18-20:38:13 - SHARE FOUND - (GPU 0)
+20:38:13:364	1a50	buf: {"id":10,"jsonrpc":"2.0","result":true}
+
+20:38:13:368	1a50	ETH: Share accepted (62 ms)!
+20:38:16:009	5824	checked ETH share on CPU, spent 4ms
+20:38:16:013	5824	sent: {"worker":"bitsbetrippin01","id":10,"method":"eth_submitWork","params":["0x308c3ff819bb2067","0xbf1d0ffbe3e1982254f898cc39423d51ecf899757855fddbdb749c7d3aa73c1b","0x0f3281528575b9cb27ce6765483c1fca3b4201cd71d7506abad9e00045cf81ae"]}
+
+20:38:16:016	5824	ETH: put share nonce 308c3ff819bb2067
+20:38:16:020	1a50	ETH: 04/05/18-20:38:16 - SHARE FOUND - (GPU 0)
+20:38:16:062	1a50	buf: {"id":10,"jsonrpc":"2.0","result":true}
+
+20:38:16:066	1a50	ETH: Share accepted (47 ms)!
+20:38:16:317	1a50	ETH: checking pool connection...
+20:38:16:321	1a50	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+20:38:16:356	1a50	buf: {"id":3,"jsonrpc":"2.0","result":["0xbf1d0ffbe3e1982254f898cc39423d51ecf899757855fddbdb749c7d3aa73c1b","0x5197b2a3898b31d4d8afb33e2216b2ef6e166b09122e514323701e9af3b09643","0x0225c17d04dad2965cc5a02a23e254c0c3f75d9178046aeb27ce1ca574"]}
+
+20:38:19:912	1a50	buf: {"id":0,"jsonrpc":"2.0","result":["0xc26b506e5c971d1101ae8380320b83d7f1b2a744af6ffb524aec989359e9bd1a","0x5197b2a3898b31d4d8afb33e2216b2ef6e166b09122e514323701e9af3b09643","0x0225c17d04dad2965cc5a02a23e254c0c3f75d9178046aeb27ce1ca574"]}
+
+20:38:19:917	1a50	ETH: 04/05/18-20:38:19 - New job from pirl.Cryptopools.info:8002
+20:38:19:920	1a50	target: 0x0000000225c17d04 (diff: 2000MH), epoch 38(1.30GB)
+20:38:19:924	1a50	ETH - Total Speed: 66.950 Mh/s, Total Shares: 2, Rejected: 0, Time: 00:00
+20:38:19:929	1a50	ETH: GPU0 66.950 Mh/s
+20:38:20:655	4064	
+20:38:20:659	4064	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+20:38:20:663	4064	ETH - Total Speed: 67.565 Mh/s, Total Shares: 2, Rejected: 0, Time: 00:00
+20:38:20:667	4064	ETH: GPU0 67.565 Mh/s
+20:38:20:671	4064	Incorrect ETH shares: none
+20:38:20:674	4064	1 minute average ETH total speed: 66.897 Mh/s
+20:38:20:678	4064	Pool switches: ETH - 0
+20:38:20:682	4064	Current ETH share target: 0x0000000225c17d04 (diff: 2000MH), epoch 38(1.30GB)
+20:38:20:686	4064	Current -dcri values: -dcri 30
+20:38:20:709	4064	GPU0 t=51C fan=34%
+20:38:20:713	4064	
+20:38:22:227	1e54	Quit, please wait...

@@ -1,0 +1,23 @@
+10:04:27:448	23a0	Check and remove old log files...
+10:04:27:448	23a0	args: -epool eu1.ethermine.org:4444 -ewal 0xD69af2A796A737A103F12d2f0BCC563a13900E6F -epsw x -dpool stratum+tcp://dcr.suprnova.cc:3252 -dwal Redhex.my -dpsw x 
+10:04:27:448	23a0	
+10:04:27:448	23a0	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+10:04:27:448	23a0	บ                Claymore's Dual GPU Miner - v11.5               บ
+10:04:27:463	23a0	บ              ETH + DCR/SIA/LBC/PASC/BLAKE2S/KECCAK             บ
+10:04:27:463	23a0	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+10:04:27:463	23a0	
+10:04:27:463	23a0	b541 
+10:04:27:687	23a0	You specified default wallet address, it is good for tests only, for normal mining you must change it to your wallet address!
+10:04:27:687	23a0	ETH: 1 pool is specified
+10:04:27:687	23a0	Main Ethereum pool is eu1.ethermine.org:4444
+10:04:27:687	23a0	DCR: 1 pool is specified
+10:04:27:687	23a0	Main Decred pool is dcr.suprnova.cc:3252
+10:04:28:010	23a0	OpenCL platform: NVIDIA CUDA
+10:04:28:010	23a0	AMD OpenCL platform not found 
+10:04:28:406	23a0	CUDA initializing...
+
+10:04:28:406	23a0	NVIDIA Cards available: 1 
+10:04:28:406	23a0	CUDA Driver Version/Runtime Version: 9.1/8.0
+10:04:28:406	23a0	GPU #0: TITAN V, 12288 MB available, 80 compute units, capability: 7.0  (pci bus 67:0:0)
+
+10:04:28:421	23a0	Total cards: 1 
