@@ -1,5 +1,5 @@
 @echo off
-setlocal EnableDelayedExpansion 
+SETLOCAL EnableDelayedExpansion
 rem **********************************************************************
 rem *         BBT Multi-Miner Easy Batch File  v6.0 by BBT Carter        *
 rem **********************************************************************
@@ -8,718 +8,554 @@ rem **********************************************************************
 
 CALL my_info.bat
 
-SET ETH_WALLET_ADDRESS=%ETH%
-SET ETC_WALLET_ADDRESS=%ETC%
-SET XMR_WALLET_ADDRESS=%XMR%
-SET SIA_WALLET_ADDRESS=%SIA%
-SET ZCASH_WALLET_ADDRESS=%ZCASH%
-SET PASCAL_WALLET_ADDRESS=%PASCAL%
-SET HUSH_WALLET_ADDRESS=%HUSH%
-SET LBRY_WALLET_ADDRESS=%LBRY%
-SET DECRED_WALLET_ADDRESS=%DECRED%
-SET DBIX_WALLET_ADDRESS=%DBIX%
-SET UBIQ_WALLET_ADDRESS=%UBIQ%
-SET EXP_WALLET_ADDRESS=%EXP%
-SET CHC_WALLET_ADDRESS=%CHC%
-SET DIGI_WALLET_ADDRESS=%DIGI%
-SET FTC_WALLET_ADDRESS=%FTC%
-SET MUS_WALLET_ADDRESS=%MUS%
-SET ZCL_WALLET_ADDRESS=%ZCL%
-SET ZEN_WALLET_ADDRESS=%ZEN%
-SET LTC_WALLET_ADDRESS=%LTC%
-SET BTC_WALLET_ADDRESS=%BTC%
-SET BTG_WALLET_ADDRESS=%BTG% 
-SET PIRL_WALLET_ADDRESS=%PIRL%
-SET ETN_WALLET_ADDRESS=%ENT%
-SET VTC_WALLET_ADDRESS=%VTC%
-SET KMD_WALLET_ADDRESS=%KMD%
-SET ELLA_WALLET_ADDRESS=%ELLA%
-SET SUMO_WALLET_ADDRESS=%SUMO%
-SET KRB_WALLET_ADDRESS=%KRB%
-SET MONA_WALLET_ADDRESS=%MONA%
-SET BWK_WALLET_ADDRESS=%BWK%
-SET RVN_WALLET_ADDRESS=%RVN%
-SET PGN_WALLET_ADDRESS=%PGN%
-SET BTCP1_WALLET_ADDRESS=%BTCP1%
-SET BTCP2_WALLET_ADDRESS=%BTCP2%
-
-:: *** Miner login for pools like suprnova.cc
-:: *** dont get excited, our primary mining weblogin is not bitsbetrippin, used as example
-:: *** MUST UPDATE JSON FILE FOR NVIDIA XMR FOR USER INFO
-
-SET MINER_WEBLOGIN=%MINER-WEBLOGIN%
-SET WORKER_PASSWORD=%WORKER-PASSWORD%
-SET MINER_NAME=%MINER-NAME%
-SET EMAIL_ADDRESS=%EMAIL-ADDRESS%
-
-::Set Intensity Globally
+::SET Intensity Globally
 SET I=20
-::Set Thread Concurrency Globally
+::SET Thread Concurrency Globally
 SET TC=1024
 ::GPU Platform (AMD) Options 0 or 1
 SET Platform=1
 
 :: Environmental Variables
-setx GPU_FORCE_64BIT_PTR 0 >nul 2>&1
-setx GPU_MAX_HEAP_SIZE 100 >nul 2>&1
-setx GPU_USE_SYNC_OBJECTS 1 >nul 2>&1
-setx GPU_MAX_ALLOC_PERCENT 100 >nul 2>&1
-setx GPU_SINGLE_ALLOC_PERCENT 100 >nul 2>&1
+SETX GPU_FORCE_64BIT_PTR 0 >nul 2>&1
+SETX GPU_MAX_HEAP_SIZE 100 >nul 2>&1
+SETX GPU_USE_SYNC_OBJECTS 1 >nul 2>&1
+SETX GPU_MAX_ALLOC_PERCENT 100 >nul 2>&1
+SETX GPU_SINGLE_ALLOC_PERCENT 100 >nul 2>&1
 
 SET miner=%1
 IF NOT "%miner%"=="" (
     SET /A M=%miner%
-    goto MinerSwitch
+    GOTO MinerSwitch
 )
-ECHO ====================================================
-ECHO *                ETHEREUM (ETH) Algorithm:Ethash   *
-ECHO ====================================================
-ECHO 1.  AMD and NVIDIA Claymore 11.6 - Eth Only Ethermine.org
-ECHO 2.  AMD and NVIDIA Claymore 11.6 - Eth Nanopool Only
-ECHO ====================================================
-ECHO *        ETHEREUM Classic (ETC) Algorithm:Dagger   *
-ECHO ====================================================
-ECHO 3.  AMD and NVIDIA Claymore 11.6 - Etc etc.ethermine.org
-ECHO 4.  AMD and NVIDIA Claymore 11.6 - Etc Nanopool Only
-ECHO ====================================================
-ECHO *                    UBIQ (UBQ) Algorithm:Dagger   *
-ECHO ====================================================
-ECHO 5.  AMD and NVIDIA Claymore 11.6 - Ubiq to Hodl Pool
-ECHO ====================================================
-ECHO *                Musicoin (MUS) Algorithm:Ethash   *
-ECHO ====================================================
-ECHO 6.  AMD and NVIDIA Claymore 11.6 - Musicoin to pool.io
-ECHO 7.  AMD and NVIDIA Claymore 11.6 - Musicoin to miningpoolhub Only
-ECHO ====================================================
-ECHO *                   PIRL (PIRL) Algorithm:Dagger   *
-ECHO ====================================================
-ECHO 8.  AMD and NVIDIA Claymore 11.6 - Pirl pools.hppcg - US based Pool
-ECHO 9.  AMD and NVIDIA Claymore 11.6 - Pirl LESS THAN 100 MH/s Only cryptopools.info
-ECHO 10. AMD and NVIDIA Claymore 11.6 - Pirl 100 MH/s to 800 MH/s Only cryptopools.info
-ECHO 11. AMD and NVIDIA Claymore 11.6 - Pirl MORE THAN 800 MH/s Only cryptopools.info
-ECHO ====================================================
-ECHO *                 Expanse (EXP) Algorithm:Dagger   *
-ECHO ====================================================
-ECHO 12.  AMD and NVIDIA Claymore 11.6 - Expanse to expmine.pro pool
-ECHO ====================================================
-ECHO *                Ellaism (ELLA) Algorithm:Ethash   *
-ECHO ====================================================
-ECHO 13.  AMD and NVIDIA Claymore 11.6 - Ella LESS THAN 180 MH/s ellaismpool US Based
-ECHO 14.  AMD and NVIDIA Claymore 11.6 - Ella 100 MH/s to 800 MH/s ellaismpool US Based
-ECHO 15.  AMD and NVIDIA Claymore 11.6 - Ella MORE THAN 800 MH/s ellaismpool US Based
-ECHO 16.  AMD and NVIDIA Claymore 11.6 - Ella LESS THAN 100 MH/s Only minerpool.net EU Based
-ECHO 17.  AMD and NVIDIA Claymore 11.6 - Ella 100 MH/s to 800 MH/s Only minerpool.net EU Based
-ECHO 18.  AMD and NVIDIA Claymore 11.6 - Ella MORE THAN 800 MH/s Only minerpool.net EU Based
-ECHO ====================================================
-ECHO *                 ZCASH (ZEC) Algorithm:Equihash   *
-ECHO ====================================================
-ECHO 19.  AMD ZCash Claymore 12.6 - Zcash to Nanopool
-ECHO 20.  NVIDIA DSTM 0.6 Zcash Miner - Zcash to Nanopool
-ECHO ====================================================
-ECHO *               Komodo (KMD) Algorithm:Equihash    *
-ECHO ====================================================
-ECHO 21.  AMD Claymore 12.6 - Komodo to Suprnova.cc
-ECHO 22.  NVIDIA DSTM 0.6 ZMiner - Komodo to Suprnova.cc
-ECHO ====================================================
-ECHO *     Bitcoin Private (BTCP) Algorithm:Equihash    *
-ECHO ====================================================
-ECHO 23.  AMD Claymore 12.6 - Bitcoin Private to btcprivate.org
-ECHO 24.  NVIDIA DSTM 0.6 ZMiner - Bitcoin Private to btcprivate.org
-ECHO ====================================================
-ECHO *             Zclassic (ZCL) Algorithm:Equihash    *
-ECHO ====================================================
-ECHO 25.  AMD Claymore 12.6 - Zclassic to Miningpoolhub
-ECHO 26.  NVIDIA DSTM 0.6 ZMiner - Zclassic to Miningpoolhub
-ECHO ====================================================
-ECHO *              ZENCash (ZEN) Algorithm:Equihash    *
-ECHO ====================================================
-ECHO 27.  AMD Claymore 12.6 - ZENCash to Supernova.cc
-ECHO 28.  NVIDIA DSTM ZMiner 0.6 ZENCash to Supernova.cc
-ECHO 29.  AMD Claymore 12.6 - ZENCash to zhash.pro
-ECHO 30.  NVIDIA DSTM 0.6 ZMiner - ZENCash zhash.pro
-ECHO ====================================================
-ECHO *                  Zcoin (XZC) Algorithm:Lyra2z    *
-ECHO ====================================================
-ECHO 31.  Nevermore 0.2.2 - Nvidia Only - Zcoin to Miningpoolhub
-ECHO 32.  Brians SGMinger 0.4.0 - AMD Only - Zcoin to Miningpoolhub
-ECHO ====================================================
-ECHO *          Feathercoin (FTC) Algorithm:Neoscrypt   *
-ECHO ====================================================
-ECHO 33.  Nevermore 0.2.2 - Nvidia Only - FTC to F2Pool FTC
-ECHO 34.  AMD NSGMiner 0.9.2 Feathercoin Miner - FTC to P2Pool FTC
-ECHO ====================================================
-ECHO *          Digibyte (DGB)    Algorithm:Groestle    *
-ECHO ====================================================
-ECHO 35.  Brians SGMinger AMD 0.4.0 GROESTL - Digibyte to Suprnova.cc
-ECHO 36.  Nevermore 0.2.2 - Nvidia Only - Digibyte to Suprnova.cc
-ECHO ====================================================
-ECHO *               Monero (XMR) Algorithm:Cryptonite  *
-ECHO ====================================================
-ECHO 37.  XMRig 2.5.2 NVIDIA - XMR to Nanopool- XMR to Nanopool
-ECHO 38.  XMRig 2.5.2 AMD - XMR to Nanopool - XMR to Nanopool
-ECHO 39.  CAST XMR Vega Miner 0.9.2 - XMR to Nanopool
-ECHO ====================================================
-ECHO *          Electroneum (ETN) Algorithm:Cryptonite  *
-ECHO ====================================================
-ECHO 40.  XMRig 2.5.2 NVIDIA - Electroneum to easyhash.io
-ECHO 41.  XMRig 2.5.2 AMD - Electroneum to easyhash.io
-ECHO 42.  CAST XMR Vega Miner 0.9.2 - XMR to Electroneum to easyhash.io 
-ECHO ====================================================
-ECHO *            Sumokoin (SUMO) Algorithm:Cryptonite  *
-ECHO ====================================================
-ECHO 43.  XMRig 2.5.2 NVIDIA - Sumokoin to easyhash.io
-ECHO 44.  XMRig 2.5.2 AMD - Sumokoin to easyhash.io
-ECHO 45.  CAST XMR Vega Miner 0.9.2 - XMR to Sumokoin to easyhash.io 
-ECHO ====================================================
-ECHO *           Karbowanec (KRB) Algorithm:Cryptonite  *
-ECHO ====================================================
-ECHO 46.  XMRig 2.5.2 NVIDIA - Karbowanec to easyhash.io
-ECHO 47.  XMRig 2.5.2 AMD - Karbowanec to easyhash.io
-ECHO 48.  CAST XMR Vega Miner 0.9.2 - XMR to Karbowanec to easyhash.io
-ECHO ====================================================
-ECHO *             Bulwark (BWK) Algorithm:NIST5        *
-ECHO ====================================================
-ECHO 49.  Brians SGMinger AMD 0.4.0 Bulkwark to bsod.pw 
-ECHO 50.  Nevermore 0.2.2 - Nvidia Only - Bulkwark to bsod.pw 
-ECHO ====================================================
-ECHO *             Ravencoin (RVN) Algorithm:x16r       *
-ECHO ====================================================
-ECHO 51.  Brians SGMinger AMD 0.4.0 - RavenCoin to Threeyed
-ECHO 52.  Nevermore 0.2.2 - Nvidia Only - RavenCoin to Threeyed
-ECHO 53.  Enemy 1.3.0 - Nvidia Only - RavenCoin to Threeyed
-ECHO 54.  Suprminer 1.6.0 - Nvidia Only - RavenCoin to Threeyed
-ECHO ====================================================
-ECHO *             Pigeoncoin (PGN) Algorithm:x16s       *
-ECHO ====================================================
-ECHO 55.  Brians SGMinger AMD 0.4.0 - Pigeoncoin to Blockcruncher
-ECHO 56.  Nevermore 0.2.2 - Nvidia Only - Pigeoncoin to Blockcruncher
-ECHO ====================================================
-ECHO *                    Vertcoin (VTC)                *
-ECHO ====================================================
-ECHO 57.  Mkxminer 3.1.0 - AMD Only - Vertcoin to Miningpoolhub
-ECHO 58.  Nevermore 0.2.2 - Nvidia Only - Vertcoin to Miningpoolhub
-ECHO ====================================================
-ECHO *            MonaCoin (MONA) Algorithm:Lyra2z      *
-ECHO ====================================================
-ECHO 59.  Mkxminer 3.1.0 - AMD Only - Monacoin to Miningpoolhub
-ECHO 60.  Nevermore 0.2.2 - Nvidia Only - Monacoin to Miningpoolhub   
-ECHO ****************************************************
-ECHO 99 - EXIT
-ECHO.
+ECHO =========================================================================
+ECHO *                           ETHASH ALGORITHM                            *
+ECHO =========================================================================
+ECHO 1.  Ethereum          (ETH)   Ethermine.org      AMD/NVIDIA Claymore 11.9
+ECHO 2.  Ethereum          (ETH)   Nanopool.org       AMD/NVIDIA Claymore 11.9
+ECHO 3.  Ethereum Classic  (ETC)   Ethermine.org      AMD/NVIDIA Claymore 11.9
+ECHO 4.  Ethereum Classic  (ETC)   Nanopool.org       AMD/NVIDIA Claymore 11.9
+ECHO 5.  Ubiq              (UBQ)   Altpool.pro        AMD/NVIDIA Claymore 11.9
+ECHO 6.  Musicoin          (MUS)   Coinmine.pl        AMD/NVIDIA Claymore 11.9
+ECHO 7.  Musicoin          (MUS)   Miningpoolhub.com  AMD/NVIDIA Claymore 11.9
+ECHO 8.  Pirl             (PIRL)   HPPCG Pool         AMD/NVIDIA Claymore 11.9
+ECHO 9.  Pirl             (PIRL)   cryptopools.info   0-150 MH/s    AMD/NVIDIA Claymore 11.9
+ECHO 10. Pirl             (PIRL)   cryptopools.info   150-800 MH/s  AMD/NVIDIA Claymore 11.9
+ECHO 11. Pirl             (PIRL)   cryptopools.info   800+ MH/s     AMD/NVIDIA Claymore 11.9
+ECHO 12. Expanse           (EXP)   expmine.pro                      AMD/NVIDIA Claymore 11.9
+ECHO 13. Ellaism          (ELLA)   ellaismpool        0-150 MH/s    AMD/NVIDIA Claymore 11.9
+ECHO 14. Ellaism          (ELLA)   ellaismpool        150-800 MH/s  AMD/NVIDIA Claymore 11.9
+ECHO 15. Ellaism          (ELLA)   ellaismpool        800+ MH/s     AMD/NVIDIA Claymore 11.9
+ECHO 16. Ellaism          (ELLA)   minerpool.net      0-100 MH/s    AMD/NVIDIA Claymore 11.9
+ECHO 17. Ellaism          (ELLA)   minerpool.net      100-800 MH/s  AMD/NVIDIA Claymore 11.9
+ECHO 18. Ellaism          (ELLA)   minerpool.net      800+ MH/s     AMD/NVIDIA Claymore 11.9
+ECHO =========================================================================
+ECHO *                           EQUIHASH ALGORITHM                          *
+ECHO =========================================================================
+ECHO 19.  ZCash            (ZEC)  Nanopool.org        AMD ZCash Claymore 12.6
+ECHO 20.  ZCash            (ZEC)  Nanopool.org        NVIDIA DSTM 0.6.1 ZMiner
+ECHO 21.  Komodo           (KMD)  Suprnova.cc         AMD Claymore 12.6
+ECHO 22.  Komodo           (KMD)  Suprnova.cc         NVIDIA DSTM 0.6.1 ZMiner
+ECHO 23.  Bitcoin Private (BTCP)  btcprivate.org      AMD Claymore 12.6
+ECHO 24.  Bitcoin Private (BTCP)  btcprivate.org      NVIDIA DSTM 0.6.1 ZMiner
+ECHO 25.  Zclassic         (ZCL)  miningpoolhub.com   AMD Claymore 12.6
+ECHO 26.  Zclassic         (ZCL)  miningpoolhub.com   NVIDIA DSTM 0.6.1 ZMiner
+ECHO 27.  ZenCash          (ZEN)  suprnova.cc         AMD Claymore 12.6
+ECHO 28.  ZenCash          (ZEN)  suprnova.cc         NVIDIA DSTM 0.6.1 ZMiner
+ECHO 29.  ZenCash          (ZEN)  zhash.pro           AMD Claymore 12.6
+ECHO 30.  ZenCash          (ZEN)  zhash.pro           NVIDIA DSTM 0.6.1 ZMiner
+ECHO =========================================================================
+ECHO *                           LYRA2Z ALGORITHM                            *
+ECHO =========================================================================
+ECHO 31.  Zcoin            (XZC)  Miningpoolhub.com   NVIDIA Nevermore 0.2.3
+ECHO 32.  Zcoin            (XZC)  Miningpoolhub.com   AMD Avermore 1.4.1
+ECHO =========================================================================
+ECHO *                          NEOSCRYPT ALGORITHM                          *
+ECHO =========================================================================
+ECHO 33.  Feathercoin      (FTC)  F2Pool              NVIDIA Nevermore 0.2.3
+ECHO 34.  Feathercoin      (FTC)  F2Pool              AMD NSGMiner 0.9.2
+ECHO =========================================================================
+ECHO *                       MYRIAD-GROESTLE ALGORITHM                       *
+ECHO =========================================================================
+ECHO 35.  Digibyte         (DGB)  Suprnova.cc         AMD Avermore 1.4.1
+ECHO 36.  Digibyte         (DGB)  Suprnova.cc         NVIDIA Nevermore 0.2.3
+ECHO =========================================================================
+ECHO *                       CRYPTONIGHT V7 ALGORITHM                        *
+ECHO =========================================================================
+ECHO 37.  Monero           (XMR)  Nanopool.org        NVIDIA XMRig 2.5.2
+ECHO 38.  Monero           (XMR)  Nanopool.org        AMD Claymore CryptoNote 11.3
+ECHO 39.  Monero           (XMR)  Nanopool.org        AMD CAST XMR Vega Miner 0.9.2
+ECHO =========================================================================
+ECHO *                         CRYPTONIGHT ALGORITHM                         *
+ECHO =========================================================================
+ECHO 40.  Electroneum      (ETN)  Easyhash.io         NVIDIA XMRig 2.5.2
+ECHO 41.  Electroneum      (ETN)  Easyhash.io         AMD Claymore CryptoNote 11.3
+ECHO 42.  Electroneum      (ETN)  Easyhash.io         AMD CAST XMR Vega Miner 0.9.2
+ECHO 43.  Sumokoin        (SUMO)  Easyhash.io         NVIDIA XMRig 2.5.2
+ECHO 44.  Sumokoin        (SUMO)  Easyhash.io         AMD Claymore CryptoNote 11.3
+ECHO 45.  Sumokoin        (SUMO)  Easyhash.io         AMD CAST XMR Vega Miner 0.9.2
+ECHO 46.  Karbowanec       (KRB)  Cryptoknight.cc     NVIDIA XMRig 2.5.2
+ECHO 47.  Karbowanec       (KRB)  Cryptoknight.cc     AMD Claymore CryptoNote 11.3
+ECHO 48.  Karbowanec       (KRB)  Cryptoknight.cc     AMD CAST XMR Vega Miner 0.9.2
+ECHO 49.
+ECHO 50.
+ECHO =========================================================================
+ECHO *                            X16R ALGORITHM                             *
+ECHO =========================================================================
+ECHO 51.  Ravencoin        (RVN)  Ravenminer.com      AMD Avermore 1.4.1
+ECHO 52.  Ravencoin        (RVN)  Ravenminer.com      NVIDIA Nevermore 0.2.3
+ECHO 53.  Ravencoin        (RVN)  Ravenminer.com      NVIDIA Enemy 1.3.0
+ECHO 54.  Ravencoin        (RVN)  Ravenminer.com      NVIDIA Suprminer 1.6.0
+ECHO =========================================================================
+ECHO *                            X16S ALGORITHM                             *
+ECHO =========================================================================
+ECHO 55.  Pigeoncoin       (PGN)  Blockcruncher       AMD Avermore 1.4.1
+ECHO 56.  Pigeoncoin       (PGN)  Blockcruncher       NVIDIA Nevermore 0.2.3
+ECHO =========================================================================
+ECHO *                          LYRA2REV2 ALGORITHM                          *
+ECHO =========================================================================
+ECHO 57.  Vertcoin         (VTC)  Miningpoolhub.com   AMD Avermore 1.4.1
+ECHO 58.  Vertcoin         (VTC)  Miningpoolhub.com   NVIDIA Nevermore 0.2.3
+ECHO =========================================================================
+ECHO *                           LYRA2Z ALGORITHM                            *
+ECHO =========================================================================
+ECHO 59.  MonaCoin        (MONA)  Miningpoolhub.com   AMD Avermore 1.4.1
+ECHO 60.  MonaCoin        (MONA)  Miningpoolhub.com   NVIDIA Nevermore 0.2.3
+ECHO *************************************************************************
+ECHO 99.  EXIT
 
 :MinerSwitch
 :: Get input from user
 SET /P M=Type 1, 2, 3, or 4 then press ENTER:
-if %ERRORLEVEL% NEQ 0 goto EOF
+IF %ERRORLEVEL% NEQ 0 GOTO EOF
 
 :: Is choice a number?
-SET "var="&for /f "delims=0123456789" %%i in ("%M%") do set var=%%i
-if defined var goto EOF
+SET "var="&for /f "delims=0123456789" %%i in ("%M%") do SET var=%%i
+IF DEFINED var GOTO EOF
 
-IF %M%==1 GOTO ethereum1
-IF %M%==2 GOTO ethereum2
-IF %M%==3 GOTO ethereumc1
-IF %M%==4 GOTO ethereumc2
-IF %M%==5 GOTO ubiq1
-IF %M%==6 GOTO mus1
-IF %M%==7 GOTO mus2
-IF %M%==8 GOTO pirl1
-IF %M%==9 GOTO pirl2
-IF %M%==10 GOTO pirl3
-IF %M%==11 GOTO pirl4
-IF %M%==12 GOTO exp1
-IF %M%==13 GOTO ella1
-IF %M%==14 GOTO ella2
-IF %M%==15 GOTO ella3
-IF %M%==16 GOTO ella4
-IF %M%==17 GOTO ella5
-IF %M%==18 GOTO ella6
-IF %M%==19 GOTO zcash1
-IF %M%==20 GOTO zcash2
-IF %M%==21 GOTO komodo1
-IF %M%==22 GOTO komodo2
-IF %M%==23 GOTO btcp1
-IF %M%==24 GOTO btcp2
-IF %M%==25 GOTO zcl1
-IF %M%==26 GOTO zcl2
-IF %M%==27 GOTO zen1
-IF %M%==28 GOTO zen2
-IF %M%==29 GOTO zen3
-IF %M%==30 GOTO zen4
-IF %M%==31 GOTO zcoin1
-IF %M%==32 GOTO zcoin2
-IF %M%==33 GOTO ftc1
-IF %M%==34 GOTO ftc2
-IF %M%==35 GOTO dgb1
-IF %M%==36 GOTO dgb2
-IF %M%==37 GOTO monero1
-IF %M%==38 GOTO monero2
-IF %M%==39 GOTO monero3
-IF %M%==40 GOTO etn1
-IF %M%==41 GOTO etn2
-IF %M%==42 GOTO etn3
-IF %M%==43 GOTO sumo1
-IF %M%==44 GOTO sumo2
-IF %M%==45 GOTO sumo3
-IF %M%==46 GOTO karb1
-IF %M%==47 GOTO karb2
-IF %M%==48 GOTO karb3
-IF %M%==49 GOTO bulk1
-IF %M%==50 GOTO bulk2
-IF %M%==51 GOTO rvn1
-IF %M%==52 GOTO rvn2
-IF %M%==53 GOTO rvn3
-IF %M%==54 GOTO rvn4
-IF %M%==55 GOTO pgn1
-IF %M%==56 GOTO pgn2
-IF %M%==57 GOTO vtc1
-IF %M%==58 GOTO vtc2
-IF %M%==59 GOTO mona1
-IF %M%==60 GOTO mona2
-IF %M% GTR 61 GOTO EOF
+IF %M%==1 GOTO ETH1
+IF %M%==2 GOTO ETH2
+IF %M%==3 GOTO ETC1
+IF %M%==4 GOTO ETC2
+IF %M%==5 GOTO UBQ1
+IF %M%==6 GOTO MUS1
+IF %M%==7 GOTO MUS2
+IF %M%==8 GOTO PIRL1
+IF %M%==9 GOTO PIRL2
+IF %M%==10 GOTO PIRL3
+IF %M%==11 GOTO PIRL4
+IF %M%==12 GOTO EXP1
+IF %M%==13 GOTO ELLA1
+IF %M%==14 GOTO ELLA2
+IF %M%==15 GOTO ELLA3
+IF %M%==16 GOTO ELLA4
+IF %M%==17 GOTO ELLA5
+IF %M%==18 GOTO ELLA6
+IF %M%==19 GOTO ZEC1
+IF %M%==20 GOTO ZEC2
+IF %M%==21 GOTO KMD1
+IF %M%==22 GOTO KMD2
+IF %M%==23 GOTO BTCP1
+IF %M%==24 GOTO BTCP2
+IF %M%==25 GOTO ZCL1
+IF %M%==26 GOTO ZCL2
+IF %M%==27 GOTO ZEN1
+IF %M%==28 GOTO ZEN2
+IF %M%==29 GOTO ZEN3
+IF %M%==30 GOTO ZEN4
+IF %M%==31 GOTO XZC1
+IF %M%==32 GOTO XZC2
+IF %M%==33 GOTO FTC1
+IF %M%==34 GOTO FTC2
+IF %M%==35 GOTO DGB1
+IF %M%==36 GOTO DGB2
+IF %M%==37 GOTO XMR1
+IF %M%==38 GOTO XMR2
+IF %M%==39 GOTO XMR3
+IF %M%==40 GOTO ETN1
+IF %M%==41 GOTO ETN2
+IF %M%==42 GOTO ETN3
+IF %M%==43 GOTO SUMO1
+IF %M%==44 GOTO SUMO2
+IF %M%==45 GOTO SUMO3
+IF %M%==46 GOTO KRB1
+IF %M%==47 GOTO KRB2
+IF %M%==48 GOTO KRB3
+IF %M%==49 GOTO EOF
+IF %M%==50 GOTO EOF
+IF %M%==51 GOTO RVN1
+IF %M%==52 GOTO RVN2
+IF %M%==53 GOTO RVN3
+IF %M%==54 GOTO RVN4
+IF %M%==55 GOTO PGN1
+IF %M%==56 GOTO PGN2
+IF %M%==57 GOTO VTC1
+IF %M%==58 GOTO VTC2
+IF %M%==59 GOTO MONA1
+IF %M%==60 GOTO MONA2
+IF %M%>61 GOTO EOF
 
 ::
 :: Ethereum miners
 ::
-
-:ethereum1
-ECHO AMD and NVIDIA Claymore 11.6 - Eth Only Ethermine.org
-Miners\Claymore_ETH_Miner_v11.6\EthDcrMiner64.exe -epool us1.ethermine.org:4444 -ewal %ETH_WALLET_ADDRESS%.%MINER_NAME% -epsw %WORKER_PASSWORD%
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:ethereum2
-ECHO AMD and NVIDIA Claymore 11.6 - Eth Only Nanopool.org
-Miners\Claymore_ETH_Miner_v11.6\EthDcrMiner64.exe -epool eth-us-east1.nanopool.org:9999 -ewal %ETC_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -epsw %WORKER_PASSWORD%
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
+:ETH1
+ECHO AMD and NVIDIA Claymore 11.9 - Eth Only Ethermine.org
+Miners\Claymore_ETH_Miner_v11.9\EthDcrMiner64 -epool us1.ethermine.org:4444 -ewal %ETH%.%MINER_NAME% -epsw %WORKER_PASSWORD%
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:ETH2
+ECHO AMD and NVIDIA Claymore 11.9 - Eth Only Nanopool.org
+Miners\Claymore_ETH_Miner_v11.9\EthDcrMiner64 -epool eth-us-east1.nanopool.org:9999 -ewal %ETH%/%MINER_NAME%/%EMAIL_ADDRESS% -epsw %WORKER_PASSWORD%
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
 ::
 :: Ethereum Classic miners
 ::
-
-:ethereumc1
-ECHO AMD and NVIDIA Claymore 11.6 - Etc (ethereum classic) etc.ethermine.org
-Miners\Claymore_ETH_Miner_v11.6\EthDcrMiner64.exe -epool us1-etc.ethermine.org:4444 -ewal %ETH_WALLET_ADDRESS%.%MINER_NAME% -epsw %WORKER_PASSWORD% -mode 1 -allpools 1 
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:ethereumc2
-ECHO AMD and NVIDIA Claymore 11.6 - Etc (ethereum classic) to Nanopool
-Miners\Claymore_ETH_Miner_v11.6\EthDcrMiner64.exe -epool etc-us-east1.nanopool.org:19999 -ewal %ETC_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -mode 1 -allpools 1 
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
+:ETC1
+ECHO AMD and NVIDIA Claymore 11.9 - Etc (ethereum classic) etc.ethermine.org
+Miners\Claymore_ETH_Miner_v11.9\EthDcrMiner64 -epool us1-etc.ethermine.org:4444 -ewal %ETC%.%MINER_NAME% -epsw %WORKER_PASSWORD% -mode 1 -allpools 1
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:ETC2
+ECHO AMD and NVIDIA Claymore 11.9 - Etc (ethereum classic) to Nanopool
+Miners\Claymore_ETH_Miner_v11.9\EthDcrMiner64 -epool etc-us-east1.nanopool.org:19999 -ewal %ETC%/%MINER_NAME%/%EMAIL_ADDRESS% -mode 1 -allpools 1
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
 ::
 :: Ubiq Miners
 ::
-
-:ubiq1
-ECHO AMD and NVIDIA Claymore 11.6 - Ubiq to Hodl Pool Only
-Miners\Claymore_ETH_Miner_v11.6\EthDcrMiner64.exe -epool stratum+tcp://ubiq.hodlpool.com:8009 -ewal %UBIQ_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -eworker %MINER_NAME% -allpools 1 -allcoins 1 -mode 1 
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
+:UBQ1
+ECHO AMD and NVIDIA Claymore 11.9 - Ubiq to Hodl Pool Only
+Miners\Claymore_ETH_Miner_v11.9\EthDcrMiner64 -epool stratum+tcp://ubiq.hodlpool.com:8009 -ewal %UBQ% -epsw x -eworker %MINER_NAME% -allpools 1 -allcoins 1 -mode 1
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
 ::
-:: Musiccoin Miners
+:: Musicoin Miners
 ::
-
-:mus1
-ECHO AMD and NVIDIA Claymore 11.6 - Musiccoin to pool.io
-Miners\Claymore_ETH_Miner_v11.6\EthDcrMiner64.exe -epool us.gmc.epool.io:8008 -ewal %MUS_WALLET_ADDRESS% -eworker %MINER_NAME% -epsw %WORKER_PASSWORD% -allpools 1 
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:mus2
-ECHO AMD and NVIDIA Claymore 11.6 - Musiccoin to miningpoolhub Pool Only
-Miners\Claymore_ETH_Miner_v11.6\EthDcrMiner64.exe -epool stratum+tcp://us-east.ethash-hub.miningpoolhub.com:20585 -ewal %MINER_WEBLOGIN%.%MINER_NAME% -epsw %WORKER_PASSWORD% -esm 2 -allcoins 1 -allpools 1 
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
+:MUS1
+ECHO AMD and NVIDIA Claymore 11.9 - Musicoin to Coinmine.pl
+Miners\Claymore_ETH_Miner_v11.9\EthDcrMiner64 -epool music.coinmine.pl:2020 -ewal %MUS%.%MINER_NAME% -dpsw x -mode 1 -allcoins 1 -allpools 1
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:MUS2
+ECHO AMD and NVIDIA Claymore 11.9 - Musicoin to miningpoolhub Pool Only
+Miners\Claymore_ETH_Miner_v11.9\EthDcrMiner64 -epool stratum+tcp://us-east.ethash-hub.miningpoolhub.com:20585 -ewal %MINER_WEBLOGIN%.%MINER_NAME% -epsw %WORKER_PASSWORD% -esm 2 -allcoins 1 -allpools 1
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
 ::
 :: Pirl Miners
 ::
-
-:pirl1
-ECHO AMD and NVIDIA Claymore 11.6 - Pirl to HPPCG Pool
-Miners\Claymore_ETH_Miner_v11.6\EthDcrMiner64.exe -epool stratum+tcp://us-nj-01.pools.hppcg.com:8005 -ewal %PIRL_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins exp -eworker %MINER_NAME%
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:pirl2
-ECHO AMD and NVIDIA Claymore 11.6 - Pirl LESS THAN 200 MH/s Only Cryptopools.info
-Miners\Claymore_ETH_Miner_v11.6\EthDcrMiner64.exe -epool stratum+tcp://pirl.Cryptopools.info:8002 -ewal %PIRL_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins exp -eworker %MINER_NAME%
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:pirl3
-ECHO AMD and NVIDIA Claymore 11.6 - Pirl 200 MH/s to 800 MH/s Only Cryptopools.info
-Miners\Claymore_ETH_Miner_v11.6\EthDcrMiner64.exe -epool stratum+tcp://pirl.Cryptopools.info:8004 -ewal %PIRL_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins exp -eworker %MINER_NAME%
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:pirl4
-ECHO AMD and NVIDIA Claymore 11.6 - Pirl MORE THAN 800 MH/s Only Cryptopools.info
-Miners\Claymore_ETH_Miner_v11.6\EthDcrMiner64.exe -epool stratum+tcp://pirl.Cryptopools.info:8008 -ewal %PIRL_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins exp -eworker %MINER_NAME%
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
+:PIRL1
+ECHO AMD and NVIDIA Claymore 11.9 - Pirl to HPPCG Pool
+Miners\Claymore_ETH_Miner_v11.9\EthDcrMiner64 -epool stratum+tcp://us-nj-01.pools.hppcg.com:8005 -ewal %PIRL% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins 1 -eworker %MINER_NAME%
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:PIRL2
+ECHO AMD and NVIDIA Claymore 11.9 - Pirl 0-150 MH/s Cryptopools.info
+Miners\Claymore_ETH_Miner_v11.9\EthDcrMiner64 -epool stratum+tcp://pirl.cryptopools.info:8002 -ewal %PIRL% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins 1 -eworker %MINER_NAME%
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:PIRL3
+ECHO AMD and NVIDIA Claymore 11.9 - Pirl 150-800 MH/s Cryptopools.info
+Miners\Claymore_ETH_Miner_v11.9\EthDcrMiner64 -epool stratum+tcp://pirl.cryptopools.info:8004 -ewal %PIRL% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins 1 -eworker %MINER_NAME%
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:PIRL4
+ECHO AMD and NVIDIA Claymore 11.9 - Pirl 800+ MH/s Cryptopools.info
+Miners\Claymore_ETH_Miner_v11.9\EthDcrMiner64 -epool stratum+tcp://pirl.cryptopools.info:8008 -ewal %PIRL% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins 1 -eworker %MINER_NAME%
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
 ::
 :: Expanse Miner
 ::
-
-:exp1
-ECHO AMD and NVIDIA Claymore 11.6 - Expanse to expmine.pro
-Miners\Claymore_ETH_Miner_v11.6\EthDcrMiner64.exe -epool stratum+tcp://us.expmine.pro:9009 -ewal %EXP_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -esm 0 -allcoins exp -allpools 1 
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
+:EXP1
+ECHO AMD and NVIDIA Claymore 11.9 - Expanse to expmine.pro
+Miners\Claymore_ETH_Miner_v11.9\EthDcrMiner64 -epool stratum+tcp://us.expmine.pro:9009 -ewal %EXP% -epsw %WORKER_PASSWORD% -esm 0 -allcoins 1 -allpools 1
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
 ::
 :: Ellaism Miners
 ::
-
-:ella1
-ECHO AMD and NVIDIA Claymore 11.6 - Ella LESS THAN 180 MH/s ellaismpool US Based
-Miners\Claymore_ETH_Miner_v11.6\EthDcrMiner64.exe -epool stratum+tcp://ellaismpool.com:8008 -ewal %ELLA_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins 1
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:ella2
-ECHO AMD and NVIDIA Claymore 11.6 - Ella 100 MH/s to 800 MH/s ellaismpool US Based
-Miners\Claymore_ETH_Miner_v11.6\EthDcrMiner64.exe -epool stratum+tcp://ellaismpool.com:8004 -ewal %ELLA_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins 1
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:ella3
-ECHO AMD and NVIDIA Claymore 11.6 - Ella MORE THAN 800 MH/s ellaismpool US Based
-Miners\Claymore_ETH_Miner_v11.6\EthDcrMiner64.exe -epool stratum+tcp://ellaismpool.com:8009 -ewal %ELLA_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins 1
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:ella4
-ECHO AMD and NVIDIA Claymore 11.6 - Ella LESS THAN 180 MH/s cryptobitpool.eu Europe Based
-Miners\Claymore_ETH_Miner_v11.6\EthDcrMiner64.exe -epool stratum+tcp://ella.cryptobitpool.eu:8002 -ewal %ELLA_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins 1
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:ella5
-ECHO AMD and NVIDIA Claymore 11.6 - Ella 100 MH/s to 800 MH/s cryptobitpool.eu Europe Based
-Miners\Claymore_ETH_Miner_v11.6\EthDcrMiner64.exe -epool stratum+tcp://ella.cryptobitpool.eu:8003 -ewal %ELLA_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins 1
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:ella6
-ECHO AMD and NVIDIA Claymore 11.6 - Ella MORE THAN 800 MH/s cryptobitpool.eu Europe Based
-Miners\Claymore_ETH_Miner_v11.6\EthDcrMiner64.exe -epool stratum+tcp://ella.cryptobitpool.eu:8004 -ewal %ELLA_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins 1
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
+:ELLA1
+ECHO AMD and NVIDIA Claymore 11.9 - Ella 0-150 MH/s ellaismpool
+Miners\Claymore_ETH_Miner_v11.9\EthDcrMiner64 -epool stratum+tcp://ellaismpool.com:8008 -ewal %ELLA% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins 1
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:ELLA2
+ECHO AMD and NVIDIA Claymore 11.9 - Ella 150-800 MH/s ellaismpool
+Miners\Claymore_ETH_Miner_v11.9\EthDcrMiner64 -epool stratum+tcp://ellaismpool.com:8004 -ewal %ELLA% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins 1
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:ELLA3
+ECHO AMD and NVIDIA Claymore 11.9 - Ella 800+ MH/s ellaismpool
+Miners\Claymore_ETH_Miner_v11.9\EthDcrMiner64 -epool stratum+tcp://ellaismpool.com:8009 -ewal %ELLA% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins 1
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:ELLA4
+ECHO AMD and NVIDIA Claymore 11.9 - Ella 0-100 MH/s minerpool.net
+Miners\Claymore_ETH_Miner_v11.9\EthDcrMiner64 -epool stratum+tcp://lb.geo.ellapool.eu:8002 -ewal %ELLA% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins 1
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:ELLA5
+ECHO AMD and NVIDIA Claymore 11.9 - Ella 100-800 MH/s minerpool.net
+Miners\Claymore_ETH_Miner_v11.9\EthDcrMiner64 -epool stratum+tcp://lb.geo.ellapool.eu:8004 -ewal %ELLA% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins 1
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:ELLA6
+ECHO AMD and NVIDIA Claymore 11.9 - Ella 800+ MH/s minerpool.net
+Miners\Claymore_ETH_Miner_v11.9\EthDcrMiner64 -epool stratum+tcp://lb.geo.ellapool.eu:8009 -ewal %ELLA% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins 1
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
 ::
 :: ZCash Miners
 ::
-:zcash1
-ECHO ZCash Claymore - Zcash to Nanopool AMD Only
-Miners\Claymore_ZCash_AMD_GPU_Miner_v12.6\ZecMiner64.exe -zpool ssl://zec-us-east1.nanopool.org:6633 -zwal %ZCASH_WALLET_ADDRESS%.%MINER_NAME%/%EMAIL_ADDRESS% -zpsw %WORKER_PASSWORD% -ftime 1 -allpools 1 
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:zcash2
-ECHO NVIDIA DSTM Zcash Miner - Zcash to Nanopool NVIDIA Only
-Miners\zm_0.6_win\zm --server zec-us-east1.nanopool.org --port 6666 --user %ZCASH_WALLET_ADDRESS% --pass %WORKER_PASSWORD%  --color 
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
+:ZEC1
+ECHO ZCash Claymore - Zcash to Nanopool.org AMD Only
+Miners\Claymore_ZCash_AMD_GPU_Miner_v12.6\ZecMiner64 -zpool ssl://zec-us-east1.nanopool.org:6633 -zwal %ZEC%.%MINER_NAME%/%EMAIL_ADDRESS% -zpsw %WORKER_PASSWORD% -ftime 1 -allpools 1
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:ZEC2
+ECHO NVIDIA DSTM Zcash Miner - Zcash to Nanopool.org NVIDIA Only
+Miners\zm_0.6.1_win\zm --server zec-us-east1.nanopool.org --port 6666 --user %ZEC% --pass %WORKER_PASSWORD%  --color
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
 ::
 :: Komodo Miners
 ::
-:komodo1
+:KMD1
 ECHO Claymore AMD - Komodo to Suprnova.cc
-Miners\Claymore_ZCash_AMD_GPU_Miner_v12.6\ZecMiner64.exe -zpool stratum+tcp://kmd.suprnova.cc:6250 -zwal %MINER_WEBLOGIN%.%MINER_NAME% -zpsw %WORKER_PASSWORD% -allpools 1
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:komodo2
+Miners\Claymore_ZCash_AMD_GPU_Miner_v12.6\ZecMiner64 -zpool stratum+tcp://kmd.suprnova.cc:6250 -zwal %MINER_WEBLOGIN%.%MINER_NAME% -zpsw %WORKER_PASSWORD% -allpools 1
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:KMD2
 ECHO NVIDIA DSTM ZMiner - Komodo to Suprnova.cc
-Miners\zm_0.6_win\zm --server kmd.suprnova.cc  --port 6250 --user %MINER_WEBLOGIN%.%MINER_NAME% --pass %WORKER_PASSWORD%
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
+Miners\zm_0.6.1_win\zm --server kmd.suprnova.cc  --port 6250 --user %MINER_WEBLOGIN%.%MINER_NAME% --pass %WORKER_PASSWORD% --color
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
 ::
-:: BTC Private Miners
+:: Bitcoin Private Miners
 ::
-:btcp1
+:BTCP1
 ECHO Claymore AMD - BTCP to btcprivate.org
-Miners\Claymore_ZCash_AMD_GPU_Miner_v12.6\ZecMiner64.exe -zpool pool2.btcprivate.org:3032 -zwal %BTCP1_WALLET_ADDRESS% -zpsw %WORKER_PASSWORD% -ftime 1 -allpools 1 
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:btcp2
+Miners\Claymore_ZCash_AMD_GPU_Miner_v12.6\ZecMiner64 -zpool pool2.btcprivate.org:3032 -zwal %BTCP% -zpsw %WORKER_PASSWORD% -ftime 1 -allpools 1
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:BTCP2
 ECHO NVIDIA DSTM Miner - BTCP to btcprivate.org
-Miners\zm_0.6_win\zm --server pool2.btcprivate.org --port 3032 --user %BTCP1_WALLET_ADDRESS% --pass %WORKER_PASSWORD%  --color 
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
+Miners\zm_0.6.1_win\zm --server pool2.btcprivate.org --port 3032 --user %BTCP% --pass %WORKER_PASSWORD% --color
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
 ::
 :: Zclassic Miners
 ::
-:zcl1
+:ZCL1
 ECHO ZClassic Claymore - Zclassic to miningpoolhub - AMD Only
-Miners\Claymore_ZCash_AMD_GPU_Miner_v12.6\ZecMiner64.exe -zpool us-east.equihash-hub.miningpoolhub.com:20575 -zwal %MINER_WEBLOGIN%.%MINER_NAME% -zpsw %WORKER_PASSWORD% -allpools 1
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:zcl2
+Miners\Claymore_ZCash_AMD_GPU_Miner_v12.6\ZecMiner64 -zpool us-east.equihash-hub.miningpoolhub.com:20575 -zwal %MINER_WEBLOGIN%.%MINER_NAME% -zpsw %WORKER_PASSWORD% -allpools 1
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:ZCL2
 ECHO NVIDIA DSTM Miner - Zclassic to miningpoolhub
-Miners\zm_0.6_win\zm --server us-east.equihash-hub.miningpoolhub.com --port 20575 --user %MINER_WEBLOGIN%.%MINER_NAME% --pass %WORKER_PASSWORD%  --color 
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
+Miners\zm_0.6.1_win\zm --server us-east.equihash-hub.miningpoolhub.com --port 20575 --user %MINER_WEBLOGIN%.%MINER_NAME% --pass %WORKER_PASSWORD%  --color
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
 ::
-:: ZENCash Miners
+:: ZenCash Miners
 ::
-:zen1
+:ZEN1
 ECHO ZENCoin Claymore - ZENCash to Suprnova.cc - AMD Only
-Miners\Claymore_ZCash_AMD_GPU_Miner_v12.6\ZecMiner64.exe -zpool stratum+tcp://zen.suprnova.cc:3618 -zwal %MINER_WEBLOGIN%.%MINER_NAME% -zpsw %WORKER_PASSWORD% -allpools 1
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:zen2
+Miners\Claymore_ZCash_AMD_GPU_Miner_v12.6\ZecMiner64 -zpool stratum+tcp://zen.suprnova.cc:3618 -zwal %MINER_WEBLOGIN%.%MINER_NAME% -zpsw %WORKER_PASSWORD% -allpools 1
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:ZEN2
 ECHO NVIDIA DSTM ZMiner - nVidia Only - ZENCash to Suprnova.cc
-Miners\DSTM_zm_0.5.4_win\zm.exe --dev --server zen.suprnova.cc --port 3618 --user %MINER_WEBLOGIN%.%MINER_NAME% --pass %WORKER_PASSWORD%
-if %ERRORLEVEL% NEQ 0 goto exit
-
-:zen3
+Miners\zm_0.6.1_win\zm --dev --server zen.suprnova.cc --port 3618 --user %MINER_WEBLOGIN%.%MINER_NAME% --pass %WORKER_PASSWORD% --color
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+:ZEN3
 ECHO ZENCoin Claymore - ZENCash to Zhash.pro - AMD Only
-Miners\Claymore_ZCash_AMD_GPU_Miner_v12.6\ZecMiner64.exe -zpool us1.zhash.pro:3059 -zwal %ZEN_WALLET_ADDRESS%.%MINER_NAME% -zpsw %WORKER_PASSWORD% -allpools 1
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:zen4
+Miners\Claymore_ZCash_AMD_GPU_Miner_v12.6\ZecMiner64 -zpool us1.zhash.pro:3059 -zwal %ZEN%.%MINER_NAME% -zpsw %WORKER_PASSWORD% -allpools 1
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:ZEN4
 ECHO NVIDIA DSTM ZMiner - nVidia Only - ZENCash to Zhash.pro
-Miners\DSTM_zm_0.5.4_win\zm.exe --dev --server us1.zhash.pro --port 3059 --user %ZEN_WALLET_ADDRESS%.%MINER_NAME% --pass %WORKER_PASSWORD% 
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
+Miners\zm_0.6.1_win\zm --dev --server us1.zhash.pro --port 3059 --user %ZEN%.%MINER_NAME% --pass %WORKER_PASSWORD% --color
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
 ::
 :: Zcoin Miners
 ::
-
-:zcoin1
-ECHO Nevermore 0.2.2 - Nvidia Only - Zcoin to Miningpoolhub
-Miners\nevermore-v0.2.2-win64\ccminer -a lyra2z -o stratum+tcp://us-east.lyra2z-hub.miningpoolhub.com:20581 -u %MINER_WEBLOGIN%.%MINER_NAME% -p %WORKER_PASSWORD% -i %I% 
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:zcoin2
-ECHO Brians SGMinger AMD 0.4.0 - Zcoin to Miningpoolhub
-Miners\sgminer-x16r-v0.4.0-windows\sgminer.exe -k lyra2z -o stratum+tcp://us-east.lyra2z-hub.miningpoolhub.com:20581 -u %MINER_WEBLOGIN%.%MINER_NAME% -p %WORKER_PASSWORD% -I %I% 
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
+:XZC1
+ECHO Nevermore 0.2.3 - Nvidia Only - Zcoin to Miningpoolhub.com
+Miners\nevermore-v0.2.3-win64\ccminer -a lyra2z -o stratum+tcp://us-east.lyra2z-hub.miningpoolhub.com:20581 -u %MINER_WEBLOGIN%.%MINER_NAME% -p %WORKER_PASSWORD% -i %I%
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:XZC2
+ECHO AMD Avermore 1.4.1 - Zcoin to Miningpoolhub.com
+cd Miners\avermore-windows-1.4.1
+sgminer -k lyra2 -o stratum+tcp://us-east.lyra2z-hub.miningpoolhub.com:20581 -u %MINER_WEBLOGIN%.%MINER_NAME% -p %WORKER_PASSWORD% -I %I%
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
 ::
 :: FTC Miners
 ::
-
-:ftc1
-ECHO Nevermore 0.2.2 - Nvidia Only - FTC to P2Pool FTC
-Miners\nevermore-v0.2.2-win64\ccminer -a neoscrypt -o stratum+tcp://46.4.0.101:19327 -u %FTC_WALLET_ADDRESS% -p %WORKER_PASSWORD%  -N60 -i %I%
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:ftc2
+:FTC1
+ECHO Nevermore 0.2.3 - Nvidia Only - FTC to P2Pool FTC
+Miners\nevermore-v0.2.3-win64\ccminer -a neoscrypt -o stratum+tcp://46.4.0.101:19327 -u %FTC% -p %WORKER_PASSWORD%  -N60 -i %I%
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:FTC2
 ECHO AMD NSGMiner Feathercoin Miner - FTC to P2Pool FTC
-Miners\nsgminer-win64-0.9.4\nsgminer.exe --neoscrypt -g 1 -w 128 -I %I% -o stratum+tcp://46.4.0.101:19327 -O %FTC_WALLET_ADDRESS%:%WORKER_PASSWORD%
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
+cd Miners\nsgminer-win64-0.9.2
+nsgminer --neoscrypt -w 128 -I d -o stratum+tcp://46.4.0.101:19327 -O %FTC%:%WORKER_PASSWORD%
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
 ::
 :: Digibyte Miners
 ::
-
-:dgb1
-ECHO Brians SGMinger AMD 0.4.0 GROESTL - Digibyte to Suprnova.cc
-Miners\sgminer-x16r-v0.4.0-windows\sgminer.exe -o stratum+tcp://dgbg.suprnova.cc:7978 -u %MINER_WEBLOGIN%.%MINER_NAME% -p %WORKER_PASSWORD% -I %I% -g 4 -w 128 -k myriadcoin-groestl --no-submit-stale
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:dgb2
-ECHO Nevermore 0.2.2 - Nvidia Only - Digibyte to Suprnova.cc
-Miners\nevermore-v0.2.2-win64\ccminer -a myr-gr -o stratum+tcp://dgbg.suprnova.cc:7978 -u %MINER_WEBLOGIN%.%MINER_NAME% -p %WORKER_PASSWORD% 
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-
+:DGB1
+ECHO AMD Avermore 1.4.1 GROESTL - Digibyte to Suprnova.cc
+cd Miners\avermore-windows-1.4.1
+sgminer -o stratum+tcp://dgbg.suprnova.cc:7978 -u %MINER_WEBLOGIN%.%MINER_NAME% -p %WORKER_PASSWORD% -I %I% -g 4 -w 128 -k myriadcoin-groestl --no-submit-stale
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:DGB2
+ECHO Nevermore 0.2.3 - Nvidia Only - Digibyte to Suprnova.cc
+Miners\nevermore-v0.2.3-win64\ccminer -a myr-gr -o stratum+tcp://dgbg.suprnova.cc:7978 -u %MINER_WEBLOGIN%.%MINER_NAME% -p %WORKER_PASSWORD%
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
 ::
 :: Monero Miners
 ::
-
-:monero1
-ECHO XMRig 2.5.2 NVIDIA - XMR to Nanopool
-Miners\cryptonight\XMR\xmrig-NVIDIA
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:monero2
-ECHO XMRig 2.5.2 AMD - XMR to Nanopool
-Miners\cryptonight\XMR\xmrig-AMD
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:monero3
-ECHO CAST XMR Vega 0.9.2 - XMR to Nanopool for RX VEGA
-Miners\cast_xmr-vega-win64_092\cast_xmr-vega -S xmr-us-east1.nanopool.org:14444 -u %XMR_WALLET_ADDRESS%.%MINER_NAME% %*
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
+:XMR1
+ECHO XMRig 2.5.2 NVIDIA - XMR to Nanopool.org
+Miners\cryptonight\XMR\xmrig-NVIDIA-2.5.2-Win64\xmrig-NVIDIA
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:XMR2
+ECHO AMD Claymore CryptoNote 11.3 - XMR to Nanopool
+Miners\Claymore_CryptoNote_AMD_v11.3\NsGpuCNMiner -xpool ssl://xmr-us-east1.nanopool.org:14433 -xwal %XMR%.%MINER_NAME%/%EMAIL_ADDRESS% -xpsw x -allpools 1 -pow7 1
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:XMR3
+ECHO CAST XMR Vega 0.9.2 - XMR to Nanopool.org for RX VEGA
+Miners\cast_xmr-vega-win64_092\cast_xmr-vega -S xmr-us-east1.nanopool.org:14444 -u %XMR%.%MINER_NAME% -p x -a 1
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
 ::
 :: Electroneum Miners
 ::
-
-:etn1
-ECHO XMRig 2.5.2 NVIDIA - Electroneum to easyhash.io
-Miners\cryptonight\ETN\xmrig-NVIDIA
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:etn2
-ECHO XMRig 2.5.2 AMD - Electroneum to easyhash.io
-Miners\cryptonight\ETN\xmrig-AMD
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:etn3
-ECHO CAST XMR Vega 0.9.2 - XMR to Electroneum to easyhash.io 
-Miners\cast_xmr-vega-win64_092\cast_xmr-vega -S etn.easyhash.io:3632 -u %ETN_WALLET_ADDRESS%.%MINER_NAME% %*
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
+:ETN1
+ECHO XMRig 2.5.2 NVIDIA - Electroneum to Easyhash.io
+Miners\cryptonight\ETN\xmrig-NVIDIA-2.5.2-Win64\xmrig-NVIDIA
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:ETN2
+ECHO AMD Claymore CryptoNote 11.3 - Electroneum to Easyhash.io
+Miners\Claymore_CryptoNote_AMD_v11.3\NsGpuCNMiner -xpool ssl://etn.easyhash.io:3633 -xwal %ETN%+%MINER_NAME% -xpsw x -di 0123456789 -ftime 1 -allpools 1
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:ETN3
+ECHO CAST XMR Vega 0.9.2 - XMR to Electroneum to Easyhash.io
+Miners\cast_xmr-vega-win64_092\cast_xmr-vega -S etn.easyhash.io:3632 -u %ETN%+%MINER_NAME% -p x -a 0
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
 ::
 :: Sumokoin Miners
 ::
-
-:sumo1
-ECHO XMRig 2.5.2 NVIDIA - Sumo to easyhash.io 
-Miners\cryptonight\SUMO\xmrig-NVIDIA
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:sumo2
-ECHO XMRig 2.5.2 AMD - Sumo to easyhash.io 
-Miners\cryptonight\SUMO\xmrig-AMD
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:sumo3
-ECHO CAST XMR Vega 0.9.2 - Sumo to easyhash.io 
-Miners\cast_xmr-vega-win64_092\cast_xmr-vega -S sumo.easyhash.io:3332 -u %SUMO_WALLET_ADDRESS%.%MINER_NAME% %*
-pause
-
+:SUMO1
+ECHO XMRig 2.5.2 NVIDIA - Sumo to Easyhash.io
+Miners\cryptonight\SUMO\xmrig-NVIDIA-2.5.2-Win64\xmrig-NVIDIA
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:SUMO2
+ECHO AMD Claymore CryptoNote 11.3 - Sumo to Easyhash.io
+Miners\Claymore_CryptoNote_AMD_v11.3\NsGpuCNMiner -xpool ssl://sumo.easyhash.io:3333 -xwal %SUMO%+%MINER_NAME% -xpsw x
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:SUMO3
+ECHO CAST XMR Vega 0.9.2 - Sumo to easyhash.io
+Miners\cast_xmr-vega-win64_092\cast_xmr-vega -S sumo.Easyhash.io:3332 -u %SUMO%+%MINER_NAME% -p x -a 0
+PAUSE
 ::
 :: Karbowanec Miners
 ::
-
-:karb1
-ECHO XMRig 2.5.5 NVIDIA - Sumo to easyhash.io  - Karbowanec to easyhash.io 
+:KRB1
+ECHO XMRig 2.5.5 NVIDIA - Sumo to easyhash.io  - Karbowanec to Cryptoknight.cc
 Miners\cryptonight\KARB\xmrig-NVIDIA
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:karb2
-ECHO XMRig 2.5.5 AMD - Karbowanec to easyhash.io
-Miners\cryptonight\KARB\xmrig-AMD
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:karb3
-ECHO CAST XMR Vega 0.9.2 - Karbowanec to easyhash.io
-Miners\cast_xmr-vega-win64_092\cast_xmr-vega -S krb.easyhash.io:3532 -u %KRB_WALLET_ADDRESS%.%MINER_NAME% %*
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:KRB2
+ECHO AMD Claymore CryptoNote 11.3 - Karbowanec to Cryptoknight.cc
+Miners\Claymore_CryptoNote_AMD_v11.3\NsGpuCNMiner -xpool stratum+tcp://karbo.ingest.cryptoknight.cc:29991 -xwal %KRB% -xpsw x
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:KRB3
+ECHO CAST XMR Vega 0.9.2 - Karbowanec Cryptoknight.cc
+Miners\cast_xmr-vega-win64_092\cast_xmr-vega -S karbo.ingest.cryptoknight.cc:29992 -u %KRB% -p x -a 0
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
 ::
-:: Bulkwark Miners
+:: Ravencoin Miners
 ::
-
-:bulk1
-ECHO Brians SGMinger AMD 0.4.0 Bulkwark to bsod.pw 
-Miners\sgminer-x16r-v0.4.0-windows\sgminer.exe -k NIST5 -o stratum+tcp://pool.bsod.pw:3833 -u %MINER_WEBLOGIN%.%MINER_NAME% -p %WORKER_PASSWORD% -i %I% 
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:bulk2
-ECHO Nevermore 0.2.2 - Nvidia Only - Bulkwark to bsod.pw 
-Miners\nevermore-v0.2.2-win64\ccminer -a NIST5 -o stratum+tcp://pool.bsod.pw:3833 -u %MINER_WEBLOGIN%.%MINER_NAME% -p %WORKER_PASSWORD% -i %I%
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-::
-:: RavenCoin Miners
-::
-
-:rvn1
-ECHO Brians SGMinger AMD 0.4.0 - RavenCoin to Threeyed
-Miners\sgminer-x16r-v0.4.0-windows\sgminer.exe -k x16r -o stratum+tcp://stratum.threeeyed.info:3333 -u %RVN_WALLET_ADDRESS% -p %WORKER_PASSWORD% -i %I% 
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:rvn2
-ECHO Nevermore 0.2.2 - Nvidia Only - RavenCoin to Threeyed
-Miners\nevermore-v0.2.2-win64\ccminer -a x16r -o stratum+tcp://stratum.threeeyed.info:3333 -u %RVN_WALLET_ADDRESS% -p %WORKER_PASSWORD% -i %I% 
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:rvn3
-ECHO Enemy 1.3.0 - Nvidia Only - RavenCoin to Threeyed
-Miners\Enemy-ccminer.1.3.0\ccminer -a x16r -o stratum+tcp://stratum.threeeyed.info:3333 -u %RVN_WALLET_ADDRESS% -p %WORKER_PASSWORD% -i %I% 
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:rvn4
-ECHO Suprminer 1.6.0 - Nvidia Only - RavenCoin to Threeyed
-Miners\suprminer-1.6\ccminer -a x16r -o stratum+tcp://stratum.threeeyed.info:3333 -u %RVN_WALLET_ADDRESS% -p %WORKER_PASSWORD% -i %I% 
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
+:RVN1
+ECHO AMD Avermore 1.4.1 - RavenCoin to Ravenminer.com
+cd Miners\avermore-windows-1.4.1
+sgminer -o stratum+tcp://us.ravenminer.com:4567 -u %RVN% -p %MINER_NAME% -k x16r --no-submit-stale
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:RVN2
+ECHO Nevermore 0.2.3 - Nvidia Only - RavenCoin to Ravenminer.com
+Miners\nevermore-v0.2.3-win64\ccminer -a x16r -o stratum+tcp://us.ravenminer.com:4567 -u %RVN% -p %MINER_NAME% -i %I%
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:RVN3
+ECHO Enemy 1.3.0 - Nvidia Only - RavenCoin to Ravenminer.com
+Miners\Enemy-ccminer.1.3.0\ccminer -a x16r -o stratum+tcp://us.ravenminer.com:4567 -u %RVN% -p %MINER_NAME% -i %I%
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:RVN4
+ECHO Suprminer 1.6.0 - Nvidia Only - RavenCoin to Ravenminer.com
+Miners\suprminer-1.6\ccminer -a x16r -o stratum+tcp://us.ravenminer.com:4567 -u %RVN% -p %MINER_NAME% -i %I%
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
 ::
 :: Pigeoncoin Miners
 ::
-
-:pgn1
-ECHO Brians SGMinger AMD 0.4.0 - Pigeoncoin to Blockcruncher
-Miners\sgminer-x16r-v0.4.0-windows\sgminer.exe -k x16s -o stratum+tcp://blockcruncher.com:3636 -u %PGN_WALLET_ADDRESS% -p %WORKER_PASSWORD% -i %I% 
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:pgn2
-ECHO Nevermore 0.2.2 - Nvidia Only - Pigeoncoin to Blockcruncher
-Miners\nevermore-v0.2.2-win64\ccminer -a x16s -o stratum+tcp://blockcruncher.com:3636 -u %PGN_WALLET_ADDRESS% -p %WORKER_PASSWORD% -i %I% 
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
+:PGN1
+ECHO AMD Avermore 1.4.1 - Pigeoncoin to Blockcruncher
+cd Miners\avermore-windows-1.4.1
+sgminer -k x16s -o stratum+tcp://blockcruncher.com:3636 -u %PGN% -p %WORKER_PASSWORD% -I %I%
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:PGN2
+ECHO Nevermore 0.2.3 - Nvidia Only - Pigeoncoin to Blockcruncher
+Miners\nevermore-v0.2.3-win64\ccminer -a x16s -o stratum+tcp://blockcruncher.com:3636 -u %PGN% -p %WORKER_PASSWORD% -i %I%
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
 ::
 :: Vertcoin Miner
 ::
-:vtc1
-ECHO Mkxminer 3.1.0 - AMD Only - Vertcoin to Miningpoolhub 
-Miners\mkxminer310\mkxminer -a Lyra2rev2 -o stratum+tcp://vtc.suprnova.cc:5678 -u %MINER_WEBLOGIN%.%MINER_NAME% -p %WORKER_PASSWORD% -i %I% --platform %platform%
-
-:vtc2
-ECHO Nevermore 0.2.2 - Nvidia Only - Vertcoin to Miningpoolhub
-Miners\nevermore-v0.2.2-win64\ccminer -a Lyra2rev2 -o stratum+tcp://hub.miningpoolhub.com:20507 -u %MINER_WEBLOGIN%.%MINER_NAME% -p %WORKER_PASSWORD% -i %I%
-
+:VTC1
+ECHO AMD Avermore 1.4.1 - Vertcoin to Suprnova.cc
+cd Miners\avermore-windows-1.4.1
+sgminer -o stratum+tcp://vtc.suprnova.cc:5678 -u %MINER_WEBLOGIN%.%MINER_NAME% -p %WORKER_PASSWORD% -k lyra2rev2 --no-submit-stale
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:VTC2
+ECHO Nevermore 0.2.3 - Nvidia Only - Vertcoin to Miningpoolhub
+Miners\nevermore-v0.2.3-win64\ccminer -a Lyra2rev2 -o stratum+tcp://hub.miningpoolhub.com:20507 -u %MINER_WEBLOGIN%.%MINER_NAME% -p %WORKER_PASSWORD% -i %I%
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
 ::
 :: MonaCoin Miners
 ::
-:mona1
-ECHO Mkxminer 3.1.0 - AMD Only - Monacoin to Miningpoolhub
-Miners\mkxminer310\mkxminer -a Lyra2rev2 -o stratum+tcp://hub.miningpoolhub.com:20593 -u %MINER_WEBLOGIN%.%MINER_NAME% -p %WORKER_PASSWORD% -i %I% --platform %platform%
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
-:mona2
-ECHO Nevermore 0.2.2 - Nvidia Only - Monacoin to Miningpoolhub
-Miners\nevermore-v0.2.2-win64\ccminer  -a Lyra2rev2 -o stratum+tcp://hub.miningpoolhub.com:20593 -u %MINER_WEBLOGIN%.%MINER_NAME% -p %WORKER_PASSWORD% -i %I%
-if %ERRORLEVEL% NEQ 0 goto exit
-pause
-
+:MONA1
+ECHO AMD Avermore 1.4.1 - MonaCoin to miningpoolhub.com
+cd Miners\avermore-windows-1.4.1
+sgminer -o stratum+tcp://hub.miningpoolhub.com:20593 -u %MINER_WEBLOGIN%.%MINER_NAME% -p x -k lyra2rev2 --no-submit-stale
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+:MONA2
+ECHO Nevermore 0.2.3 - Nvidia Only - Monacoin to Miningpoolhub
+Miners\nevermore-v0.2.3-win64\ccminer -a Lyra2rev2 -o stratum+tcp://hub.miningpoolhub.com:20593 -u %MINER_WEBLOGIN%.%MINER_NAME% -p %WORKER_PASSWORD% -i %I%
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
 :EOF
