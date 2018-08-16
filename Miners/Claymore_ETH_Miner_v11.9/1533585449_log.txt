@@ -1,0 +1,239 @@
+13:57:29:169	18c4	Check and remove old log files...
+13:57:29:173	18c4	args: -epool stratum+tcp://ellaismpool.com:8008 -ewal 0x1FD15054675c913b5B7A21b0d7338fff9FAFB8eE -epsw x -allpools 1 -allcoins 1 -gser 2 
+13:57:29:176	18c4	
+13:57:29:179	18c4	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+13:57:29:181	18c4	บ                Claymore's Dual GPU Miner - v11.9               บ
+13:57:29:182	18c4	บ              ETH + DCR/SIA/LBC/PASC/BLAKE2S/KECCAK             บ
+13:57:29:183	18c4	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+13:57:29:184	18c4	
+13:57:29:185	18c4	b597 
+13:57:29:389	18c4	ETH: 1 pool is specified
+13:57:29:392	18c4	Main Ethereum pool is ellaismpool.com:8008
+13:57:29:394	18c4	DCR: 0 pool is specified
+13:57:29:551	18c4	OpenCL platform: AMD Accelerated Parallel Processing
+13:57:29:552	18c4	OpenCL platform: Intel(R) OpenCL
+13:57:29:552	18c4	OpenCL platform: NVIDIA CUDA
+13:57:29:555	18c4	OpenCL initializing...
+
+13:57:29:556	18c4	AMD Cards available: 1 
+13:57:29:557	18c4	GPU #0: Ellesmere (Radeon RX 580 Series), 8192 MB available, 36 compute units (pci bus 3:0:0)
+13:57:29:557	18c4	GPU #0 recognized as Radeon RX 480/580
+13:57:29:558	18c4	POOL/SOLO version
+13:57:29:558	18c4	Platform: Windows
+13:57:29:679	18c4	start building OpenCL program for GPU 0...
+13:57:29:988	18c4	done
+13:57:30:240	18c4	GPU #0: algorithm ASM 1
+13:57:30:357	18c4	CUDA initializing...
+
+13:57:30:358	18c4	NVIDIA Cards available: 1 
+13:57:30:359	18c4	CUDA Driver Version/Runtime Version: 9.2/8.0
+13:57:30:363	18c4	GPU #1: GeForce GTX 1080, 8192 MB available, 20 compute units, capability: 6.1  (pci bus 5:0:0)
+13:57:30:364	18c4	Total cards: 2 
+13:57:34:374	18c4	NVML version: 9.398.36
+13:57:35:600	18c4	SSL: Imported 41 certificates from local storage
+13:57:35:607	26d8	ETH: Stratum - connecting to 'ellaismpool.com' <45.63.93.129> port 8008 (unsecure)
+13:57:35:653	26d8	sent: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0x1FD15054675c913b5B7A21b0d7338fff9FAFB8eE", "x"], "id": 2, "method": "eth_submitLogin"}
+
+13:57:35:656	26d8	ETH: Stratum - Connected (ellaismpool.com:8008) (unsecure)
+13:57:35:692	26d8	buf: {"id":2,"jsonrpc":"2.0","result":true}
+
+13:57:35:695	26d8	ETH: Authorized
+13:57:35:699	26d8	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+13:57:35:702	18c4	No pool specified for Decred! Ethereum-only mining mode is enabled
+13:57:35:704	18c4	ETHEREUM-ONLY MINING MODE ENABLED (-mode 1)
+13:57:35:705	18c4	ETH: eth-proxy stratum mode
+13:57:35:707	18c4	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+13:57:35:709	18c4	"-allcoins" option is set, default pools will be used for devfee, check "Readme" file for details.
+13:57:35:711	18c4	Watchdog enabled
+13:57:35:712	18c4	Remote management (READ-ONLY MODE) is enabled on port 3333
+13:57:35:713	18c4	
+13:57:35:715	18c4	You did not specify -dcri values directly, so they will be detected automatically
+13:57:35:717	18c4	Automatic detection of best -dcri values started, please wait...
+
+13:57:35:743	26d8	buf: {"id":3,"jsonrpc":"2.0","result":null,"error":{"code":0,"message":"Work not ready"}}
+
+13:57:35:743	26d8	ETH: Received error: {"id":3,"jsonrpc":"2.0","result":null,"error":{"code":0,"message":"Worknotready"}}
+13:57:35:746	26d8	Socket was closed remotely (by pool)
+13:57:35:747	26d8	ETH: Job timeout, disconnect, retry in 20 sec...
+13:57:55:750	26d8	ETH: Stratum - connecting to 'ellaismpool.com' <45.63.93.129> port 8008 (unsecure)
+13:57:55:790	26d8	sent: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0x1FD15054675c913b5B7A21b0d7338fff9FAFB8eE", "x"], "id": 2, "method": "eth_submitLogin"}
+
+13:57:55:794	26d8	ETH: Stratum - Connected (ellaismpool.com:8008) (unsecure)
+13:57:55:830	26d8	buf: {"id":2,"jsonrpc":"2.0","result":true}
+
+13:57:55:833	26d8	ETH: Authorized
+13:57:55:837	26d8	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+13:57:55:874	26d8	buf: {"id":3,"jsonrpc":"2.0","result":null,"error":{"code":0,"message":"Work not ready"}}
+
+13:57:55:879	26d8	ETH: Received error: {"id":3,"jsonrpc":"2.0","result":null,"error":{"code":0,"message":"Worknotready"}}
+13:57:55:881	26d8	Socket was closed remotely (by pool)
+13:57:55:884	26d8	ETH: Job timeout, disconnect, retry in 20 sec...
+13:57:59:561	1d4c	em hbt: 3813, fm hbt: 0, 
+13:57:59:563	1d4c	watchdog - thread 0 (gpu0), hb time 47
+13:57:59:565	1d4c	watchdog - thread 1 (gpu0), hb time 47
+13:57:59:568	1d4c	watchdog - thread 2 (gpu1), hb time 47
+13:57:59:570	1d4c	watchdog - thread 3 (gpu1), hb time 47
+13:57:59:938	ebc	GPU0 t=45C fan=0%; GPU1 t=43C fan=17%
+13:58:15:889	26d8	ETH: Stratum - connecting to 'ellaismpool.com' <45.63.93.129> port 8008 (unsecure)
+13:58:16:010	26d8	sent: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0x1FD15054675c913b5B7A21b0d7338fff9FAFB8eE", "x"], "id": 2, "method": "eth_submitLogin"}
+
+13:58:16:013	26d8	ETH: Stratum - Connected (ellaismpool.com:8008) (unsecure)
+13:58:16:048	26d8	buf: {"id":2,"jsonrpc":"2.0","result":true}
+
+13:58:16:051	26d8	ETH: Authorized
+13:58:16:054	26d8	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+13:58:16:088	26d8	buf: {"id":3,"jsonrpc":"2.0","result":null,"error":{"code":0,"message":"Work not ready"}}
+
+13:58:16:090	26d8	ETH: Received error: {"id":3,"jsonrpc":"2.0","result":null,"error":{"code":0,"message":"Worknotready"}}
+13:58:16:094	26d8	Socket was closed remotely (by pool)
+13:58:16:095	26d8	ETH: Job timeout, disconnect, retry in 20 sec...
+13:58:29:742	1d4c	em hbt: 13843, fm hbt: 0, 
+13:58:29:742	1d4c	watchdog - thread 0 (gpu0), hb time 31
+13:58:29:743	1d4c	watchdog - thread 1 (gpu0), hb time 16
+13:58:29:743	1d4c	watchdog - thread 2 (gpu1), hb time 31
+13:58:29:744	1d4c	watchdog - thread 3 (gpu1), hb time 109
+13:58:30:536	ebc	GPU0 t=45C fan=0%; GPU1 t=45C fan=19%
+13:58:36:099	26d8	ETH: Stratum - connecting to 'ellaismpool.com' <45.63.93.129> port 8008 (unsecure)
+13:58:36:265	26d8	sent: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0x1FD15054675c913b5B7A21b0d7338fff9FAFB8eE", "x"], "id": 2, "method": "eth_submitLogin"}
+
+13:58:36:266	26d8	ETH: Stratum - Connected (ellaismpool.com:8008) (unsecure)
+13:58:36:310	26d8	buf: {"id":2,"jsonrpc":"2.0","result":true}
+
+13:58:36:312	26d8	ETH: Authorized
+13:58:36:314	26d8	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+13:58:36:358	26d8	buf: {"id":3,"jsonrpc":"2.0","result":null,"error":{"code":0,"message":"Work not ready"}}
+
+13:58:36:359	26d8	ETH: Received error: {"id":3,"jsonrpc":"2.0","result":null,"error":{"code":0,"message":"Worknotready"}}
+13:58:36:360	26d8	Socket was closed remotely (by pool)
+13:58:36:361	26d8	ETH: Job timeout, disconnect, retry in 20 sec...
+13:58:56:364	26d8	ETH: Stratum - connecting to 'ellaismpool.com' <45.63.93.129> port 8008 (unsecure)
+13:58:56:411	26d8	sent: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0x1FD15054675c913b5B7A21b0d7338fff9FAFB8eE", "x"], "id": 2, "method": "eth_submitLogin"}
+
+13:58:56:412	26d8	ETH: Stratum - Connected (ellaismpool.com:8008) (unsecure)
+13:58:56:455	26d8	buf: {"id":2,"jsonrpc":"2.0","result":true}
+
+13:58:56:456	26d8	ETH: Authorized
+13:58:56:458	26d8	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+13:58:56:501	26d8	buf: {"id":3,"jsonrpc":"2.0","result":null,"error":{"code":0,"message":"Work not ready"}}
+
+13:58:56:504	26d8	ETH: Received error: {"id":3,"jsonrpc":"2.0","result":null,"error":{"code":0,"message":"Worknotready"}}
+13:58:56:506	26d8	Socket was closed remotely (by pool)
+13:58:56:507	26d8	ETH: Job timeout, disconnect, retry in 20 sec...
+13:58:59:910	1d4c	em hbt: 3547, fm hbt: 0, 
+13:58:59:912	1d4c	watchdog - thread 0 (gpu0), hb time 93
+13:58:59:914	1d4c	watchdog - thread 1 (gpu0), hb time 15
+13:58:59:917	1d4c	watchdog - thread 2 (gpu1), hb time 0
+13:58:59:919	1d4c	watchdog - thread 3 (gpu1), hb time 31
+13:59:01:124	ebc	GPU0 t=45C fan=0%; GPU1 t=47C fan=21%
+13:59:16:510	26d8	ETH: Stratum - connecting to 'ellaismpool.com' <45.63.93.129> port 8008 (unsecure)
+13:59:16:557	26d8	sent: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0x1FD15054675c913b5B7A21b0d7338fff9FAFB8eE", "x"], "id": 2, "method": "eth_submitLogin"}
+
+13:59:16:558	26d8	ETH: Stratum - Connected (ellaismpool.com:8008) (unsecure)
+13:59:16:601	26d8	buf: {"id":2,"jsonrpc":"2.0","result":true}
+
+13:59:16:602	26d8	ETH: Authorized
+13:59:16:604	26d8	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+13:59:16:646	26d8	buf: {"id":3,"jsonrpc":"2.0","result":null,"error":{"code":0,"message":"Work not ready"}}
+
+13:59:16:647	26d8	ETH: Received error: {"id":3,"jsonrpc":"2.0","result":null,"error":{"code":0,"message":"Worknotready"}}
+13:59:16:648	26d8	Socket was closed remotely (by pool)
+13:59:16:649	26d8	ETH: Job timeout, disconnect, retry in 20 sec...
+13:59:30:076	1d4c	em hbt: 13562, fm hbt: 15, 
+13:59:30:077	1d4c	watchdog - thread 0 (gpu0), hb time 62
+13:59:30:077	1d4c	watchdog - thread 1 (gpu0), hb time 62
+13:59:30:078	1d4c	watchdog - thread 2 (gpu1), hb time 62
+13:59:30:079	1d4c	watchdog - thread 3 (gpu1), hb time 62
+13:59:31:715	ebc	GPU0 t=45C fan=0%; GPU1 t=48C fan=23%
+13:59:36:652	26d8	ETH: Stratum - connecting to 'ellaismpool.com' <45.63.93.129> port 8008 (unsecure)
+13:59:36:702	26d8	sent: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0x1FD15054675c913b5B7A21b0d7338fff9FAFB8eE", "x"], "id": 2, "method": "eth_submitLogin"}
+
+13:59:36:704	26d8	ETH: Stratum - Connected (ellaismpool.com:8008) (unsecure)
+13:59:36:739	26d8	buf: {"id":2,"jsonrpc":"2.0","result":true}
+
+13:59:36:740	26d8	ETH: Authorized
+13:59:36:742	26d8	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+13:59:36:787	26d8	buf: {"id":3,"jsonrpc":"2.0","result":null,"error":{"code":0,"message":"Work not ready"}}
+
+13:59:36:788	26d8	ETH: Received error: {"id":3,"jsonrpc":"2.0","result":null,"error":{"code":0,"message":"Worknotready"}}
+13:59:36:791	26d8	Socket was closed remotely (by pool)
+13:59:36:792	26d8	ETH: Job timeout, disconnect, retry in 20 sec...
+13:59:56:794	26d8	ETH: Stratum - connecting to 'ellaismpool.com' <45.63.93.129> port 8008 (unsecure)
+13:59:56:841	26d8	sent: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0x1FD15054675c913b5B7A21b0d7338fff9FAFB8eE", "x"], "id": 2, "method": "eth_submitLogin"}
+
+13:59:56:842	26d8	ETH: Stratum - Connected (ellaismpool.com:8008) (unsecure)
+13:59:56:886	26d8	buf: {"id":2,"jsonrpc":"2.0","result":true}
+
+13:59:56:886	26d8	ETH: Authorized
+13:59:56:887	26d8	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+13:59:56:932	26d8	buf: {"id":3,"jsonrpc":"2.0","result":null,"error":{"code":0,"message":"Work not ready"}}
+
+13:59:56:932	26d8	ETH: Received error: {"id":3,"jsonrpc":"2.0","result":null,"error":{"code":0,"message":"Worknotready"}}
+13:59:56:933	26d8	Socket was closed remotely (by pool)
+13:59:56:934	26d8	ETH: Job timeout, disconnect, retry in 20 sec...
+14:00:00:245	1d4c	em hbt: 3453, fm hbt: 16, 
+14:00:00:246	1d4c	watchdog - thread 0 (gpu0), hb time 94
+14:00:00:247	1d4c	watchdog - thread 1 (gpu0), hb time 31
+14:00:00:248	1d4c	watchdog - thread 2 (gpu1), hb time 94
+14:00:00:249	1d4c	watchdog - thread 3 (gpu1), hb time 31
+14:00:02:302	ebc	GPU0 t=45C fan=0%; GPU1 t=49C fan=24%
+14:00:16:936	26d8	ETH: Stratum - connecting to 'ellaismpool.com' <45.63.93.129> port 8008 (unsecure)
+14:00:16:981	26d8	sent: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0x1FD15054675c913b5B7A21b0d7338fff9FAFB8eE", "x"], "id": 2, "method": "eth_submitLogin"}
+
+14:00:16:982	26d8	ETH: Stratum - Connected (ellaismpool.com:8008) (unsecure)
+14:00:17:025	26d8	buf: {"id":2,"jsonrpc":"2.0","result":true}
+
+14:00:17:026	26d8	ETH: Authorized
+14:00:17:027	26d8	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+14:00:17:070	26d8	buf: {"id":3,"jsonrpc":"2.0","result":null,"error":{"code":0,"message":"Work not ready"}}
+
+14:00:17:071	26d8	ETH: Received error: {"id":3,"jsonrpc":"2.0","result":null,"error":{"code":0,"message":"Worknotready"}}
+14:00:17:072	26d8	Socket was closed remotely (by pool)
+14:00:17:074	26d8	ETH: Job timeout, disconnect, retry in 20 sec...
+14:00:30:412	1d4c	em hbt: 13468, fm hbt: 15, 
+14:00:30:415	1d4c	watchdog - thread 0 (gpu0), hb time 63
+14:00:30:419	1d4c	watchdog - thread 1 (gpu0), hb time 0
+14:00:30:421	1d4c	watchdog - thread 2 (gpu1), hb time 47
+14:00:30:423	1d4c	watchdog - thread 3 (gpu1), hb time 0
+14:00:32:890	ebc	GPU0 t=45C fan=0%; GPU1 t=50C fan=25%
+14:00:37:077	26d8	ETH: Stratum - connecting to 'ellaismpool.com' <45.63.93.129> port 8008 (unsecure)
+14:00:37:124	26d8	sent: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0x1FD15054675c913b5B7A21b0d7338fff9FAFB8eE", "x"], "id": 2, "method": "eth_submitLogin"}
+
+14:00:37:125	26d8	ETH: Stratum - Connected (ellaismpool.com:8008) (unsecure)
+14:00:37:169	26d8	buf: {"id":2,"jsonrpc":"2.0","result":true}
+
+14:00:37:172	26d8	ETH: Authorized
+14:00:37:175	26d8	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+14:00:37:209	26d8	buf: {"id":3,"jsonrpc":"2.0","result":null,"error":{"code":0,"message":"Work not ready"}}
+
+14:00:37:212	26d8	ETH: Received error: {"id":3,"jsonrpc":"2.0","result":null,"error":{"code":0,"message":"Worknotready"}}
+14:00:37:216	26d8	Socket was closed remotely (by pool)
+14:00:37:219	26d8	ETH: Job timeout, disconnect, retry in 20 sec...
+14:00:57:223	26d8	ETH: Stratum - connecting to 'ellaismpool.com' <45.63.93.129> port 8008 (unsecure)
+14:00:57:271	26d8	sent: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0x1FD15054675c913b5B7A21b0d7338fff9FAFB8eE", "x"], "id": 2, "method": "eth_submitLogin"}
+
+14:00:57:272	26d8	ETH: Stratum - Connected (ellaismpool.com:8008) (unsecure)
+14:00:57:315	26d8	buf: {"id":2,"jsonrpc":"2.0","result":true}
+
+14:00:57:316	26d8	ETH: Authorized
+14:00:57:318	26d8	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+14:00:57:360	26d8	buf: {"id":3,"jsonrpc":"2.0","result":null,"error":{"code":0,"message":"Work not ready"}}
+
+14:00:57:361	26d8	ETH: Received error: {"id":3,"jsonrpc":"2.0","result":null,"error":{"code":0,"message":"Worknotready"}}
+14:00:57:364	26d8	Socket was closed remotely (by pool)
+14:00:57:366	26d8	ETH: Job timeout, disconnect, retry in 20 sec...
+14:01:00:583	1d4c	em hbt: 3359, fm hbt: 15, 
+14:01:00:585	1d4c	watchdog - thread 0 (gpu0), hb time 31
+14:01:00:587	1d4c	watchdog - thread 1 (gpu0), hb time 63
+14:01:00:590	1d4c	watchdog - thread 2 (gpu1), hb time 31
+14:01:00:592	1d4c	watchdog - thread 3 (gpu1), hb time 47

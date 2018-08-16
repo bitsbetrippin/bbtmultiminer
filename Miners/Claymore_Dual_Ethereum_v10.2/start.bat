@@ -1,1 +1,0 @@
-EthDcrMiner64.exe -epool stratum+tcp://etn.easyhash.io:3632 -ewal etnkC8KxSU1Xi5Mu8G6eeVjdw51gAU6jpL4JEQdmVbVBg3tt5WAiq5TdtNtiqhcxBxdZVgUzM3KnV3kbokBQh8Qq1CBACJdvj7 -epsw x -allcoins 1

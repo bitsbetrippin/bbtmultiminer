@@ -1,0 +1,58 @@
+12:19:15:090	1088	Check and remove old log files...
+12:19:15:094	1088	args: -epool stratum+tcp://ellaismpool.com:8008 -ewal 0x1FD15054675c913b5B7A21b0d7338fff9FAFB8eE -epsw x -allpools 1 -allcoins 1 
+12:19:15:097	1088	
+12:19:15:098	1088	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+12:19:15:099	1088	บ                Claymore's Dual GPU Miner - v11.9               บ
+12:19:15:100	1088	บ              ETH + DCR/SIA/LBC/PASC/BLAKE2S/KECCAK             บ
+12:19:15:101	1088	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+12:19:15:102	1088	
+12:19:15:102	1088	b597 
+12:19:15:309	1088	ETH: 1 pool is specified
+12:19:15:311	1088	Main Ethereum pool is ellaismpool.com:8008
+12:19:15:314	1088	DCR: 0 pool is specified
+12:19:16:131	1088	OpenCL platform: AMD Accelerated Parallel Processing
+12:19:16:132	1088	OpenCL platform: Intel(R) OpenCL
+12:19:16:132	1088	OpenCL platform: NVIDIA CUDA
+12:19:16:137	1088	OpenCL initializing...
+
+12:19:16:138	1088	AMD Cards available: 1 
+12:19:16:139	1088	GPU #0: Ellesmere (Radeon RX 580 Series), 8192 MB available, 36 compute units (pci bus 3:0:0)
+12:19:16:140	1088	GPU #0 recognized as Radeon RX 480/580
+12:19:16:141	1088	POOL/SOLO version
+12:19:16:141	1088	Platform: Windows
+12:19:16:266	1088	start building OpenCL program for GPU 0...
+12:19:17:021	1088	done
+12:19:17:262	1088	GPU #0: algorithm ASM 1
+12:19:17:372	1088	CUDA initializing...
+
+12:19:17:373	1088	NVIDIA Cards available: 1 
+12:19:17:375	1088	CUDA Driver Version/Runtime Version: 9.2/8.0
+12:19:17:379	1088	GPU #1: GeForce GTX 1080, 8192 MB available, 20 compute units, capability: 6.1  (pci bus 5:0:0)
+12:19:17:380	1088	Total cards: 2 
+12:19:20:592	1088	NVML version: 9.398.36
+12:19:21:846	1088	SSL: Imported 41 certificates from local storage
+12:19:21:925	2674	ETH: Stratum - connecting to 'ellaismpool.com' <45.63.93.129> port 8008 (unsecure)
+12:19:21:947	1088	No pool specified for Decred! Ethereum-only mining mode is enabled
+12:19:21:948	1088	ETHEREUM-ONLY MINING MODE ENABLED (-mode 1)
+12:19:21:949	1088	ETH: eth-proxy stratum mode
+12:19:21:949	1088	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+12:19:21:950	1088	"-allcoins" option is set, default pools will be used for devfee, check "Readme" file for details.
+12:19:21:951	1088	Watchdog enabled
+12:19:21:952	1088	Remote management (READ-ONLY MODE) is enabled on port 3333
+12:19:21:952	1088	
+12:19:21:953	1088	You did not specify -dcri values directly, so they will be detected automatically
+12:19:21:954	1088	Automatic detection of best -dcri values started, please wait...
+
+12:19:21:986	2674	sent: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0x1FD15054675c913b5B7A21b0d7338fff9FAFB8eE", "x"], "id": 2, "method": "eth_submitLogin"}
+
+12:19:21:988	2674	ETH: Stratum - Connected (ellaismpool.com:8008) (unsecure)
+12:19:22:034	2674	buf: {"id":2,"jsonrpc":"2.0","result":true}
+
+12:19:22:035	2674	ETH: Authorized
+12:19:22:036	2674	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+12:19:22:079	2674	buf: {"id":3,"jsonrpc":"2.0","result":null,"error":{"code":0,"message":"Work not ready"}}
+
+12:19:22:082	2674	ETH: Received error: {"id":3,"jsonrpc":"2.0","result":null,"error":{"code":0,"message":"Worknotready"}}
+12:19:22:085	2674	Socket was closed remotely (by pool)
+12:19:22:088	2674	ETH: Job timeout, disconnect, retry in 20 sec...

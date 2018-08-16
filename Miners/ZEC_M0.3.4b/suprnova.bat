@@ -1,1 +1,0 @@
-miner --server zec.suprnova.cc --user suprnova.1 --pass x --port 2142

@@ -1,0 +1,115 @@
+12:21:09:147	2798	Check and remove old log files...
+12:21:09:150	2798	args: -epool us1.ethermine.org:4444 -ewal 0xb49b49d65d7674061cdf807d138653560ca23e78.TESTRIG -epsw x 
+12:21:09:153	2798	
+12:21:09:156	2798	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+12:21:09:157	2798	บ                Claymore's Dual GPU Miner - v11.9               บ
+12:21:09:158	2798	บ              ETH + DCR/SIA/LBC/PASC/BLAKE2S/KECCAK             บ
+12:21:09:159	2798	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+12:21:09:160	2798	
+12:21:09:160	2798	b597 
+12:21:09:362	2798	ETH: 1 pool is specified
+12:21:09:365	2798	Main Ethereum pool is us1.ethermine.org:4444
+12:21:09:368	2798	DCR: 0 pool is specified
+12:21:09:502	2798	OpenCL platform: AMD Accelerated Parallel Processing
+12:21:09:503	2798	OpenCL platform: Intel(R) OpenCL
+12:21:09:504	2798	OpenCL platform: NVIDIA CUDA
+12:21:09:507	2798	OpenCL initializing...
+
+12:21:09:508	2798	AMD Cards available: 1 
+12:21:09:509	2798	GPU #0: Ellesmere (Radeon RX 580 Series), 8192 MB available, 36 compute units (pci bus 3:0:0)
+12:21:09:509	2798	GPU #0 recognized as Radeon RX 480/580
+12:21:09:510	2798	POOL/SOLO version
+12:21:09:511	2798	Platform: Windows
+12:21:09:612	2798	start building OpenCL program for GPU 0...
+12:21:09:917	2798	done
+12:21:10:173	2798	GPU #0: algorithm ASM 1
+12:21:10:285	2798	CUDA initializing...
+
+12:21:10:286	2798	NVIDIA Cards available: 1 
+12:21:10:287	2798	CUDA Driver Version/Runtime Version: 9.2/8.0
+12:21:10:291	2798	GPU #1: GeForce GTX 1080, 8192 MB available, 20 compute units, capability: 6.1  (pci bus 5:0:0)
+12:21:10:292	2798	Total cards: 2 
+12:21:14:303	2798	NVML version: 9.398.36
+12:21:15:536	2798	SSL: Imported 41 certificates from local storage
+12:21:15:559	21fc	ETH: Stratum - connecting to 'us1.ethermine.org' <18.191.218.23> port 4444 (unsecure)
+12:21:15:613	21fc	sent: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0xb49b49d65d7674061cdf807d138653560ca23e78.TESTRIG", "x"], "id": 2, "method": "eth_submitLogin"}
+
+12:21:15:614	21fc	ETH: Stratum - Connected (us1.ethermine.org:4444) (unsecure)
+12:21:15:638	2798	No pool specified for Decred! Ethereum-only mining mode is enabled
+12:21:15:638	2798	ETHEREUM-ONLY MINING MODE ENABLED (-mode 1)
+12:21:15:640	2798	ETH: eth-proxy stratum mode
+12:21:15:641	2798	Watchdog enabled
+12:21:15:641	2798	Remote management (READ-ONLY MODE) is enabled on port 3333
+12:21:15:641	2798	
+12:21:15:642	2798	You did not specify -dcri values directly, so they will be detected automatically
+12:21:15:643	2798	Automatic detection of best -dcri values started, please wait...
+
+12:21:15:657	21fc	buf: {"id":2,"jsonrpc":"2.0","result":true}
+
+12:21:15:658	21fc	ETH: Authorized
+12:21:15:658	21fc	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+12:21:15:701	21fc	buf: {"id":3,"jsonrpc":"2.0","result":["0xd42a0bf06b879de9098953c451dd94e95c283be8413c6be5424bc1e8e8c296e0","0x6475dd15a6baef221154af2b85dff79a86a0cf20fb27dab062b60c93191bd403","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x5d1468"]}
+
+12:21:15:740	2144	Setting DAG epoch #203...
+12:21:17:824	2144	Setting DAG epoch #203 for GPU0
+12:21:17:825	2b3c	Setting DAG epoch #203 for GPU1
+12:21:17:826	2144	Create GPU buffer for GPU0
+12:21:17:827	2b3c	Create GPU buffer for GPU1
+12:21:22:315	2144	GPU0 DAG creation time - 4380 ms
+12:21:22:319	2144	Setting DAG epoch #203 for GPU0 done
+12:21:24:206	21fc	buf: {"id":0,"jsonrpc":"2.0","result":["0x9aadf2a65280646f7d8e42836a19a8b9148315488519393848c87fc310f631e3","0x6475dd15a6baef221154af2b85dff79a86a0cf20fb27dab062b60c93191bd403","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x5d1469"]}
+
+12:21:24:209	21fc	ETH: 08/06/18-12:21:24 - New job from us1.ethermine.org:4444
+12:21:24:212	21fc	target: 0x0000000112e0be82 (diff: 4000MH), epoch 203(2.59GB)
+12:21:24:215	21fc	ETH - Total Speed: 30.152 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+12:21:24:219	21fc	ETH: GPU0 30.152 Mh/s, GPU1 0.000 Mh/s
+12:21:25:482	21fc	buf: {"id":0,"jsonrpc":"2.0","result":["0xccc05eaed712de1161b2216ed6306a6505af56621a256057a35ed31198c8f357","0x6475dd15a6baef221154af2b85dff79a86a0cf20fb27dab062b60c93191bd403","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x5d1469"]}
+
+12:21:25:485	21fc	ETH: 08/06/18-12:21:25 - New job from us1.ethermine.org:4444
+12:21:25:488	21fc	target: 0x0000000112e0be82 (diff: 4000MH), epoch 203(2.59GB)
+12:21:25:490	21fc	ETH - Total Speed: 30.130 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+12:21:25:491	21fc	ETH: GPU0 30.130 Mh/s, GPU1 0.000 Mh/s
+12:21:25:712	21fc	ETH: checking pool connection...
+12:21:25:714	21fc	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+12:21:25:743	2b3c	GPU1 DAG creation time - 7715 ms
+12:21:25:744	2b3c	Setting DAG epoch #203 for GPU1 done
+12:21:25:754	21fc	buf: {"id":3,"jsonrpc":"2.0","result":["0xccc05eaed712de1161b2216ed6306a6505af56621a256057a35ed31198c8f357","0x6475dd15a6baef221154af2b85dff79a86a0cf20fb27dab062b60c93191bd403","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x5d1469"]}
+
+12:21:32:833	21ac	gd 0.62
+12:21:33:501	1350	GPU #0: apply best detected -dcri value: 8
+12:21:33:504	1350	Automatic detection of best -dcri values completed
+12:21:35:713	21fc	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x34e6964", "0x00000000000000000000000000000000000000000000000000000000f1e31176"]}
+
+12:21:35:729	21fc	ETH: checking pool connection...
+12:21:35:729	21fc	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+12:21:35:750	21fc	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+12:21:35:791	21fc	buf: {"id":3,"jsonrpc":"2.0","result":["0xccc05eaed712de1161b2216ed6306a6505af56621a256057a35ed31198c8f357","0x6475dd15a6baef221154af2b85dff79a86a0cf20fb27dab062b60c93191bd403","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x5d1469"]}
+
+12:21:39:449	1054	GPU0 t=61C fan=32%; GPU1 t=59C fan=34%
+12:21:39:541	1350	em hbt: 16, fm hbt: 78, 
+12:21:39:543	1350	watchdog - thread 0 (gpu0), hb time 359
+12:21:39:545	1350	watchdog - thread 1 (gpu0), hb time 31
+12:21:39:547	1350	watchdog - thread 2 (gpu1), hb time 344
+12:21:39:549	1350	watchdog - thread 3 (gpu1), hb time 125
+12:21:45:743	21fc	ETH: checking pool connection...
+12:21:45:745	21fc	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+12:21:45:786	21fc	buf: {"id":3,"jsonrpc":"2.0","result":["0xccc05eaed712de1161b2216ed6306a6505af56621a256057a35ed31198c8f357","0x6475dd15a6baef221154af2b85dff79a86a0cf20fb27dab062b60c93191bd403","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x5d1469"]}
+
+12:21:46:776	29ec	
+12:21:46:777	29ec	GPU #0: Ellesmere (Radeon RX 580 Series), 8192 MB available, 36 compute units (pci bus 3:0:0)
+12:21:46:778	29ec	GPU #1: GeForce GTX 1080, 8192 MB available, 20 compute units, capability: 6.1  (pci bus 5:0:0)
+12:21:46:779	29ec	ETH - Total Speed: 55.463 Mh/s, Total Shares: 0(0+0), Rejected: 0(0+0), Time: 00:00
+12:21:46:780	29ec	ETH: GPU0 30.142 Mh/s, GPU1 25.321 Mh/s
+12:21:46:781	29ec	Incorrect ETH shares: none
+12:21:46:782	29ec	1 minute average ETH total speed: 55.397 Mh/s
+12:21:46:783	29ec	Pool switches: ETH - 0
+12:21:46:784	29ec	Current ETH share target: 0x0000000112e0be82 (diff: 4000MH), epoch 203(2.59GB)
+12:21:46:787	29ec	Current -dcri values: -dcri 8,30
+12:21:46:789	29ec	GPU0 t=62C fan=32%; GPU1 t=60C fan=35%
+12:21:46:791	29ec	
+12:21:48:288	b9c	Quit, please wait...
