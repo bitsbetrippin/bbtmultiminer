@@ -1,7 +1,7 @@
 @echo off
 SETLOCAL EnableDelayedExpansion
 rem **********************************************************************
-rem *         BBT Multi-Miner Easy Batch File  v6.0 by BBT Carter        *
+rem *         BBT Multi-Miner Easy Batch File  v7.0 by BBT Carter        *
 rem **********************************************************************
 rem * BEST VIEWED IN FULL SCREEN 1920x1080
 rem **********************************************************************
