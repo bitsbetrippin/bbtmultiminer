@@ -34,7 +34,7 @@ ECHO 1.  Ethereum          (ETH)   Ethermine.org      AMD/NVIDIA Claymore 11.9
 ECHO 2.  Ethereum          (ETH)   Nanopool.org       AMD/NVIDIA Claymore 11.9
 ECHO 3.  Ethereum Classic  (ETC)   Ethermine.org      AMD/NVIDIA Claymore 11.9
 ECHO 4.  Ethereum Classic  (ETC)   Nanopool.org       AMD/NVIDIA Claymore 11.9
-ECHO 5.  Ubiq              (UBQ)   Altpool.pro        AMD/NVIDIA Claymore 11.9
+ECHO 5.  Ubiq              (UBQ)   ubiq.HODLPool      AMD/NVIDIA Claymore 11.9
 ECHO 6.  Musicoin          (MUS)   Coinmine.pl        AMD/NVIDIA Claymore 11.9
 ECHO 7.  Musicoin          (MUS)   Miningpoolhub.com  AMD/NVIDIA Claymore 11.9
 ECHO 8.  Pirl             (PIRL)   HPPCG Pool         AMD/NVIDIA Claymore 11.9
