@@ -15,7 +15,7 @@ Steps
 #4) Launch Multiminer bat file, choose your coin/pool combo. NOTE: Some miners/config is set GPU Type (NVIDIA/AMD) specific
 
  =========================================================================
- *                           ETHASH ALGORITHM                            *
+ ETHASH ALGORITHM                            
  =========================================================================
  1.  Ethereum          (ETH)   Ethermine.org      AMD/NVIDIA Claymore 11.9
  2.  Ethereum          (ETH)   Nanopool.org       AMD/NVIDIA Claymore 11.9
@@ -36,7 +36,7 @@ Steps
  17. Ellaism          (ELLA)   minerpool.net      100-800 MH/s  AMD/NVIDIA Claymore 11.9
  18. Ellaism          (ELLA)   minerpool.net      800+ MH/s     AMD/NVIDIA Claymore 11.9
  =========================================================================
- *                           EQUIHASH ALGORITHM                          *
+EQUIHASH ALGORITHM                      
  =========================================================================
  19.  ZCash            (ZEC)  Nanopool.org        AMD ZCash Claymore 12.6
  20.  ZCash            (ZEC)  Nanopool.org        NVIDIA DSTM 0.6.1 ZMiner
@@ -51,28 +51,28 @@ Steps
  29.  ZenCash          (ZEN)  zhash.pro           AMD Claymore 12.6
  30.  ZenCash          (ZEN)  zhash.pro           NVIDIA DSTM 0.6.1 ZMiner
  =========================================================================
- *                           LYRA2Z ALGORITHM                            *
+ LYRA2Z ALGORITHM                       
  =========================================================================
  31.  Zcoin            (XZC)  Miningpoolhub.com   NVIDIA Nevermore 0.2.3
  32.  Zcoin            (XZC)  Miningpoolhub.com   AMD Avermore 1.4.1
  =========================================================================
- *                          NEOSCRYPT ALGORITHM                          *
+ NEOSCRYPT ALGORITHM                       
  =========================================================================
  33.  Feathercoin      (FTC)  F2Pool              NVIDIA Nevermore 0.2.3
  34.  Feathercoin      (FTC)  F2Pool              AMD NSGMiner 0.9.2
  =========================================================================
- *                       MYRIAD-GROESTLE ALGORITHM                       *
+ MYRIAD-GROESTLE ALGORITHM                  
  =========================================================================
  35.  Digibyte         (DGB)  Suprnova.cc         AMD Avermore 1.4.1
  36.  Digibyte         (DGB)  Suprnova.cc         NVIDIA Nevermore 0.2.3
  =========================================================================
- *                       CRYPTONIGHT V7 ALGORITHM                        *
+ CRYPTONIGHT V7 ALGORITHM                      
  =========================================================================
  37.  Monero           (XMR)  Nanopool.org        NVIDIA XMRig 2.5.2
  38.  Monero           (XMR)  Nanopool.org        AMD Claymore CryptoNote 11.3
  39.  Monero           (XMR)  Nanopool.org        AMD CAST XMR Vega Miner 0.9.2
  =========================================================================
- *                         CRYPTONIGHT ALGORITHM                         *
+ CRYPTONIGHT ALGORITHM
  =========================================================================
  40.  Electroneum      (ETN)  Easyhash.io         NVIDIA XMRig 2.5.2
  41.  Electroneum      (ETN)  Easyhash.io         AMD Claymore CryptoNote 11.3
@@ -86,24 +86,24 @@ Steps
  49.
  50.
  =========================================================================
- *                            X16R ALGORITHM                             *
+ X16R ALGORITHM
  =========================================================================
  51.  Ravencoin        (RVN)  Ravenminer.com      AMD Avermore 1.4.1
  52.  Ravencoin        (RVN)  Ravenminer.com      NVIDIA Nevermore 0.2.3
  53.  Ravencoin        (RVN)  Ravenminer.com      NVIDIA Enemy 1.3.0
  54.  Ravencoin        (RVN)  Ravenminer.com      NVIDIA Suprminer 1.6.0
  =========================================================================
- *                            X16S ALGORITHM                             *
+ X16S ALGORITHM
  =========================================================================
  55.  Pigeoncoin       (PGN)  Blockcruncher       AMD Avermore 1.4.1
  56.  Pigeoncoin       (PGN)  Blockcruncher       NVIDIA Nevermore 0.2.3
  =========================================================================
- *                          LYRA2REV2 ALGORITHM                          *
+ LYRA2REV2 ALGORITHM
  =========================================================================
  57.  Vertcoin         (VTC)  Miningpoolhub.com   AMD Avermore 1.4.1
  58.  Vertcoin         (VTC)  Miningpoolhub.com   NVIDIA Nevermore 0.2.3
  =========================================================================
- *                           LYRA2Z ALGORITHM                            *
+ LYRA2Z ALGORITHM
  =========================================================================
  59.  MonaCoin        (MONA)  Miningpoolhub.com   AMD Avermore 1.4.1
  60.  MonaCoin        (MONA)  Miningpoolhub.com   NVIDIA Nevermore 0.2.3
