@@ -7,8 +7,11 @@ Major Overhall Update by Bit 49, change accepted.
 Steps
 
 #1) Download Release v7.0
+
 #2) Download and install Notepad ++ or a advanced editor
+
 #3) Unzip Release, edit in Notepad++ the MyInfo.Bat and put your coin's payment address for the coins you are going to mine, save file
+
 #4) Launch Multiminer bat file, choose your coin/pool combo. NOTE: Some miners/config is set GPU Type (NVIDIA/AMD) specific
 
  =========================================================================
