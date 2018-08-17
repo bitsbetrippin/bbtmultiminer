@@ -94,14 +94,17 @@ EQUIHASH ALGORITHM
  54.  Ravencoin        (RVN)  Ravenminer.com      NVIDIA Suprminer 1.6.0
  
  X16S ALGORITHM
+ 
  55.  Pigeoncoin       (PGN)  Blockcruncher       AMD Avermore 1.4.1
  56.  Pigeoncoin       (PGN)  Blockcruncher       NVIDIA Nevermore 0.2.3
  
  LYRA2REV2 ALGORITHM
+ 
  57.  Vertcoin         (VTC)  Miningpoolhub.com   AMD Avermore 1.4.1
  58.  Vertcoin         (VTC)  Miningpoolhub.com   NVIDIA Nevermore 0.2.3
  
  LYRA2Z ALGORITHM
+ 
  59.  MonaCoin        (MONA)  Miningpoolhub.com   AMD Avermore 1.4.1
  60.  MonaCoin        (MONA)  Miningpoolhub.com   NVIDIA Nevermore 0.2.3
  
