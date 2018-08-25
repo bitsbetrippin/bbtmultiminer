@@ -48,78 +48,79 @@ ECHO 15. Ellaism          (ELLA)   ellaismpool        800+ MH/s     AMD/NVIDIA C
 ECHO 16. Ellaism          (ELLA)   minerpool.net      0-100 MH/s    AMD/NVIDIA Claymore 11.9
 ECHO 17. Ellaism          (ELLA)   minerpool.net      100-800 MH/s  AMD/NVIDIA Claymore 11.9
 ECHO 18. Ellaism          (ELLA)   minerpool.net      800+ MH/s     AMD/NVIDIA Claymore 11.9
+ECHO 19. Akroma           (AKA)    2miners.com        AMD/NVIDIA Claymore 11.9
 ECHO =========================================================================
 ECHO *                           EQUIHASH ALGORITHM                          *
 ECHO =========================================================================
-ECHO 19.  ZCash            (ZEC)  Nanopool.org        AMD ZCash Claymore 12.6
-ECHO 20.  ZCash            (ZEC)  Nanopool.org        NVIDIA DSTM 0.6.1 ZMiner
-ECHO 21.  Komodo           (KMD)  Suprnova.cc         AMD Claymore 12.6
-ECHO 22.  Komodo           (KMD)  Suprnova.cc         NVIDIA DSTM 0.6.1 ZMiner
-ECHO 23.  Bitcoin Private (BTCP)  btcprivate.org      AMD Claymore 12.6
-ECHO 24.  Bitcoin Private (BTCP)  btcprivate.org      NVIDIA DSTM 0.6.1 ZMiner
-ECHO 25.  Zclassic         (ZCL)  miningpoolhub.com   AMD Claymore 12.6
-ECHO 26.  Zclassic         (ZCL)  miningpoolhub.com   NVIDIA DSTM 0.6.1 ZMiner
-ECHO 27.  ZenCash          (ZEN)  suprnova.cc         AMD Claymore 12.6
-ECHO 28.  ZenCash          (ZEN)  suprnova.cc         NVIDIA DSTM 0.6.1 ZMiner
-ECHO 29.  ZenCash          (ZEN)  zhash.pro           AMD Claymore 12.6
-ECHO 30.  ZenCash          (ZEN)  zhash.pro           NVIDIA DSTM 0.6.1 ZMiner
+ECHO 20.  ZCash            (ZEC)  Nanopool.org        AMD ZCash Claymore 12.6
+ECHO 21.  ZCash            (ZEC)  Nanopool.org        NVIDIA DSTM 0.6.1 ZMiner
+ECHO 22.  Komodo           (KMD)  Suprnova.cc         AMD Claymore 12.6
+ECHO 23.  Komodo           (KMD)  Suprnova.cc         NVIDIA DSTM 0.6.1 ZMiner
+ECHO 24.  Bitcoin Private (BTCP)  btcprivate.org      AMD Claymore 12.6
+ECHO 25.  Bitcoin Private (BTCP)  btcprivate.org      NVIDIA DSTM 0.6.1 ZMiner
+ECHO 26.  Zclassic         (ZCL)  miningpoolhub.com   AMD Claymore 12.6
+ECHO 27.  Zclassic         (ZCL)  miningpoolhub.com   NVIDIA DSTM 0.6.1 ZMiner
+ECHO 28.  ZenCash          (ZEN)  suprnova.cc         AMD Claymore 12.6
+ECHO 29.  ZenCash          (ZEN)  suprnova.cc         NVIDIA DSTM 0.6.1 ZMiner
+ECHO 30.  ZenCash          (ZEN)  zhash.pro           AMD Claymore 12.6
+ECHO 31.  ZenCash          (ZEN)  zhash.pro           NVIDIA DSTM 0.6.1 ZMiner
 ECHO =========================================================================
 ECHO *                           LYRA2Z ALGORITHM                            *
 ECHO =========================================================================
-ECHO 31.  Zcoin            (XZC)  Miningpoolhub.com   NVIDIA Nevermore 0.2.3
-ECHO 32.  Zcoin            (XZC)  Miningpoolhub.com   AMD Avermore 1.4.1
+ECHO 32.  Zcoin            (XZC)  Miningpoolhub.com   NVIDIA Nevermore 0.2.3
+ECHO 33.  Zcoin            (XZC)  Miningpoolhub.com   AMD Avermore 1.4.1
 ECHO =========================================================================
 ECHO *                          NEOSCRYPT ALGORITHM                          *
 ECHO =========================================================================
-ECHO 33.  Feathercoin      (FTC)  F2Pool              NVIDIA Nevermore 0.2.3
-ECHO 34.  Feathercoin      (FTC)  F2Pool              AMD NSGMiner 0.9.2
+ECHO 34.  Feathercoin      (FTC)  F2Pool              NVIDIA Nevermore 0.2.3
+ECHO 35.  Feathercoin      (FTC)  F2Pool              AMD NSGMiner 0.9.2
 ECHO =========================================================================
 ECHO *                       MYRIAD-GROESTLE ALGORITHM                       *
 ECHO =========================================================================
-ECHO 35.  Digibyte         (DGB)  Suprnova.cc         AMD Avermore 1.4.1
-ECHO 36.  Digibyte         (DGB)  Suprnova.cc         NVIDIA Nevermore 0.2.3
+ECHO 36.  Digibyte         (DGB)  Suprnova.cc         AMD Avermore 1.4.1
+ECHO 37.  Digibyte         (DGB)  Suprnova.cc         NVIDIA Nevermore 0.2.3
 ECHO =========================================================================
 ECHO *                       CRYPTONIGHT V7 ALGORITHM                        *
 ECHO =========================================================================
-ECHO 37.  Monero           (XMR)  Nanopool.org        NVIDIA XMRig 2.5.2
-ECHO 38.  Monero           (XMR)  Nanopool.org        AMD Claymore CryptoNote 11.3
-ECHO 39.  Monero           (XMR)  Nanopool.org        AMD CAST XMR Vega Miner 0.9.2
+ECHO 38.  Monero           (XMR)  Nanopool.org        NVIDIA XMRig 2.5.2
+ECHO 39.  Monero           (XMR)  Nanopool.org        AMD Claymore CryptoNote 11.3
+ECHO 40.  Monero           (XMR)  Nanopool.org        AMD CAST XMR Vega Miner 0.9.2
 ECHO =========================================================================
 ECHO *                         CRYPTONIGHT ALGORITHM                         *
 ECHO =========================================================================
-ECHO 40.  Electroneum      (ETN)  Easyhash.io         NVIDIA XMRig 2.5.2
-ECHO 41.  Electroneum      (ETN)  Easyhash.io         AMD Claymore CryptoNote 11.3
-ECHO 42.  Electroneum      (ETN)  Easyhash.io         AMD CAST XMR Vega Miner 0.9.2
-ECHO 43.  Sumokoin        (SUMO)  Easyhash.io         NVIDIA XMRig 2.5.2
-ECHO 44.  Sumokoin        (SUMO)  Easyhash.io         AMD Claymore CryptoNote 11.3
-ECHO 45.  Sumokoin        (SUMO)  Easyhash.io         AMD CAST XMR Vega Miner 0.9.2
-ECHO 46.  Karbowanec       (KRB)  Cryptoknight.cc     NVIDIA XMRig 2.5.2
-ECHO 47.  Karbowanec       (KRB)  Cryptoknight.cc     AMD Claymore CryptoNote 11.3
-ECHO 48.  Karbowanec       (KRB)  Cryptoknight.cc     AMD CAST XMR Vega Miner 0.9.2
-ECHO 49.
+ECHO 41.  Electroneum      (ETN)  Easyhash.io         NVIDIA XMRig 2.5.2
+ECHO 42.  Electroneum      (ETN)  Easyhash.io         AMD Claymore CryptoNote 11.3
+ECHO 43.  Electroneum      (ETN)  Easyhash.io         AMD CAST XMR Vega Miner 0.9.2
+ECHO 44.  Sumokoin        (SUMO)  Easyhash.io         NVIDIA XMRig 2.5.2
+ECHO 45.  Sumokoin        (SUMO)  Easyhash.io         AMD Claymore CryptoNote 11.3
+ECHO 46.  Sumokoin        (SUMO)  Easyhash.io         AMD CAST XMR Vega Miner 0.9.2
+ECHO 47.  Karbowanec       (KRB)  Cryptoknight.cc     NVIDIA XMRig 2.5.2
+ECHO 48.  Karbowanec       (KRB)  Cryptoknight.cc     AMD Claymore CryptoNote 11.3
+ECHO 49.  Karbowanec       (KRB)  Cryptoknight.cc     AMD CAST XMR Vega Miner 0.9.2
 ECHO 50.
+ECHO 51.
 ECHO =========================================================================
 ECHO *                            X16R ALGORITHM                             *
 ECHO =========================================================================
-ECHO 51.  Ravencoin        (RVN)  Ravenminer.com      AMD Avermore 1.4.1
-ECHO 52.  Ravencoin        (RVN)  Ravenminer.com      NVIDIA Nevermore 0.2.3
-ECHO 53.  Ravencoin        (RVN)  Ravenminer.com      NVIDIA Enemy 1.3.0
-ECHO 54.  Ravencoin        (RVN)  Ravenminer.com      NVIDIA Suprminer 1.6.0
+ECHO 52.  Ravencoin        (RVN)  Ravenminer.com      AMD Avermore 1.4.1
+ECHO 53.  Ravencoin        (RVN)  Ravenminer.com      NVIDIA Nevermore 0.2.3
+ECHO 54.  Ravencoin        (RVN)  Ravenminer.com      NVIDIA Enemy 1.3.0
+ECHO 55.  Ravencoin        (RVN)  Ravenminer.com      NVIDIA Suprminer 1.6.0
 ECHO =========================================================================
 ECHO *                            X16S ALGORITHM                             *
 ECHO =========================================================================
-ECHO 55.  Pigeoncoin       (PGN)  Blockcruncher       AMD Avermore 1.4.1
-ECHO 56.  Pigeoncoin       (PGN)  Blockcruncher       NVIDIA Nevermore 0.2.3
+ECHO 56.  Pigeoncoin       (PGN)  Blockcruncher       AMD Avermore 1.4.1
+ECHO 57.  Pigeoncoin       (PGN)  Blockcruncher       NVIDIA Nevermore 0.2.3
 ECHO =========================================================================
 ECHO *                          LYRA2REV2 ALGORITHM                          *
 ECHO =========================================================================
-ECHO 57.  Vertcoin         (VTC)  Miningpoolhub.com   AMD Avermore 1.4.1
-ECHO 58.  Vertcoin         (VTC)  Miningpoolhub.com   NVIDIA Nevermore 0.2.3
+ECHO 58.  Vertcoin         (VTC)  Miningpoolhub.com   AMD Avermore 1.4.1
+ECHO 59.  Vertcoin         (VTC)  Miningpoolhub.com   NVIDIA Nevermore 0.2.3
 ECHO =========================================================================
 ECHO *                           LYRA2Z ALGORITHM                            *
 ECHO =========================================================================
-ECHO 59.  MonaCoin        (MONA)  Miningpoolhub.com   AMD Avermore 1.4.1
-ECHO 60.  MonaCoin        (MONA)  Miningpoolhub.com   NVIDIA Nevermore 0.2.3
+ECHO 60.  MonaCoin        (MONA)  Miningpoolhub.com   AMD Avermore 1.4.1
+ECHO 61.  MonaCoin        (MONA)  Miningpoolhub.com   NVIDIA Nevermore 0.2.3
 ECHO *************************************************************************
 ECHO 99.  EXIT
 
@@ -150,48 +151,49 @@ IF %M%==15 GOTO ELLA3
 IF %M%==16 GOTO ELLA4
 IF %M%==17 GOTO ELLA5
 IF %M%==18 GOTO ELLA6
-IF %M%==19 GOTO ZEC1
-IF %M%==20 GOTO ZEC2
-IF %M%==21 GOTO KMD1
-IF %M%==22 GOTO KMD2
-IF %M%==23 GOTO BTCP1
-IF %M%==24 GOTO BTCP2
-IF %M%==25 GOTO ZCL1
-IF %M%==26 GOTO ZCL2
-IF %M%==27 GOTO ZEN1
-IF %M%==28 GOTO ZEN2
-IF %M%==29 GOTO ZEN3
-IF %M%==30 GOTO ZEN4
-IF %M%==31 GOTO XZC1
-IF %M%==32 GOTO XZC2
-IF %M%==33 GOTO FTC1
-IF %M%==34 GOTO FTC2
-IF %M%==35 GOTO DGB1
-IF %M%==36 GOTO DGB2
-IF %M%==37 GOTO XMR1
-IF %M%==38 GOTO XMR2
-IF %M%==39 GOTO XMR3
-IF %M%==40 GOTO ETN1
-IF %M%==41 GOTO ETN2
-IF %M%==42 GOTO ETN3
-IF %M%==43 GOTO SUMO1
-IF %M%==44 GOTO SUMO2
-IF %M%==45 GOTO SUMO3
-IF %M%==46 GOTO KRB1
-IF %M%==47 GOTO KRB2
-IF %M%==48 GOTO KRB3
-IF %M%==49 GOTO EOF
+IF %M%==19 GOTO AKA
+IF %M%==20 GOTO ZEC1
+IF %M%==21 GOTO ZEC2
+IF %M%==22 GOTO KMD1
+IF %M%==23 GOTO KMD2
+IF %M%==24 GOTO BTCP1
+IF %M%==25 GOTO BTCP2
+IF %M%==26 GOTO ZCL1
+IF %M%==27 GOTO ZCL2
+IF %M%==28 GOTO ZEN1
+IF %M%==29 GOTO ZEN2
+IF %M%==30 GOTO ZEN3
+IF %M%==31 GOTO ZEN4
+IF %M%==32 GOTO XZC1
+IF %M%==33 GOTO XZC2
+IF %M%==34 GOTO FTC1
+IF %M%==35 GOTO FTC2
+IF %M%==36 GOTO DGB1
+IF %M%==37 GOTO DGB2
+IF %M%==38 GOTO XMR1
+IF %M%==39 GOTO XMR2
+IF %M%==40 GOTO XMR3
+IF %M%==41 GOTO ETN1
+IF %M%==42 GOTO ETN2
+IF %M%==43 GOTO ETN3
+IF %M%==44 GOTO SUMO1
+IF %M%==45 GOTO SUMO2
+IF %M%==46 GOTO SUMO3
+IF %M%==47 GOTO KRB1
+IF %M%==48 GOTO KRB2
+IF %M%==49 GOTO KRB3
 IF %M%==50 GOTO EOF
-IF %M%==51 GOTO RVN1
-IF %M%==52 GOTO RVN2
-IF %M%==53 GOTO RVN3
-IF %M%==54 GOTO RVN4
-IF %M%==55 GOTO PGN1
-IF %M%==56 GOTO PGN2
-IF %M%==57 GOTO VTC1
-IF %M%==58 GOTO VTC2
-IF %M%==59 GOTO MONA1
-IF %M%==60 GOTO MONA2
+IF %M%==51 GOTO EOF
+IF %M%==52 GOTO RVN1
+IF %M%==53 GOTO RVN2
+IF %M%==54 GOTO RVN3
+IF %M%==55 GOTO RVN4
+IF %M%==56 GOTO PGN1
+IF %M%==57 GOTO PGN2
+IF %M%==58 GOTO VTC1
+IF %M%==59 GOTO VTC2
+IF %M%==60 GOTO MONA1
+IF %M%==61 GOTO MONA2
 IF %M%>61 GOTO EOF
 
 ::
@@ -303,6 +305,14 @@ PAUSE
 :ELLA6
 ECHO AMD and NVIDIA Claymore 11.9 - Ella 800+ MH/s minerpool.net
 Miners\Claymore_ETH_Miner_v11.9\EthDcrMiner64 -epool stratum+tcp://lb.geo.ellapool.eu:8009 -ewal %ELLA% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins 1
+IF %ERRORLEVEL% NEQ 0 GOTO exit
+PAUSE
+::
+:: Akroma Miners
+::
+:AKA
+ECHO AMD and NVIDIA Claymore 11.9 - Akroma to 2miners
+Miners\Claymore_ETH_Miner_v11.9\EthDcrMiner64 -epool aka.2miners.com:5050 -ewal %AKA% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins 1 -eworker %MINER_NAME%
 IF %ERRORLEVEL% NEQ 0 GOTO exit
 PAUSE
 ::
