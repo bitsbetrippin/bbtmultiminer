@@ -1,0 +1,32 @@
+[17:51:45] INFO - ----------------------------------------------
+[17:51:45] INFO - |                   NBMiner                  |
+[17:51:45] INFO - |              NVIDIA GPU Miner              |
+[17:51:45] INFO - |                    12.3                    |
+[17:51:45] INFO - ----------------------------------------------
+[17:51:45] INFO - ALGO:  tensority_ethash
+[17:51:45] INFO - URL:   stratum+tcp://btm.f2pool.com:9221
+[17:51:45] INFO - USER:  bm1qjce8ml6nruc78kmw3v7m0k67nj39mmwwwketnu.dmdefault
+[17:51:45] INFO - URLD:   ethproxy+tcp://eth.f2pool.com:8008
+[17:51:45] INFO - USERD:  0x4296116d44a4a7259B52B1A756e19083e675062A.dmdefault
+[17:51:45] INFO - ============= Device Information =============
+[17:51:45] INFO - ID 0: TITAN V 12288 MB, CC 70
+[17:51:45] INFO - ==============================================
+[17:51:45] INFO - NVML initialized.
+[17:51:47] INFO - tensority - Logging in to btm.f2pool.com:9221 ...
+[17:51:48] INFO - tensority - New job from btm.f2pool.com, ID: KHGhxiwV, DIFF: 65.54K
+[17:51:48] INFO - tensority - Login succeeded.
+[17:51:48] INFO - ethash - Logging in to eth.f2pool.com:8008 ...
+[17:51:48] INFO - ethash - Login succeeded.
+[17:51:48] INFO - API:  0.0.0.0:22333
+[17:51:48] INFO - API server started.
+[17:51:49] INFO - ethash - New job from eth.f2pool.com, ID: a8dc4603, DIFF: 4294.90M
+[17:51:50] INFO - tensority - Device 0 seed cache updated.
+[17:51:50] INFO - ethash - Epoch change to 233
+[17:51:51] INFO - ethash - Device 0 Building DAG buffer...
+[17:51:59] INFO - ethash - Device 0 DAG buffer costs 7.60s , 9809.30 MB of memory left
+[17:52:03] INFO - ethash - New job from eth.f2pool.com, ID: e5da0b40, DIFF: 4294.90M
+[17:52:04] INFO - ethash - New job from eth.f2pool.com, ID: 1c5fb3af, DIFF: 4294.90M
+[17:52:07] INFO - tensority - 0: 3306 h/s
+[17:52:07] INFO - ethash - 0: 54.17 Mh/s
+[17:52:18] INFO - tensority - #1 Share accepted, 307 ms. [DEVICE 0]
+[17:52:21] INFO - tensority - #2 Share accepted, 296 ms. [DEVICE 0]

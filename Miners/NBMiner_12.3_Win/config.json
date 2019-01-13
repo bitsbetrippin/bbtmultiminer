@@ -1,0 +1,26 @@
+﻿{
+	"algo": "tensority_ethash",
+    "api": "127.0.0.1:22333",
+	"devices": "",
+	
+    "url": "stratum+tcp://btm.f2pool.com:9221",
+    "user": "bm1qjce8ml6nruc78kmw3v7m0k67nj39mmwwwketnu.default",
+	"url1": "",
+    "user1": "",
+	"url2": "",
+    "user2": "",
+	
+	"secondary-intensity": 14,
+	
+	"secondary-url": "ethproxy+tcp://eth.f2pool.com:8008",
+	"secondary-user": "0x4296116d44a4a7259B52B1A756e19083e675062A.default",
+	"secondary-url1": "",
+	"secondary-user1": "",
+	"secondary-url2": "",
+	"secondary-user2": "",
+	
+	"ssl-strict": false,
+
+	"log": true,
+	"long-format": false
+}

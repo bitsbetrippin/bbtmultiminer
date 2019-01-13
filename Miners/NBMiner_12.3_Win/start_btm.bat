@@ -1,0 +1,1 @@
+nbminer -a tensority -o stratum+tcp://btm.pool.zhizhu.top:3859 -u bm1qjce8ml6nruc78kmw3v7m0k67nj39mmwwwketnu.default -log
