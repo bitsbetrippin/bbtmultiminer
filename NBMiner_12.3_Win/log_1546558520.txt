@@ -1,0 +1,49 @@
+[17:35:20] INFO - ----------------------------------------------
+[17:35:20] INFO - |                   NBMiner                  |
+[17:35:20] INFO - |              NVIDIA GPU Miner              |
+[17:35:20] INFO - |                    12.3                    |
+[17:35:20] INFO - ----------------------------------------------
+[17:35:20] INFO - ALGO:  tensority
+[17:35:20] INFO - URL:   stratum+tcp://btm.pool.zhizhu.top:3859
+[17:35:20] INFO - USER:  bm1qjce8ml6nruc78kmw3v7m0k67nj39mmwwwketnu.default
+[17:35:20] INFO - ============= Device Information =============
+[17:35:20] INFO - ID 0: TITAN V 12288 MB, CC 70
+[17:35:20] INFO - ==============================================
+[17:35:20] INFO - NVML initialized.
+[17:35:22] INFO - tensority - Logging in to btm.pool.zhizhu.top:3859 ...
+[17:35:23] INFO - tensority - New job from btm.pool.zhizhu.top, ID: 1, DIFF: 262.16K
+[17:35:23] INFO - tensority - Login succeeded.
+[17:35:23] INFO - API:  0.0.0.0:22333
+[17:35:23] INFO - API server started.
+[17:35:24] INFO - tensority - Device 0 seed cache updated.
+[17:35:42] INFO - tensority - 0: 6005 h/s
+[17:35:53] INFO - tensority - New job from btm.pool.zhizhu.top, ID: 2, DIFF: 262.16K
+[17:36:02] INFO - tensority - 0: 6045 h/s
+[17:36:22] INFO - tensority - 0: 5904 h/s
+[17:36:42] INFO - tensority - 0: 5928 h/s
+[17:36:44] INFO - tensority - New job from btm.pool.zhizhu.top, ID: 3, DIFF: 131.08K
+[17:36:53] INFO - tensority - #1 Share accepted, 240 ms. [DEVICE 0]
+[17:37:02] INFO - tensority - 0: 6269 h/s
+[17:37:08] INFO - tensority - New job from btm.pool.zhizhu.top, ID: 4, DIFF: 65.54K
+[17:37:11] INFO - tensority - #2 Share accepted, 239 ms. [DEVICE 0]
+[17:37:12] INFO - tensority - #3 Share accepted, 262 ms. [DEVICE 0]
+[17:37:22] INFO - =========== Device Health ===========
+[17:37:22] INFO - |ID|TEMP|PWR|FAN|CCLK|MCLK|CUTL|MUTL|
+[17:37:22] INFO - | 0|  78|203| 55|1335| 850| 100|  18|
+[17:37:22] INFO - =====================================
+[17:37:22] INFO - tensority - Total Speed: 6410 h/s, Total Shares: 3, Rejected: 0.
+[17:37:22] INFO - tensority - 0: 6410 h/s
+[17:37:31] INFO - tensority - #4 Share accepted, 363 ms. [DEVICE 0]
+[17:37:39] INFO - tensority - #5 Share accepted, 348 ms. [DEVICE 0]
+[17:37:42] INFO - tensority - 0: 5898 h/s
+[17:37:47] INFO - tensority - #6 Share accepted, 241 ms. [DEVICE 0]
+[17:37:59] INFO - tensority - New job from btm.pool.zhizhu.top, ID: 5, DIFF: 65.54K
+[17:38:01] INFO - tensority - #7 Share accepted, 237 ms. [DEVICE 0]
+[17:38:02] INFO - tensority - 0: 5868 h/s
+[17:38:08] INFO - tensority - #8 Share accepted, 242 ms. [DEVICE 0]
+[17:38:19] INFO - tensority - #9 Share accepted, 239 ms. [DEVICE 0]
+[17:38:22] INFO - tensority - 0: 6090 h/s
+[17:38:28] INFO - tensority - #10 Share accepted, 4218 ms. [DEVICE 0]
+[17:38:36] INFO - tensority - #11 Share accepted, 240 ms. [DEVICE 0]
+[17:38:42] INFO - tensority - 0: 5938 h/s
+[17:38:47] INFO - tensority - #12 Share accepted, 256 ms. [DEVICE 0]

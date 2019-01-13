@@ -1,0 +1,1 @@
+nbminer -a tensority_ethash -o stratum+tcp://btm.f2pool.com:9221 -u bm1qjce8ml6nruc78kmw3v7m0k67nj39mmwwwketnu.dmdefault -do ethproxy+tcp://eth.f2pool.com:8008 -du 0x4296116d44a4a7259B52B1A756e19083e675062A.dmdefault -log
