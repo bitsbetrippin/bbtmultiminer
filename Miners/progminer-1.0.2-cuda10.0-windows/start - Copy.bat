@@ -1,0 +1,1 @@
+progminer.exe -P stratum1+tcp://0xb5799FC547306A4802BAc047D83485396595f225.1070@testnet.progpool.pro:8008
