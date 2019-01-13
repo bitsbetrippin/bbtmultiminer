@@ -1,0 +1,58 @@
+{
+	"DEFAULTS" : {
+		"DEVICES" : "AUTO", 	
+		"APIPORT" : 0
+	},
+
+	"EXAMPLE_AION" : 
+	{
+		"COIN" : "AION",
+		"POOLS" : [
+			{"POOL" : "na.aionmine.org",
+			 "PORT" : "3333",
+			 "USER" : "0xa0e1ff18f69eac5d17fc8c5ac078739d64cc0a8ae2f84b7ca6d55c33bff8dc52.lolMiner",
+			 "PASS" : "x"},
+			{"POOL" : "eu.aionmine.org",
+			 "PORT" : "9999",
+			 "USER" : "0xa0e1ff18f69eac5d17fc8c5ac078739d64cc0a8ae2f84b7ca6d55c33bff8dc52.lolMiner",
+			 "PASS" : "x"}
+		]
+	},
+
+	"EXAMPLE_BTG" : 
+	{
+		"COIN" : "BTG",
+		"POOLS" : [
+			{"POOL" : "btg-eu.coinblockers.com",
+			 "PORT" : "3333",
+			 "USER" : "GJhxC7mi5zNVJ2YsGrRQRWyZBMEPqHS6RC.lolMiner",
+			 "PASS" : "x"},
+			{"POOL" : "btg.suprnova.cc",
+			 "PORT" : "8866",
+			 "USER" : "Lolliedieb.BitcoinGold",
+			 "PASS" : "x"}
+		]
+	},	
+
+	"EXAMPLE_MNX" : 
+	{
+		"COIN" : "MNX",
+		"POOLS" : [
+			{"POOL" : "eu.minexpool.nl",
+			 "PORT" : "9999",
+			 "USER" : "XQZoBeGPZJoLhTdkcF8bScsNH5Wyesd9g4.lolMiner",
+			 "PASS" : "x"}
+		]
+	},
+
+	"EXAMPLE_ZERO" : 
+	{
+		"COIN" : "ZER",
+		"POOLS" : [
+			{"POOL" : "zero.easymine.rocks",
+			 "PORT" : "2000",
+			 "USER" : "t1XEbhjnSEitiV2DX8zsLBNqe5zmozt5sP4.lolMiner",
+			 "PASS" : "x"}
+		]
+	}
+}

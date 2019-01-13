@@ -1,0 +1,29 @@
+# Sample configuration file to mine BitcoinGold
+# options has same names as command line arguments
+# run "miner --config sample_config.txt"
+
+[common]
+algo=144_5
+pers=BgoldPoW
+#devices=0 1 2 3
+templimit=90
+color=1 ; enable color output
+watchdog=1
+pec=1 ; enable power efficiency calculator
+api=10555 ; enable API, to view statistics navigate to http://localhost:10555 in your browser
+logfile=miner.log
+
+# Main pool
+[server]
+host=eu.btgpool.pro
+port=1445
+user=GZdx44gPVFX7GfeWXA3kyiuXecym3CWGHi.rig0
+pass=x
+
+# Failover pool, you can specify unlimited number of failover pools
+[server]
+host=btg.2miners.com
+port=4040
+user=GZdx44gPVFX7GfeWXA3kyiuXecym3CWGHi.rig0
+pass=x
+
