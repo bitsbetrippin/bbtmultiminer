@@ -1,0 +1,31 @@
+{
+	"DEFAULTS" : {
+		"DEVICES" : "AUTO", 	
+		"APIPORT" : 0
+	},
+
+	"EXAMPLE_LEAFPOOL" : 
+	{
+		"COIN" : "BEAM",
+		"POOLS" : [
+			{"POOL" : "beam-eu.leafpool.com",
+			 "PORT" : "3333",
+			 "USER" : "beam_address.worker/my@email.com"}
+		]
+	},
+
+	"EXAMPLE_FAILOVER_SPARK_BEAM" : 
+	{
+		"COIN" : "BEAM",
+		"POOLS" : [
+			{"POOL" : "beam-eu.sparkpool.com",
+			 "PORT" : "2222",
+			 "USER" : "beam_address.worker"},
+			{"POOL" : "beam-pool.beepool.org",
+			 "PORT" : "9507",
+			 "USER" : "beam_address.worker"}
+		]
+	}
+
+	
+}
