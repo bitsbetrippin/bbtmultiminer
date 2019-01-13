@@ -1,0 +1,851 @@
+2018.12.02:02:19:11.534: main Phoenix Miner 4.0b Windows/msvc - Release build
+2018.12.02:02:19:11.534: main Cmd line: -pool ubiq.hodlpool.com:8009 -wal 0x21b75D1b449bd7dAE9B2C8730C7bEC8854409Cfb -worker titanv -coin ubq 
+2018.12.02:02:19:11.736: main CUDA version: 10.0, CUDA runtime: 8.0
+2018.12.02:02:19:11.737: main No OpenCL platforms found
+2018.12.02:02:19:11.737: main Available GPUs for mining:
+2018.12.02:02:19:11.737: main GPU1: TITAN V (pcie 67), CUDA cap. 7.0, 12 GB VRAM, 80 CUs
+2018.12.02:02:19:11.740: main NVML library initialized
+2018.12.02:02:19:11.746: main Nvidia driver version: 411.63
+2018.12.02:02:19:11.941: main Eth: Loading pools from epools.txt
+2018.12.02:02:19:11.941: main Eth: Invalid wallet 'YourWallet.THREADRIPPER' specified for pool 1 from epools.txt. Replace with a real wallet
+2018.12.02:02:19:11.941: main Eth: Invalid wallet 'YourWallet.THREADRIPPER' specified for pool 2 from epools.txt. Replace with a real wallet
+2018.12.02:02:19:11.941: main Eth: the pool list contains 1 pool (1 from command-line)
+2018.12.02:02:19:11.941: main Eth: primary pool: ubiq.hodlpool.com:8009
+2018.12.02:02:19:11.941: main Starting GPU mining
+2018.12.02:02:19:11.942: wdog Starting watchdog thread
+2018.12.02:02:19:11.942: main Eth: Connecting to ethash pool ubiq.hodlpool.com:8009 (proto: EthProxy)
+2018.12.02:02:19:11.984: eths Eth: Connected to ethash pool ubiq.hodlpool.com:8009 (158.69.248.48)
+2018.12.02:02:19:11.984: eths Eth: Send: {"id":1,"jsonrpc":"2.0","method":"eth_submitLogin","worker":"titanv","params":["0x21b75D1b449bd7dAE9B2C8730C7bEC8854409Cfb"]}
+
+2018.12.02:02:19:12.027: eths Eth: Received: {"id":1,"jsonrpc":"2.0","result":true}
+2018.12.02:02:19:12.028: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:19:12.067: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x31659e4750020d73afb9d20bf5ddfc119629addd04fe2e358934faeb8703fdc3","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:19:12.068: eths Eth: New job #31659e47 from ubiq.hodlpool.com:8009; diff: 4000MH
+2018.12.02:02:19:12.068: GPU1 GPU1: Starting up... (0)
+2018.12.02:02:19:12.068: GPU1 GPU1: Generating ubqhash light cache for epoch #22
+2018.12.02:02:19:12.143: main Listening for CDM remote manager at port 3333 in read-only mode
+2018.12.02:02:19:12.143: main GPU1: 44C 30%
+2018.12.02:02:19:12.506: GPU1 Light cache generated in 0.4 s (42.9 MB/s)
+2018.12.02:02:19:12.612: eths Eth: Received: {"id":0,"jsonrpc":"2.0","result":["0x6fb5018c3f8fa731ddee95978469f27bc11d920491d735f13aa347c92cad140a","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:19:12.613: eths Eth: New job #6fb5018c from ubiq.hodlpool.com:8009; diff: 4000MH
+2018.12.02:02:19:14.222: GPU1 GPU1: Allocating DAG (1.19) GB; good for epoch up to #24
+2018.12.02:02:19:14.267: GPU1 GPU1: Allocating light cache buffer (19.0) MB; good for epoch up to #24
+2018.12.02:02:19:14.271: GPU1 GPU1: Generating DAG for epoch #22
+2018.12.02:02:19:15.795: GPU1 GPU1: DAG  88%
+2018.12.02:02:19:15.962: GPU1 GPU1: DAG generated in 1.7 s (710.1 MB/s)
+2018.12.02:02:19:17.032: main Eth speed: 0.000 MH/s, shares: 0/0/0, time: 0:00
+2018.12.02:02:19:21.985: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:19:22.028: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x6fb5018c3f8fa731ddee95978469f27bc11d920491d735f13aa347c92cad140a","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:19:22.120: main Eth speed: 66.205 MH/s, shares: 0/0/0, time: 0:00
+2018.12.02:02:19:27.146: main Eth speed: 67.222 MH/s, shares: 0/0/0, time: 0:00
+2018.12.02:02:19:30.827: GPU1 Eth: GPU1: ETH share found!
+2018.12.02:02:19:30.827: eths Eth: Send: {"id":4,"jsonrpc":"2.0","method":"eth_submitWork","worker":"titanv","params":["0xf3508b8f44453f1b","0x6fb5018c3f8fa731ddee95978469f27bc11d920491d735f13aa347c92cad140a","0x9fc52cc07a6a8d1c0d3a537cb356596234c77be9f8ef677fa76032eab41f25e7"]}
+
+2018.12.02:02:19:30.827: eths Eth: Share actual difficulty: 7669 MH
+2018.12.02:02:19:30.872: eths Eth: Received: {"id":4,"jsonrpc":"2.0","result":true}
+2018.12.02:02:19:30.872: eths Eth: Share accepted in 45 ms
+2018.12.02:02:19:31.986: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:19:31.986: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x401b9ad","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:19:32.018: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x6fb5018c3f8fa731ddee95978469f27bc11d920491d735f13aa347c92cad140a","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:19:32.018: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:19:32.172: main Eth speed: 68.047 MH/s, shares: 1/0/0, time: 0:00
+2018.12.02:02:19:37.197: main Eth speed: 68.060 MH/s, shares: 1/0/0, time: 0:00
+2018.12.02:02:19:40.009: main GPU1: 57C 37%
+2018.12.02:02:19:41.986: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:19:42.022: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x6fb5018c3f8fa731ddee95978469f27bc11d920491d735f13aa347c92cad140a","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:19:42.220: main Eth speed: 68.052 MH/s, shares: 1/0/0, time: 0:00
+2018.12.02:02:19:47.244: main Eth speed: 67.866 MH/s, shares: 1/0/0, time: 0:00
+2018.12.02:02:19:51.987: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:19:51.987: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x40904c0","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:19:52.020: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x6fb5018c3f8fa731ddee95978469f27bc11d920491d735f13aa347c92cad140a","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:19:52.028: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:19:52.270: main Eth speed: 69.705 MH/s, shares: 1/0/0, time: 0:00
+2018.12.02:02:19:57.093: main  
+2018.12.02:02:19:57.093: main *** 0:00 *** 12/2 02:19 **************************************
+2018.12.02:02:19:57.093: main Eth: Mining UBQ on ubiq.hodlpool.com:8009 for 0:00
+2018.12.02:02:19:57.093: main Eth: Accepted shares 1 (0 stales), rejected shares 0 (0 stales)
+2018.12.02:02:19:57.093: main Eth: Incorrect shares 0 (0.00%), est. stales percentage 0.00% 
+2018.12.02:02:19:57.093: main Eth: Maximum difficulty of found share: 7669 MH
+2018.12.02:02:19:57.093: main Eth: Average speed (5 min): 67.715 MH/s
+2018.12.02:02:19:57.093: main  
+2018.12.02:02:19:57.295: main Eth speed: 66.966 MH/s, shares: 1/0/0, time: 0:00
+2018.12.02:02:20:01.988: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:20:02.021: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x6fb5018c3f8fa731ddee95978469f27bc11d920491d735f13aa347c92cad140a","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:20:02.476: main Eth speed: 68.759 MH/s, shares: 1/0/0, time: 0:00
+2018.12.02:02:20:07.511: main Eth speed: 66.403 MH/s, shares: 1/0/0, time: 0:00
+2018.12.02:02:20:08.114: main GPU1: 63C 43%
+2018.12.02:02:20:11.989: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:20:11.989: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x4030701","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:20:12.023: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x6fb5018c3f8fa731ddee95978469f27bc11d920491d735f13aa347c92cad140a","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:20:12.027: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:20:12.676: main Eth speed: 66.845 MH/s, shares: 1/0/0, time: 0:01
+2018.12.02:02:20:13.054: GPU1 Eth: GPU1: ETH share found!
+2018.12.02:02:20:13.054: eths Eth: Send: {"id":4,"jsonrpc":"2.0","method":"eth_submitWork","worker":"titanv","params":["0xf3508b9140c1e137","0x6fb5018c3f8fa731ddee95978469f27bc11d920491d735f13aa347c92cad140a","0x2b3ea589832e0793c2c8a351947712af7661ed74dffda20d5d274b1900b6d426"]}
+
+2018.12.02:02:20:13.054: eths Eth: Share actual difficulty: 8658 MH
+2018.12.02:02:20:13.104: eths Eth: Received: {"id":4,"jsonrpc":"2.0","result":true}
+2018.12.02:02:20:13.104: eths Eth: Share accepted in 50 ms
+2018.12.02:02:20:17.699: main Eth speed: 66.348 MH/s, shares: 2/0/0, time: 0:01
+2018.12.02:02:20:21.989: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:20:22.022: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x6fb5018c3f8fa731ddee95978469f27bc11d920491d735f13aa347c92cad140a","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:20:22.798: main Eth speed: 66.606 MH/s, shares: 2/0/0, time: 0:01
+2018.12.02:02:20:27.579: GPU1 Eth: GPU1: ETH share found!
+2018.12.02:02:20:27.579: eths Eth: Send: {"id":4,"jsonrpc":"2.0","method":"eth_submitWork","worker":"titanv","params":["0xf3508b91f48eeed3","0x6fb5018c3f8fa731ddee95978469f27bc11d920491d735f13aa347c92cad140a","0x6f37786d1790546c597e6980070a704c23cffe347d9e52f77ea34f6a0007edc3"]}
+
+2018.12.02:02:20:27.579: eths Eth: Share actual difficulty: 5593 MH
+2018.12.02:02:20:27.622: eths Eth: Received: {"id":4,"jsonrpc":"2.0","result":true}
+2018.12.02:02:20:27.622: eths Eth: Share accepted in 43 ms
+2018.12.02:02:20:27.826: main Eth speed: 67.071 MH/s, shares: 3/0/0, time: 0:01
+2018.12.02:02:20:31.990: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:20:31.990: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x40171b2","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:20:32.023: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x6fb5018c3f8fa731ddee95978469f27bc11d920491d735f13aa347c92cad140a","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:20:32.029: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:20:32.851: main Eth speed: 67.047 MH/s, shares: 3/0/0, time: 0:01
+2018.12.02:02:20:36.068: main GPU1: 68C 47%
+2018.12.02:02:20:37.876: main Eth speed: 66.728 MH/s, shares: 3/0/0, time: 0:01
+2018.12.02:02:20:41.991: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:20:42.025: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x6fb5018c3f8fa731ddee95978469f27bc11d920491d735f13aa347c92cad140a","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:20:42.206: main  
+2018.12.02:02:20:42.206: main *** 0:01 *** 12/2 02:20 **************************************
+2018.12.02:02:20:42.206: main Eth: Mining UBQ on ubiq.hodlpool.com:8009 for 0:01
+2018.12.02:02:20:42.206: main Eth: Accepted shares 3 (0 stales), rejected shares 0 (0 stales)
+2018.12.02:02:20:42.206: main Eth: Incorrect shares 0 (0.00%), est. stales percentage 0.00% 
+2018.12.02:02:20:42.206: main Eth: Maximum difficulty of found share: 8658 MH
+2018.12.02:02:20:42.206: main Eth: Average speed (5 min): 67.099 MH/s
+2018.12.02:02:20:42.206: main Eth: Effective speed: 133.33 MH/s; at pool: 133.33 MH/s
+2018.12.02:02:20:42.206: main  
+2018.12.02:02:20:43.010: main Eth speed: 66.267 MH/s, shares: 3/0/0, time: 0:01
+2018.12.02:02:20:48.033: main Eth speed: 68.122 MH/s, shares: 3/0/0, time: 0:01
+2018.12.02:02:20:50.225: GPU1 Eth: GPU1: ETH share found!
+2018.12.02:02:20:50.225: eths Eth: Send: {"id":4,"jsonrpc":"2.0","method":"eth_submitWork","worker":"titanv","params":["0xf3508b92fc71a458","0x6fb5018c3f8fa731ddee95978469f27bc11d920491d735f13aa347c92cad140a","0x926e125b60c527c603f3eac604f2efd4d828efc6ee1ee6cc6bb158d7c4b5cc58"]}
+
+2018.12.02:02:20:50.225: eths Eth: Share actual difficulty: 15.0 GH (!)
+2018.12.02:02:20:50.270: eths Eth: Received: {"id":4,"jsonrpc":"2.0","result":true}
+2018.12.02:02:20:50.270: eths Eth: Share accepted in 45 ms
+2018.12.02:02:20:51.991: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:20:51.991: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x3fe773d","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:20:52.024: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x6fb5018c3f8fa731ddee95978469f27bc11d920491d735f13aa347c92cad140a","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:20:52.030: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:20:53.059: main Eth speed: 68.801 MH/s, shares: 4/0/0, time: 0:01
+2018.12.02:02:20:58.085: main Eth speed: 69.274 MH/s, shares: 4/0/0, time: 0:01
+2018.12.02:02:21:01.992: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:21:02.024: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x6fb5018c3f8fa731ddee95978469f27bc11d920491d735f13aa347c92cad140a","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:21:02.381: eths Eth: Received: {"id":0,"jsonrpc":"2.0","result":["0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:21:02.381: eths Eth: New job #0841dae0 from ubiq.hodlpool.com:8009; diff: 4000MH
+2018.12.02:02:21:03.117: main Eth speed: 66.122 MH/s, shares: 4/0/0, time: 0:01
+2018.12.02:02:21:04.122: main GPU1: 70C 49%
+2018.12.02:02:21:08.142: main Eth speed: 69.057 MH/s, shares: 4/0/0, time: 0:01
+2018.12.02:02:21:11.993: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:21:11.993: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x402f104","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:21:12.027: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:21:12.032: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:21:13.353: main Eth speed: 68.494 MH/s, shares: 4/0/0, time: 0:02
+2018.12.02:02:21:18.379: main Eth speed: 70.636 MH/s, shares: 4/0/0, time: 0:02
+2018.12.02:02:21:21.994: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:21:22.027: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:21:23.405: main Eth speed: 68.121 MH/s, shares: 4/0/0, time: 0:02
+2018.12.02:02:21:24.804: GPU1 Eth: GPU1: ETH share found!
+2018.12.02:02:21:24.804: eths Eth: Send: {"id":4,"jsonrpc":"2.0","method":"eth_submitWork","worker":"titanv","params":["0x821e0317ef15817e","0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x8c3c0f06c05972f16a0524037de4c7d52030141528e5bce793a7a8b70785f1f8"]}
+
+2018.12.02:02:21:24.804: eths Eth: Share actual difficulty: 4677 MH
+2018.12.02:02:21:24.844: eths Eth: Received: {"id":4,"jsonrpc":"2.0","result":true}
+2018.12.02:02:21:24.844: eths Eth: Share accepted in 40 ms
+2018.12.02:02:21:27.226: main  
+2018.12.02:02:21:27.226: main *** 0:02 *** 12/2 02:21 **************************************
+2018.12.02:02:21:27.226: main Eth: Mining UBQ on ubiq.hodlpool.com:8009 for 0:02
+2018.12.02:02:21:27.226: main Eth: Accepted shares 5 (0 stales), rejected shares 0 (0 stales)
+2018.12.02:02:21:27.226: main Eth: Incorrect shares 0 (0.00%), est. stales percentage 0.00% 
+2018.12.02:02:21:27.226: main Eth: Maximum difficulty of found share: 15.0 GH (!)
+2018.12.02:02:21:27.226: main Eth: Average speed (5 min): 67.351 MH/s
+2018.12.02:02:21:27.226: main Eth: Effective speed: 148.15 MH/s; at pool: 148.15 MH/s
+2018.12.02:02:21:27.226: main  
+2018.12.02:02:21:28.432: main Eth speed: 68.139 MH/s, shares: 5/0/0, time: 0:02
+2018.12.02:02:21:31.994: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:21:31.994: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x40417d3","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:21:32.028: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:21:32.032: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:21:32.051: main GPU1: 72C 51%
+2018.12.02:02:21:33.458: main Eth speed: 68.110 MH/s, shares: 5/0/0, time: 0:02
+2018.12.02:02:21:38.482: main Eth speed: 68.118 MH/s, shares: 5/0/0, time: 0:02
+2018.12.02:02:21:41.994: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:21:42.028: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:21:43.509: main Eth speed: 68.136 MH/s, shares: 5/0/0, time: 0:02
+2018.12.02:02:21:48.533: main Eth speed: 68.152 MH/s, shares: 5/0/0, time: 0:02
+2018.12.02:02:21:51.995: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:21:51.995: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x405ae40","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:21:52.028: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:21:52.034: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:21:53.566: main Eth speed: 67.560 MH/s, shares: 5/0/0, time: 0:02
+2018.12.02:02:21:58.593: main Eth speed: 67.053 MH/s, shares: 5/0/0, time: 0:02
+2018.12.02:02:22:00.162: main GPU1: 74C 52%
+2018.12.02:02:22:01.995: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:22:02.029: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:22:03.780: main Eth speed: 66.529 MH/s, shares: 5/0/0, time: 0:02
+2018.12.02:02:22:08.806: main Eth speed: 66.988 MH/s, shares: 5/0/0, time: 0:02
+2018.12.02:02:22:11.996: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:22:11.996: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x404ac26","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:22:12.030: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:22:12.036: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:22:12.422: main  
+2018.12.02:02:22:12.422: main *** 0:03 *** 12/2 02:22 **************************************
+2018.12.02:02:22:12.422: main Eth: Mining UBQ on ubiq.hodlpool.com:8009 for 0:03
+2018.12.02:02:22:12.422: main Eth: Accepted shares 5 (0 stales), rejected shares 0 (0 stales)
+2018.12.02:02:22:12.422: main Eth: Incorrect shares 0 (0.00%), est. stales percentage 0.00% 
+2018.12.02:02:22:12.422: main Eth: Maximum difficulty of found share: 15.0 GH (!)
+2018.12.02:02:22:12.422: main Eth: Average speed (5 min): 67.415 MH/s
+2018.12.02:02:22:12.422: main Eth: Effective speed: 111.11 MH/s; at pool: 111.11 MH/s
+2018.12.02:02:22:12.422: main  
+2018.12.02:02:22:13.968: main Eth speed: 67.188 MH/s, shares: 5/0/0, time: 0:03
+2018.12.02:02:22:18.993: main Eth speed: 66.472 MH/s, shares: 5/0/0, time: 0:03
+2018.12.02:02:22:21.996: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:22:22.029: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:22:24.017: main Eth speed: 67.907 MH/s, shares: 5/0/0, time: 0:03
+2018.12.02:02:22:28.034: main GPU1: 74C 53%
+2018.12.02:02:22:29.040: main Eth speed: 67.649 MH/s, shares: 5/0/0, time: 0:03
+2018.12.02:02:22:31.997: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:22:31.997: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x4029f83","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:22:32.032: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:22:32.034: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:22:34.063: main Eth speed: 65.768 MH/s, shares: 5/0/0, time: 0:03
+2018.12.02:02:22:39.158: main Eth speed: 65.920 MH/s, shares: 5/0/0, time: 0:03
+2018.12.02:02:22:41.998: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:22:42.032: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:22:44.184: main Eth speed: 65.807 MH/s, shares: 5/0/0, time: 0:03
+2018.12.02:02:22:45.553: GPU1 Eth: GPU1: ETH share found!
+2018.12.02:02:22:45.553: eths Eth: Send: {"id":4,"jsonrpc":"2.0","method":"eth_submitWork","worker":"titanv","params":["0x821e031baee7feb7","0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0xcf101aeaa5ac7b30b6bf211baaac411f50ede8b70ae3cf8b1895e446222c832d"]}
+
+2018.12.02:02:22:45.553: eths Eth: Share actual difficulty: 5610 MH
+2018.12.02:02:22:45.594: eths Eth: Received: {"id":4,"jsonrpc":"2.0","result":true}
+2018.12.02:02:22:45.594: eths Eth: Share accepted in 41 ms
+2018.12.02:02:22:49.217: main Eth speed: 64.051 MH/s, shares: 6/0/0, time: 0:03
+2018.12.02:02:22:51.999: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:22:51.999: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x3fe993d","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:22:52.032: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:22:52.037: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:22:54.243: main Eth speed: 66.246 MH/s, shares: 6/0/0, time: 0:03
+2018.12.02:02:22:56.052: main GPU1: 75C 53%
+2018.12.02:02:22:57.460: main  
+2018.12.02:02:22:57.460: main *** 0:03 *** 12/2 02:22 **************************************
+2018.12.02:02:22:57.460: main Eth: Mining UBQ on ubiq.hodlpool.com:8009 for 0:03
+2018.12.02:02:22:57.460: main Eth: Accepted shares 6 (0 stales), rejected shares 0 (0 stales)
+2018.12.02:02:22:57.460: main Eth: Incorrect shares 0 (0.00%), est. stales percentage 0.00% 
+2018.12.02:02:22:57.460: main Eth: Maximum difficulty of found share: 15.0 GH (!)
+2018.12.02:02:22:57.460: main Eth: Average speed (5 min): 67.039 MH/s
+2018.12.02:02:22:57.460: main Eth: Effective speed: 106.67 MH/s; at pool: 106.67 MH/s
+2018.12.02:02:22:57.460: main  
+2018.12.02:02:22:59.268: main Eth speed: 66.960 MH/s, shares: 6/0/0, time: 0:03
+2018.12.02:02:23:02.000: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:23:02.033: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:23:04.293: main Eth speed: 67.543 MH/s, shares: 6/0/0, time: 0:03
+2018.12.02:02:23:09.317: main Eth speed: 65.313 MH/s, shares: 6/0/0, time: 0:03
+2018.12.02:02:23:12.000: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:23:12.000: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x3fd9e39","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:23:12.037: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:23:12.037: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:23:14.344: main Eth speed: 66.761 MH/s, shares: 6/0/0, time: 0:04
+2018.12.02:02:23:19.510: main Eth speed: 64.750 MH/s, shares: 6/0/0, time: 0:04
+2018.12.02:02:23:22.001: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:23:22.044: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:23:24.048: main GPU1: 75C 54%
+2018.12.02:02:23:24.651: main Eth speed: 66.693 MH/s, shares: 6/0/0, time: 0:04
+2018.12.02:02:23:29.676: main Eth speed: 69.258 MH/s, shares: 6/0/0, time: 0:04
+2018.12.02:02:23:32.001: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:23:32.002: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x3fdb56e","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:23:32.039: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:23:32.040: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:23:34.701: main Eth speed: 68.118 MH/s, shares: 6/0/0, time: 0:04
+2018.12.02:02:23:37.601: GPU1 Eth: GPU1: ETH share found!
+2018.12.02:02:23:37.601: eths Eth: Send: {"id":4,"jsonrpc":"2.0","method":"eth_submitWork","worker":"titanv","params":["0x821e031e1c99a3e8","0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0xd9b748d3f48824ca613966955fc2d5abff9888478f9a101a700df3362495e6ad"]}
+
+2018.12.02:02:23:37.601: eths Eth: Share actual difficulty: 13.7 GH (!)
+2018.12.02:02:23:37.660: eths Eth: Received: {"id":4,"jsonrpc":"2.0","result":true}
+2018.12.02:02:23:37.660: eths Eth: Share accepted in 59 ms
+2018.12.02:02:23:39.735: main Eth speed: 68.176 MH/s, shares: 7/0/0, time: 0:04
+2018.12.02:02:23:42.002: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:23:42.035: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:23:42.550: main  
+2018.12.02:02:23:42.550: main *** 0:04 *** 12/2 02:23 **************************************
+2018.12.02:02:23:42.550: main Eth: Mining UBQ on ubiq.hodlpool.com:8009 for 0:04
+2018.12.02:02:23:42.550: main Eth: Accepted shares 7 (0 stales), rejected shares 0 (0 stales)
+2018.12.02:02:23:42.550: main Eth: Incorrect shares 0 (0.00%), est. stales percentage 0.00% 
+2018.12.02:02:23:42.550: main Eth: Maximum difficulty of found share: 15.0 GH (!)
+2018.12.02:02:23:42.550: main Eth: Average speed (5 min): 67.002 MH/s
+2018.12.02:02:23:42.550: main Eth: Effective speed: 103.70 MH/s; at pool: 103.70 MH/s
+2018.12.02:02:23:42.550: main  
+2018.12.02:02:23:44.761: main Eth speed: 68.206 MH/s, shares: 7/0/0, time: 0:04
+2018.12.02:02:23:49.786: main Eth speed: 68.211 MH/s, shares: 7/0/0, time: 0:04
+2018.12.02:02:23:52.003: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:23:52.003: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x3ff1d6c","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:23:52.040: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:23:52.043: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:23:52.198: main GPU1: 76C 54%
+2018.12.02:02:23:54.811: main Eth speed: 69.971 MH/s, shares: 7/0/0, time: 0:04
+2018.12.02:02:23:59.836: main Eth speed: 68.219 MH/s, shares: 7/0/0, time: 0:04
+2018.12.02:02:24:02.004: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:24:02.037: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:24:04.860: main Eth speed: 68.213 MH/s, shares: 7/0/0, time: 0:04
+2018.12.02:02:24:09.886: main Eth speed: 68.229 MH/s, shares: 7/0/0, time: 0:04
+2018.12.02:02:24:12.005: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:24:12.005: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x4004e0c","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:24:12.048: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:24:12.054: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:24:14.912: main Eth speed: 68.237 MH/s, shares: 7/0/0, time: 0:05
+2018.12.02:02:24:20.077: main Eth speed: 66.336 MH/s, shares: 7/0/0, time: 0:05
+2018.12.02:02:24:20.077: main GPU1: 76C 55%
+2018.12.02:02:24:21.769: GPU1 Eth: GPU1: ETH share found!
+2018.12.02:02:24:21.769: eths Eth: Send: {"id":4,"jsonrpc":"2.0","method":"eth_submitWork","worker":"titanv","params":["0x821e03202adfe48a","0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x18d2beae662dc162717bb618d93c783122a8ff5fc1e042a56eb978594795754d"]}
+
+2018.12.02:02:24:21.769: eths Eth: Share actual difficulty: 22.1 GH (!)
+2018.12.02:02:24:21.812: eths Eth: Received: {"id":4,"jsonrpc":"2.0","result":true}
+2018.12.02:02:24:21.812: eths Eth: Share accepted in 43 ms
+2018.12.02:02:24:22.005: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:24:22.041: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:24:25.229: main Eth speed: 65.688 MH/s, shares: 8/0/0, time: 0:05
+2018.12.02:02:24:27.641: main  
+2018.12.02:02:24:27.641: main *** 0:05 *** 12/2 02:24 **************************************
+2018.12.02:02:24:27.641: main Eth: Mining UBQ on ubiq.hodlpool.com:8009 for 0:05
+2018.12.02:02:24:27.641: main Eth: Accepted shares 8 (0 stales), rejected shares 0 (0 stales)
+2018.12.02:02:24:27.641: main Eth: Incorrect shares 0 (0.00%), est. stales percentage 0.00% 
+2018.12.02:02:24:27.641: main Eth: Maximum difficulty of found share: 22.1 GH (!)
+2018.12.02:02:24:27.641: main Eth: Average speed (5 min): 67.041 MH/s
+2018.12.02:02:24:27.641: main Eth: Effective speed: 101.59 MH/s; at pool: 101.59 MH/s
+2018.12.02:02:24:27.641: main  
+2018.12.02:02:24:30.254: main Eth speed: 63.900 MH/s, shares: 8/0/0, time: 0:05
+2018.12.02:02:24:32.006: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:24:32.006: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x3fde58e","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:24:32.041: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:24:32.045: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:24:35.288: main Eth speed: 67.464 MH/s, shares: 8/0/0, time: 0:05
+2018.12.02:02:24:40.314: main Eth speed: 68.097 MH/s, shares: 8/0/0, time: 0:05
+2018.12.02:02:24:42.007: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:24:42.041: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:24:45.339: main Eth speed: 67.755 MH/s, shares: 8/0/0, time: 0:05
+2018.12.02:02:24:48.138: main GPU1: 77C 55%
+2018.12.02:02:24:50.430: main Eth speed: 66.738 MH/s, shares: 8/0/0, time: 0:05
+2018.12.02:02:24:52.007: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:24:52.007: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x3fedcf9","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:24:52.041: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:24:52.048: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:24:55.452: main Eth speed: 66.241 MH/s, shares: 8/0/0, time: 0:05
+2018.12.02:02:25:00.475: main Eth speed: 67.633 MH/s, shares: 8/0/0, time: 0:05
+2018.12.02:02:25:02.008: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:25:02.042: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:25:05.499: main Eth speed: 67.808 MH/s, shares: 8/0/0, time: 0:05
+2018.12.02:02:25:10.526: main Eth speed: 65.526 MH/s, shares: 8/0/0, time: 0:05
+2018.12.02:02:25:12.009: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:25:12.009: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x3fde154","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:25:12.041: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:25:12.048: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:25:12.733: main  
+2018.12.02:02:25:12.733: main *** 0:06 *** 12/2 02:25 **************************************
+2018.12.02:02:25:12.733: main Eth: Mining UBQ on ubiq.hodlpool.com:8009 for 0:06
+2018.12.02:02:25:12.733: main Eth: Accepted shares 8 (0 stales), rejected shares 0 (0 stales)
+2018.12.02:02:25:12.733: main Eth: Incorrect shares 0 (0.00%), est. stales percentage 0.00% 
+2018.12.02:02:25:12.733: main Eth: Maximum difficulty of found share: 22.1 GH (!)
+2018.12.02:02:25:12.733: main Eth: Average speed (5 min): 66.979 MH/s
+2018.12.02:02:25:12.733: main Eth: Effective speed: 88.89 MH/s; at pool: 88.89 MH/s
+2018.12.02:02:25:12.733: main  
+2018.12.02:02:25:15.686: main Eth speed: 65.195 MH/s, shares: 8/0/0, time: 0:06
+2018.12.02:02:25:16.434: main GPU1: 77C 55%
+2018.12.02:02:25:19.497: GPU1 Eth: GPU1: ETH share found!
+2018.12.02:02:25:19.497: eths Eth: Send: {"id":4,"jsonrpc":"2.0","method":"eth_submitWork","worker":"titanv","params":["0x821e0322daf18fe1","0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x28a8b2257c7435e99691df83f92892f83d8fe249ffd43019606d3d8631a2faab"]}
+
+2018.12.02:02:25:19.497: eths Eth: Share actual difficulty: 68.4 GH (!)
+2018.12.02:02:25:19.537: eths Eth: Received: {"id":4,"jsonrpc":"2.0","result":true}
+2018.12.02:02:25:19.537: eths Eth: Share accepted in 40 ms
+2018.12.02:02:25:20.704: main Eth speed: 64.414 MH/s, shares: 9/0/0, time: 0:06
+2018.12.02:02:25:22.009: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:25:22.048: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:25:25.736: main Eth speed: 61.441 MH/s, shares: 9/0/0, time: 0:06
+2018.12.02:02:25:30.757: main Eth speed: 63.972 MH/s, shares: 9/0/0, time: 0:06
+2018.12.02:02:25:32.010: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:25:32.010: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x3fb6198","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:25:32.043: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:25:32.047: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:25:35.782: main Eth speed: 64.684 MH/s, shares: 9/0/0, time: 0:06
+2018.12.02:02:25:38.746: GPU1 Eth: GPU1: ETH share found!
+2018.12.02:02:25:38.746: eths Eth: Send: {"id":4,"jsonrpc":"2.0","method":"eth_submitWork","worker":"titanv","params":["0x821e0323bcf59c2c","0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x1f935d54e17a7c39640e4dfd47e122db24923337fb3675883fd0d99e087876f3"]}
+
+2018.12.02:02:25:38.746: eths Eth: Share actual difficulty: 7601 MH
+2018.12.02:02:25:38.786: eths Eth: Received: {"id":4,"jsonrpc":"2.0","result":true}
+2018.12.02:02:25:38.786: eths Eth: Share accepted in 40 ms
+2018.12.02:02:25:40.790: main Eth speed: 62.081 MH/s, shares: 10/0/0, time: 0:06
+2018.12.02:02:25:42.011: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:25:42.045: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x0841dae042806ec1057f653b5b3a4b7a5c7f42feb6ffba24d653bbd0b1c207a0","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:25:44.207: main GPU1: 77C 55%
+2018.12.02:02:25:45.827: main Eth speed: 66.429 MH/s, shares: 10/0/0, time: 0:06
+2018.12.02:02:25:50.258: eths Eth: Received: {"id":0,"jsonrpc":"2.0","result":["0xbaf042298e4bc032d3f446b5ddf61e66c2f9fd2021ab8eff5d99e1af84ad118c","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:25:50.259: eths Eth: New job #baf04229 from ubiq.hodlpool.com:8009; diff: 4000MH
+2018.12.02:02:25:50.875: main Eth speed: 62.118 MH/s, shares: 10/0/0, time: 0:06
+2018.12.02:02:25:52.011: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:25:52.011: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x3f6914f","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:25:52.044: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0xbaf042298e4bc032d3f446b5ddf61e66c2f9fd2021ab8eff5d99e1af84ad118c","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:25:52.050: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:25:55.899: main Eth speed: 65.424 MH/s, shares: 10/0/0, time: 0:06
+2018.12.02:02:25:57.910: main  
+2018.12.02:02:25:57.910: main *** 0:06 *** 12/2 02:25 **************************************
+2018.12.02:02:25:57.910: main Eth: Mining UBQ on ubiq.hodlpool.com:8009 for 0:06
+2018.12.02:02:25:57.910: main Eth: Accepted shares 10 (0 stales), rejected shares 0 (0 stales)
+2018.12.02:02:25:57.910: main Eth: Incorrect shares 0 (0.00%), est. stales percentage 0.00% 
+2018.12.02:02:25:57.910: main Eth: Maximum difficulty of found share: 68.4 GH (!)
+2018.12.02:02:25:57.910: main Eth: Average speed (5 min): 66.557 MH/s
+2018.12.02:02:25:57.910: main Eth: Effective speed: 98.77 MH/s; at pool: 98.77 MH/s
+2018.12.02:02:25:57.910: main  
+2018.12.02:02:26:00.926: main Eth speed: 67.963 MH/s, shares: 10/0/0, time: 0:06
+2018.12.02:02:26:02.012: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:26:02.052: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0xbaf042298e4bc032d3f446b5ddf61e66c2f9fd2021ab8eff5d99e1af84ad118c","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:26:05.949: main Eth speed: 69.908 MH/s, shares: 10/0/0, time: 0:06
+2018.12.02:02:26:10.973: main Eth speed: 67.962 MH/s, shares: 10/0/0, time: 0:06
+2018.12.02:02:26:12.013: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:26:12.013: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x3f64114","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:26:12.056: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0xbaf042298e4bc032d3f446b5ddf61e66c2f9fd2021ab8eff5d99e1af84ad118c","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:26:12.056: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:26:12.179: main GPU1: 74C 74%
+2018.12.02:02:26:16.137: main Eth speed: 68.064 MH/s, shares: 10/0/0, time: 0:07
+2018.12.02:02:26:21.170: main Eth speed: 68.002 MH/s, shares: 10/0/0, time: 0:07
+2018.12.02:02:26:22.014: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:26:22.061: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0xbaf042298e4bc032d3f446b5ddf61e66c2f9fd2021ab8eff5d99e1af84ad118c","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:26:26.214: main Eth speed: 67.178 MH/s, shares: 10/0/0, time: 0:07
+2018.12.02:02:26:31.240: main Eth speed: 67.196 MH/s, shares: 10/0/0, time: 0:07
+2018.12.02:02:26:32.014: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:26:32.014: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x3f5a0d0","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:26:32.051: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0xbaf042298e4bc032d3f446b5ddf61e66c2f9fd2021ab8eff5d99e1af84ad118c","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:26:32.053: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:26:36.266: main Eth speed: 68.382 MH/s, shares: 10/0/0, time: 0:07
+2018.12.02:02:26:40.287: main GPU1: 72C 74%
+2018.12.02:02:26:41.291: main Eth speed: 72.366 MH/s, shares: 10/0/0, time: 0:07
+2018.12.02:02:26:42.014: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:26:42.047: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0xbaf042298e4bc032d3f446b5ddf61e66c2f9fd2021ab8eff5d99e1af84ad118c","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:26:43.100: main  
+2018.12.02:02:26:43.100: main *** 0:07 *** 12/2 02:26 **************************************
+2018.12.02:02:26:43.100: main Eth: Mining UBQ on ubiq.hodlpool.com:8009 for 0:07
+2018.12.02:02:26:43.100: main Eth: Accepted shares 10 (0 stales), rejected shares 0 (0 stales)
+2018.12.02:02:26:43.100: main Eth: Incorrect shares 0 (0.00%), est. stales percentage 0.00% 
+2018.12.02:02:26:43.100: main Eth: Maximum difficulty of found share: 68.4 GH (!)
+2018.12.02:02:26:43.100: main Eth: Average speed (5 min): 66.612 MH/s
+2018.12.02:02:26:43.100: main Eth: Effective speed: 88.69 MH/s; at pool: 88.69 MH/s
+2018.12.02:02:26:43.100: main  
+2018.12.02:02:26:43.229: GPU1 Eth: GPU1: ETH share found!
+2018.12.02:02:26:43.229: eths Eth: Send: {"id":4,"jsonrpc":"2.0","method":"eth_submitWork","worker":"titanv","params":["0xe79c45451547d5d2","0xbaf042298e4bc032d3f446b5ddf61e66c2f9fd2021ab8eff5d99e1af84ad118c","0xebf3f8487e3dcde44de1848ec03957378fa09f7f1886882f4bf1c688bbeb1ea1"]}
+
+2018.12.02:02:26:43.229: eths Eth: Share actual difficulty: 5286 MH
+2018.12.02:02:26:43.268: eths Eth: Received: {"id":4,"jsonrpc":"2.0","result":true}
+2018.12.02:02:26:43.268: eths Eth: Share accepted in 39 ms
+2018.12.02:02:26:46.317: main Eth speed: 75.484 MH/s, shares: 11/0/0, time: 0:07
+2018.12.02:02:26:51.414: main Eth speed: 75.896 MH/s, shares: 11/0/0, time: 0:07
+2018.12.02:02:26:52.015: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:26:52.015: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x3fc9cc6","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:26:52.056: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0xbaf042298e4bc032d3f446b5ddf61e66c2f9fd2021ab8eff5d99e1af84ad118c","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:26:52.064: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:26:56.440: main Eth speed: 74.651 MH/s, shares: 11/0/0, time: 0:07
+2018.12.02:02:27:01.464: main Eth speed: 71.674 MH/s, shares: 11/0/0, time: 0:07
+2018.12.02:02:27:01.816: GPU1 Eth: GPU1: ETH share found!
+2018.12.02:02:27:01.816: eths Eth: Send: {"id":4,"jsonrpc":"2.0","method":"eth_submitWork","worker":"titanv","params":["0xe79c45460bf73361","0xbaf042298e4bc032d3f446b5ddf61e66c2f9fd2021ab8eff5d99e1af84ad118c","0x2b603e6153f7e9b4c01f7450c6aff92d985d4def8187e56dff17d0ff1b5cdb5f"]}
+
+2018.12.02:02:27:01.816: eths Eth: Share actual difficulty: 8524 MH
+2018.12.02:02:27:01.856: eths Eth: Received: {"id":4,"jsonrpc":"2.0","result":true}
+2018.12.02:02:27:01.856: eths Eth: Share accepted in 40 ms
+2018.12.02:02:27:02.015: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:27:02.048: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0xbaf042298e4bc032d3f446b5ddf61e66c2f9fd2021ab8eff5d99e1af84ad118c","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:27:06.489: main Eth speed: 70.111 MH/s, shares: 12/0/0, time: 0:07
+2018.12.02:02:27:08.299: main GPU1: 70C 74%
+2018.12.02:02:27:11.524: main Eth speed: 70.288 MH/s, shares: 12/0/0, time: 0:07
+2018.12.02:02:27:12.015: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:27:12.015: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x40128cc","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:27:12.052: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0xbaf042298e4bc032d3f446b5ddf61e66c2f9fd2021ab8eff5d99e1af84ad118c","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:27:12.053: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:27:16.689: main Eth speed: 73.659 MH/s, shares: 12/0/0, time: 0:08
+2018.12.02:02:27:21.714: main Eth speed: 73.586 MH/s, shares: 12/0/0, time: 0:08
+2018.12.02:02:27:22.016: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:27:22.049: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0xbaf042298e4bc032d3f446b5ddf61e66c2f9fd2021ab8eff5d99e1af84ad118c","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:27:25.259: eths Eth: Received: {"id":0,"jsonrpc":"2.0","result":["0x319c641c7013eba285295bc877207820e951813bb4b9b51ecb95c49d6ea5e52f","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:27:25.259: eths Eth: New job #319c641c from ubiq.hodlpool.com:8009; diff: 4000MH
+2018.12.02:02:27:26.901: main Eth speed: 72.195 MH/s, shares: 12/0/0, time: 0:08
+2018.12.02:02:27:28.107: main  
+2018.12.02:02:27:28.107: main *** 0:08 *** 12/2 02:27 **************************************
+2018.12.02:02:27:28.107: main Eth: Mining UBQ on ubiq.hodlpool.com:8009 for 0:08
+2018.12.02:02:27:28.107: main Eth: Accepted shares 12 (0 stales), rejected shares 0 (0 stales)
+2018.12.02:02:27:28.107: main Eth: Incorrect shares 0 (0.00%), est. stales percentage 0.00% 
+2018.12.02:02:27:28.107: main Eth: Maximum difficulty of found share: 68.4 GH (!)
+2018.12.02:02:27:28.107: main Eth: Average speed (5 min): 67.552 MH/s
+2018.12.02:02:27:28.107: main Eth: Effective speed: 96.77 MH/s; at pool: 96.77 MH/s
+2018.12.02:02:27:28.107: main  
+2018.12.02:02:27:31.925: main Eth speed: 71.829 MH/s, shares: 12/0/0, time: 0:08
+2018.12.02:02:27:32.017: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:27:32.017: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x407cf24","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:27:32.051: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x319c641c7013eba285295bc877207820e951813bb4b9b51ecb95c49d6ea5e52f","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:27:32.051: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:27:36.342: main GPU1: 71C 74%
+2018.12.02:02:27:36.945: main Eth speed: 71.771 MH/s, shares: 12/0/0, time: 0:08
+2018.12.02:02:27:41.972: main Eth speed: 72.726 MH/s, shares: 12/0/0, time: 0:08
+2018.12.02:02:27:42.017: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:27:42.051: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x319c641c7013eba285295bc877207820e951813bb4b9b51ecb95c49d6ea5e52f","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:27:42.510: GPU1 Eth: GPU1: ETH share found!
+2018.12.02:02:27:42.510: eths Eth: Send: {"id":4,"jsonrpc":"2.0","method":"eth_submitWork","worker":"titanv","params":["0xbd96ef1483d8fc90","0x319c641c7013eba285295bc877207820e951813bb4b9b51ecb95c49d6ea5e52f","0x4a7073d83e517dcfc49b9471bf151a95bf6deae0a5fd01071d70887ad33442fd"]}
+
+2018.12.02:02:27:42.510: eths Eth: Share actual difficulty: 14.8 GH (!)
+2018.12.02:02:27:42.547: eths Eth: Received: {"id":4,"jsonrpc":"2.0","result":true}
+2018.12.02:02:27:42.547: eths Eth: Share accepted in 37 ms
+2018.12.02:02:27:46.995: main Eth speed: 76.116 MH/s, shares: 13/0/0, time: 0:08
+2018.12.02:02:27:52.017: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:27:52.017: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x40fa156","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:27:52.021: main Eth speed: 75.834 MH/s, shares: 13/0/0, time: 0:08
+2018.12.02:02:27:52.051: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x319c641c7013eba285295bc877207820e951813bb4b9b51ecb95c49d6ea5e52f","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:27:52.056: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:27:57.064: main Eth speed: 76.474 MH/s, shares: 13/0/0, time: 0:08
+2018.12.02:02:28:02.018: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:28:02.051: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x319c641c7013eba285295bc877207820e951813bb4b9b51ecb95c49d6ea5e52f","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:28:02.090: main Eth speed: 76.563 MH/s, shares: 13/0/0, time: 0:08
+2018.12.02:02:28:04.310: main GPU1: 71C 74%
+2018.12.02:02:28:05.643: GPU1 Eth: GPU1: ETH share found!
+2018.12.02:02:28:05.644: eths Eth: Send: {"id":4,"jsonrpc":"2.0","method":"eth_submitWork","worker":"titanv","params":["0xbd96ef15c0534fd1","0x319c641c7013eba285295bc877207820e951813bb4b9b51ecb95c49d6ea5e52f","0x951a6feb1c4d7385f2b8e343dde7abce742ff52782c454c9587c299b51482b5b"]}
+
+2018.12.02:02:28:05.644: eths Eth: Share actual difficulty: 4021 MH
+2018.12.02:02:28:05.688: eths Eth: Received: {"id":4,"jsonrpc":"2.0","result":true}
+2018.12.02:02:28:05.688: eths Eth: Share accepted in 44 ms
+2018.12.02:02:28:07.262: main Eth speed: 75.952 MH/s, shares: 14/0/0, time: 0:08
+2018.12.02:02:28:12.018: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:28:12.018: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x41a6c73","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:28:12.053: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x319c641c7013eba285295bc877207820e951813bb4b9b51ecb95c49d6ea5e52f","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:28:12.053: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:28:12.286: main Eth speed: 76.413 MH/s, shares: 14/0/0, time: 0:09
+2018.12.02:02:28:13.233: main  
+2018.12.02:02:28:13.233: main *** 0:09 *** 12/2 02:28 **************************************
+2018.12.02:02:28:13.233: main Eth: Mining UBQ on ubiq.hodlpool.com:8009 for 0:09
+2018.12.02:02:28:13.233: main Eth: Accepted shares 14 (0 stales), rejected shares 0 (0 stales)
+2018.12.02:02:28:13.233: main Eth: Incorrect shares 0 (0.00%), est. stales percentage 0.00% 
+2018.12.02:02:28:13.233: main Eth: Maximum difficulty of found share: 68.4 GH (!)
+2018.12.02:02:28:13.233: main Eth: Average speed (5 min): 68.983 MH/s
+2018.12.02:02:28:13.233: main Eth: Effective speed: 103.51 MH/s; at pool: 103.51 MH/s
+2018.12.02:02:28:13.233: main  
+2018.12.02:02:28:17.453: main Eth speed: 75.887 MH/s, shares: 14/0/0, time: 0:09
+2018.12.02:02:28:22.019: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:28:22.052: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x319c641c7013eba285295bc877207820e951813bb4b9b51ecb95c49d6ea5e52f","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:28:22.586: main Eth speed: 75.692 MH/s, shares: 14/0/0, time: 0:09
+2018.12.02:02:28:27.689: main Eth speed: 74.584 MH/s, shares: 14/0/0, time: 0:09
+2018.12.02:02:28:31.988: GPU1 Eth: GPU1: ETH share found!
+2018.12.02:02:28:31.988: eths Eth: Send: {"id":4,"jsonrpc":"2.0","method":"eth_submitWork","worker":"titanv","params":["0xbd96ef171fd0d949","0x319c641c7013eba285295bc877207820e951813bb4b9b51ecb95c49d6ea5e52f","0x3835bd91e612de4b038d885b1acc1548610d53ebb7de78099f50de4455c8847d"]}
+
+2018.12.02:02:28:31.988: eths Eth: Share actual difficulty: 144.5 GH (!)
+2018.12.02:02:28:32.019: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:28:32.019: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x422dfaa","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:28:32.032: eths Eth: Received: {"id":4,"jsonrpc":"2.0","result":true}
+2018.12.02:02:28:32.032: eths Eth: Share accepted in 44 ms
+2018.12.02:02:28:32.053: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x319c641c7013eba285295bc877207820e951813bb4b9b51ecb95c49d6ea5e52f","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:28:32.053: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:28:32.325: main GPU1: 71C 74%
+2018.12.02:02:28:32.726: main Eth speed: 73.710 MH/s, shares: 15/0/0, time: 0:09
+2018.12.02:02:28:37.749: main Eth speed: 74.472 MH/s, shares: 15/0/0, time: 0:09
+2018.12.02:02:28:41.946: eths Eth: Received: {"id":0,"jsonrpc":"2.0","result":["0xd561a6140fbb32fbbaedbf60c355d66dc184d420214111de82d25a251a5caea7","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:28:41.946: eths Eth: New job #d561a614 from ubiq.hodlpool.com:8009; diff: 4000MH
+2018.12.02:02:28:42.020: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:28:42.053: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0xd561a6140fbb32fbbaedbf60c355d66dc184d420214111de82d25a251a5caea7","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:28:42.884: main Eth speed: 71.598 MH/s, shares: 15/0/0, time: 0:09
+2018.12.02:02:28:47.908: main Eth speed: 71.979 MH/s, shares: 15/0/0, time: 0:09
+2018.12.02:02:28:52.020: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:28:52.020: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x4278b3f","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:28:52.055: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0xd561a6140fbb32fbbaedbf60c355d66dc184d420214111de82d25a251a5caea7","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:28:52.055: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:28:52.932: main Eth speed: 72.106 MH/s, shares: 15/0/0, time: 0:09
+2018.12.02:02:28:53.439: eths Eth: Received: {"id":0,"jsonrpc":"2.0","result":["0x2f0245377184eadc06a6c4fef42644652a0d195b234e5f2332c5b2eb142df180","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:28:53.439: eths Eth: New job #2f024537 from ubiq.hodlpool.com:8009; diff: 4000MH
+2018.12.02:02:28:57.966: main Eth speed: 75.762 MH/s, shares: 15/0/0, time: 0:09
+2018.12.02:02:28:58.368: main  
+2018.12.02:02:28:58.368: main *** 0:09 *** 12/2 02:28 **************************************
+2018.12.02:02:28:58.368: main Eth: Mining UBQ on ubiq.hodlpool.com:8009 for 0:09
+2018.12.02:02:28:58.368: main Eth: Accepted shares 15 (0 stales), rejected shares 0 (0 stales)
+2018.12.02:02:28:58.368: main Eth: Incorrect shares 0 (0.00%), est. stales percentage 0.00% 
+2018.12.02:02:28:58.368: main Eth: Maximum difficulty of found share: 144.5 GH (!)
+2018.12.02:02:28:58.368: main Eth: Average speed (5 min): 69.935 MH/s
+2018.12.02:02:28:58.368: main Eth: Effective speed: 102.39 MH/s; at pool: 102.39 MH/s
+2018.12.02:02:28:58.368: main  
+2018.12.02:02:29:00.306: main GPU1: 72C 74%
+2018.12.02:02:29:02.021: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:29:02.055: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x2f0245377184eadc06a6c4fef42644652a0d195b234e5f2332c5b2eb142df180","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:29:03.114: main Eth speed: 75.712 MH/s, shares: 15/0/0, time: 0:09
+2018.12.02:02:29:08.137: main Eth speed: 75.463 MH/s, shares: 15/0/0, time: 0:09
+2018.12.02:02:29:12.021: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:29:12.022: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x42f3666","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:29:12.055: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x2f0245377184eadc06a6c4fef42644652a0d195b234e5f2332c5b2eb142df180","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:29:12.060: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:29:13.159: main Eth speed: 77.555 MH/s, shares: 15/0/0, time: 0:10
+2018.12.02:02:29:18.329: main Eth speed: 72.584 MH/s, shares: 15/0/0, time: 0:10
+2018.12.02:02:29:22.022: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:29:22.056: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x2f0245377184eadc06a6c4fef42644652a0d195b234e5f2332c5b2eb142df180","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:29:23.355: main Eth speed: 75.177 MH/s, shares: 15/0/0, time: 0:10
+2018.12.02:02:29:28.263: main GPU1: 72C 74%
+2018.12.02:02:29:28.464: main Eth speed: 75.254 MH/s, shares: 15/0/0, time: 0:10
+2018.12.02:02:29:32.022: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:29:32.022: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x436fbf3","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:29:32.055: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x2f0245377184eadc06a6c4fef42644652a0d195b234e5f2332c5b2eb142df180","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:29:32.060: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:29:33.490: main Eth speed: 75.599 MH/s, shares: 15/0/0, time: 0:10
+2018.12.02:02:29:38.516: main Eth speed: 73.593 MH/s, shares: 15/0/0, time: 0:10
+2018.12.02:02:29:38.691: GPU1 Eth: GPU1: ETH share found!
+2018.12.02:02:29:38.691: eths Eth: Send: {"id":4,"jsonrpc":"2.0","method":"eth_submitWork","worker":"titanv","params":["0x2e4e708b16758362","0x2f0245377184eadc06a6c4fef42644652a0d195b234e5f2332c5b2eb142df180","0x9bbcca908d0874ca286921c38d7539a7f1753145e994e4b3787a7283fca04597"]}
+
+2018.12.02:02:29:38.691: eths Eth: Share actual difficulty: 5149 MH
+2018.12.02:02:29:38.730: eths Eth: Received: {"id":4,"jsonrpc":"2.0","result":true}
+2018.12.02:02:29:38.730: eths Eth: Share accepted in 39 ms
+2018.12.02:02:29:42.023: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:29:42.056: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x2f0245377184eadc06a6c4fef42644652a0d195b234e5f2332c5b2eb142df180","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:29:43.102: GPU1 Eth: GPU1: ETH share found!
+2018.12.02:02:29:43.102: eths Eth: Send: {"id":4,"jsonrpc":"2.0","method":"eth_submitWork","worker":"titanv","params":["0x2e4e708b53648835","0x2f0245377184eadc06a6c4fef42644652a0d195b234e5f2332c5b2eb142df180","0xfcfdc2eaee5df6c3e844492053d5894e69e89bbf08478524d397f5eff475afba"]}
+
+2018.12.02:02:29:43.102: eths Eth: Share actual difficulty: 15.7 GH (!)
+2018.12.02:02:29:43.139: eths Eth: Received: {"id":4,"jsonrpc":"2.0","result":true}
+2018.12.02:02:29:43.139: eths Eth: Share accepted in 37 ms
+2018.12.02:02:29:43.542: main  
+2018.12.02:02:29:43.542: main *** 0:10 *** 12/2 02:29 **************************************
+2018.12.02:02:29:43.542: main Eth: Mining UBQ on ubiq.hodlpool.com:8009 for 0:10
+2018.12.02:02:29:43.542: main Eth speed: 72.947 MH/s, shares: 17/0/0, time: 0:10
+2018.12.02:02:29:43.542: main Eth: Accepted shares 17 (0 stales), rejected shares 0 (0 stales)
+2018.12.02:02:29:43.542: main Eth: Incorrect shares 0 (0.00%), est. stales percentage 0.00% 
+2018.12.02:02:29:43.542: main Eth: Maximum difficulty of found share: 144.5 GH (!)
+2018.12.02:02:29:43.542: main Eth: Average speed (5 min): 71.055 MH/s
+2018.12.02:02:29:43.542: main Eth: Effective speed: 107.77 MH/s; at pool: 107.77 MH/s
+2018.12.02:02:29:43.542: main  
+2018.12.02:02:29:48.568: main Eth speed: 72.743 MH/s, shares: 17/0/0, time: 0:10
+2018.12.02:02:29:52.023: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:29:52.023: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x4401f66","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:29:52.056: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x2f0245377184eadc06a6c4fef42644652a0d195b234e5f2332c5b2eb142df180","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:29:52.061: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:29:53.602: main Eth speed: 75.890 MH/s, shares: 17/0/0, time: 0:10
+2018.12.02:02:29:56.215: main GPU1: 72C 74%
+2018.12.02:02:29:58.627: main Eth speed: 75.863 MH/s, shares: 17/0/0, time: 0:10
+2018.12.02:02:30:02.024: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:30:02.058: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x2f0245377184eadc06a6c4fef42644652a0d195b234e5f2332c5b2eb142df180","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:30:03.654: main Eth speed: 76.127 MH/s, shares: 17/0/0, time: 0:10
+2018.12.02:02:30:08.678: main Eth speed: 73.578 MH/s, shares: 17/0/0, time: 0:10
+2018.12.02:02:30:10.834: GPU1 Eth: GPU1: ETH share found!
+2018.12.02:02:30:10.834: eths Eth: Send: {"id":4,"jsonrpc":"2.0","method":"eth_submitWork","worker":"titanv","params":["0x2e4e708cc20b27a0","0x2f0245377184eadc06a6c4fef42644652a0d195b234e5f2332c5b2eb142df180","0x7c6547242a32e0f74e7268e15289ce470a271f91b9aeeb430e1602ca71b84537"]}
+
+2018.12.02:02:30:10.834: eths Eth: Share actual difficulty: 4271 MH
+2018.12.02:02:30:10.875: eths Eth: Received: {"id":4,"jsonrpc":"2.0","result":true}
+2018.12.02:02:30:10.875: eths Eth: Share accepted in 41 ms
+2018.12.02:02:30:12.024: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:30:12.024: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x4494c30","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:30:12.065: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x2f0245377184eadc06a6c4fef42644652a0d195b234e5f2332c5b2eb142df180","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:30:12.065: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:30:13.702: main Eth speed: 76.754 MH/s, shares: 18/0/0, time: 0:11
+2018.12.02:02:30:18.874: main Eth speed: 76.842 MH/s, shares: 18/0/0, time: 0:11
+2018.12.02:02:30:22.025: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:30:22.058: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x2f0245377184eadc06a6c4fef42644652a0d195b234e5f2332c5b2eb142df180","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:30:23.898: main Eth speed: 76.730 MH/s, shares: 18/0/0, time: 0:11
+2018.12.02:02:30:24.300: main GPU1: 72C 74%
+2018.12.02:02:30:28.722: main  
+2018.12.02:02:30:28.722: main *** 0:11 *** 12/2 02:30 **************************************
+2018.12.02:02:30:28.722: main Eth: Mining UBQ on ubiq.hodlpool.com:8009 for 0:11
+2018.12.02:02:30:28.722: main Eth: Accepted shares 18 (0 stales), rejected shares 0 (0 stales)
+2018.12.02:02:30:28.722: main Eth: Incorrect shares 0 (0.00%), est. stales percentage 0.00% 
+2018.12.02:02:30:28.722: main Eth: Maximum difficulty of found share: 144.5 GH (!)
+2018.12.02:02:30:28.722: main Eth: Average speed (5 min): 72.662 MH/s
+2018.12.02:02:30:28.722: main Eth: Effective speed: 106.51 MH/s; at pool: 106.51 MH/s
+2018.12.02:02:30:28.722: main  
+2018.12.02:02:30:28.923: main Eth speed: 76.036 MH/s, shares: 18/0/0, time: 0:11
+2018.12.02:02:30:32.026: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:30:32.026: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x456f785","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:30:32.058: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x2f0245377184eadc06a6c4fef42644652a0d195b234e5f2332c5b2eb142df180","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:30:32.065: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:30:33.950: main Eth speed: 76.115 MH/s, shares: 18/0/0, time: 0:11
+2018.12.02:02:30:37.023: eths Eth: Received: {"id":0,"jsonrpc":"2.0","result":["0x33357fa0e1161f75113b43226d4a01b020a57ae3c49d358401fc0e5b313983d1","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:30:37.023: eths Eth: New job #33357fa0 from ubiq.hodlpool.com:8009; diff: 4000MH
+2018.12.02:02:30:38.974: main Eth speed: 76.890 MH/s, shares: 18/0/0, time: 0:11
+2018.12.02:02:30:42.026: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:30:42.060: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x33357fa0e1161f75113b43226d4a01b020a57ae3c49d358401fc0e5b313983d1","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:30:44.007: main Eth speed: 74.474 MH/s, shares: 18/0/0, time: 0:11
+2018.12.02:02:30:49.033: main Eth speed: 76.921 MH/s, shares: 18/0/0, time: 0:11
+2018.12.02:02:30:52.026: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:30:52.026: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x4648687","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:30:52.063: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x33357fa0e1161f75113b43226d4a01b020a57ae3c49d358401fc0e5b313983d1","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:30:52.063: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:30:52.248: main GPU1: 72C 74%
+2018.12.02:02:30:54.058: main Eth speed: 73.515 MH/s, shares: 18/0/0, time: 0:11
+2018.12.02:02:30:59.083: main Eth speed: 73.545 MH/s, shares: 18/0/0, time: 0:11
+2018.12.02:02:31:02.027: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:31:02.061: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x33357fa0e1161f75113b43226d4a01b020a57ae3c49d358401fc0e5b313983d1","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:31:04.110: main Eth speed: 76.072 MH/s, shares: 18/0/0, time: 0:11
+2018.12.02:02:31:09.132: main Eth speed: 75.996 MH/s, shares: 18/0/0, time: 0:11
+2018.12.02:02:31:12.028: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:31:12.028: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x46b3933","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:31:12.068: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x33357fa0e1161f75113b43226d4a01b020a57ae3c49d358401fc0e5b313983d1","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:31:12.068: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:31:13.892: main  
+2018.12.02:02:31:13.892: main *** 0:12 *** 12/2 02:31 **************************************
+2018.12.02:02:31:13.892: main Eth: Mining UBQ on ubiq.hodlpool.com:8009 for 0:12
+2018.12.02:02:31:13.892: main Eth: Accepted shares 18 (0 stales), rejected shares 0 (0 stales)
+2018.12.02:02:31:13.892: main Eth: Incorrect shares 0 (0.00%), est. stales percentage 0.00% 
+2018.12.02:02:31:13.892: main Eth: Maximum difficulty of found share: 144.5 GH (!)
+2018.12.02:02:31:13.892: main Eth: Average speed (5 min): 74.136 MH/s
+2018.12.02:02:31:13.892: main Eth: Effective speed: 99.86 MH/s; at pool: 99.86 MH/s
+2018.12.02:02:31:13.892: main  
+2018.12.02:02:31:14.295: main Eth speed: 76.631 MH/s, shares: 18/0/0, time: 0:12
+2018.12.02:02:31:19.319: main Eth speed: 76.365 MH/s, shares: 18/0/0, time: 0:12
+2018.12.02:02:31:20.325: main GPU1: 72C 74%
+2018.12.02:02:31:22.028: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:31:22.062: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x33357fa0e1161f75113b43226d4a01b020a57ae3c49d358401fc0e5b313983d1","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:31:24.345: main Eth speed: 73.566 MH/s, shares: 18/0/0, time: 0:12
+2018.12.02:02:31:29.369: main Eth speed: 73.516 MH/s, shares: 18/0/0, time: 0:12
+2018.12.02:02:31:32.029: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:31:32.029: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x471ef4b","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:31:32.065: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x33357fa0e1161f75113b43226d4a01b020a57ae3c49d358401fc0e5b313983d1","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:31:32.070: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:31:34.395: main Eth speed: 73.625 MH/s, shares: 18/0/0, time: 0:12
+2018.12.02:02:31:39.429: main Eth speed: 79.372 MH/s, shares: 18/0/0, time: 0:12
+2018.12.02:02:31:42.030: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:31:42.063: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x33357fa0e1161f75113b43226d4a01b020a57ae3c49d358401fc0e5b313983d1","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:31:44.455: main Eth speed: 73.672 MH/s, shares: 18/0/0, time: 0:12
+2018.12.02:02:31:48.335: main GPU1: 72C 74%
+2018.12.02:02:31:49.540: main Eth speed: 77.460 MH/s, shares: 18/0/0, time: 0:12
+2018.12.02:02:31:52.030: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:31:52.030: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x471d198","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:31:52.065: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x33357fa0e1161f75113b43226d4a01b020a57ae3c49d358401fc0e5b313983d1","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:31:52.065: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:31:54.567: main Eth speed: 72.219 MH/s, shares: 18/0/0, time: 0:12
+2018.12.02:02:31:58.952: main  
+2018.12.02:02:31:58.952: main *** 0:12 *** 12/2 02:31 **************************************
+2018.12.02:02:31:58.952: main Eth: Mining UBQ on ubiq.hodlpool.com:8009 for 0:12
+2018.12.02:02:31:58.952: main Eth: Accepted shares 18 (0 stales), rejected shares 0 (0 stales)
+2018.12.02:02:31:58.952: main Eth: Incorrect shares 0 (0.00%), est. stales percentage 0.00% 
+2018.12.02:02:31:58.952: main Eth: Maximum difficulty of found share: 144.5 GH (!)
+2018.12.02:02:31:58.952: main Eth: Average speed (5 min): 74.589 MH/s
+2018.12.02:02:31:58.952: main Eth: Effective speed: 93.87 MH/s; at pool: 93.87 MH/s
+2018.12.02:02:31:58.952: main  
+2018.12.02:02:31:59.756: main Eth speed: 69.677 MH/s, shares: 18/0/0, time: 0:12
+2018.12.02:02:32:02.030: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:32:02.064: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x33357fa0e1161f75113b43226d4a01b020a57ae3c49d358401fc0e5b313983d1","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:32:04.780: main Eth speed: 73.174 MH/s, shares: 18/0/0, time: 0:12
+2018.12.02:02:32:09.942: main Eth speed: 67.919 MH/s, shares: 18/0/0, time: 0:12
+2018.12.02:02:32:12.031: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:32:12.031: eths Eth: Send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","worker":"titanv","params":["0x46e31a8","0x8856a6fe6ade1ece518945968207102afccf3c77b3924ef8edecb591f00938ec"]}
+
+2018.12.02:02:32:12.064: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x33357fa0e1161f75113b43226d4a01b020a57ae3c49d358401fc0e5b313983d1","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:32:12.077: eths Eth: Received: {"id":6,"jsonrpc":"2.0","result":true}
+2018.12.02:02:32:15.108: main Eth speed: 68.135 MH/s, shares: 18/0/0, time: 0:13
+2018.12.02:02:32:15.953: GPU1 Eth: GPU1: ETH share found!
+2018.12.02:02:32:15.953: eths Eth: Send: {"id":4,"jsonrpc":"2.0","method":"eth_submitWork","worker":"titanv","params":["0x20658cefaf4bbc27","0x33357fa0e1161f75113b43226d4a01b020a57ae3c49d358401fc0e5b313983d1","0x957b60170849aa41cd9cb4ff0e89bd639620bcc5489effdff988e1d36c8bd983"]}
+
+2018.12.02:02:32:15.953: eths Eth: Share actual difficulty: 8801 MH
+2018.12.02:02:32:15.993: eths Eth: Received: {"id":4,"jsonrpc":"2.0","result":true}
+2018.12.02:02:32:15.993: eths Eth: Share accepted in 40 ms
+2018.12.02:02:32:16.314: main GPU1: 71C 67%
+2018.12.02:02:32:19.891: unkn Quitting...
+2018.12.02:02:32:21.231: wdog Stopping watchdog thread
+2018.12.02:02:32:21.232: main Exit code: 0

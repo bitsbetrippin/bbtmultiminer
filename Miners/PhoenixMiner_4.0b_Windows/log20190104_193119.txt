@@ -1,0 +1,38 @@
+2019.01.04:19:31:19.635: main Phoenix Miner 4.0b Windows/msvc - Release build
+2019.01.04:19:31:19.635: main Cmd line: -pool ssl://eu1.ethermine.org:5555 -pool2 ssl://us1.ethermine.org:5555 -wal 0x008c26f3a2Ca8bdC11e5891e0278c9436B6F5d1E.Rig001 
+2019.01.04:19:31:19.635: main No CUDA driver found
+2019.01.04:19:31:21.172: main OpenCL driver version: 18.10/11
+2019.01.04:19:31:21.172: main OpenCL driver version: 18.5.1
+2019.01.04:19:31:21.172: main Available GPUs for mining:
+2019.01.04:19:31:21.172: main GPU1: Radeon RX 590 Series (pcie 1), OpenCL 2.0, 8 GB VRAM, 36 CUs
+2019.01.04:19:31:21.172: main GPU2: Radeon RX 590 Series (pcie 1), OpenCL 2.0, 8 GB VRAM, 36 CUs
+2019.01.04:19:31:21.185: main ADL library initialized
+2019.01.04:19:31:22.872: main Eth: Loading pools from epools.txt
+2019.01.04:19:31:22.872: main Eth: the pool list contains 4 pools (2 from command-line)
+2019.01.04:19:31:22.872: main Eth: primary pool: ssl://eu1.ethermine.org:5555
+2019.01.04:19:31:22.872: main Starting GPU mining
+2019.01.04:19:31:22.872: main Matched GPU1 to ADL adapter index 0 (method 1)
+2019.01.04:19:31:22.883: main GPU1: Created ADL monitor for adapter 0; overdrive version: 7
+2019.01.04:19:31:22.883: main GPU1: using AMD driver ver 18.12.1
+2019.01.04:19:31:22.883: main Matched GPU2 to ADL adapter index 0 (method 1)
+2019.01.04:19:31:22.895: main GPU2: Created ADL monitor for adapter 0; overdrive version: 7
+2019.01.04:19:31:22.895: main GPU2: using AMD driver ver 18.12.1
+2019.01.04:19:31:22.895: wdog Starting watchdog thread
+2019.01.04:19:31:23.229: main Eth: Connecting to ethash pool ssl://eu1.ethermine.org:5555 (proto: EthProxy)
+2019.01.04:19:31:23.247: eths Eth: Connected to SSL ethash pool eu1.ethermine.org:5555 (172.65.207.106)
+2019.01.04:19:31:23.303: eths Eth: Send: {"id":1,"jsonrpc":"2.0","method":"eth_submitLogin","worker":"eth1.0","params":["0x008c26f3a2Ca8bdC11e5891e0278c9436B6F5d1E.Rig001"]}
+
+2019.01.04:19:31:23.430: main Listening for CDM remote manager at port 3333 in read-only mode
+2019.01.04:19:31:23.430: main GPU1: 28C 35%, GPU2: 28C 35%
+2019.01.04:19:31:23.497: eths Eth: Received: {"id":1,"jsonrpc":"2.0","result":true}
+2019.01.04:19:31:23.497: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","params":[]}
+
+2019.01.04:19:31:23.616: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0xafdb1241449ac0179d8af74ab5c2881d67c508b1fb418e89505e849352c6dced","0x9b47e1765cef9674400bef45620d53a845a595c8cdaafcb3993a3a119b5576cf","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x6afe32"]}
+2019.01.04:19:31:23.616: eths Eth: New job #afdb1241 from ssl://eu1.ethermine.org:5555; diff: 4000MH
+2019.01.04:19:31:23.616: GPU1 GPU1: Starting up... (0)
+2019.01.04:19:31:23.616: GPU1 GPU1: Generating ethash light cache for epoch #233
+2019.01.04:19:31:23.617: GPU2 GPU2: Starting up... (0)
+2019.01.04:19:31:25.499: GPU1 Light cache generated in 1.9 s (24.0 MB/s)
+2019.01.04:19:31:25.754: GPU1 GPU1: Allocating DAG (2.84) GB; good for epoch up to #235
+2019.01.04:19:31:25.760: GPU1 GPU1: Allocating light cache buffer (45.4) MB; good for epoch up to #235
+2019.01.04:19:31:25.767: GPU1 GPU1: Generating DAG for epoch #233

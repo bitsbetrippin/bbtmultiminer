@@ -1,0 +1,43 @@
+2018.12.02:02:32:45.882: main Phoenix Miner 4.0b Windows/msvc - Release build
+2018.12.02:02:32:45.882: main Cmd line: -pool ubiq.hodlpool.com:8009 -wal 0x21b75D1b449bd7dAE9B2C8730C7bEC8854409Cfb -worker titanv -coin ubq 
+2018.12.02:02:32:46.086: main CUDA version: 10.0, CUDA runtime: 8.0
+2018.12.02:02:32:46.087: main No OpenCL platforms found
+2018.12.02:02:32:46.087: main Available GPUs for mining:
+2018.12.02:02:32:46.087: main GPU1: TITAN V (pcie 67), CUDA cap. 7.0, 12 GB VRAM, 80 CUs
+2018.12.02:02:32:46.090: main NVML library initialized
+2018.12.02:02:32:46.096: main Nvidia driver version: 411.63
+2018.12.02:02:32:46.265: main Eth: Loading pools from epools.txt
+2018.12.02:02:32:46.265: main Eth: Invalid wallet 'YourWallet.THREADRIPPER' specified for pool 1 from epools.txt. Replace with a real wallet
+2018.12.02:02:32:46.265: main Eth: Invalid wallet 'YourWallet.THREADRIPPER' specified for pool 2 from epools.txt. Replace with a real wallet
+2018.12.02:02:32:46.265: main Eth: the pool list contains 1 pool (1 from command-line)
+2018.12.02:02:32:46.265: main Eth: primary pool: ubiq.hodlpool.com:8009
+2018.12.02:02:32:46.265: main Starting GPU mining
+2018.12.02:02:32:46.266: wdog Starting watchdog thread
+2018.12.02:02:32:46.266: main Eth: Connecting to ethash pool ubiq.hodlpool.com:8009 (proto: EthProxy)
+2018.12.02:02:32:46.347: eths Eth: Connected to ethash pool ubiq.hodlpool.com:8009 (158.69.248.48)
+2018.12.02:02:32:46.347: eths Eth: Send: {"id":1,"jsonrpc":"2.0","method":"eth_submitLogin","worker":"titanv","params":["0x21b75D1b449bd7dAE9B2C8730C7bEC8854409Cfb"]}
+
+2018.12.02:02:32:46.396: eths Eth: Received: {"id":1,"jsonrpc":"2.0","result":true}
+2018.12.02:02:32:46.396: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:32:46.431: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0xa7a21273c0a2d836efe1e28fdbd9557680f8469b654cf219c7729c1ce1063202","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:32:46.431: eths Eth: New job #a7a21273 from ubiq.hodlpool.com:8009; diff: 4000MH
+2018.12.02:02:32:46.431: GPU1 GPU1: Starting up... (0)
+2018.12.02:02:32:46.431: GPU1 GPU1: Generating ubqhash light cache for epoch #22
+2018.12.02:02:32:46.467: main Listening for CDM remote manager at port 3333 in read-only mode
+2018.12.02:02:32:46.467: main GPU1: 58C 67%
+2018.12.02:02:32:46.886: GPU1 Light cache generated in 0.5 s (41.3 MB/s)
+2018.12.02:02:32:48.586: GPU1 GPU1: Allocating DAG (1.19) GB; good for epoch up to #24
+2018.12.02:02:32:48.631: GPU1 GPU1: Allocating light cache buffer (19.0) MB; good for epoch up to #24
+2018.12.02:02:32:48.636: GPU1 GPU1: Generating DAG for epoch #22
+2018.12.02:02:32:50.159: GPU1 GPU1: DAG  88%
+2018.12.02:02:32:50.330: GPU1 GPU1: DAG generated in 1.7 s (708.8 MB/s)
+2018.12.02:02:32:51.288: main Eth speed: 0.000 MH/s, shares: 0/0/0, time: 0:00
+2018.12.02:02:32:56.313: main Eth speed: 66.493 MH/s, shares: 0/0/0, time: 0:00
+2018.12.02:02:32:56.348: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"titanv","params":[]}
+
+2018.12.02:02:32:56.392: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0xa7a21273c0a2d836efe1e28fdbd9557680f8469b654cf219c7729c1ce1063202","0x77e29faaecdca7314f4aca32b59b79ba53423722779514f80382fe5fa4042b2a","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+2018.12.02:02:33:01.488: main Eth speed: 66.734 MH/s, shares: 0/0/0, time: 0:00
+2018.12.02:02:33:02.952: unkn Quitting...
+2018.12.02:02:33:04.274: wdog Stopping watchdog thread
+2018.12.02:02:33:04.275: main Exit code: 0
