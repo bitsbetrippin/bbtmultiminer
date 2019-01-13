@@ -1,0 +1,17 @@
+ {
+    "quiet" : true,
+    "debug" : false,
+    "protocol" : false,
+    "no-cpu-verify" : true,
+    
+
+    "algo" : "x16r",
+    "intensity" : "19",
+
+
+    
+    "url" : "stratum+tcp://ravenminer.com:3636",
+    "user" : "RFQXKVKpHMwyJ86YqQUJSZK1S8m8oRbC5h",
+    "retry-pause" : "6",
+    "pass" : "c=RVN"
+}
