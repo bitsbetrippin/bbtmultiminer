@@ -1,5 +1,50 @@
 Major Overhall Update
 
+VER 8.0
+* Miner Software Changes
+- Depricated
+  Claymore Cryptonote AMD 11.3
+  Claymore Eth Miner 11.9
+  Claymore Zcash AMD 12.6
+  Cryptonight XMRRIG 2.5.2
+  Enemy CCMINER 1.3.0
+  Suprminer 1.6
+  ZM 0.6.1
+
+- Added
+  Claymore Eth Miner 12.0
+  Cryptodredge 0.15.1 Cuda 10 & 9.2
+  Phoenix Miner 4.0b
+  Wildrig Multi 0.14.0
+  Z-Enemy 1.28 Cuda 10  & 9.1
+  NBMiner v12.3
+  PROGPOW AMD & Cuda 0.16
+  T-Rex 0.8.9 Cuda 9 & 10
+  lyclMiner 0.2.0
+  Gminer 1.14
+  lolMiner 0.6
+  
+
+* Noteable Info
+
+Removed Algo/Networks
+- Removed all support for Equihash Algo (ZEC,ZEN,BTCP) due to ASIC/FPGA 
+- Removed support for Pigeoncoin x16s
+
+Added Algo/Networks
+- Added Support for UBQHASH / Ubiqcoin's new custom algorithm
+- Added PROGPOW Support
+- Added HEX, AEX, Time Travel 10, SKUNK, SonoA, CN Saber, Tensiory, Equihash 210/9 and LYRA2REV3 options
+- Support for Bytom, AION, Vertcoin LYRA2REV3, Bittube, Project SONO, C25, Luxcore, Bitcore, AeriumX, XDNA, BitcoinInterest, CLO, BEAM, VEIL and latest Ethereum PROGPOW Gangnam
+- Multiple syntax fixes, to many to list
+
+Known issue
+Set Path for Wildrig
+
+------------------------------------------------------------------------------------------------- 
+
+VER 7.0
+
 *Notable Info
 - This version supports the new Monero v7 Fork update with CAST XMR 0.9.1
 
