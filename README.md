@@ -1,4 +1,4 @@
-BBT Multi Miner v8.0b - 16 August 2018
+BBT Multi Miner v8.0b - 13 January 2019
 
 BBT MultiMiner is the official BitsBeTrippin MultiMiner Tool produced by BBT Carter (and commits by a range of open source community members).
 
