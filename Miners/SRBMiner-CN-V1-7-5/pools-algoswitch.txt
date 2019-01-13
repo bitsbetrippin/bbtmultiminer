@@ -1,0 +1,15 @@
+{
+"pools" :
+[
+	{
+		"pool" : "gulf.moneroocean.stream:10016", 
+		"wallet" : "4A5hJyu2FvuM2azexYssHW2odrNCNWVqLLmzCowrA57xGJLNufXfzVgcMpAy3YWpzZSAPALhVH4Ed7xo6RZYyw2bUtbm12g", 
+		"password" : "x"
+	},
+	{
+		"pool" : "mine.c3pool.com:19999", 
+		"wallet" : "4A5hJyu2FvuM2azexYssHW2odrNCNWVqLLmzCowrA57xGJLNufXfzVgcMpAy3YWpzZSAPALhVH4Ed7xo6RZYyw2bUtbm12g", 
+		"password" : "x"
+	}
+]
+}

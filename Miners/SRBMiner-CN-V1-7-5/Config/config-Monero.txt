@@ -1,0 +1,7 @@
+{	
+"cryptonight_type" : "normalv7",	
+"intensity" : 0,	
+"double_threads" : false,	
+"shutdown_temperature" : 90,	
+"off_temperature" : 100	
+}

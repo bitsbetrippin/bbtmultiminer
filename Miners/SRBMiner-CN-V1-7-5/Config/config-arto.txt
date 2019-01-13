@@ -1,0 +1,5 @@
+{
+"cryptonight_type" : "artocash",
+"intensity" : 0,
+"double_threads" : true
+}

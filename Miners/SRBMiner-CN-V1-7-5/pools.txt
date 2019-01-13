@@ -1,0 +1,15 @@
+{
+"pools" :
+[
+	{
+		"pool" : "xmr-eu1.nanopool.org:14444", 
+		"wallet" : "4A5hJyu2FvuM2azexYssHW2odrNCNWVqLLmzCowrA57xGJLNufXfzVgcMpAy3YWpzZSAPALhVH4Ed7xo6RZYyw2bUtbm12g.donation", 
+		"password" : "x"
+	},
+	{
+		"pool" : "xmr-eu2.nanopool.org:14444", 
+		"wallet" : "4A5hJyu2FvuM2azexYssHW2odrNCNWVqLLmzCowrA57xGJLNufXfzVgcMpAy3YWpzZSAPALhVH4Ed7xo6RZYyw2bUtbm12g.donation", 
+		"password" : "x"
+	}
+]
+}

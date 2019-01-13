@@ -1,0 +1,59 @@
+{
+"algos" :
+[
+	{
+		"algo" : "normalv8",
+		"config" : "Config\\config-normalv8.txt",
+		"hashrate" : 1,
+		"startup_script": ""
+	},
+	{
+		"algo" : "normalv7",
+		"config" : "Config\\config-normalv7.txt",
+		"hashrate" : 1,
+		"startup_script": ""
+	},
+	{
+		"algo" : "heavy",
+		"config" : "Config\\config-heavy.txt",
+		"hashrate" : 1,
+		"startup_script": ""
+	},
+	{
+		"algo" : "haven",
+		"config" : "Config\\config-haven.txt",
+		"hashrate" : 1,
+		"startup_script": ""
+	},
+	{
+		"algo" : "bittubev2",
+		"config" : "Config\\config-bittubev2.txt",
+		"hashrate" : 1,
+		"startup_script": ""
+	},
+	{
+		"algo" : "stellitev8",
+		"config" : "Config\\config-stellitev8.txt",
+		"hashrate" : 1,
+		"startup_script": ""
+	},
+	{
+		"algo" : "fast",
+		"config" : "Config\\config-fast.txt",
+		"hashrate" : 1,
+		"startup_script": ""
+	},
+	{
+		"algo" : "litev7",
+		"config" : "Config\\config-litev7.txt",
+		"hashrate" : 1,
+		"startup_script": ""
+	},
+	{
+		"algo" : "turtle",
+		"config" : "Config\\config-turtle.txt",
+		"hashrate" : 1,
+		"startup_script": ""
+	}
+]
+}

@@ -1,0 +1,12 @@
+{	
+"pools" :	
+[	
+{	
+"pool" : "xmr-us-east1.nanopool.org:14444",	
+"password" : "x",	
+"nicehash" : false,	
+"wallet" : "452eu5HWBcTEwQfwkRFHp9MgC39DhtAio5um8mEs6ZRgcyq9V3Gy3GbJfyASSxepSRQRe6SHcQ27xgorYzyZrn6DSVmWvuw",	
+"worker" : "bbtworker01"	
+}	
+]	
+}

@@ -1,0 +1,5 @@
+{
+"cryptonight_type" : "normalv7",
+"intensity" : 0,
+"double_threads" : true
+}

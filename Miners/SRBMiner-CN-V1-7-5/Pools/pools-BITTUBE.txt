@@ -1,0 +1,12 @@
+{	
+"pools" :	
+[	
+{	
+"pool" : "tube.ingest.cryptoknight.cc:5632",	
+"password" : "x",	
+"nicehash" : false,	
+"wallet" : "bxc6BG4mARPEzUyYXg4XeMUwVTkQA48s7MbFSwwHmJNkiB8ofmrW1JW1pGxeDiP68yTAh9TgynW45Zwn91s9NYLX2Vnoau8WT",	
+"worker" : "worker1"	
+}	
+]	
+}
