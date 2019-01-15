@@ -1,1 +1,1 @@
-miner.exe --algo 210_9 --pers AION0PoW --server aion-eu.luxor.tech --port 3366 --user 0xa07978089c76e2010720bec8400f05530cd946a567dc0fd9b862d83a45681f7c --pass x
+miner.exe --algo 210_9 --pers AION0PoW --server cluster.aionpool.tech --port 3333 --user 0xa06d51fb56e7e107c1078ee15753ace46b1c00a1a724912f0e3c8de02949a85e --pass x
