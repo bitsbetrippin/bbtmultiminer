@@ -647,22 +647,22 @@ PAUSE
 ::
 :AION1
 ECHO GMiner 1.14 1-2GPU -  NVIDIA Only
-Miners\gminer_1_14_windows64\miner.exe --algo 210_9 --pers AION0PoW --server na.aionpool.tech --port 2222 --user %AION% --pass %WORKER_PASSWORD% 
+Miners\gminer_1_14_windows64\miner.exe --algo 210_9 --pers AION0PoW --server cluster.aionpool.tech --port 2222 --user %AION% --pass %WORKER_PASSWORD% 
 IF %ERRORLEVEL% NEQ 0 GOTO exit
 PAUSE
 :AION2
 ECHO GMiner 1.14 3-8GPU -  NVIDIA Only
-Miners\gminer_1_14_windows64\miner.exe --algo 210_9 --pers AION0PoW --server na.aionpool.tech --port 3333 --user %AION% --pass %WORKER_PASSWORD% 
+Miners\gminer_1_14_windows64\miner.exe --algo 210_9 --pers AION0PoW --server cluster.aionpool.tech --port 3333 --user %AION% --pass %WORKER_PASSWORD% 
 IF %ERRORLEVEL% NEQ 0 GOTO exit
 PAUSE
 :AION3
 ECHO lolMiner 0.06 1-2GPU -  AMD OnlypanAN
-Miners\lolMiner_v06_Win64\lolMiner lolMiner.exe --coin AION --pool na.aionpool.tech --port 2222 --user %AION% --pass %WORKER_PASSWORD% 
+Miners\lolMiner_v06_Win64\lolMiner lolMiner.exe --coin AION --pool cluster.aionpool.tech --port 2222 --user %AION% --pass %WORKER_PASSWORD% 
 IF %ERRORLEVEL% NEQ 0 GOTO exit
 PAUSE
 :AION4
 ECHO lolMiner 0.06 3-8GPU -  AMD Only
-Miners\lolMiner_v06_Win64\lolMiner lolMiner.exe --coin AION --pool na.aionpool.tech --port 3333 --user %AION% --pass %WORKER_PASSWORD% 
+Miners\lolMiner_v06_Win64\lolMiner lolMiner.exe --coin AION --pool cluster.aionpool.tech --port 3333 --user %AION% --pass %WORKER_PASSWORD% 
 IF %ERRORLEVEL% NEQ 0 GOTO exit
 PAUSE
 ::
